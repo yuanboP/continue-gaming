@@ -1,0 +1,11 @@
+{
+  "carrier_id": "ca6932c3d5f89f28b",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 38524.717,
+    "expires_ms": 39074.717,
+    "id": "pick-ca6932c3d5f89f28b",
+    "key": "k"
+  },
+  "visible_evidence": "The four connector pins are bent down across the board rather than extending straight outward."
+}

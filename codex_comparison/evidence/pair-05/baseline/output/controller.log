@@ -1,0 +1,30 @@
+BOARD 1 d 22.222
+BOARD 2 f 26.29
+BOARD 3 j 30.198
+BOARD 4 k 38.658
+ACTION 1 {'clock_ms': 22229.89238, 'id': 'reject-1', 'key': 'd', 'result': 'target_grab', 'session_id': 'a88515e4-1482-4768-a0d3-2dda59a37477'}
+BOARD 5 d 46.546
+ACTION 2 {'clock_ms': 26295.693886, 'id': 'reject-2', 'key': 'f', 'result': 'target_grab', 'session_id': 'a88515e4-1482-4768-a0d3-2dda59a37477'}
+ACTION 3 {'clock_ms': 30594.308394, 'id': 'reject-3', 'key': 'j', 'result': 'expired', 'session_id': 'a88515e4-1482-4768-a0d3-2dda59a37477'}
+BOARD 6 f 50.139
+BOARD 7 j 54.099
+BOARD 8 k 63.106
+ACTION 5 {'clock_ms': 46554.189963, 'id': 'reject-5', 'key': 'd', 'result': 'target_grab', 'session_id': 'a88515e4-1482-4768-a0d3-2dda59a37477'}
+BOARD 9 d 70.266
+BOARD 10 f 73.971
+BOARD 11 j 78.233
+ACTION 8 {'clock_ms': 63110.198049, 'id': 'reject-8', 'key': 'k', 'result': 'target_grab', 'session_id': 'a88515e4-1482-4768-a0d3-2dda59a37477'}
+BOARD 12 k 87.089
+BOARD 13 d 94.368
+BOARD 14 f 98.184
+BOARD 15 j 102.345
+BOARD 16 k 110.844
+BOARD 17 d 118.089
+BOARD 18 f 121.991
+BOARD 19 j 126.135
+BOARD 20 k 134.967
+BOARD 21 d 142.18
+BOARD 22 f 145.7
+BOARD 23 j 150.499
+BOARD 24 k 159.058
+EXPORTED

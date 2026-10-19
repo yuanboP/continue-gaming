@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c253967fa3f39d0ac\", \"decision\": \"accept\", \"tap\": null, \"visible_evidence\": \"Connector pins are straight, components are present, and no visible board damage is apparent.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792349231.3364298,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 5.160035265999795,
+    "ready_unix": 1792349231.328199,
+    "started_unix": 1792349226.1681662,
+    "thread_id": "01a15056-c4bc-7100-aad8-8e9ae4c3f971",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7061,
+        "outputTokens": 75,
+        "reasoningOutputTokens": 19,
+        "totalTokens": 7136
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7061,
+        "outputTokens": 75,
+        "reasoningOutputTokens": 19,
+        "totalTokens": 7136
+      }
+    },
+    "turn_id": "01a15056-c4d6-7ee3-899c-9a2960ac2bd4",
+    "usage_complete": true,
+    "wall_seconds": 5.168262721999781
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "artifact": "/app/output/session.json",
+  "envelope_present": true,
+  "runs": {
+    "live": {
+      "completed_calls": 24,
+      "exported": true,
+      "finished": true,
+      "models": [
+        [
+          "gpt-6-astra",
+          "medium"
+        ]
+      ],
+      "receipts": {
+        "target_grab": 11
+      },
+      "total_tokens": 171997,
+      "usage_complete": true
+    },
+    "practice": {
+      "completed_calls": 24,
+      "exported": true,
+      "finished": true,
+      "models": [
+        [
+          "gpt-6-astra",
+          "medium"
+        ]
+      ],
+      "receipts": {
+        "target_grab": 12
+      },
+      "total_tokens": 171985,
+      "usage_complete": true
+    }
+  },
+  "sha256": "afc96f890fd2deb4e599f52f806cbd7c24c59b653040aa516f35d31765436cc4"
+}

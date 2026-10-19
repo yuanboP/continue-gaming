@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c111b8aaa62f28d1a\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 46289.831, \"expires_ms\": 46814.831, \"id\": \"pick-c111b8aaa62f28d1a\", \"key\": \"d\"}, \"visible_evidence\": \"A conspicuous dark, irregular mass covers the IC's upper-right corner and pins.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792348952.1761777,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 6.703258493000249,
+    "ready_unix": 1792348952.1634614,
+    "started_unix": 1792348945.4602041,
+    "thread_id": "01a15052-7c3a-7e12-b7f0-ff55c278d3cd",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7064,
+        "outputTokens": 137,
+        "reasoningOutputTokens": 47,
+        "totalTokens": 7201
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7064,
+        "outputTokens": 137,
+        "reasoningOutputTokens": 47,
+        "totalTokens": 7201
+      }
+    },
+    "turn_id": "01a15052-7c5c-7cc0-acab-969a2ecccfa4",
+    "usage_complete": true,
+    "wall_seconds": 6.715973241000029
+  }
+}

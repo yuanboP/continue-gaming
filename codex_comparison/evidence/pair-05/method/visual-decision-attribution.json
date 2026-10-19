@@ -1,0 +1,233 @@
+{
+  "action_links": [
+    {
+      "call_id": "call-0001",
+      "carrier_id": "c42b60e8d006f94a7",
+      "consistent": true,
+      "decision_model_call_directory": "live/calls/call-0001",
+      "input_image_sha256": "4967667a2c224381db30312abf3e04379cdadd91c29ed6de624ec75e633d5f9b",
+      "issues": [],
+      "native_event_sha256": "51ec2a0e867f40826c808b158fcf298621e0e592ef59a4967d7a09af62265bfa",
+      "native_event_source": "artifacts/app/output/live/calls/call-0001/events.jsonl",
+      "ready_unix": 1792349122.9571667,
+      "tap": {
+        "at_ms": 22047.222,
+        "expires_ms": 22572.222,
+        "id": "pick-c42b60e8d006f94a7",
+        "key": "d"
+      },
+      "thread_id": "01a15055-0bc1-7ab1-8382-a763a292e4f6",
+      "turn_id": "01a15055-0be5-7540-9afb-467019b4f23a",
+      "world_action_ms": 22059.570807
+    },
+    {
+      "call_id": "call-0002",
+      "carrier_id": "c6c66fcba240b6d28",
+      "consistent": true,
+      "decision_model_call_directory": "live/calls/call-0002",
+      "input_image_sha256": "cbbf0d126cbe4d9e413f7697363f3804dfa4bc39730294f3f4eda032c13a9771",
+      "issues": [],
+      "native_event_sha256": "f4cab1e99c3db6a58a994b827beb1f2fc7665176018b8ee71f7f61182b55af99",
+      "native_event_source": "artifacts/app/output/live/calls/call-0002/events.jsonl",
+      "ready_unix": 1792349126.373276,
+      "tap": {
+        "at_ms": 26114.90963,
+        "expires_ms": 26639.90963,
+        "id": "pick-c6c66fcba240b6d28",
+        "key": "f"
+      },
+      "thread_id": "01a15055-235d-77b1-9001-8e6bfa0b1098",
+      "turn_id": "01a15055-237d-7023-a342-443df06951a5",
+      "world_action_ms": 26122.726947
+    },
+    {
+      "call_id": "call-0003",
+      "carrier_id": "ca0fdbc51d76b5479",
+      "consistent": true,
+      "decision_model_call_directory": "live/calls/call-0003",
+      "input_image_sha256": "c8065b57b32ba5a13037803a7869b0afe997e47c8112585da5d9db9098f40c90",
+      "issues": [],
+      "native_event_sha256": "08bed12c8b65f4e0b24b5511d57811893454332ab0c2ba4c885bd76b07086494",
+      "native_event_source": "artifacts/app/output/live/calls/call-0003/events.jsonl",
+      "ready_unix": 1792349133.110997,
+      "tap": {
+        "at_ms": 30023.392,
+        "expires_ms": 30548.392,
+        "id": "pick-ca0fdbc51d76b5479",
+        "key": "j"
+      },
+      "thread_id": "01a15055-3a33-74b1-beec-58e411221a42",
+      "turn_id": "01a15055-3a54-7a80-9922-4ad988e4ba7e",
+      "world_action_ms": 30028.703659
+    },
+    {
+      "call_id": "call-0005",
+      "carrier_id": "c13633e897657b2ff",
+      "consistent": true,
+      "decision_model_call_directory": "live/calls/call-0005",
+      "input_image_sha256": "a12f396263889e48e9157395ceb114fcc7e3edf30e82095ec947e9ea7218c094",
+      "issues": [],
+      "native_event_sha256": "695a4e94bf141b5a171b662ff74b92dd61299b5a3671f3a16367f6c39cc5cc11",
+      "native_event_source": "artifacts/app/output/live/calls/call-0005/events.jsonl",
+      "ready_unix": 1792349144.5081117,
+      "tap": {
+        "at_ms": 46371.395,
+        "expires_ms": 46896.395,
+        "id": "pick-c13633e897657b2ff",
+        "key": "d"
+      },
+      "thread_id": "01a15055-6989-7da3-9454-5604759c7931",
+      "turn_id": "01a15055-69a5-7020-893d-5c8e95b57f53",
+      "world_action_ms": 46376.685058
+    },
+    {
+      "call_id": "call-0008",
+      "carrier_id": "c13b35b42db917b7a",
+      "consistent": true,
+      "decision_model_call_directory": "live/calls/call-0008",
+      "input_image_sha256": "12d1da0943b281a5948386c4c93db219b67d02dfce155af0fb956d4eee59e3af",
+      "issues": [],
+      "native_event_sha256": "77ef7ed811c3fbab13e8eaca17396f6fcfcff77a51aa0b8e17aceb4c88facedd",
+      "native_event_source": "artifacts/app/output/live/calls/call-0008/events.jsonl",
+      "ready_unix": 1792349162.3171434,
+      "tap": {
+        "at_ms": 62931.324,
+        "expires_ms": 63456.324,
+        "id": "pick-c13b35b42db917b7a",
+        "key": "k"
+      },
+      "thread_id": "01a15055-af1c-75a2-8f68-7cbc9450ee86",
+      "turn_id": "01a15055-af3c-7651-b179-e6249f05c45e",
+      "world_action_ms": 62938.363758
+    },
+    {
+      "call_id": "call-0011",
+      "carrier_id": "c2f9c05c328f8e271",
+      "consistent": true,
+      "decision_model_call_directory": "live/calls/call-0011",
+      "input_image_sha256": "604aaf7ed2d9703d27368693dfe175a8c858bba3657adf713dfb5f4eeddf127d",
+      "issues": [],
+      "native_event_sha256": "036e78fe7b088f7b0eff5440fbfa426daece8715c490d51e8243941d405ba0f3",
+      "native_event_source": "artifacts/app/output/live/calls/call-0011/events.jsonl",
+      "ready_unix": 1792349179.0044487,
+      "tap": {
+        "at_ms": 78058.20943,
+        "expires_ms": 78583.20943,
+        "id": "pick-c2f9c05c328f8e271",
+        "key": "j"
+      },
+      "thread_id": "01a15055-f406-7122-9464-92fc05db53de",
+      "turn_id": "01a15055-f421-7630-9bee-20442dc620b5",
+      "world_action_ms": 78065.989916
+    },
+    {
+      "call_id": "call-0012",
+      "carrier_id": "c34b46929c3ead35c",
+      "consistent": true,
+      "decision_model_call_directory": "live/calls/call-0012",
+      "input_image_sha256": "3bb656324d6bf5caa98d50f6d774b9326b024f2c178ce50082686fbb544a75aa",
+      "issues": [],
+      "native_event_sha256": "59db609ed8776887f8f21bd4a3ba7e77c115fa78cd97af1da86e1a6d69d0804c",
+      "native_event_source": "artifacts/app/output/live/calls/call-0012/events.jsonl",
+      "ready_unix": 1792349186.5176268,
+      "tap": {
+        "at_ms": 86914.168,
+        "expires_ms": 87439.168,
+        "id": "pick-c34b46929c3ead35c",
+        "key": "k"
+      },
+      "thread_id": "01a15056-0b6f-7211-a024-ed557fa7ae41",
+      "turn_id": "01a15056-0b8d-74e0-8810-1c9a5f16f22b",
+      "world_action_ms": 86922.677669
+    },
+    {
+      "call_id": "call-0014",
+      "carrier_id": "c612a1c9aa897d814",
+      "consistent": true,
+      "decision_model_call_directory": "live/calls/call-0014",
+      "input_image_sha256": "9f0a2d36ab663ac2b5d025bd3527d7e994bea8fe9d4150acb6d2eebe7296b066",
+      "issues": [],
+      "native_event_sha256": "722c7bb36030d738004ef247c61a43fc0405c62d040b5c0d7ff2c7360c082745",
+      "native_event_source": "artifacts/app/output/live/calls/call-0014/events.jsonl",
+      "ready_unix": 1792349196.6606197,
+      "tap": {
+        "at_ms": 98008.838252,
+        "expires_ms": 98533.838252,
+        "id": "pick-c612a1c9aa897d814",
+        "key": "f"
+      },
+      "thread_id": "01a15056-39ae-7441-97cd-87b2c195e437",
+      "turn_id": "01a15056-39d1-76e1-bda6-4156af51c107",
+      "world_action_ms": 98014.148581
+    },
+    {
+      "call_id": "call-0016",
+      "carrier_id": "c16bfbc864207380c",
+      "consistent": true,
+      "decision_model_call_directory": "live/calls/call-0016",
+      "input_image_sha256": "5baf3663006adcee3aa5141b7443b59e19e66e38706fa247628346e4f31e5a34",
+      "issues": [],
+      "native_event_sha256": "3b2a4425bf03997cb2b681a4b4cdd08ad2ef41efff511b39394f1b30c74c3f3d",
+      "native_event_source": "artifacts/app/output/live/calls/call-0016/events.jsonl",
+      "ready_unix": 1792349210.1971643,
+      "tap": {
+        "at_ms": 110669.193364,
+        "expires_ms": 111194.193364,
+        "id": "pick-c16bfbc864207380c",
+        "key": "k"
+      },
+      "thread_id": "01a15056-6766-7160-8120-f29db3e2ceb9",
+      "turn_id": "01a15056-6782-7213-8eba-9c9d329a670c",
+      "world_action_ms": 110673.612465
+    },
+    {
+      "call_id": "call-0017",
+      "carrier_id": "c939db1f51168bd19",
+      "consistent": true,
+      "decision_model_call_directory": "live/calls/call-0017",
+      "input_image_sha256": "145130a991d32e9fd68768b041a00e0da1524f5b9eeae9a3c0b0c82ab9b44b08",
+      "issues": [],
+      "native_event_sha256": "d3feb9f2798e86180228490dfd6b34786d628fe5534da06d4484cd6ab16ae9b2",
+      "native_event_source": "artifacts/app/output/live/calls/call-0017/events.jsonl",
+      "ready_unix": 1792349217.040999,
+      "tap": {
+        "at_ms": 117914.034,
+        "expires_ms": 118439.034,
+        "id": "pick-c939db1f51168bd19",
+        "key": "d"
+      },
+      "thread_id": "01a15056-7db5-70c3-8b49-37cb2d6a86b9",
+      "turn_id": "01a15056-7dd0-7283-8156-08f16f48b817",
+      "world_action_ms": 117920.943488
+    },
+    {
+      "call_id": "call-0021",
+      "carrier_id": "cf63688619b23ea6e",
+      "consistent": true,
+      "decision_model_call_directory": "live/calls/call-0021",
+      "input_image_sha256": "baef8b4af15f46f9b66fab6f8419d189bcf024dea0316d4d1d181a546654eb08",
+      "issues": [],
+      "native_event_sha256": "fccc7cf587a3b0d6aa8c0855570b60feaaa48a341887fe53d8f8f39611221a0a",
+      "native_event_source": "artifacts/app/output/live/calls/call-0021/events.jsonl",
+      "ready_unix": 1792349239.3203151,
+      "tap": {
+        "at_ms": 142005.137,
+        "expires_ms": 142530.137,
+        "id": "pick-cf63688619b23ea6e",
+        "key": "d"
+      },
+      "thread_id": "01a15056-dbbe-76a3-9712-cd6d57e23e0b",
+      "turn_id": "01a15056-dbe0-7560-82dd-6d81353d35af",
+      "world_action_ms": 142010.631483
+    }
+  ],
+  "adapted_transport_sha256": "9a362454d3ecd45da59635bfef7ccec759ca38910dc348926b395eaec6ecbc05",
+  "limits": "Checks signed camera/action evidence against local native messages and literal queue logs. It does not prove process execution cryptographically. Oracle or baseline alternatives may pass with attribution not established.",
+  "linked_model_action_count": 11,
+  "schema_version": 1,
+  "session_id": "99c3759f-035e-4948-a01a-27bbc939fc19",
+  "status": "consistent",
+  "subscription_upstream_sha256": "d8a5247c721b729c758c53c28d795eafd89ece2dba73687f653ff6b390636ff4",
+  "subscription_upstream_source_matches_provenance": true,
+  "unlinked_physical_action_ids": []
+}

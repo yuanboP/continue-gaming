@@ -1,0 +1,200 @@
+{
+  "schema": "infrastructure-ui-report-v1",
+  "kind": "human_preview_and_static_portal_check",
+  "model_calls": 0,
+  "benchmark_game_result": false,
+  "started_at": "2026-10-19T04:20:37.827591+00:00",
+  "checks": [
+    {
+      "name": "runtime_hash_bindings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "native_transport_integrity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "source_snapshot_integrity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "portal_local_links",
+      "passed": true,
+      "details": {
+        "resolved_links": 5,
+        "files": 17
+      }
+    },
+    {
+      "name": "portal_images_loaded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "portal_navigation_aster",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "aster_file_url",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "aster_no_research_interface",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "aster_ready_canvas",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "aster_click_start",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "aster_keyboard_move",
+      "passed": true,
+      "details": {
+        "before": {
+          "x": 239.5,
+          "y": 550.3577981651376,
+          "pixels": 218
+        },
+        "after": {
+          "x": 351.3013698630137,
+          "y": 550.1780821917808,
+          "pixels": 219
+        }
+      }
+    },
+    {
+      "name": "aster_pause_freezes_pixels",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "aster_restart_resets_player",
+      "passed": true,
+      "details": {
+        "restart": {
+          "x": 239.5,
+          "y": 550.3577981651376,
+          "pixels": 218
+        }
+      }
+    },
+    {
+      "name": "portal_navigation_traceline",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "traceline_file_url",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "traceline_static_label",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "traceline_image_loaded",
+      "passed": true,
+      "details": {
+        "width": 1920,
+        "height": 1120
+      }
+    },
+    {
+      "name": "traceline_controls_disabled",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "traceline_clock_static",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "traceline_expand_image",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "traceline_no_api_requests",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "no_external_network",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "no_page_errors",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "portal.png",
+      "sha256": "a623b22302d397be1b99dce6aac14e5882b4961f5a230974518cc7df76ac3474",
+      "bytes": 86408
+    },
+    {
+      "path": "aster-ready.png",
+      "sha256": "d970374252fb4332b7e24ff269a38f61bda6ecf1559f43afc9ad61bdb1f5880e",
+      "bytes": 85137
+    },
+    {
+      "path": "aster-moved.png",
+      "sha256": "679617eefd5ba95496fa02d67102030b96159a3658288fa9f238ca09c329c983",
+      "bytes": 103454
+    },
+    {
+      "path": "aster-paused.png",
+      "sha256": "c9d99b4217218ce024c28eab84c98f25927610e2bb41551482bebdda57647d13",
+      "bytes": 77985
+    },
+    {
+      "path": "aster-restarted.png",
+      "sha256": "c0cd6c713b299fa4bd116012746d3e786e14f42b03e42e243a98229b6143d8d2",
+      "bytes": 101832
+    },
+    {
+      "path": "traceline-static.png",
+      "sha256": "b1d21ee887a0edd8d38ec49ba23dc0b8cf1f1a1d1dd3ed591a4ddb1494464155",
+      "bytes": 430039
+    }
+  ],
+  "source_sha256": {
+    "index.html": "63a0b6fa43df6951a5929d0c36e22911beaffab62b502daa307918888aac081f",
+    "README.md": "bfe39952eecb5c53d6afa3f9c045c6bd924e831b2d64f5b95c5c23fb06078e0f",
+    "traceline/index.html": "046c802548a169fca19e307fbfd106efea530bc781e8ddd4851e39ad379a0989",
+    "traceline/style.css": "b8958bea8810916706e2c61cb403fe2fb9286f2fdeba9e16c28eff81fe6ecf96",
+    "traceline/app.js": "a8188c415706dd32825aa5e40bbbbe12f5164a6f78895ec07d5e1b5e8f9b44c3",
+    "aster/index.html": "1c25b09c70fca6105fbef97ac83b7fc30fde235da26cb8abed91985dc3d41d46",
+    "rules/aster.md": "da825e39af715ed0405a26fbc13f071d5b7a5494bf31ade0f4c2f2b16e53d8dd",
+    "third-party/ATTRIBUTION.md": "93f55cf94b789f0efa6db768a2d3624836cb8338e0799fb982689a5772d87bba",
+    "third-party/LICENSE-CODE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "third-party/LICENSE-DATASET": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+    "third-party/NOTICE-UPSTREAM": "17ac4f8874c43d85d74851568c8adbd4a5624b652ca7c381c81ffb5216582f4a",
+    "assets/traceline.svg": "1475f546c4601bc1cbda028d7b8de105c77e251687153e48512ec0f276dd5c66",
+    "assets/aster.svg": "454d3c770b37e33bb8bddc66463c458badd06a64c798f2260c45717be0c163f0",
+    "rules/traceline/instruction.md": "fc04901637215beea3d851fa9e86c087399ddf2cdc8637a62b0f0d942ee09f70",
+    "rules/traceline/API_CONTRACT.md": "ea78e03599a017bdf9e1ca78b20efa551c5d50750354f6fcb060cc03b4525ee5",
+    "rules/traceline/QUALITY_RULES.md": "2fd57866f04949d3fb5bcc58d0bc167a0b0d9329b4483e97b6641eab5403b401",
+    "traceline/assets/inspection-preview.png": "58c7ddf9af28333e7c326c5888059273eb3339d88b0505db05ecd0fee09380a3"
+  },
+  "passed": true,
+  "finished_at": "2026-10-19T04:20:44.565627+00:00"
+}

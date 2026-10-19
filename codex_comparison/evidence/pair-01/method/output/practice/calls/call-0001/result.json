@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c4105cca7b53302fc\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 22022.222, \"expires_ms\": 22572.222, \"id\": \"pick-c4105cca7b53302fc\", \"key\": \"d\"}, \"visible_evidence\": \"Two connector pins on the query board are visibly bent.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345338.9011533,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 7.525589009999976,
+    "ready_unix": 1792345338.8937807,
+    "started_unix": 1792345331.3681927,
+    "thread_id": "01a1501b-56ac-7a31-bac3-25b2e4bed9b5",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7056,
+        "outputTokens": 122,
+        "reasoningOutputTokens": 42,
+        "totalTokens": 7178
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7056,
+        "outputTokens": 122,
+        "reasoningOutputTokens": 42,
+        "totalTokens": 7178
+      }
+    },
+    "turn_id": "01a1501b-56d3-7eb3-b534-efc0493f7ff4",
+    "usage_complete": true,
+    "wall_seconds": 7.532959767999955
+  }
+}

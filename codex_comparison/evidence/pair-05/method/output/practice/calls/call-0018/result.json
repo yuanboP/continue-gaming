@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"cc4ff64debb5d6b48\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 121608.479091, \"expires_ms\": 122133.479091, \"id\": \"pick-cc4ff64debb5d6b48\", \"key\": \"f\"}, \"visible_evidence\": \"The upper central resistor is visibly broken, with fragmented material across its body.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792349028.4857202,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 6.283753063999939,
+    "ready_unix": 1792349028.4838018,
+    "started_unix": 1792349022.20005,
+    "thread_id": "01a15053-a7fb-7c43-a371-0f27ec625815",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7065,
+        "outputTokens": 134,
+        "reasoningOutputTokens": 43,
+        "totalTokens": 7199
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7065,
+        "outputTokens": 134,
+        "reasoningOutputTokens": 43,
+        "totalTokens": 7199
+      }
+    },
+    "turn_id": "01a15053-a817-7831-b721-def1df25b227",
+    "usage_complete": true,
+    "wall_seconds": 6.285669880000569
+  }
+}

@@ -1,0 +1,1 @@
+{"reject":true,"reason":"The component immediately left of the IC is visibly damaged and surrounded by conspicuous crusty foreign material across its pads."}

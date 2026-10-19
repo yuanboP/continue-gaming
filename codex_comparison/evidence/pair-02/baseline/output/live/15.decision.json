@@ -1,0 +1,5 @@
+{
+  "decided_wall": 1792346762.5285141,
+  "reason": "Two rightmost J1 header pins are severely bent sideways and converge, unlike the straight, parallel reference pins.",
+  "reject": true
+}

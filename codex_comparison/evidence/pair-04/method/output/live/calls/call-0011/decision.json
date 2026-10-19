@@ -1,0 +1,11 @@
+{
+  "carrier_id": "ce73f31d6d5a35ac1",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 77899.482,
+    "expires_ms": 78449.482,
+    "id": "pick-ce73f31d6d5a35ac1",
+    "key": "j"
+  },
+  "visible_evidence": "The capacitor left of the main chip is missing, leaving two exposed pads."
+}

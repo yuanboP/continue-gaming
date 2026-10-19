@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "tasks": [
+    {
+      "task": "aster-baseline",
+      "config_passed": true
+    },
+    {
+      "task": "aster-method",
+      "config_passed": true
+    },
+    {
+      "task": "traceline-baseline",
+      "config_passed": true
+    },
+    {
+      "task": "traceline-method",
+      "config_passed": true
+    }
+  ],
+  "aster_physics_unchanged": true,
+  "models_started": 0
+}

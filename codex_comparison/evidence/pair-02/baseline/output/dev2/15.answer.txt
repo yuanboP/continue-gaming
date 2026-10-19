@@ -1,0 +1,1 @@
+{"reject":false,"reason":"All components appear present and intact; connector pins are straight, with no visible cracks, foreign material, or damaging contamination."}

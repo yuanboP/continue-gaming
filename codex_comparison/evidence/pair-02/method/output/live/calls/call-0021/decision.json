@@ -1,0 +1,11 @@
+{
+  "carrier_id": "ca71fba1e1a505855",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 142388.928,
+    "expires_ms": 142913.928,
+    "id": "pick-ca71fba1e1a505855",
+    "key": "d"
+  },
+  "visible_evidence": "The query's main IC has a conspicuous gouged, damaged area on its surface."
+}

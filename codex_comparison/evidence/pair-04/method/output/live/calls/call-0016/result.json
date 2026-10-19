@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"cf93283487e530a32\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 110305.375, \"expires_ms\": 110855.375, \"id\": \"pick-cf93283487e530a32\", \"key\": \"k\"}, \"visible_evidence\": \"The central chip is visibly broken, with a detached fragment across its lower pins.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792348114.4414546,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 5.912129911000193,
+    "ready_unix": 1792348114.4312348,
+    "started_unix": 1792348108.519107,
+    "thread_id": "01a15045-b6eb-7792-a58a-202df933f183",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7057,
+        "outputTokens": 124,
+        "reasoningOutputTokens": 40,
+        "totalTokens": 7181
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7057,
+        "outputTokens": 124,
+        "reasoningOutputTokens": 40,
+        "totalTokens": 7181
+      }
+    },
+    "turn_id": "01a15045-b707-7a70-8463-7ac6625427b2",
+    "usage_complete": true,
+    "wall_seconds": 5.922347187000014
+  }
+}

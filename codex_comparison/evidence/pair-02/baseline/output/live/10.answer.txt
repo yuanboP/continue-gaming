@@ -1,0 +1,1 @@
+{"reject":true,"reason":"The main IC has conspicuous broken material across its lower-left corner and pins, indicating physical component damage. The USB connector also shows extensive brown contamination."}

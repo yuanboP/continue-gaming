@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c42b60e8d006f94a7\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 22047.222, \"expires_ms\": 22572.222, \"id\": \"pick-c42b60e8d006f94a7\", \"key\": \"d\"}, \"visible_evidence\": \"The USB connector housing is visibly bent and damaged.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792349122.961961,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 9.783209963000445,
+    "ready_unix": 1792349122.9571667,
+    "started_unix": 1792349113.276462,
+    "thread_id": "01a15055-0bc1-7ab1-8382-a763a292e4f6",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7064,
+        "outputTokens": 139,
+        "reasoningOutputTokens": 54,
+        "totalTokens": 7203
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7064,
+        "outputTokens": 139,
+        "reasoningOutputTokens": 54,
+        "totalTokens": 7203
+      }
+    },
+    "turn_id": "01a15055-0be5-7540-9afb-467019b4f23a",
+    "usage_complete": true,
+    "wall_seconds": 9.788003120000212
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cfd9febc77087be06",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 149799.101,
+    "expires_ms": 150349.101,
+    "id": "pick-cfd9febc77087be06",
+    "key": "j"
+  },
+  "visible_evidence": "The main IC has a conspicuous gouged, damaged area on its surface."
+}

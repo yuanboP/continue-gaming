@@ -1,0 +1,367 @@
+{
+  "collector_sha256": "36f5fcf0b38f3127d0078c11b4756629fafe8ee719848b3dc125ab2ad7aa8a65",
+  "files": [
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/01.decision",
+      "public_bytes": 37,
+      "public_sha256": "8e2d32be3495521fba8d9b86b65f2d43ef06572145830807a6b0d36504a8b030",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/01.decision",
+      "source_bytes": 37,
+      "source_sha256": "8e2d32be3495521fba8d9b86b65f2d43ef06572145830807a6b0d36504a8b030",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/02.decision",
+      "public_bytes": 32,
+      "public_sha256": "9ee8133fc89c899469f25b780918986aff29cc7de8fa141ceedb7ff416d81437",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/02.decision",
+      "source_bytes": 32,
+      "source_sha256": "9ee8133fc89c899469f25b780918986aff29cc7de8fa141ceedb7ff416d81437",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/03.decision",
+      "public_bytes": 38,
+      "public_sha256": "4f6f5a4ffbc0e7c934dad5f2977f7f203080341f92250157381987d1c7a6424e",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/03.decision",
+      "source_bytes": 38,
+      "source_sha256": "4f6f5a4ffbc0e7c934dad5f2977f7f203080341f92250157381987d1c7a6424e",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/04.decision",
+      "public_bytes": 37,
+      "public_sha256": "e411b415d8b17396de7951780f3ce07c79384e2f7c371d241a5e49e9960d6cbf",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/04.decision",
+      "source_bytes": 37,
+      "source_sha256": "e411b415d8b17396de7951780f3ce07c79384e2f7c371d241a5e49e9960d6cbf",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/05.decision",
+      "public_bytes": 36,
+      "public_sha256": "8bed6e278bca24a3d317a23baec49c339524653b3b341fe3b93f6032f32bf6a3",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/05.decision",
+      "source_bytes": 36,
+      "source_sha256": "8bed6e278bca24a3d317a23baec49c339524653b3b341fe3b93f6032f32bf6a3",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/06.decision",
+      "public_bytes": 27,
+      "public_sha256": "fe9918916262f02337299d66fdcea177463c5832c9de5f8cda4c6a0b17f1062e",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/06.decision",
+      "source_bytes": 27,
+      "source_sha256": "fe9918916262f02337299d66fdcea177463c5832c9de5f8cda4c6a0b17f1062e",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/07.decision",
+      "public_bytes": 41,
+      "public_sha256": "d604a205684ea68ff253e0fe9f1e696415caf4eb0e126160debfb021e684be83",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/07.decision",
+      "source_bytes": 41,
+      "source_sha256": "d604a205684ea68ff253e0fe9f1e696415caf4eb0e126160debfb021e684be83",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/08.decision",
+      "public_bytes": 33,
+      "public_sha256": "8d7ff5546591d720205d727de1daf01044233f155cec44003e17c7d7fb2da929",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/08.decision",
+      "source_bytes": 33,
+      "source_sha256": "8d7ff5546591d720205d727de1daf01044233f155cec44003e17c7d7fb2da929",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/09.decision",
+      "public_bytes": 43,
+      "public_sha256": "9d30c2efc69bdbff2eeabc926e13d47d2aa38696350828b90c0c98ef35ebb67d",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/09.decision",
+      "source_bytes": 43,
+      "source_sha256": "9d30c2efc69bdbff2eeabc926e13d47d2aa38696350828b90c0c98ef35ebb67d",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/10.decision",
+      "public_bytes": 22,
+      "public_sha256": "0ce6b7f13fb270cd0a95224283459e049d5aaf074a0f2fecd0e42518eee484f7",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/10.decision",
+      "source_bytes": 22,
+      "source_sha256": "0ce6b7f13fb270cd0a95224283459e049d5aaf074a0f2fecd0e42518eee484f7",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/11.decision",
+      "public_bytes": 33,
+      "public_sha256": "1f92a0638749fa92071b5d29698ed6d410139bc15266dd0c3e126b99159379ed",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/11.decision",
+      "source_bytes": 33,
+      "source_sha256": "1f92a0638749fa92071b5d29698ed6d410139bc15266dd0c3e126b99159379ed",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/12.decision",
+      "public_bytes": 12,
+      "public_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/12.decision",
+      "source_bytes": 12,
+      "source_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/13.decision",
+      "public_bytes": 12,
+      "public_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/13.decision",
+      "source_bytes": 12,
+      "source_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/14.decision",
+      "public_bytes": 29,
+      "public_sha256": "2498501ea44077d9c7218ca8c72027d138212e2cdab968cf423ee633c9ece68b",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/14.decision",
+      "source_bytes": 29,
+      "source_sha256": "2498501ea44077d9c7218ca8c72027d138212e2cdab968cf423ee633c9ece68b",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/15.decision",
+      "public_bytes": 12,
+      "public_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/15.decision",
+      "source_bytes": 12,
+      "source_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/01.decision",
+      "public_bytes": 31,
+      "public_sha256": "9dfd7f48531fb04c410e191b1b94765d2a8a125e1b21a6faee30d75c1f33ddeb",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/01.decision",
+      "source_bytes": 31,
+      "source_sha256": "9dfd7f48531fb04c410e191b1b94765d2a8a125e1b21a6faee30d75c1f33ddeb",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/02.decision",
+      "public_bytes": 37,
+      "public_sha256": "f57485daf1bcea88e24d6abc4d9e11ebc18de4822544cebc3de548ac7e132636",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/02.decision",
+      "source_bytes": 37,
+      "source_sha256": "f57485daf1bcea88e24d6abc4d9e11ebc18de4822544cebc3de548ac7e132636",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/03.decision",
+      "public_bytes": 31,
+      "public_sha256": "27afa2ebca517b8042b4bf96287a070c52f21fb7a46504cb79cfeb5d55b55182",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/03.decision",
+      "source_bytes": 31,
+      "source_sha256": "27afa2ebca517b8042b4bf96287a070c52f21fb7a46504cb79cfeb5d55b55182",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/04.decision",
+      "public_bytes": 37,
+      "public_sha256": "f69f6bf24d1d3ac942702038766c64a495638a2aae93bc48ba3c136841831fc3",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/04.decision",
+      "source_bytes": 37,
+      "source_sha256": "f69f6bf24d1d3ac942702038766c64a495638a2aae93bc48ba3c136841831fc3",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/05.decision",
+      "public_bytes": 39,
+      "public_sha256": "0e90aa91d436a1232a88f6782de25dea963fbcc57cdad8cce6c115e8b78a351c",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/05.decision",
+      "source_bytes": 39,
+      "source_sha256": "0e90aa91d436a1232a88f6782de25dea963fbcc57cdad8cce6c115e8b78a351c",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/06.decision",
+      "public_bytes": 12,
+      "public_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/06.decision",
+      "source_bytes": 12,
+      "source_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/07.decision",
+      "public_bytes": 46,
+      "public_sha256": "51ab5563bb8912298c541caba3f9031a891719c6380e9d849a5faacc1be42efd",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/07.decision",
+      "source_bytes": 46,
+      "source_sha256": "51ab5563bb8912298c541caba3f9031a891719c6380e9d849a5faacc1be42efd",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/08.decision",
+      "public_bytes": 32,
+      "public_sha256": "dff25eb14c409720be9947c7118ec6f8128abfabc00986bf0906082fbaf2e758",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/08.decision",
+      "source_bytes": 32,
+      "source_sha256": "dff25eb14c409720be9947c7118ec6f8128abfabc00986bf0906082fbaf2e758",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/09.decision",
+      "public_bytes": 32,
+      "public_sha256": "3683fd184844fca1002b892f72910bca6d14ed5f6bea4f267df148e1ca6d8b9e",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/09.decision",
+      "source_bytes": 32,
+      "source_sha256": "3683fd184844fca1002b892f72910bca6d14ed5f6bea4f267df148e1ca6d8b9e",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/10.decision",
+      "public_bytes": 30,
+      "public_sha256": "3f1bf8ce55dee441c77ae7bf4074b5932f32f6a54e7a62bee232daa41964d2bc",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/10.decision",
+      "source_bytes": 30,
+      "source_sha256": "3f1bf8ce55dee441c77ae7bf4074b5932f32f6a54e7a62bee232daa41964d2bc",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/11.decision",
+      "public_bytes": 46,
+      "public_sha256": "3f6a5ca4ad11766ca9e4bdf3a190bd538383c82b1faa79ffc176bcf01f4d6424",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/11.decision",
+      "source_bytes": 46,
+      "source_sha256": "3f6a5ca4ad11766ca9e4bdf3a190bd538383c82b1faa79ffc176bcf01f4d6424",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/12.decision",
+      "public_bytes": 33,
+      "public_sha256": "38f746e3a355ea1c4ebdbe8f1aafbf32fc6fe0b2c9ad4e263bc7ca1d405c6f0e",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/12.decision",
+      "source_bytes": 33,
+      "source_sha256": "38f746e3a355ea1c4ebdbe8f1aafbf32fc6fe0b2c9ad4e263bc7ca1d405c6f0e",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/13.decision",
+      "public_bytes": 12,
+      "public_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/13.decision",
+      "source_bytes": 12,
+      "source_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/14.decision",
+      "public_bytes": 12,
+      "public_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/14.decision",
+      "source_bytes": 12,
+      "source_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/15.decision",
+      "public_bytes": 38,
+      "public_sha256": "87a05dce6cab6adc03abf6f460fdc03e4748db1b45ccf05d7024a23458814942",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/15.decision",
+      "source_bytes": 38,
+      "source_sha256": "87a05dce6cab6adc03abf6f460fdc03e4748db1b45ccf05d7024a23458814942",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/16.decision",
+      "public_bytes": 12,
+      "public_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/16.decision",
+      "source_bytes": 12,
+      "source_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/17.decision",
+      "public_bytes": 12,
+      "public_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/17.decision",
+      "source_bytes": 12,
+      "source_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/18.decision",
+      "public_bytes": 38,
+      "public_sha256": "2d8c3b1814b460e672c8c197fb014a1389922829a8c246e30cc10a2b39a8284f",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/18.decision",
+      "source_bytes": 38,
+      "source_sha256": "2d8c3b1814b460e672c8c197fb014a1389922829a8c246e30cc10a2b39a8284f",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/19.decision",
+      "public_bytes": 12,
+      "public_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/19.decision",
+      "source_bytes": 12,
+      "source_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/20.decision",
+      "public_bytes": 12,
+      "public_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/20.decision",
+      "source_bytes": 12,
+      "source_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/21.decision",
+      "public_bytes": 33,
+      "public_sha256": "a0408e8e5347444d5677afe06b6a2e9e0adfaf588a4421b8925c2a04c3c30d7a",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/21.decision",
+      "source_bytes": 33,
+      "source_sha256": "a0408e8e5347444d5677afe06b6a2e9e0adfaf588a4421b8925c2a04c3c30d7a",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/22.decision",
+      "public_bytes": 12,
+      "public_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/22.decision",
+      "source_bytes": 12,
+      "source_sha256": "3c02c114c2412ec79a8e47a131b0b4a5066c2c4c307d350fd6df1073614833fb",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/23.decision",
+      "public_bytes": 25,
+      "public_sha256": "bb476b97431d277d0ce0ff0121e13901e4ebef0a5a96b4e95406c3b072081e17",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/23.decision",
+      "source_bytes": 25,
+      "source_sha256": "bb476b97431d277d0ce0ff0121e13901e4ebef0a5a96b4e95406c3b072081e17",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/24.decision",
+      "public_bytes": 42,
+      "public_sha256": "0044717360fc5c10fe9a22494e6e415f4513dc445e961238409f5cc896775916",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/24.decision",
+      "source_bytes": 42,
+      "source_sha256": "0044717360fc5c10fe9a22494e6e415f4513dc445e961238409f5cc896775916",
+      "transformation": "credential-reasoning-field-and-host-path-sanitization"
+    },
+    {
+      "path": "supplement.json",
+      "public_bytes": 17378,
+      "public_sha256": "65667b3f8269065b490b74e38b203c674388540288c774b78ce0c2771521cf77",
+      "source": "generated-by-collect_evidence.py",
+      "source_sha256": "e4a65adcdf1d5767f71bbec93e27666360774a839a95c97b608f6714220faaa1",
+      "transformation": "derived-evidence-index"
+    }
+  ],
+  "frozen_collector_sha256": "e4a65adcdf1d5767f71bbec93e27666360774a839a95c97b608f6714220faaa1",
+  "manifest_note": "SHA256SUMS covers every entry and manifest.json; original snapshot unchanged.",
+  "schema_version": 1
+}

@@ -1,0 +1,51 @@
+{
+  "agent": {
+    "env": {
+      "CODEX_AUTH_JSON_PATH": "${CODEX_AUTH_JSON_PATH}",
+      "CODEX_EXTRA_CONFIG": "",
+      "OPENAI_BASE_URL": ""
+    },
+    "extra_allowed_hosts": [],
+    "kwargs": {
+      "prompt_template_path": "<WORKSPACE>/visual_inspection_v4/harness/skill-prompt.j2",
+      "reasoning_effort": "medium",
+      "version": "0.157.0"
+    },
+    "mcp_servers": [],
+    "model_name": "openai/gpt-6-astra",
+    "name": "codex",
+    "resume_trajectory": false,
+    "skills": [
+      "<WORKSPACE>/visual_inspection_v4/reproduction/awake-v1/tasks/pair-01/sooool/visual-inspection-v4/method/sooool-realtime"
+    ]
+  },
+  "environment": {
+    "cpu_enforcement_policy": "auto",
+    "delete": true,
+    "extra_allowed_hosts": [],
+    "extra_docker_compose": [],
+    "force_build": false,
+    "import_path": "harbor_suite.docker_copy:CopyDocker",
+    "kwargs": {},
+    "memory_enforcement_policy": "auto"
+  },
+  "install_only": false,
+  "schema_version": 1,
+  "skills": [
+    {
+      "digest": "sha256:35e0913e0f4a31f1b449fdc070d5ea2c305ac2036d94f45ef2065d2bcda017af",
+      "name": "sooool-realtime",
+      "source": "<WORKSPACE>/visual_inspection_v4/reproduction/awake-v1/tasks/pair-01/sooool/visual-inspection-v4/method/sooool-realtime"
+    }
+  ],
+  "task": {
+    "digest": "sha256:09aff0ee28c5f420833dad5c25559a298e0d40880e008522c069938b991f81b1",
+    "name": "visual-inspection-v4",
+    "path": "<WORKSPACE>/visual_inspection_v4/reproduction/awake-v1/tasks/pair-01/sooool/visual-inspection-v4",
+    "type": "local"
+  },
+  "timeout_multiplier": 1.0,
+  "verifier": {
+    "disable": false
+  }
+}

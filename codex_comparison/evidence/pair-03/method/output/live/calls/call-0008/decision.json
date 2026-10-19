@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cc290e99055376e51",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 62566.066,
+    "expires_ms": 63091.066,
+    "id": "pick-cc290e99055376e51",
+    "key": "k"
+  },
+  "visible_evidence": "The USB connector shell is visibly bent and damaged."
+}

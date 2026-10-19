@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cd4aca70def8dd9ff",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 22022.222,
+    "expires_ms": 22572.222,
+    "id": "pick-cd4aca70def8dd9ff",
+    "key": "d"
+  },
+  "visible_evidence": "A small resistor below the left indicator LED is missing, leaving exposed solder pads."
+}

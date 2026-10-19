@@ -1,0 +1,4 @@
+{
+  "reason": "Missing resistor below left LED; deformed contaminated USB shell",
+  "reject": true
+}

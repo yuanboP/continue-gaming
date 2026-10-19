@@ -1,0 +1,28 @@
+{
+  "agent": {
+    "env": {
+      "CODEX_AUTH_JSON_PATH": "${CODEX_AUTH_JSON_PATH}",
+      "CODEX_EXTRA_CONFIG": "",
+      "OPENAI_BASE_URL": ""
+    },
+    "kwargs": {
+      "prompt_template_path": "<WORKSPACE>/visual_inspection_v4/harness/skill-prompt.j2",
+      "reasoning_effort": "medium",
+      "version": "0.157.0"
+    },
+    "model_name": "openai/gpt-6-astra",
+    "name": "codex",
+    "skills": [
+      "<WORKSPACE>/visual_inspection_v4/reproduction/awake-v1/tasks/pair-01/sooool/visual-inspection-v4/method/sooool-realtime"
+    ]
+  },
+  "environment": {
+    "import_path": "harbor_suite.docker_copy:CopyDocker"
+  },
+  "job_id": "35a818d6-899e-458d-812d-ba1e2006c449",
+  "task": {
+    "path": "<WORKSPACE>/visual_inspection_v4/reproduction/awake-v1/tasks/pair-01/sooool/visual-inspection-v4"
+  },
+  "trial_name": "visual-inspection-v4__SoDZ6fb",
+  "trials_dir": "<JOBS>/v4-repro-awake-v1-01-sooool"
+}

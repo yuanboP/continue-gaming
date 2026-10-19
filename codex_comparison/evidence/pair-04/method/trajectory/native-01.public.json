@@ -1,0 +1,848 @@
+{
+  "events": [
+    {
+      "channel": "commentary",
+      "content": [
+        {
+          "text": "I’ll read the inspection rules, API contract, and realtime skill, then prepare image comparisons and timed gate actions before starting the live run.",
+          "type": "text"
+        }
+      ],
+      "event": "assistant_message",
+      "source_line": 12,
+      "timestamp": "2026-10-18T18:23:19.683Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:\"cat /app/QUALITY_RULES.md /app/API_CONTRACT.md /root/.agents/skills/sooool-realtime/SKILL.md\",\"max_output_tokens\":18000}));\n",
+      "call_id": "call_70147033278b4ef5833f43bcfcf8fc52",
+      "event": "tool_call",
+      "source_line": 13,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:23:20.473Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_70147033278b4ef5833f43bcfcf8fc52",
+      "content": [
+        {
+          "text": "Script completed\nWall time 0.0 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"a9c6fe\", \"exit_code\": 0, \"original_token_count\": 3147, \"output\": \"# Public quality inspection rule\\n\\nInspect each query circuit board against its independent normal reference of the same board type. Reject a board with a visible structural defect: bent or broken pins/connectors, a missing or damaged component, a cracked or broken board/part, or a conspicuous foreign material or damaging contamination. Normal manufacturing variation, printing, component markings, illumination, reflections and a different camera orientation are not defects by themselves.\\n\\nThe reference is a different physical normal example. Exact pixel differences or text differences alone do not establish a defect. Examine the whole query. Images preserve the complete original field of view; no supplied box or crop marks a defect.\\n\\nThe physical action is a timed reject at the downstream gate, using d/f/j/k for its four lanes. Accept normal items by leaving them alone. Do not use anonymous carrier IDs, SKU names, the order of appearance, or assumed class proportions as a quality signal. A correct quality judgment delivered after the gate has passed cannot reject the item.\\n\\nThe trusted verifier uses independent dataset annotations and the actual action times. This is a simulated inspection and rejection workflow, not a certified production quality system.\\n# Visual inspection and timed rejection — v3 public contract\\n\\nThis is a simulated inspection station using real photographs of electronic boards. It evaluates visual defect decisions plus timed reject commands, not a physical robot's joint control. Canonical artifact: `/app/output/session.json`.\\n\\n## Task and shared information\\n\\nCompare each current query board to its independent known-normal reference. Reject visibly defective boards; let normal boards continue. Normal boards may differ in pose, printed markings, component appearance and reflections. Neither the reference nor an online filename reveals the query's class. No pretrained defect classifier, defect mask, target boolean or future image list is supplied.\\n\\nThe live world lasts **180 seconds** and contains **24 distinct query images: 12 normal and 12 defective**. One carrier enters approximately every six seconds, alternating across four lanes. An entry sensor provides the anonymous carrier ID, lane, SKU alias and entry timestamp. Each lane has a public fixed speed: d=45, f=50, j=55, k=48 mm/s. Distance from entry sensor to rejection gate is 1000mm. Therefore the predicted gate crossing is `entry_ms + 1000 * distance_to_gate_mm / lane_speed_mm_s[lane]`. This encoder information is identical for both experimental conditions.\\n\\nEach key `d/f/j/k` triggers one immediate reject actuator in its corresponding lane. Its effective window is ±350ms around that carrier's crossing. The actuator requires 800ms between physical commands. Empty operations consume cooldown; a repeated physical command within cooldown is a collision. The server does not schedule future actions, classify a board, select a target, or repair a wrong timestamp.\\n\\nA pass requires **at least 11/12 defective boards rejected**, **at most 1/12 normal boards wrongly rejected**, **at most two empty operations**, **zero collisions**, and a complete authenticated live session. Failed, late and duplicate actions remain visible in evidence. Both conditions may use shell, image processing, OCR, computer vision, background scripts and calls to the same available model, subject to the experiment's shared budget.\\n\\n## Camera views and observations\\n\\n`GET /observe` returns:\\n\\n```\\n{\\n  \\\"schema_version\\\": \\\"visual-inspection-v3.1\\\",\\n  \\\"phase\\\": \\\"ready|running|finished\\\", \\\"mode\\\": \\\"live|dev\\\",\\n  \\\"session_id\\\": \\\"opaque-session-id\\\", \\\"clock_ms\\\": 1234.5, \\\"clock_rate\\\": 1,\\n  \\\"horizon_ms\\\": 180000,\\n  \\\"calibration\\\": {\\\"...\\\": \\\"the public contract.json\\\"},\\n  \\\"episode_counts\\\": {\\\"defect\\\": 12, \\\"normal\\\": 12},\\n  \\\"frame_url\\\": \\\"/frame.png\\\",\\n  \\\"carriers\\\": [\\n    {\\\"carrier_id\\\":\\\"opaque-id\\\", \\\"lane\\\":\\\"d\\\", \\\"sku\\\":\\\"board_a\\\", \\\"entry_ms\\\":0,\\n     \\\"inspection_url\\\":\\\"/inspection/opaque-id.png\\\"}\\n  ],\\n  \\\"receipts\\\": []\\n}\\n```\\n\\n`carriers` includes only already-entered carriers still in their gate opportunity; it never lists future carriers. The 1920×1200 frame shows four inspection cards and a lane diagram. Each card contains the whole query photograph and an independent whole normal-reference photograph. There is no ground-truth crop, defect box, mask or class-dependent border. The card also prints its public sensor metadata.\\n\\n- `GET /frame.png` returns the complete camera/dashboard PNG.\\n- `GET /observe?inline=1` returns the same PNG as `image_base64` captured at the observation's `clock_ms`.\\n- `GET /inspection/<carrier_id>.png` returns a high-resolution query/reference comparison for an already-entered carrier. It remains available after that carrier passes for diagnosis. Future or unknown IDs return 404.\\n- PNG headers include `X-Clock-Ms`, `X-Session-Id`, and, for inspection images, `X-Carrier-Id`.\\n\\nImages are re-encoded to PNG without original filenames, directory paths or EXIF. SKU aliases identify which normal reference applies; they reveal no quality label. Carrier identities are independent opaque strings. The photograph dataset names, original paths and annotations are private until the completed evaluation export.\\n\\n## Session and atomic-action API\\n\\n`OPS_URL` is the live world; `DEV_OPS_URL` is a separate development world with **disjoint query photographs**. The normal references may be shared, but no reference image is used as a query.\\n\\n- `POST /begin` with `{}` starts the live wall clock. Repeating it does not reset or change the scene.\\n- `POST /act` accepts `{\\\"key\\\":\\\"d\\\",\\\"id\\\":\\\"unique-command-id\\\",\\\"session_id\\\":\\\"current-session\\\",\\\"expires_ms\\\":12345}`. `key` and `id` are required; other two fields are optional guards. IDs must be 1–128 characters. An exact repeated ID returns the original receipt without another action. Reusing the same ID with changed content is rejected. No `at_ms` or server-side scheduling field is accepted.\\n- The action receipt contains `id`, `key`, `clock_ms`, `session_id`, and `result`: `target_grab` (defective board correctly rejected), `wrong_grab` (normal board wrongly rejected), `empty`, `collision`, `expired`, `wrong_session`, or `not_running`. Outcome feedback is retrospective.\\n- `GET /export` or `POST /export` with `{}` returns the signed completed session. Save the entire envelope unchanged as `/app/output/session.json`. Before completion this endpoint returns HTTP 409.\\n- Development only: `POST /reset` with `{\\\"seed\\\":11,\\\"speed\\\":1}` resets and immediately starts a new practice episode. Live reset returns HTTP 403. Practice speed can be 1–100, but quality decisions intended for a live transfer should be tested at realistic timing.\\n\\nDevelopment may have fewer unique query images and a shorter duration; `episode_counts` and `horizon_ms` give its actual size. Images are not repeated to inflate the development set. No developer export can satisfy live evaluation.\\n\\n## Verification boundary\\n\\nThe export is exactly `{\\\"payload\\\":{...},\\\"signature\\\":\\\"HMAC-SHA256 hex\\\"}`. Only the world and private verifier have the signing key. After signature, task identity, seed and frozen-contract checks, an independent reducer verifies every private sampled image against the frozen asset catalog, reobtains its official class, and recomputes actuator timing, cooldown, duplicate removal, correct rejection, mistaken rejection and missed defects. Submitted summaries are not trusted.\\n---\\nname: sooool-realtime\\ndescription: Use public latency measurements, timing simulation, concurrent native visual decisions, and SOOOOL's original finite action queue when an environment keeps moving during model inference.\\n---\\n\\nRead `/app/API_CONTRACT.md` and `/app/QUALITY_RULES.md`. Both are shared with standard Codex. You retain full tools and may adapt the supplied workflow within the task budget. Quality decisions and literal action times come from the same model/effort as the outer agent. No image classifier, label map, defect crop, or answer table is provided.\\n\\nThe workflow separates visual inference from timed actuation. Four native workers inspect public images while the original SOOOOL executor holds future literal taps. Before capture, the helper reserves the carrier's public possible-action window; this is resource protection, not a quality decision or queued action. Accept, uncertain, invalid and failed decisions release it; a reject binds the same reservation to the model's original literal tap. Image acquisition pauses near these windows because camera rendering and actuator handling may share resources. An already in-flight capture cannot be cancelled reliably, and a delay beyond the measured budget remains possible. A speed-1 policy is refused in an accelerated developer world.\\n\\nFirst measure the separate developer world's control/capture transport. These model-free timing probes deliberately issue immediate DEV actions; they are not quality judgments or a scored practice attempt. The probe refuses the live world. Preserve the raw requests, receipts, PNG responses, timing samples, and failures:\\n\\n```sh\\npython3 /app/ops.py dev --seed 11 --speed 1\\npython3 /app/actor_runtime/timing.py probe --url \\\"$DEV_OPS_URL\\\" --output /app/output/timing-probe --samples 8\\nnode /app/actor_runtime/simulate_timing.mjs --profile /app/output/timing-probe/profile.json --output /app/output/timing-search\\n```\\n\\nThe simulation actually runs the unchanged SOOOOL executor under a virtual clock for a finite dispatch-lead grid. It selects a recommendation only if recorded delays, zero delay, and declared margin scenarios fit the original physical window. This local schedule simulation does not measure visual accuracy or native-model request latency, and finite samples are not tail guarantees. Read `timing-search/timing-policy.json` and `simulation.json`; an infeasible result is a measured limitation, not permission to widen the task window. Profile artifacts must come from development, never from replaying private live labels.\\n\\nReset the developer world after the probes. A single real-time practice is usually enough to inspect model judgments, timing behavior, and usage. Keep the model `gpt-6-astra` and effort `medium` for the matched experiment:\\n\\n```sh\\npython3 /app/ops.py dev --seed 11 --speed 1\\npython3 /app/actor_runtime/actor_loop.py --url \\\"$DEV_OPS_URL\\\" --output /app/output/practice --artifact /app/output/practice-session.json --timing-policy /app/output/timing-search/timing-policy.json --workers 4 --max-calls 24\\n```\\n\\nThe prompt supplies only public calibration and aggregate DEV timing. The model computes gate crossing G, chooses a dispatch point inside the original `[G-W,G+W]` opportunity, and uses **expires_ms = G+W**, the complete physical upper bound. The measured lead recommends an earlier send point; it is not silently applied by the host. The validator rejects invalid literals rather than repairing them. Inspect visible evidence and errors before changing a semantic prompt; neither schema validity nor correct timing proves that a board was classified correctly.\\n\\nUse the 900-second total agent allowance deliberately: roughly 90 seconds for reading/probes/simulation, 180–240 seconds for one practice, and a modest development reserve. Aim to start the official 180-second shift with at least 300 seconds remaining for initialization, outstanding calls, and export. All development, nested calls and failures consume this allowance. Additional practice is available, but repeating a full practice costs time needed by the official shift.\\n\\nRun the official shift with a new output directory. `--begin` initializes native transports before starting the stopped official clock:\\n\\n```sh\\npython3 /app/actor_runtime/actor_loop.py --url \\\"$OPS_URL\\\" --output /app/output/live --artifact /app/output/session.json --timing-policy /app/output/timing-search/timing-policy.json --begin --workers 4 --max-calls 24\\n```\\n\\nKeep the process alive until it exports the complete signed `/app/output/session.json`. After a successful export, submit the artifact; rereading every live call is not required. Preserve code edits and all call/probe/simulation/queue logs. `actor-calls.jsonl` records the loaded policy, public capture timing, capture guard intervals, model readiness/completion, literal decisions and native usage. `plan-events.jsonl` connects upstream receipts to server actions. A failed call or uncertain decision causes no inferred reject; no failed object is silently retried. There is no default hedging in this candidate. Equal wall allowance does not imply equal actual model calls or tokens.\\n\", \"wall_time_seconds\": 3.417e-06}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 16,
+      "timestamp": "2026-10-18T18:23:20.570Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:\"cat /app/contract.json && python3 /app/ops.py --help && ls /app/actor_runtime\",\"max_output_tokens\":6000}));\ntext(await tools.exec_command({cmd:\"python3 /app/ops.py dev --seed 11 --speed 1\",\"max_output_tokens\":1500}));\n",
+      "call_id": "call_1efb696abc3e44779664d96d37b226e6",
+      "event": "tool_call",
+      "source_line": 18,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:23:23.304Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_1efb696abc3e44779664d96d37b226e6",
+      "content": [
+        {
+          "text": "Script completed\nWall time 1.0 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"1e7977\", \"exit_code\": 0, \"original_token_count\": 464, \"output\": \"{\\n  \\\"schema_version\\\": \\\"visual-inspection-v3.1\\\",\\n  \\\"horizon_ms\\\": 180000,\\n  \\\"width\\\": 1920,\\n  \\\"height\\\": 1200,\\n  \\\"lane_keys\\\": [\\\"d\\\", \\\"f\\\", \\\"j\\\", \\\"k\\\"],\\n  \\\"distance_to_gate_mm\\\": 1000,\\n  \\\"lane_speed_mm_s\\\": {\\\"d\\\": 45, \\\"f\\\": 50, \\\"j\\\": 55, \\\"k\\\": 48},\\n  \\\"grab_window_ms\\\": 350,\\n  \\\"arm_cooldown_ms\\\": 800,\\n  \\\"entry_interval_ms\\\": 6000,\\n  \\\"entry_jitter_ms\\\": 350,\\n  \\\"defect_count\\\": 12,\\n  \\\"normal_count\\\": 12,\\n  \\\"minimum_defect_grabs\\\": 11,\\n  \\\"maximum_normal_grabs\\\": 1,\\n  \\\"maximum_empty_grabs\\\": 2,\\n  \\\"maximum_collisions\\\": 0,\\n  \\\"task_rule\\\": \\\"Compare each query board with its independent known-normal reference. Reject visibly defective boards at their lane's gate; let normal boards pass.\\\"\\n}\\nusage: ops.py [-h] [--url URL] [--timeout TIMEOUT]\\n              {observe,frame,act,begin,dev,export} ...\\n\\nPublic atomic client, identical in both experiment arms. This module performs\\nHTTP requests and saves observations. It contains no action queue, image\\nanalysis, target matching, timing prediction or control policy.\\n\\npositional arguments:\\n  {observe,frame,act,begin,dev,export}\\n    observe             Read public metadata; optionally retain its exact PNG\\n    frame               Save a current PNG with capture time returned on\\n                        stdout\\n    act                 Execute one key immediately; never schedule a future\\n                        key\\n    begin               Begin the official wall-clock session\\n    dev                 Reset the separate DEV_OPS_URL practice world\\n    export              Save the authoritative signed session artifact\\n\\noptions:\\n  -h, --help            show this help message and exit\\n  --url URL             Public world endpoint; defaults to OPS_URL or\\n                        WORLD_URL\\n  --timeout TIMEOUT\\nactor_loop.py\\ndecision.schema.json\\nnative_client.patch\\nnative_client.py\\nprovenance.json\\nsimulate_timing.mjs\\ntiming.py\\nupstream\\n\", \"wall_time_seconds\": 3.833e-06}",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"e9beff\", \"exit_code\": 0, \"original_token_count\": 272, \"output\": \"{\\\"calibration\\\": {\\\"arm_cooldown_ms\\\": 800, \\\"defect_count\\\": 12, \\\"distance_to_gate_mm\\\": 1000, \\\"entry_interval_ms\\\": 6000, \\\"entry_jitter_ms\\\": 350, \\\"grab_window_ms\\\": 350, \\\"height\\\": 1200, \\\"horizon_ms\\\": 180000, \\\"lane_keys\\\": [\\\"d\\\", \\\"f\\\", \\\"j\\\", \\\"k\\\"], \\\"lane_speed_mm_s\\\": {\\\"d\\\": 45, \\\"f\\\": 50, \\\"j\\\": 55, \\\"k\\\": 48}, \\\"maximum_collisions\\\": 0, \\\"maximum_empty_grabs\\\": 2, \\\"maximum_normal_grabs\\\": 1, \\\"minimum_defect_grabs\\\": 11, \\\"normal_count\\\": 12, \\\"schema_version\\\": \\\"visual-inspection-v3.1\\\", \\\"task_rule\\\": \\\"Compare each query board with its independent known-normal reference. Reject visibly defective boards at their lane's gate; let normal boards pass.\\\", \\\"width\\\": 1920}, \\\"carriers\\\": [{\\\"carrier_id\\\": \\\"c4105cca7b53302fc\\\", \\\"entry_ms\\\": 0.0, \\\"inspection_url\\\": \\\"/inspection/c4105cca7b53302fc.png\\\", \\\"lane\\\": \\\"d\\\", \\\"sku\\\": \\\"board_a\\\"}], \\\"clock_ms\\\": 0.003083, \\\"clock_rate\\\": 1.0, \\\"episode_counts\\\": {\\\"defect\\\": 12, \\\"normal\\\": 12}, \\\"frame_url\\\": \\\"/frame.png\\\", \\\"horizon_ms\\\": 180000, \\\"mode\\\": \\\"dev\\\", \\\"phase\\\": \\\"running\\\", \\\"receipts\\\": [], \\\"schema_version\\\": \\\"visual-inspection-v3.1\\\", \\\"session_id\\\": \\\"78d60a44-8f9a-40fc-92df-aed1018233de\\\"}\", \"wall_time_seconds\": 0.76055332}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 22,
+      "timestamp": "2026-10-18T18:23:24.340Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:'python3 /app/actor_runtime/timing.py probe --url \"$DEV_OPS_URL\" --output /app/output/timing-probe --samples 8',yield_time_ms:1000,max_output_tokens:1500}));\ntext(await tools.exec_command({cmd:\"sed -n '1,240p' /app/actor_runtime/actor_loop.py\",\"max_output_tokens\":9500}));\n",
+      "call_id": "call_73a1419e40fe455abb79c1fdea4993f9",
+      "event": "tool_call",
+      "source_line": 24,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:23:26.721Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_73a1419e40fe455abb79c1fdea4993f9",
+      "content": [
+        {
+          "text": "Script completed\nWall time 1.2 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"c1a8ab\", \"original_token_count\": 0, \"output\": \"\", \"session_id\": 11898, \"wall_time_seconds\": 1.007534033}",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"851aa2\", \"exit_code\": 0, \"original_token_count\": 3490, \"output\": \"#!/usr/bin/env python3\\n\\\"\\\"\\\"Generic camera → concurrent native vision → literal timed action loop.\\n\\nAll selection and action-time choices are model outputs. The host only acquires\\npublic pixels, queues independent requests and forwards validated literal taps.\\nNo dataset, labels, masks, reference classifier or defect threshold is imported.\\n\\\"\\\"\\\"\\nfrom __future__ import annotations\\n\\nimport argparse\\nfrom concurrent.futures import ThreadPoolExecutor\\nimport hashlib\\nimport json\\nimport math\\nimport os\\nfrom pathlib import Path\\nimport queue\\nimport subprocess\\nimport sys\\nimport threading\\nimport time\\nfrom urllib.request import Request, urlopen\\n\\nHERE = Path(__file__).resolve().parent\\nsys.path.insert(0, str(HERE.parent))\\nfrom native_client import SubscriptionClient\\nfrom timing import CaptureProtection, PublicClock, gate_ms, read_policy\\n\\nSYSTEM = (\\n    \\\"You are a visual inspection controller. Read the supplied public task rules, \\\"\\n    \\\"sensor metadata and camera pixels. Make the quality decision and every action \\\"\\n    \\\"time yourself. Return only the requested JSON. Do not use tools or inspect files. \\\"\\n    \\\"Describe only a short visible observation in visible_evidence; do not include reasoning steps.\\\"\\n)\\n\\n\\ndef request(base, endpoint, payload=None, timeout=10):\\n    url = base.rstrip('/') + '/' + endpoint.lstrip('/')\\n    data = None if payload is None else json.dumps(payload, allow_nan=False).encode()\\n    req = Request(url, data=data, headers={} if data is None else {'Content-Type': 'application/json'})\\n    with urlopen(req, timeout=timeout) as response:\\n        return response.read(), dict(response.headers.items())\\n\\n\\ndef api(base, endpoint, payload=None):\\n    return json.loads(request(base, endpoint, payload)[0])\\n\\n\\ndef validate_decision(value, carrier, calibration=None):\\n    if not isinstance(value, dict) or set(value) != {'carrier_id', 'decision', 'visible_evidence', 'tap'}:\\n        raise ValueError('Decision must match the exact public schema')\\n    if value['carrier_id'] != carrier['carrier_id']:\\n        raise ValueError('Decision refers to a different captured carrier')\\n    if value['decision'] not in ('accept', 'reject', 'uncertain') or not isinstance(value['visible_evidence'], str):\\n        raise ValueError('Invalid quality decision')\\n    tap = value['tap']\\n    if value['decision'] != 'reject':\\n        if tap is not None:\\n            raise ValueError('Only a reject decision may carry an action')\\n        return None\\n    if not isinstance(tap, dict) or set(tap) != {'id', 'key', 'at_ms', 'expires_ms'}:\\n        raise ValueError('Reject requires one explicit finite timed tap')\\n    if tap['id'] != 'pick-' + carrier['carrier_id'] or tap['key'] != carrier['lane']:\\n        raise ValueError('Tap identity/key differs from the public carrier binding')\\n    for key in ('at_ms', 'expires_ms'):\\n        if isinstance(tap[key], bool) or not isinstance(tap[key], (int, float)) or not math.isfinite(tap[key]):\\n            raise ValueError('Action timestamps must be finite')\\n    if tap['at_ms'] < 0 or tap['expires_ms'] < tap['at_ms']:\\n        raise ValueError('Invalid time order')\\n    if calibration is not None:\\n        gate, width = gate_ms(carrier, calibration), calibration['grab_window_ms']\\n        if not gate-width <= tap['at_ms'] <= gate+width:\\n            raise ValueError('Literal dispatch is outside the public physical opportunity')\\n        # Numerical precision tolerance only: retain the literal value unchanged.\\n        # The world still applies its exact physical window, including its edge.\\n        if abs(tap['expires_ms']-(gate+width)) > 1:\\n            raise ValueError('Model expiry must use the full public window upper bound (1ms numeric tolerance)')\\n    return tap\\n\\n\\ndef prompt_for(carrier, observation, frame_clock, rules, timing_policy=None, current_clock_ms=None):\\n    timing = None if timing_policy is None else {key: timing_policy[key] for key in\\n        ['recommended_lead_ms','delay_low_ms','delay_high_ms','margin_ms','profile_samples']}\\n    return f'''Inspect the attached camera image for this one carrier. It contains a query product and an independent normal reference. The normal reference is an example, not an exact pixel template.\\n\\nPUBLIC QUALITY RULES:\\n{rules}\\n\\nPUBLIC SENSOR DATA:\\n{json.dumps({'carrier': carrier, 'capture_clock_ms': frame_clock, 'calibration': observation['calibration']}, ensure_ascii=False, sort_keys=True)}\\n\\nDEVELOPMENT TRANSPORT MEASUREMENT (finite samples; not guaranteed bounds):\\n{json.dumps({'timing': timing, 'request_clock_ms': current_clock_ms}, sort_keys=True)}\\n\\nThe conveyor keeps moving during your response. Decide accept, reject, or uncertain from the pixels. Do not infer quality from an anonymous ID, SKU, image orientation, or assumed class balance. If reject, compute G = entry_ms + 1000 * distance_to_gate_mm / lane_speed_mm_s[lane] and W = grab_window_ms from the public data. Return one literal tap with id \\\"pick-{carrier['carrier_id']}\\\" and key \\\"{carrier['lane']}\\\". Use the full physical opportunity for expiry: expires_ms = G + W (ordinary numerical rounding within 1ms is accepted; the physical window itself is exact). Do not shorten expiry to at_ms plus an arbitrary allowance. Transport takes time after the local queue fires. When a measured lead is supplied, the recommended dispatch is at_ms = G - recommended_lead_ms. Check that your chosen dispatch itself lies inside [G-W, G+W] and that dispatch plus the measured delay range remains inside that physical window. You must compute and write the actual numerical timestamps yourself; the host will never correct them. If your decision cannot still be safely delivered, return uncertain with tap null rather than a knowingly stale action. If accept or uncertain, tap must be null. Do not use tools. Return only the required JSON with one short visible observation, not a step-by-step explanation.'''\\n\\n\\nclass Journal:\\n    def __init__(self, path):\\n        self.file = Path(path).open('x')\\n        self.lock = threading.Lock()\\n\\n    def write(self, event, **detail):\\n        with self.lock:\\n            self.file.write(json.dumps({'event': event, 'unix': time.time(), **detail}, allow_nan=False) + '\\\\n')\\n            self.file.flush()\\n\\n    def close(self):\\n        self.file.close()\\n\\n\\ndef run(args):\\n    if not 1 <= args.workers <= 4 or not 1 <= args.max_calls <= 100:\\n        raise ValueError('workers must be 1..4 and max-calls 1..100')\\n    output = args.output.resolve()\\n    output.mkdir(parents=True, exist_ok=True)\\n    journal = Journal(output / 'actor-calls.jsonl')\\n    schema = json.loads((HERE / 'decision.schema.json').read_text())\\n    rules = args.rules.read_text()\\n    client_pool = queue.Queue()\\n    clients = []\\n    process = None\\n    queue_url = f'http://127.0.0.1:{args.queue_port}'\\n    transaction_lock = threading.Lock()\\n    transaction_version = 0\\n    public_clock = PublicClock()\\n    timing_policy = None\\n    protection = None\\n    try:\\n        # Initialize native transports while the official world is still ready.\\n        # Initialization is not a model call and reads no credential content here.\\n        for index in range(args.workers):\\n            client = SubscriptionClient(output=output / f'transport-{index}',\\n                                        output_schema=schema, system=SYSTEM,\\n                                        model=args.model, effort=args.effort)\\n            client.timeout = args.call_timeout\\n            clients.append(client)\\n            client_pool.put(client)\\n        observation = api(args.url, '/observe')\\n        public_clock.update(observation)\\n        if not args.diagnose:\\n            if args.timing_policy is None:\\n                raise ValueError('Execution requires --timing-policy from a DEV probe and simulation')\\n            timing_policy, policy_hash = read_policy(args.timing_policy, observation['calibration'],\\n                                                    observation.get('clock_rate', 1))\\n            protection = CaptureProtection(timing_policy)\\n            journal.write('timing_policy_loaded', path=str(args.timing_policy), sha256=policy_hash,\\n                          policy=timing_policy, no_action_retiming=True)\\n        if args.begin and not args.diagnose and observation['phase'] == 'ready':\\n            observation = api(args.url, '/begin', {})\\n            public_clock.update(observation)\\n        if not args.diagnose and observation['phase'] != 'running':\\n            raise ValueError('Live/practice execution requires a running episode; use --begin for ready')\\n        if args.diagnose and observation['phase'] == 'ready' and not observation.get('carriers'):\\n            raise ValueError('No diagnostic imagery in ready world; begin/reset DEV before diagnosis')\\n        session_id = observation['session_id']\\n        journal.write('loop_start', session_id=session_id, model=args.model, effort=args.effort,\\n                      workers=args.workers, max_calls=args.max_calls, diagnose=args.diagnose,\\n                      input_information='Public pixels, reference images and visible carrier sensor metadata only')\\n        if not args.diagnose:\\n            process = subprocess.Popen(\\n                ['node', str(HERE.parent / 'plan_runtime/runner.js'), 'serve', '--url', args.url,\\n                 '--port', str(args.queue_port), '--log', str(output / 'plan-events.jsonl')],\\n                stdout=(output / 'queue.stdout.log').open('x'),\\n                stderr=(output / 'queue.stderr.log').open('x'))\\n            deadline = time.monotonic() + 15\\n            while True:\\n                try:\\n                    api(queue_url, '/snapshot')\\n                    break\\n                except Exception:\\n                    if process.poll() is not None or time.monotonic() >= deadline:\\n                        raise RuntimeError('Timed executor did not start; inspect queue stderr')\\n                    time.sleep(.05)\\n\\n        def infer(job):\\n            nonlocal transaction_version\\n            carrier, observation, frame_clock, png, call_id, directory = job\\n            client = client_pool.get()\\n            accepted = False\\n\\n            def release_opportunity(reason):\\n                if protection is not None:\\n                    previous = protection.release_provisional('pick-'+carrier['carrier_id'])\\n                    journal.write('action_protection_released', call_id=call_id,\\n                                  carrier_id=carrier['carrier_id'], reason=reason,\\n                                  previous=previous, clock_ms=public_clock.now())\\n\\n            def on_answer(answer, ready):\\n                nonlocal transaction_version, accepted\\n                value = json.loads(answer)\\n                try:\\n                    tap = validate_decision(value, carrier, observation['calibration'])\\n                except ValueError as error:\\n                    accepted = True\\n                    release_opportunity('invalid_decision')\\n                    journal.write('invalid_decision', call_id=call_id, carrier_id=carrier['carrier_id'],\\n                                  decision=value, error=str(error), **ready)\\n                    return  # Continue native turn to retain complete usage; no action.\\n                (directory / 'decision.json').write_text(json.dumps(value, indent=2) + '\\\\n')\\n                journal.write('decision_ready', call_id=call_id, carrier_id=carrier['carrier_id'],\\n                              decision=value, **ready)\\n                accepted = True\\n                if tap is None:\\n                    release_opportunity(value['decision'])\\n                if tap is not None and not args.diagnose:\\n                    protection.add(tap)\\n                    journal.write('action_protection_added', call_id=call_id, literal_tap=tap,\\n                                  current_clock_ms=public_clock.now())\\n                    with transaction_lock:\\n                        transaction_version += 1\\n                        transaction = {'version': transaction_version, 'cancel_ids': [], 'taps': [tap]}\\n                        try:\\n                            receipt = api(queue_url, '/submit', transaction)\\n                            journal.write('transaction_submitted', call_id=call_id,\\n                                          transaction=transaction, receipt=receipt)\\n                        except Exception as error:\\n                            journal.write('transaction_transport_error', call_id=call_id,\\n                                          transaction=transaction, error=str(error))\\n\\n            try:\\n                if getattr(client, 'broken', False):\\n                    client = SubscriptionClient(output=output / ('replacement-' + call_id),\\n                                                output_schema=schema, system=SYSTEM,\\n                                                model=args.model, effort=args.effort)\\n                    client.timeout = args.call_timeout\\n                    clients.append(client)\\n                journal.write('call_started', call_id=call_id, carrier_id=carrier['carrier_id'],\\n                              capture_clock_ms=frame_clock, model=args.model, effort=args.effort,\\n                              call_directory=str(directory.relative_to(output)))\\n                answer, meta = client.act(prompt_for(carrier, observation, frame_clock, rules,\\n                                                    timing_policy, public_clock.now()),\\n                                          [png], directory=directory, on_answer=on_answer)\\n                if not accepted:\\n                    on_answer(answer, {'thread_id': meta['thread_id'], 'turn_id': meta['turn_id'],\\n                                       'ready_unix': meta['completed_unix'],\\n                                       'ready_seconds': meta['wall_seconds']})\\n                journal.write('call_completed', call_id=call_id, carrier_id=carrier['carrier_id'],\\n                              status='completed', **meta)\\n            except Exception as error:\\n\", \"wall_time_seconds\": 4.625e-06}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 27,
+      "timestamp": "2026-10-18T18:23:27.944Z"
+    },
+    {
+      "channel": "commentary",
+      "content": [
+        {
+          "text": "I’m using the sooool-realtime skill’s concurrent visual workers and timed action queue. I’ll first measure practice-service delays so each reject can be dispatched within the ±350 ms gate window.",
+          "type": "text"
+        }
+      ],
+      "event": "assistant_message",
+      "source_line": 32,
+      "timestamp": "2026-10-18T18:23:31.067Z"
+    },
+    {
+      "arguments": "text(await tools.write_stdin({session_id:11898,chars:\"\",yield_time_ms:1000,max_output_tokens:1500}));\ntext(await tools.exec_command({cmd:\"sed -n '240,450p' /app/actor_runtime/actor_loop.py\",\"max_output_tokens\":5500}));\n",
+      "call_id": "call_355e0631891c4c1792ac7023f068db69",
+      "event": "tool_call",
+      "source_line": 33,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:23:32.100Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_355e0631891c4c1792ac7023f068db69",
+      "content": [
+        {
+          "text": "Script completed\nWall time 2.9 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"cdade3\", \"exit_code\": 0, \"original_token_count\": 22, \"output\": \"{\\\"model_calls\\\": 0, \\\"profile\\\": \\\"/app/output/timing-probe/profile.json\\\", \\\"samples\\\": 8}\", \"wall_time_seconds\": 2.81379116}",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"5f91fa\", \"exit_code\": 0, \"original_token_count\": 2368, \"output\": \"            except Exception as error:\\n                if not accepted:\\n                    release_opportunity('call_failed')\\n                failure = directory / 'error.json'\\n                detail = json.loads(failure.read_text()) if failure.is_file() else {}\\n                journal.write('call_failed', call_id=call_id, carrier_id=carrier['carrier_id'],\\n                              error_type=type(error).__name__, error=str(error), native_detail=detail,\\n                              usage_complete=False)\\n            finally:\\n                client_pool.put(client)\\n\\n        seen = set()\\n        protected_carriers = set()\\n        pending = []\\n        active = set()\\n        call_count = 0\\n        guard_active = False\\n        with ThreadPoolExecutor(max_workers=args.workers) as executor:\\n            while True:\\n                observation = api(args.url, '/observe')\\n                if timing_policy is not None and observation.get('clock_rate', 1) != timing_policy['clock_rate']:\\n                    raise ValueError('Public clock rate changed; refusing to reuse timing policy')\\n                public_clock.update(observation)\\n                if observation['session_id'] != session_id:\\n                    raise ValueError('Public session changed; refusing to reuse captured decisions')\\n                if observation['phase'] == 'finished':\\n                    journal.write('world_finished', pending_without_model_calls=len(pending),\\n                                  in_flight=len(active), clock_ms=observation['clock_ms'])\\n                    break\\n                if protection is not None:\\n                    try:\\n                        protection.reconcile(api(queue_url, '/snapshot'))\\n                    except Exception as error:\\n                        journal.write('protection_snapshot_error', error=str(error))\\n                for carrier in sorted(observation.get('carriers', []),\\n                                      key=lambda value: gate_ms(value, observation['calibration'])):\\n                    ident = carrier['carrier_id']\\n                    if ident in seen or len(seen) >= args.max_calls:\\n                        continue\\n                    if protection is not None and ident not in protected_carriers:\\n                        protection.reserve(carrier, observation['calibration'])\\n                        protected_carriers.add(ident)\\n                        journal.write('action_opportunity_reserved', carrier_id=ident,\\n                                      gate_ms=gate_ms(carrier, observation['calibration']),\\n                                      window_ms=observation['calibration']['grab_window_ms'],\\n                                      clock_ms=public_clock.now(), no_action_submitted=True)\\n                    blockers = [] if protection is None else protection.blockers(public_clock.now())\\n                    if blockers:\\n                        if not guard_active:\\n                            journal.write('capture_guard_enter', pending_actions=blockers,\\n                                          delayed_carrier_id=ident, clock_ms=public_clock.now())\\n                            guard_active = True\\n                        break  # Global shared resource; another lane is not exempt.\\n                    if guard_active:\\n                        journal.write('capture_guard_exit', clock_ms=public_clock.now())\\n                        guard_active = False\\n                    seen.add(ident)\\n                    try:\\n                        capture_started = time.monotonic()\\n                        capture_clock_start = public_clock.now()\\n                        journal.write('capture_request_started', carrier_id=ident,\\n                                      endpoint=carrier['inspection_url'], clock_ms=capture_clock_start)\\n                        png, headers = request(args.url, carrier['inspection_url'])\\n                        if not png.startswith(b'\\\\x89PNG\\\\r\\\\n\\\\x1a\\\\n'):\\n                            raise ValueError('Inspection endpoint did not return PNG')\\n                        h = {key.lower(): value for key, value in headers.items()}\\n                        frame_clock = float(h.get('x-clock-ms', observation['clock_ms']))\\n                        if h.get('x-session-id', session_id) != session_id:\\n                            raise ValueError('Capture session changed')\\n                        call_id = f'call-{len(seen):04d}'\\n                        directory = output / 'calls' / call_id\\n                        directory.mkdir(parents=True, exist_ok=False)\\n                        (directory / 'observation.json').write_text(json.dumps(observation, indent=2) + '\\\\n')\\n                        journal.write('capture', call_id=call_id, carrier_id=ident,\\n                                      capture_clock_ms=frame_clock, image_sha256=hashlib.sha256(png).hexdigest(),\\n                                      request_clock_ms=capture_clock_start, response_clock_ms=public_clock.now(),\\n                                      rtt_ms=1000*(time.monotonic()-capture_started))\\n                        overlap = [] if protection is None else protection.blockers(public_clock.now())\\n                        if overlap:\\n                            journal.write('capture_completed_inside_protection', carrier_id=ident,\\n                                          pending_actions=overlap, clock_ms=public_clock.now(),\\n                                          note='An already in-flight render cannot be cancelled by this client')\\n                        pending.append((carrier, observation, frame_clock, png, call_id, directory))\\n                    except Exception as error:\\n                        if protection is not None:\\n                            previous = protection.release_provisional('pick-'+ident)\\n                            journal.write('action_protection_released', carrier_id=ident,\\n                                          reason='capture_failed', previous=previous, clock_ms=public_clock.now())\\n                        journal.write('capture_failed', carrier_id=ident, error=str(error))\\n                active = {future for future in active if not future.done()}\\n                while pending and len(active) < args.workers and call_count < args.max_calls:\\n                    # Entry order is public; no class information affects dispatch order.\\n                    pending.sort(key=lambda job: gate_ms(job[0], job[1]['calibration']))\\n                    job = pending.pop(0)\\n                    active.add(executor.submit(infer, job))\\n                    call_count += 1\\n                if args.diagnose and call_count >= args.max_calls and not active:\\n                    break\\n                if args.diagnose and observation['phase'] == 'ready' and seen and not pending and not active:\\n                    break\\n                time.sleep(args.poll_ms / 1000)\\n            # Existing requests finish and retain their usage even if the world ended.\\n            # No unstarted request is counted as a model invocation.\\n        if not args.diagnose:\\n            exported, _ = request(args.url, '/export')\\n            json.loads(exported)\\n            args.artifact.parent.mkdir(parents=True, exist_ok=True)\\n            args.artifact.write_bytes(exported)\\n            journal.write('export', artifact=str(args.artifact), sha256=hashlib.sha256(exported).hexdigest())\\n            (output / 'queue-final.json').write_text(json.dumps(api(queue_url, '/snapshot'), indent=2) + '\\\\n')\\n            api(queue_url, '/stop', {})\\n            process.wait(timeout=10)\\n        journal.write('loop_completed', calls_started=call_count, carriers_seen=len(seen))\\n        print(json.dumps({'completed': True, 'diagnose': args.diagnose,\\n                          'calls_started': call_count, 'output': str(output)}))\\n    finally:\\n        for client in clients:\\n            client.close()\\n        if process is not None and process.poll() is None:\\n            process.terminate()\\n            process.wait(timeout=10)\\n        journal.close()\\n\\n\\ndef main():\\n    parser = argparse.ArgumentParser(description=__doc__)\\n    parser.add_argument('--url', default=os.environ.get('OPS_URL'), required=not bool(os.environ.get('OPS_URL')))\\n    parser.add_argument('--output', type=Path, required=True)\\n    parser.add_argument('--rules', type=Path, default=HERE.parent / 'QUALITY_RULES.md')\\n    parser.add_argument('--artifact', type=Path, default=Path('/app/output/session.json'))\\n    parser.add_argument('--model', default='gpt-6-astra')\\n    parser.add_argument('--effort', default='medium', choices=['low', 'medium', 'high', 'xhigh'])\\n    parser.add_argument('--workers', type=int, default=4)\\n    parser.add_argument('--max-calls', type=int, default=24)\\n    parser.add_argument('--call-timeout', type=float, default=60)\\n    parser.add_argument('--poll-ms', type=float, default=150)\\n    parser.add_argument('--queue-port', type=int, default=8766)\\n    parser.add_argument('--begin', action='store_true')\\n    parser.add_argument('--timing-policy', type=Path, help='DEV profile/simulation policy; required except in diagnose mode')\\n    parser.add_argument('--diagnose', action='store_true', help='Read available public pictures; call models but take no actions or begin/reset')\\n    args = parser.parse_args()\\n    if not 20 <= args.poll_ms <= 5000 or not 1 <= args.call_timeout <= 180:\\n        parser.error('poll-ms must be 20..5000 and call-timeout 1..180')\\n    run(args)\\n\\n\\nif __name__ == '__main__':\\n    main()\\n\", \"wall_time_seconds\": 4.958e-06}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 37,
+      "timestamp": "2026-10-18T18:23:34.962Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:\"node /app/actor_runtime/simulate_timing.mjs --profile /app/output/timing-probe/profile.json --output /app/output/timing-search\",\"max_output_tokens\":2000}));\n",
+      "call_id": "call_22f02ff85ed3468fb5b3fd6bafb7ad39",
+      "event": "tool_call",
+      "source_line": 39,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:23:38.201Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_22f02ff85ed3468fb5b3fd6bafb7ad39",
+      "content": [
+        {
+          "text": "Script completed\nWall time 0.2 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"e9598b\", \"exit_code\": 0, \"original_token_count\": 48, \"output\": \"{\\\"feasible\\\": true, \\\"lead_ms\\\": 200, \\\"policy\\\": \\\"/app/output/timing-search/timing-policy.json\\\", \\\"simulations\\\": 154, \\\"upstream_sha256\\\": \\\"3b0c38c81ae163fc1ff56dc26943484e8121a47f90ce4d3c7f2be221547e1b28\\\"}\", \"wall_time_seconds\": 4.417e-06}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 42,
+      "timestamp": "2026-10-18T18:23:38.395Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:\"cat /app/output/timing-search/timing-policy.json && python3 - <<'PY'\\nimport json\\ns=json.load(open('/app/output/timing-search/simulation.json'))\\nprint(str(s)[:9000])\\nPY\",\"max_output_tokens\":3500}));\ntext(await tools.exec_command({cmd:\"python3 /app/ops.py dev --seed 11 --speed 1\",\"max_output_tokens\":500}));\n",
+      "call_id": "call_541e0f01a3ac40b49368c4fdee5dc22d",
+      "event": "tool_call",
+      "source_line": 44,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:23:41.873Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_541e0f01a3ac40b49368c4fdee5dc22d",
+      "content": [
+        {
+          "text": "Script completed\nWall time 1.0 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"9009c6\", \"exit_code\": 0, \"original_token_count\": 2548, \"output\": \"{\\n  \\\"schema\\\": \\\"sooool-transport-policy-v4\\\",\\n  \\\"profile_mode\\\": \\\"dev\\\",\\n  \\\"clock_rate\\\": 1,\\n  \\\"profile_sha256\\\": \\\"36efe5cbf205e0665f55f828540f8d40630bfb65e04dc71aa0fe2c4dfba1f44a\\\",\\n  \\\"simulator_sha256\\\": \\\"e70b5ae8735f3c2d21eace5ff90c700e09cf8a368e0491317076f81800a2ea84\\\",\\n  \\\"executor_host_sha256\\\": \\\"45852fb2a6fbcbeb7676f14fd0f28bb2cb526d48dc39886ff75625623759897f\\\",\\n  \\\"upstream_executor_sha256\\\": \\\"3b0c38c81ae163fc1ff56dc26943484e8121a47f90ce4d3c7f2be221547e1b28\\\",\\n  \\\"window_ms\\\": 350,\\n  \\\"margin_ms\\\": 25,\\n  \\\"feasible\\\": true,\\n  \\\"recommended_lead_ms\\\": 200,\\n  \\\"delay_low_ms\\\": -25,\\n  \\\"delay_high_ms\\\": 405.2849219998179,\\n  \\\"capture_budget_ms\\\": 414.6729419998337,\\n  \\\"settle_budget_ms\\\": 401.75848000026235,\\n  \\\"profile_samples\\\": 8,\\n  \\\"selection\\\": \\\"Maximum worst-case slack over a fixed lead grid and recorded/envelope scenarios\\\",\\n  \\\"limitations\\\": [\\n    \\\"Empirical envelopes are not guaranteed latency bounds.\\\",\\n    \\\"This simulation validates dispatch feasibility only, not image decisions or true model latency.\\\",\\n    \\\"Capture guard is sized from measured RTT; no counterfactual guard improvement is claimed.\\\",\\n    \\\"The actor model must itself output the literal at_ms and full-window expires_ms.\\\"\\n  ]\\n}\\n{'candidates': [{'lead_ms': 0, 'passes': 9, 'total': 11, 'min_slack_ms': -55.284921999817016, 'feasible': False}, {'lead_ms': 25, 'passes': 9, 'total': 11, 'min_slack_ms': -30.284921999817016, 'feasible': False}, {'lead_ms': 50, 'passes': 9, 'total': 11, 'min_slack_ms': -5.284921999817016, 'feasible': False}, {'lead_ms': 75, 'passes': 10, 'total': 11, 'min_slack_ms': 19.715078000182984, 'feasible': False}, {'lead_ms': 100, 'passes': 11, 'total': 11, 'min_slack_ms': 44.715078000182984, 'feasible': True}, {'lead_ms': 125, 'passes': 11, 'total': 11, 'min_slack_ms': 69.71507800018298, 'feasible': True}, {'lead_ms': 150, 'passes': 11, 'total': 11, 'min_slack_ms': 94.71507800018298, 'feasible': True}, {'lead_ms': 175, 'passes': 11, 'total': 11, 'min_slack_ms': 119.71507800018298, 'feasible': True}, {'lead_ms': 200, 'passes': 11, 'total': 11, 'min_slack_ms': 125, 'feasible': True}, {'lead_ms': 225, 'passes': 11, 'total': 11, 'min_slack_ms': 100, 'feasible': True}, {'lead_ms': 250, 'passes': 11, 'total': 11, 'min_slack_ms': 75, 'feasible': True}, {'lead_ms': 275, 'passes': 11, 'total': 11, 'min_slack_ms': 50, 'feasible': True}, {'lead_ms': 300, 'passes': 11, 'total': 11, 'min_slack_ms': 25, 'feasible': True}, {'lead_ms': 325, 'passes': 10, 'total': 11, 'min_slack_ms': 0, 'feasible': False}], 'scenarios': [{'name': 'sample-0', 'network': 1.0471680002578978, 'jitter': 2}, {'name': 'sample-1', 'network': 308.9428879997158, 'jitter': 2}, {'name': 'sample-2', 'network': 1.1886310001318634, 'jitter': 3.4907659996861184}, {'name': 'sample-3', 'network': 377.03384600007576, 'jitter': 3.25107599974217}, {'name': 'sample-4', 'network': 1.6875050000890042, 'jitter': 2}, {'name': 'sample-5', 'network': 314.78590899998926, 'jitter': 2}, {'name': 'sample-6', 'network': 2.038220999746045, 'jitter': 10.108117000072525}, {'name': 'sample-7', 'network': 313.63893300005657, 'jitter': 2}, {'name': 'zero-delay', 'network': 0, 'jitter': 0}, {'name': 'lower-envelope', 'network': -25, 'jitter': 0}, {'name': 'upper-envelope', 'network': 405.2849219998179, 'jitter': 0}], 'trace': [{'lead_ms': 0, 'scenario': 'sample-0', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 10002}], 'server_arrival_ms': 10003.047168000257, 'physical_slack_ms': 346.95283199974256, 'passed': True}, {'lead_ms': 0, 'scenario': 'sample-1', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 10002}], 'server_arrival_ms': 10310.942887999716, 'physical_slack_ms': 39.05711200028418, 'passed': True}, {'lead_ms': 0, 'scenario': 'sample-2', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 10003.490765999686}], 'server_arrival_ms': 10004.679396999818, 'physical_slack_ms': 345.320603000182, 'passed': True}, {'lead_ms': 0, 'scenario': 'sample-3', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 10003.251075999742}], 'server_arrival_ms': 10380.284921999817, 'physical_slack_ms': -30.284921999817016, 'passed': False}, {'lead_ms': 0, 'scenario': 'sample-4', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 10002}], 'server_arrival_ms': 10003.687505000089, 'physical_slack_ms': 346.312494999911, 'passed': True}, {'lead_ms': 0, 'scenario': 'sample-5', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 10002}], 'server_arrival_ms': 10316.78590899999, 'physical_slack_ms': 33.21409100001074, 'passed': True}, {'lead_ms': 0, 'scenario': 'sample-6', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 10010.108117000073}], 'server_arrival_ms': 10012.146337999819, 'physical_slack_ms': 337.85366200018143, 'passed': True}, {'lead_ms': 0, 'scenario': 'sample-7', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 10002}], 'server_arrival_ms': 10315.638933000057, 'physical_slack_ms': 34.36106699994343, 'passed': True}, {'lead_ms': 0, 'scenario': 'zero-delay', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 10000}], 'server_arrival_ms': 10000, 'physical_slack_ms': 350, 'passed': True}, {'lead_ms': 0, 'scenario': 'lower-envelope', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 10000}], 'server_arrival_ms': 9975, 'physical_slack_ms': 325, 'passed': True}, {'lead_ms': 0, 'scenario': 'upper-envelope', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 10000, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 10000}], 'server_arrival_ms': 10405.284921999817, 'physical_slack_ms': -55.284921999817016, 'passed': False}, {'lead_ms': 25, 'scenario': 'sample-0', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 9975, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 9975, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 9977}], 'server_arrival_ms': 9978.047168000257, 'physical_slack_ms': 328.04716800025744, 'passed': True}, {'lead_ms': 25, 'scenario': 'sample-1', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 9975, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 9975, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 9977}], 'server_arrival_ms': 10285.942887999716, 'physical_slack_ms': 64.05711200028418, 'passed': True}, {'lead_ms': 25, 'scenario': 'sample-2', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 9975, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 9975, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 9978.490765999686}], 'server_arrival_ms': 9979.679396999818, 'physical_slack_ms': 329.679396999818, 'passed': True}, {'lead_ms': 25, 'scenario': 'sample-3', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 9975, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 9975, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 9978.251075999742}], 'server_arrival_ms': 10355.284921999817, 'physical_slack_ms': -5.284921999817016, 'passed': False}, {'lead_ms': 25, 'scenario': 'sample-4', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 9975, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts': [{'seq': 2, 'status': 'executed', 'version': 1, 'id': 'fixture', 'key': 'd', 'at_ms': 9975, 'expires_ms': 10350, 'admitted_version': 1, 'actual_ms': 9977}], 'server_arrival_ms': 9978.687505000089, 'physical_slack_ms': 328.687505000089, 'passed': True}, {'lead_ms': 25, 'scenario': 'sample-5', 'literal': {'id': 'fixture', 'key': 'd', 'at_ms': 9975, 'expires_ms': 10350}, 'admission': 'accepted', 'upstream_receipts':\\n\", \"wall_time_seconds\": 5.042e-06}",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"fa19b7\", \"exit_code\": 0, \"original_token_count\": 271, \"output\": \"{\\\"calibration\\\": {\\\"arm_cooldown_ms\\\": 800, \\\"defect_count\\\": 12, \\\"distance_to_gate_mm\\\": 1000, \\\"entry_interval_ms\\\": 6000, \\\"entry_jitter_ms\\\": 350, \\\"grab_window_ms\\\": 350, \\\"height\\\": 1200, \\\"horizon_ms\\\": 180000, \\\"lane_keys\\\": [\\\"d\\\", \\\"f\\\", \\\"j\\\", \\\"k\\\"], \\\"lane_speed_mm_s\\\": {\\\"d\\\": 45, \\\"f\\\": 50, \\\"j\\\": 55, \\\"k\\\": 48}, \\\"maximum_collisions\\\": 0, \\\"maximum_empty_grabs\\\": 2, \\\"maximum_normal_grabs\\\": 1, \\\"minimum_defect_grabs\\\": 11, \\\"normal_count\\\": 12, \\\"schema_version\\\": \\\"visual-inspection-v3.1\\\", \\\"task_rule\\\": \\\"Compare each query board with its independent known-normal reference. Reject visibly defective boards at their lane's gate; let normal boards pass.\\\", \\\"width\\\": 1920}, \\\"carriers\\\": [{\\\"carrier_id\\\": \\\"c4105cca7b53302fc\\\", \\\"entry_ms\\\": 0.0, \\\"inspection_url\\\": \\\"/inspection/c4105cca7b53302fc.png\\\", \\\"lane\\\": \\\"d\\\", \\\"sku\\\": \\\"board_a\\\"}], \\\"clock_ms\\\": 0.004, \\\"clock_rate\\\": 1.0, \\\"episode_counts\\\": {\\\"defect\\\": 12, \\\"normal\\\": 12}, \\\"frame_url\\\": \\\"/frame.png\\\", \\\"horizon_ms\\\": 180000, \\\"mode\\\": \\\"dev\\\", \\\"phase\\\": \\\"running\\\", \\\"receipts\\\": [], \\\"schema_version\\\": \\\"visual-inspection-v3.1\\\", \\\"session_id\\\": \\\"7f5a744f-823e-4a58-84b2-f752813be6db\\\"}\", \"wall_time_seconds\": 0.727995847}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 48,
+      "timestamp": "2026-10-18T18:23:42.854Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:'python3 /app/actor_runtime/actor_loop.py --url \"$DEV_OPS_URL\" --output /app/output/practice --artifact /app/output/practice-session.json --timing-policy /app/output/timing-search/timing-policy.json --workers 4 --max-calls 24 > /app/output/practice-console.log 2>&1',yield_time_ms:1000,max_output_tokens:500}));\n",
+      "call_id": "call_daa5f1cc3e0b409d8c35883dcd070bc7",
+      "event": "tool_call",
+      "source_line": 50,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:23:45.618Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_daa5f1cc3e0b409d8c35883dcd070bc7",
+      "content": [
+        {
+          "text": "Script completed\nWall time 1.2 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"a98ec9\", \"original_token_count\": 0, \"output\": \"\", \"session_id\": 83673, \"wall_time_seconds\": 1.002161924}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 52,
+      "timestamp": "2026-10-18T18:23:46.789Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:\"ls /app/output/practice && tail -n 3 /app/output/practice/actor-calls.jsonl\",\"max_output_tokens\":1600}));\ntext(await tools.exec_command({cmd:\"sed -n '1,100p' /app/actor_runtime/native_client.py\",\"max_output_tokens\":2000}));\n",
+      "call_id": "call_19015a526f8743a8bbfa672eb9995056",
+      "event": "tool_call",
+      "source_line": 56,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:23:50.258Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_19015a526f8743a8bbfa672eb9995056",
+      "content": [
+        {
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"3a5f41\", \"exit_code\": 0, \"original_token_count\": 216, \"output\": \"actor-calls.jsonl\\ncalls\\nplan-events.jsonl\\nqueue.stderr.log\\nqueue.stdout.log\\ntransport-0\\ntransport-1\\ntransport-2\\ntransport-3\\n{\\\"event\\\": \\\"capture_request_started\\\", \\\"unix\\\": 1792347828.7409618, \\\"carrier_id\\\": \\\"c834c687a3acb6266\\\", \\\"endpoint\\\": \\\"/inspection/c834c687a3acb6266.png\\\", \\\"clock_ms\\\": 5896.645141000139}\\n{\\\"event\\\": \\\"capture\\\", \\\"unix\\\": 1792347829.0709395, \\\"call_id\\\": \\\"call-0002\\\", \\\"carrier_id\\\": \\\"c834c687a3acb6266\\\", \\\"capture_clock_ms\\\": 5898.193538, \\\"image_sha256\\\": \\\"7ece31ad8987af0cd00db0efc7c3eea3e7bf36d12c0fce0db2582357e624844a\\\", \\\"request_clock_ms\\\": 5896.645141000139, \\\"response_clock_ms\\\": 6226.621000000254, \\\"rtt_ms\\\": 329.9781509999775}\\n{\\\"event\\\": \\\"call_started\\\", \\\"unix\\\": 1792347829.0711658, \\\"call_id\\\": \\\"call-0002\\\", \\\"carrier_id\\\": \\\"c834c687a3acb6266\\\", \\\"capture_clock_ms\\\": 5898.193538, \\\"model\\\": \\\"gpt-6-astra\\\", \\\"effort\\\": \\\"medium\\\", \\\"call_directory\\\": \\\"calls/call-0002\\\"}\\n\", \"wall_time_seconds\": 4.334e-06}",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"e7ce80\", \"exit_code\": 0, \"original_token_count\": 1534, \"output\": \"\\\"\\\"\\\"Sooool native transport, parameterized for matched-model inspection.\\n\\nSee provenance.json for adaptations. Native Codex handles its existing login;\\nthis adapter never reads or copies credential content.\\n\\\"\\\"\\\"\\nfrom __future__ import annotations\\nimport base64\\nfrom collections import deque\\nimport hashlib\\nimport json\\nimport os\\nfrom pathlib import Path\\nimport queue\\nimport shutil\\nimport subprocess\\nimport tempfile\\nimport threading\\nimport time\\n\\nBASE = 'You are a visual game controller. Read the supplied screenshots and game instructions, then return only the requested structured decision. Make all movement and resource decisions yourself from visible observations. Do not use tools, inspect files, execute commands, or access hidden environment state.'\\nMINIMAL = 'Follow the latest user task policy and requested output exactly. Use brief reasoning sufficient for a correct decision. Preserve necessary checks, but avoid redundant verification, exhaustive alternatives, or expanding the task. Return only the requested output, then stop. Do not force reasoning to zero.'\\n\\ndef retain_input(path, payload):\\n    \\\"\\\"\\\"Shared cohort inputs may be hardlinked and read-only; never rewrite them.\\\"\\\"\\\"\\n    path=Path(path)\\n    if path.exists():\\n        if path.read_bytes()!=payload:raise ValueError('Immutable input mismatch: '+path.name)\\n    else:path.write_bytes(payload)\\n\\nclass SubscriptionClient:\\n    def __init__(self, suite=None, output=None, output_schema=None, lean=False, aggressive=False, system=None, **kwargs):\\n        self.output = Path(output or tempfile.mkdtemp(prefix='sol-native-'))\\n        self.output.mkdir(parents=True, exist_ok=True)\\n        self.schema = output_schema\\n        self.service_tier = kwargs.get('service_tier')\\n        self.model = kwargs.get('model', 'gpt-6-astra')\\n        self.effort = kwargs.get('effort', 'medium')\\n        if kwargs.get('auth_only_home'):\\n            raise ValueError('Authentication copying is not supported')\\n        self.base = system or (BASE if aggressive or lean else MINIMAL)\\n        self.timeout = float(os.environ.get('SOL_TURN_TIMEOUT', '180'))\\n        self.counter = 0\\n        self.rpc_id = 0\\n        self.events = queue.Queue()\\n        self.pending = deque()\\n        executable = os.environ.get('SOL_CODEX_BIN') or shutil.which('codex')\\n        if not executable:\\n            raise RuntimeError('Install Codex CLI and sign in with ChatGPT first; no API fallback.')\\n        self._workspace = tempfile.TemporaryDirectory(prefix='sol-pixels-')\\n        self.workspace = Path(self._workspace.name)\\n        settings = {'model':self.model, 'model_reasoning_effort':self.effort,\\n            'forced_login_method':'chatgpt', 'model_provider':'openai',\\n            'features.apps':False, 'features.plugins':False, 'features.shell_tool':False,\\n            'features.multi_agent':False, 'features.view_image':False,\\n            'web_search':'disabled', 'memories.use_memories':False,\\n            'memories.generate_memories':False, 'project_doc_max_bytes':0,\\n            'history.persistence':'none', 'personality':'none',\\n            'log_dir':str(self.workspace/'logs'), 'sqlite_home':str(self.workspace/'state')}\\n        # Match the original minimal harness: omit all extra coding-agent context.\\n        settings.update({'developer_instructions':'', 'skills.include_instructions':False,\\n            'include_apps_instructions':False, 'include_collaboration_mode_instructions':False,\\n            'include_environment_context':False, 'include_permissions_instructions':False,\\n            'mcp_servers':{}})\\n        for feature in ('unified_exec','multi_agent_v2','browser_use','browser_use_external',\\n            'browser_use_full_cdp_access','computer_use','image_generation','sleep_tool',\\n            'skill_search','workspace_dependencies','code_mode_host','recommended_plugins',\\n            'goals','worktrees','skill_mcp_dependency_install','code_mode','remote_plugin',\\n            'plugin_sharing','memories','hooks','in_app_browser','in_app_chat',\\n            'in_app_dictation','in_app_local_automation','in_app_updates','in_app_voice',\\n            'realtime_conversation','tool_suggest','auth_elicitation','tool_call_mcp_elicitation',\\n            'shell_snapshot'):\\n            settings['features.'+feature]=False\\n        system_path=self.workspace/'system.txt';system_path.write_text(self.base)\\n        settings['model_instructions_file']=str(system_path)\\n        settings['features.skip_host_skill_discovery']=True\\n        if self.service_tier == 'default':\\n            settings['service_tier']='default'\\n            settings['features.fast_mode']=False\\n        command = [executable, 'app-server', '--stdio']\\n        for key,value in settings.items():\\n            command += ['-c', key+'='+json.dumps(value)]\\n        child_env = {k:v for k,v in os.environ.items() if k not in (\\n            'OPENAI_API_KEY','CODEX_API_KEY','OPENAI_BASE_URL','OPENAI_API_BASE')}\\n        if os.environ.get('SOL_CODEX_HOME'):\\n            child_env['CODEX_HOME'] = os.environ['SOL_CODEX_HOME']\\n\\n        self.stderr = (self.output/'native-stderr.log').open('w')\\n        self.process = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE,\\n            stderr=self.stderr, text=True, cwd=self.workspace, env=child_env)\\n        threading.Thread(target=self._reader,daemon=True).start()\\n        try:\\n            self._rpc('initialize', {'clientInfo':{'name':'sol_realtime','title':'SOL Realtime','version':'0.1.0'}})\\n            self._send({'method':'initialized','params':{}})\\n            auth = self._rpc('account/read',{'refreshToken':False})\\n            if (auth.get('account') or {}).get('type') != 'chatgpt':\\n                raise RuntimeError('ChatGPT subscription login required; API authentication is rejected.')\\n            if self.service_tier == 'default':\\n                config=self._rpc('config/read',{'includeLayers':False})['config']\\n                if config.get('service_tier') != 'default' or config.get('features',{}).get('fast_mode') is not False:\\n                    raise RuntimeError('Native configuration did not disable Fast for default-tier simulation')\\n\", \"wall_time_seconds\": 4.542e-06}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 60,
+      "timestamp": "2026-10-18T18:23:50.347Z"
+    },
+    {
+      "arguments": "text(await tools.write_stdin({session_id:83673,chars:\"\",yield_time_ms:1000,max_output_tokens:500}));\ntext(await tools.exec_command({cmd:\"find /app/output/practice/calls/call-0001 -maxdepth 1 -type f\",\"max_output_tokens\":1000}));\n",
+      "call_id": "call_5839233f206a4030af5e7ff6b0c9362b",
+      "event": "tool_call",
+      "source_line": 62,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:23:53.132Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_5839233f206a4030af5e7ff6b0c9362b",
+      "content": [
+        {
+          "text": "Script completed\nWall time 5.0 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"a70298\", \"original_token_count\": 0, \"output\": \"\", \"session_id\": 83673, \"wall_time_seconds\": 5.001538967}",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"405de4\", \"exit_code\": 0, \"original_token_count\": 90, \"output\": \"/app/output/practice/calls/call-0001/observation.json\\n/app/output/practice/calls/call-0001/native-thread.json\\n/app/output/practice/calls/call-0001/prompt.txt\\n/app/output/practice/calls/call-0001/image_0.png\\n/app/output/practice/calls/call-0001/result.json\\n/app/output/practice/calls/call-0001/decision.json\\n/app/output/practice/calls/call-0001/events.jsonl\\n\", \"wall_time_seconds\": 4.25e-06}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 65,
+      "timestamp": "2026-10-18T18:23:58.184Z"
+    },
+    {
+      "arguments": "{\"duration_ms\": 30000}",
+      "call_id": "call_5afd5593c9714819a18a103d85d3dae2",
+      "event": "tool_call",
+      "source_line": 69,
+      "status": null,
+      "timestamp": "2026-10-18T18:24:00.221Z",
+      "tool": "sleep"
+    },
+    {
+      "call_id": "call_5afd5593c9714819a18a103d85d3dae2",
+      "content": "Wall time: 30.0177 seconds\nSleep completed.",
+      "event": "tool_result",
+      "source_line": 72,
+      "timestamp": "2026-10-18T18:24:30.266Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:\"python3 - <<'PY'\\nimport json,collections\\np='/app/output/practice/actor-calls.jsonl'\\ne=[json.loads(l) for l in open(p)]\\nprint(collections.Counter(x['event'] for x in e))\\nfor x in e:\\n if x['event'] in ['decision_ready','call_failed','invalid_decision']: print(x)\\nprint('RESULT SAMPLE',open('/app/output/practice/calls/call-0001/result.json').read()[:3500])\\nPY\",\"max_output_tokens\":4500}));\n",
+      "call_id": "call_47e2763175fd48cda3a780bc309e2d0c",
+      "event": "tool_call",
+      "source_line": 74,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:24:33.778Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_47e2763175fd48cda3a780bc309e2d0c",
+      "content": [
+        {
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"47eb8b\", \"exit_code\": 0, \"original_token_count\": 1451, \"output\": \"Counter({'action_opportunity_reserved': 9, 'capture_request_started': 9, 'capture': 9, 'call_started': 9, 'decision_ready': 8, 'call_completed': 8, 'action_protection_added': 5, 'transaction_submitted': 5, 'action_protection_released': 3, 'timing_policy_loaded': 1, 'loop_start': 1})\\n{'event': 'decision_ready', 'unix': 1792347834.8675587, 'call_id': 'call-0001', 'carrier_id': 'c4105cca7b53302fc', 'decision': {'carrier_id': 'c4105cca7b53302fc', 'decision': 'reject', 'visible_evidence': 'The two left header pins are visibly bent out of alignment.', 'tap': {'id': 'pick-c4105cca7b53302fc', 'key': 'd', 'at_ms': 22022.222, 'expires_ms': 22572.222}}, 'thread_id': '01a15041-70cd-7533-b43b-53deccf889fa', 'turn_id': '01a15041-70f1-7da2-8c33-52c562ff5f0b', 'ready_unix': 1792347834.8672712, 'ready_seconds': 6.443055443000048}\\n{'event': 'decision_ready', 'unix': 1792347838.524414, 'call_id': 'call-0002', 'carrier_id': 'c834c687a3acb6266', 'decision': {'carrier_id': 'c834c687a3acb6266', 'decision': 'reject', 'visible_evidence': 'Several header pins are visibly bent and splayed sideways.', 'tap': {'id': 'pick-c834c687a3acb6266', 'key': 'f', 'at_ms': 25670.694052, 'expires_ms': 26220.694052}}, 'thread_id': '01a15041-7352-7e32-b98a-89805268d3e6', 'turn_id': '01a15041-7373-7091-8825-d7eab281847a', 'ready_unix': 1792347838.5240722, 'ready_seconds': 9.452787045999685}\\n{'event': 'decision_ready', 'unix': 1792347848.1719165, 'call_id': 'call-0004', 'carrier_id': 'c1b98fbe466809a11', 'decision': {'carrier_id': 'c1b98fbe466809a11', 'decision': 'accept', 'visible_evidence': 'The board, USB connector, components and chip pins appear intact, with no visible structural damage or foreign material.', 'tap': None}, 'thread_id': '01a15041-a398-7bf3-8171-0c8f67e1011b', 'turn_id': '01a15041-a3bb-7e81-98bb-94c0994920f4', 'ready_unix': 1792347848.1716158, 'ready_seconds': 6.742957858999944}\\n{'event': 'decision_ready', 'unix': 1792347848.610862, 'call_id': 'call-0003', 'carrier_id': 'c902a174f11fa2ac0', 'decision': {'carrier_id': 'c902a174f11fa2ac0', 'decision': 'reject', 'visible_evidence': 'The rightmost header pin is bent downward across the board.', 'tap': {'id': 'pick-c902a174f11fa2ac0', 'key': 'j', 'at_ms': 29834.146, 'expires_ms': 30384.146}}, 'thread_id': '01a15041-8afb-7761-8a1d-838114dadfee', 'turn_id': '01a15041-8b19-70b0-bfac-2d07344022f8', 'ready_unix': 1792347848.610636, 'ready_seconds': 13.482716241000162}\\n{'event': 'decision_ready', 'unix': 1792347853.744679, 'call_id': 'call-0005', 'carrier_id': 'c111b8aaa62f28d1a', 'decision': {'carrier_id': 'c111b8aaa62f28d1a', 'decision': 'reject', 'visible_evidence': 'Conspicuous dark debris covers the IC’s upper-right corner and nearby pins.', 'tap': {'id': 'pick-c111b8aaa62f28d1a', 'key': 'd', 'at_ms': 46264.831, 'expires_ms': 46814.831}}, 'thread_id': '01a15041-bba1-7c42-980e-e42a66dbf0fd', 'turn_id': '01a15041-bbc1-7273-9dd5-690fb2b8ac1a', 'ready_unix': 1792347853.7441773, 'ready_seconds': 6.162356716999966}\\n{'event': 'decision_ready', 'unix': 1792347859.624975, 'call_id': 'call-0006', 'carrier_id': 'caf5570eed8e94b15', 'decision': {'carrier_id': 'caf5570eed8e94b15', 'decision': 'accept', 'visible_evidence': 'Components and connector appear intact, with aligned pins and no visible board damage or foreign material.', 'tap': None}, 'thread_id': '01a15041-d313-7d23-b01f-f0f89bc07459', 'turn_id': '01a15041-d32f-7541-9728-53b49eb4cc54', 'ready_unix': 1792347859.6245656, 'ready_seconds': 6.040553223999723}\\n{'event': 'decision_ready', 'unix': 1792347866.2293818, 'call_id': 'call-0007', 'carrier_id': 'ced52a24135b00a54', 'decision': {'carrier_id': 'ced52a24135b00a54', 'decision': 'accept', 'visible_evidence': 'Components and connector pins appear intact, with no visible board damage or conspicuous contamination.', 'tap': None}, 'thread_id': '01a15041-e799-7f61-b031-c6c8c3deefff', 'turn_id': '01a15041-e7ba-7863-87aa-07ca36600f03', 'ready_unix': 1792347866.2290087, 'ready_seconds': 7.3913172930001565}\\n{'event': 'decision_ready', 'unix': 1792347872.2149203, 'call_id': 'call-0008', 'carrier_id': 'c601e5b4578511608', 'decision': {'carrier_id': 'c601e5b4578511608', 'decision': 'reject', 'visible_evidence': 'The small resistor along the bottom edge is visibly damaged, with an irregular exposed center.', 'tap': {'id': 'pick-c601e5b4578511608', 'key': 'k', 'at_ms': 62920.524, 'expires_ms': 63470.524}}, 'thread_id': '01a15042-0230-74b2-81d7-f3be8e433605', 'turn_id': '01a15042-0250-7891-957c-7545b65f74ca', 'ready_unix': 1792347872.2142344, 'ready_seconds': 6.573334909000096}\\nRESULT SAMPLE {\\n  \\\"answer\\\": \\\"{\\\\\\\"carrier_id\\\\\\\":\\\\\\\"c4105cca7b53302fc\\\\\\\",\\\\\\\"decision\\\\\\\":\\\\\\\"reject\\\\\\\",\\\\\\\"visible_evidence\\\\\\\":\\\\\\\"The two left header pins are visibly bent out of alignment.\\\\\\\",\\\\\\\"tap\\\\\\\":{\\\\\\\"id\\\\\\\":\\\\\\\"pick-c4105cca7b53302fc\\\\\\\",\\\\\\\"key\\\\\\\":\\\\\\\"d\\\\\\\",\\\\\\\"at_ms\\\\\\\":22022.222,\\\\\\\"expires_ms\\\\\\\":22572.222}}\\\",\\n  \\\"meta\\\": {\\n    \\\"wall_seconds\\\": 6.448792277999928,\\n    \\\"started_unix\\\": 1792347828.4242175,\\n    \\\"ready_unix\\\": 1792347834.8672712,\\n    \\\"ready_seconds\\\": 6.443055443000048,\\n    \\\"completed_unix\\\": 1792347834.8730102,\\n    \\\"thread_id\\\": \\\"01a15041-70cd-7533-b43b-53deccf889fa\\\",\\n    \\\"turn_id\\\": \\\"01a15041-70f1-7da2-8c33-52c562ff5f0b\\\",\\n    \\\"model\\\": \\\"gpt-6-astra\\\",\\n    \\\"effort\\\": \\\"medium\\\",\\n    \\\"token_usage\\\": {\\n      \\\"total\\\": {\\n        \\\"totalTokens\\\": 7134,\\n        \\\"inputTokens\\\": 7055,\\n        \\\"cachedInputTokens\\\": 2816,\\n        \\\"cacheWriteInputTokens\\\": 0,\\n        \\\"outputTokens\\\": 79,\\n        \\\"reasoningOutputTokens\\\": 0\\n      },\\n      \\\"last\\\": {\\n        \\\"totalTokens\\\": 7134,\\n        \\\"inputTokens\\\": 7055,\\n        \\\"cachedInputTokens\\\": 2816,\\n        \\\"cacheWriteInputTokens\\\": 0,\\n        \\\"outputTokens\\\": 79,\\n        \\\"reasoningOutputTokens\\\": 0\\n      },\\n      \\\"modelContextWindow\\\": 258400\\n    },\\n    \\\"usage_complete\\\": true,\\n    \\\"auth\\\": \\\"chatgpt\\\",\\n    \\\"direct_api_calls\\\": 0\\n  }\\n}\\n\", \"wall_time_seconds\": 1.7085e-05}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 77,
+      "timestamp": "2026-10-18T18:24:33.863Z"
+    },
+    {
+      "channel": "commentary",
+      "content": [
+        {
+          "text": "The timing simulation selected a 200 ms dispatch lead. Practice decisions are arriving in about 6–14 seconds, and the logs retain native completion evidence and token usage. I’m checking the resulting actuator receipts before starting live.",
+          "type": "text"
+        }
+      ],
+      "event": "assistant_message",
+      "source_line": 82,
+      "timestamp": "2026-10-18T18:24:37.217Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:\"tail -n 4 /app/output/practice/plan-events.jsonl\",\"max_output_tokens\":2000}));\nconst r=await tools.view_image({path:\"/app/output/practice/calls/call-0008/image_0.png\"});image(r.image_url);\n",
+      "call_id": "call_533ed7b27a00463098dd6d61fc304f95",
+      "event": "tool_call",
+      "source_line": 83,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:24:38.306Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_533ed7b27a00463098dd6d61fc304f95",
+      "content": [
+        {
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"45b48d\", \"exit_code\": 0, \"original_token_count\": 173, \"output\": \"{\\\"seq\\\":70,\\\"event\\\":\\\"clock_sync\\\",\\\"host_monotonic_ms\\\":47130.378074000124,\\\"public_clock_ms\\\":52250.39896,\\\"transport_ms\\\":5.549786000046879,\\\"offset_change_ms\\\":-0.9132549998903414}\\n{\\\"seq\\\":71,\\\"event\\\":\\\"clock_sync\\\",\\\"host_monotonic_ms\\\":48127.65610900009,\\\"public_clock_ms\\\":53248.763939,\\\"transport_ms\\\":1.972366000059992,\\\"offset_change_ms\\\":1.0821510000896524}\\n{\\\"seq\\\":72,\\\"event\\\":\\\"clock_sync\\\",\\\"host_monotonic_ms\\\":49128.8108359999,\\\"public_clock_ms\\\":54249.805857,\\\"transport_ms\\\":2.070466000121087,\\\"offset_change_ms\\\":-0.11210000023129396}\\n{\\\"seq\\\":73,\\\"event\\\":\\\"clock_sync\\\",\\\"host_monotonic_ms\\\":50129.36809499981,\\\"public_clock_ms\\\":55250.481257,\\\"transport_ms\\\":1.8472279999405146,\\\"offset_change_ms\\\":0.11818200017296476}\\n\", \"wall_time_seconds\": 7.626e-06}",
+          "type": "text"
+        },
+        {
+          "note": "Image bytes omitted from native logs; selected output screenshots are collected separately.",
+          "source_block_sha256": "0e9cde1c132389353eee4c93b4e3c83221cf9986b819419d849d496162fb2de9",
+          "type": "image_reference"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 87,
+      "timestamp": "2026-10-18T18:24:38.422Z"
+    },
+    {
+      "arguments": "{\"duration_ms\": 40000}",
+      "call_id": "call_aeb205901e25418784d04fde85c681bc",
+      "event": "tool_call",
+      "source_line": 89,
+      "status": null,
+      "timestamp": "2026-10-18T18:24:46.154Z",
+      "tool": "sleep"
+    },
+    {
+      "call_id": "call_aeb205901e25418784d04fde85c681bc",
+      "content": "Wall time: 40.0249 seconds\nSleep completed.",
+      "event": "tool_result",
+      "source_line": 92,
+      "timestamp": "2026-10-18T18:25:26.190Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:\"python3 - <<'PY'\\nimport json,collections\\nes=[json.loads(l) for l in open('/app/output/practice/actor-calls.jsonl')]\\nprint(collections.Counter(e['event'] for e in es))\\nfor e in es:\\n if e['event'] in ('call_failed','invalid_decision'):print(e)\\nps=[json.loads(l) for l in open('/app/output/practice/plan-events.jsonl')]\\nfor e in ps:\\n if e['event'] not in ('clock_sync','upstream_receipt','transaction'):print(e)\\nPY\",\"max_output_tokens\":2400}));\n",
+      "call_id": "call_4268b224dae342678f2d5c7e5a8c64c5",
+      "event": "tool_call",
+      "source_line": 94,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:25:30.078Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_4268b224dae342678f2d5c7e5a8c64c5",
+      "content": [
+        {
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"3801b9\", \"exit_code\": 0, \"original_token_count\": 3897, \"output\": \"Warning: truncated output (original token count: 3897)\\nTotal output lines: 44\\n\\nCounter({'action_opportunity_reserved': 18, 'capture_request_started': 18, 'capture': 18, 'call_started': 18, 'decision_ready': 17, 'call_completed': 17, 'action_protection_added': 9, 'transaction_submitted': 9, 'action_protection_released': 8, 'timing_policy_loaded': 1, 'loop_start': 1, 'capture_guard_enter': 1, 'capture_guard_exit': 1})\\n{'seq': 1, 'event': 'runtime_start', 'host_monotonic_ms': 94.20759900007397, 'session_id': '7f5a744f-823e-4a58-84b2-f752813be6db', 'public_observation': {'calibration': {'arm_cooldown_ms': 800, 'defect_count': 12, 'distance_to_gate_mm': 1000, 'entry_interval_ms': 6000, 'entry_jitter_ms': 350, 'grab_window_ms': 350, 'height': 1200, 'horizon_ms': 180000, 'lane_keys': ['d', 'f', 'j', 'k'], 'lane_speed_mm_s': {'d': 45, 'f': 50, 'j': 55, 'k': 48}, 'maximum_collisions': 0, 'maximum_empty_grabs': 2, 'maximum_normal_grabs': 1, 'minimum_defect_grabs': 11, 'normal_count': 12, 'schema_version': 'visual-inspection-v3.1', 'task_rule': \\\"Compare each query board with its independent known-normal reference. Reject visibly defective boards at their lane's gate; let normal boards pass.\\\", 'width': 1920}, 'carriers': [{'carrier_id': 'c4105cca7b53302fc', 'entry_ms': 0, 'inspection_url': '/inspection/c4105cca7b53302fc.png', 'lane': 'd', 'sku': 'board_a'}], 'clock_ms': 5204.802616, 'clock_rate': 1, 'episode_counts': {'defect': 12, 'normal': 12}, 'frame_url': '/frame.png', 'horizon_ms': 180000, 'mode': 'dev', 'phase': 'running', 'receipts': [], 'schema_version': 'visual-inspection-v3.1', 'session_id': '7f5a744f-823e-4a58-84b2-f752813be6db'}, 'upstream_sha256': '3b0c38c81ae163fc1ff56dc26943484e8121a47f90ce4d3c7f2be221547e1b28', 'control_interval_ms': 2, 'clock_source': 'public clock_ms plus local monotonic elapsed time times public clock_rate', 'clock_rate': 1, 'no_action_retiming': True}\\n{'seq': 8, 'event': 'model_transaction', 'host_monotonic_ms': 6902.779920000117, 'transaction': {'version': 1, 'cancel_ids': [], 'taps': [{'id': 'pick-c4105cca7b53302fc', 'key': 'd', 'at_ms': 22022.222, 'expires_ms': 22572.222}]}, 'received_ms': 12023.65296699977}\\n{'seq': 9, 'event': 'upstream_receipts', 'host_monotonic_ms': 6903.356871000025, 'source': 'submit', 'receipts': [{'seq': 1, 'status': 'admitted', 'version': 1, 'id': 'pick-c4105cca7b53302fc', 'key': 'd', 'at_ms': 22022.222, 'expires_ms': 22572.222, 'admitted_version': 1, 'received_ms': 12024.020654999973}], 'clock_ms': 12024.18966499981}\\n{'seq': 14, 'event': 'model_transaction', 'host_monotonic_ms': 10560.610711999703, 'transaction': {'version': 2, 'cancel_ids': [], 'taps': [{'id': 'pick-c834c687a3acb6266', 'key': 'f', 'at_ms': 25670.694052, 'expires_ms': 26220.694052}]}, 'received_ms': 15678.728974999916}\\n{'seq': 15, 'event': 'upstream_receipts', 'host_monotonic_ms': 10561.213711999822, 'source': 'submit', 'receipts': [{'seq': 2, 'status': 'admitted', 'version': 2, 'id': 'pick-c834c687a3acb6266', 'key': 'f', 'at_ms': 25670.694052, 'expires_ms': 26220.694052, 'admitted_version': 2, 'received_ms': 15679.120085000117}], 'clock_ms': 15679.216217000094}\\n{'seq': 22, 'event': 'upstream_receipts', 'host_monotonic_ms': 16902.489697999787, 'source': 'timer', 'receipts': [{'seq': 3, 'status': 'executed', 'version': 2, 'id': 'pick-c4105cca7b53302fc', 'key': 'd', 'at_ms': 22022.222, 'expires_ms': 22572.222, 'admitted_version': 1, 'actual_ms': 22022.352718999857}], 'clock_ms': 22022.70208199999}\\n{'seq': 23, 'event': 'atomic_request', 'host_monotonic_ms': 16902.64808700001, 'action': {'key': 'd', 'id': 'pick-c4105cca7b53302fc', 'expires_ms': 22572.222, 'session_id': '7f5a744f-823e-4a58-84b2-f752813be6db'}, 'model_at_ms': 22022.222, 'upstream_executed_ms': 22022.352718999857, 'sent_ms': 22022.94718599996}\\n{'seq': 24, 'event': 'atomic_response', 'host_monotonic_ms': 16905.732469999697, 'id': 'pick-c4105cca7b53302fc', 'key': 'd', 'sent_ms': 22022.94718599996, 'received_ms': 22026.0339869999, 'ok': True, 'status': 200, 'body': {'clock_ms': 22026.858097, 'id': 'pick-c4105cca7b53302fc', 'key': 'd', 'result': 'target_grab', 'session_id': '7f5a744f-823e-4a58-84b2-f752813be6db'}}\\n{'seq': 29, 'event': 'upstream_receipts', 'host_monotonic_ms': 20551.85692399973, 'source': 'timer', 'receipts': [{'seq': 4, 'status': 'executed', 'version': 2, 'id': 'pick-c834c687a3acb6266', 'key': 'f', 'at_ms': 25670.694052, 'expires_ms': 26220.694052, 'admitted_version': 2, 'actual_ms': 25671.91094399974}], 'clock_ms': 25671.95148899997}\\n{'seq': 30, 'event': 'atomic_request', 'host_monotonic_ms': 20551.909012000076, 'action': {'key': 'f', 'id': 'pick-c834c687a3acb6266', 'expires_ms': 26220.694052, 'session_id': '7f5a744f-823e-4a58-84b2-f752813be6db'}, 'model_at_ms': 25670.694052, 'upstream_executed_ms': 25671.91094399974, 'sent_ms': 25672.023828999925}\\n{'seq': 31, 'event': 'atomic_response', 'host_m…1497 tokens truncated…{'id': 'pick-c563e9bed45100358', 'key': 'j', 'at_ms': 78176.776, 'expires_ms': 78726.776}]}, 'received_ms': 69824.97712299979}\\n{'seq': 94, 'event': 'upstream_receipts', 'host_monotonic_ms': 64705.1773959999, 'source': 'submit', 'receipts': [{'seq': 12, 'status': 'admitted', 'version': 7, 'id': 'pick-c563e9bed45100358', 'key': 'j', 'at_ms': 78176.776, 'expires_ms': 78726.776, 'admitted_version': 7, 'received_ms': 69825.13985800004}], 'clock_ms': 69825.17048799997}\\n{'seq': 96, 'event': 'upstream_receipts', 'host_monotonic_ms': 65240.18418499967, 'source': 'timer', 'receipts': [{'seq': 13, 'status': 'executed', 'version': 7, 'id': 'pick-c6b77730f65bd9acb', 'key': 'd', 'at_ms': 70358.473481, 'expires_ms': 70908.473481, 'admitted_version': 6, 'actual_ms': 70361.15460200002}], 'clock_ms': 70361.19106600014}\\n{'seq': 97, 'event': 'atomic_request', 'host_monotonic_ms': 65240.37104899995, 'action': {'key': 'd', 'id': 'pick-c6b77730f65bd9acb', 'expires_ms': 70908.473481, 'session_id': '7f5a744f-823e-4a58-84b2-f752813be6db'}, 'model_at_ms': 70358.473481, 'upstream_executed_ms': 70361.15460200002, 'sent_ms': 70361.39414100023}\\n{'seq': 98, 'event': 'atomic_response', 'host_monotonic_ms': 65243.577992999926, 'id': 'pick-c6b77730f65bd9acb', 'key': 'd', 'sent_ms': 70361.39414100023, 'received_ms': 70364.60304300021, 'ok': True, 'status': 200, 'body': {'clock_ms': 70364.285116, 'id': 'pick-c6b77730f65bd9acb', 'key': 'd', 'result': 'target_grab', 'session_id': '7f5a744f-823e-4a58-84b2-f752813be6db'}}\\n{'seq': 106, 'event': 'upstream_receipts', 'host_monotonic_ms': 73058.44457900012, 'source': 'timer', 'receipts': [{'seq': 14, 'status': 'executed', 'version': 7, 'id': 'pick-c563e9bed45100358', 'key': 'j', 'at_ms': 78176.776, 'expires_ms': 78726.776, 'admitted_version': 7, 'actual_ms': 78178.65802499982}], 'clock_ms': 78178.7059499999}\\n{'seq': 107, 'event': 'atomic_request', 'host_monotonic_ms': 73058.50458899979, 'action': {'key': 'j', 'id': 'pick-c563e9bed45100358', 'expires_ms': 78726.776, 'session_id': '7f5a744f-823e-4a58-84b2-f752813be6db'}, 'model_at_ms': 78176.776, 'upstream_executed_ms': 78178.65802499982, 'sent_ms': 78178.78550499961}\\n{'seq': 108, 'event': 'atomic_response', 'host_monotonic_ms': 73060.83236499969, 'id': 'pick-c563e9bed45100358', 'key': 'j', 'sent_ms': 78178.78550499961, 'received_ms': 78181.11290699993, 'ok': True, 'status': 200, 'body': {'clock_ms': 78181.657041, 'id': 'pick-c563e9bed45100358', 'key': 'j', 'result': 'target_grab', 'session_id': '7f5a744f-823e-4a58-84b2-f752813be6db'}}\\n{'seq': 117, 'event': 'model_transaction', 'host_monotonic_ms': 81141.8484319998, 'transaction': {'version': 8, 'cancel_ids': [], 'taps': [{'id': 'pick-cb4ff00ae3f1347de', 'key': 'f', 'at_ms': 97532.594176, 'expires_ms': 98082.594176}]}, 'received_ms': 86261.96109899992}\\n{'seq': 118, 'event': 'upstream_receipts', 'host_monotonic_ms': 81142.4421219998, 'source': 'submit', 'receipts': [{'seq': 15, 'status': 'admitted', 'version': 8, 'id': 'pick-cb4ff00ae3f1347de', 'key': 'f', 'at_ms': 97532.594176, 'expires_ms': 98082.594176, 'admitted_version': 8, 'received_ms': 86262.31478799993}], 'clock_ms': 86262.42143200032}\\n{'seq': 130, 'event': 'model_transaction', 'host_monotonic_ms': 92146.14266999997, 'transaction': {'version': 9, 'cancel_ids': [], 'taps': [{'id': 'pick-cae9ca08b2d7c5048', 'key': 'k', 'at_ms': 110841.248, 'expires_ms': 111391.248}]}, 'received_ms': 97266.12971499967}\\n{'seq': 131, 'event': 'upstream_receipts', 'host_monotonic_ms': 92146.379923, 'source': 'submit', 'receipts': [{'seq': 16, 'status': 'admitted', 'version': 9, 'id': 'pick-cae9ca08b2d7c5048', 'key': 'k', 'at_ms': 110841.248, 'expires_ms': 111391.248, 'admitted_version': 9, 'received_ms': 97266.25352999973}], 'clock_ms': 97266.31070699994}\\n{'seq': 133, 'event': 'upstream_receipts', 'host_monotonic_ms': 92413.91327899974, 'source': 'timer', 'receipts': [{'seq': 17, 'status': 'executed', 'version': 9, 'id': 'pick-cb4ff00ae3f1347de', 'key': 'f', 'at_ms': 97532.594176, 'expires_ms': 98082.594176, 'admitted_version': 8, 'actual_ms': 97534.93726699997}], 'clock_ms': 97534.984818}\\n{'seq': 134, 'event': 'atomic_request', 'host_monotonic_ms': 92413.98141699983, 'action': {'key': 'f', 'id': 'pick-cb4ff00ae3f1347de', 'expires_ms': 98082.594176, 'session_id': '7f5a744f-823e-4a58-84b2-f752813be6db'}, 'model_at_ms': 97532.594176, 'upstream_executed_ms': 97534.93726699997, 'sent_ms': 97535.06724999996}\\n{'seq': 135, 'event': 'atomic_response', 'host_monotonic_ms': 92416.13665599981, 'id': 'pick-cb4ff00ae3f1347de', 'key': 'f', 'sent_ms': 97535.06724999996, 'received_ms': 97537.22303099988, 'ok': True, 'status': 200, 'body': {'clock_ms': 97537.287877, 'id': 'pick-cb4ff00ae3f1347de', 'key': 'f', 'result': 'target_grab', 'session_id': '7f5a744f-823e-4a58-84b2-f752813be6db'}}\\n\", \"wall_time_seconds\": 0.000113564}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 97,
+      "timestamp": "2026-10-18T18:25:30.167Z"
+    },
+    {
+      "channel": "commentary",
+      "content": [
+        {
+          "text": "Practice has completed 17 visual decisions without call or validation failures. The sampled image supports its reported damaged-component rejection, and actuator receipts so far show successful defect rejects.",
+          "type": "text"
+        }
+      ],
+      "event": "assistant_message",
+      "source_line": 102,
+      "timestamp": "2026-10-18T18:25:33.560Z"
+    },
+    {
+      "arguments": "{\"duration_ms\": 40000}",
+      "call_id": "call_5c9211bb65c342baaa4db58467f924d6",
+      "event": "tool_call",
+      "source_line": 103,
+      "status": null,
+      "timestamp": "2026-10-18T18:25:33.603Z",
+      "tool": "sleep"
+    },
+    {
+      "call_id": "call_5c9211bb65c342baaa4db58467f924d6",
+      "content": "Wall time: 40.0137 seconds\nSleep completed.",
+      "event": "tool_result",
+      "source_line": 106,
+      "timestamp": "2026-10-18T18:26:13.528Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:\"python3 - <<'PY'\\nimport json,collections\\nfor name in ['actor-calls','plan-events']:\\n es=[json.loads(l) for l in open('/app/output/practice/'+name+'.jsonl')]\\n if name=='actor-calls':\\n  print(collections.Counter(e['event'] for e in es))\\n  print('decisions',collections.Counter(e['decision']['decision'] for e in es if e['event']=='decision_ready'))\\n else:print('receipts',collections.Counter(e['body']['result'] for e in es if e['event']=='atomic_response'))\\nPY\",\"max_output_tokens\":1000}));\n",
+      "call_id": "call_cba014e8ff9c460ca6864d534582bc39",
+      "event": "tool_call",
+      "source_line": 108,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:26:17.225Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_cba014e8ff9c460ca6864d534582bc39",
+      "content": [
+        {
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"d678c3\", \"exit_code\": 0, \"original_token_count\": 108, \"output\": \"Counter({'action_opportunity_reserved': 24, 'capture_request_started': 24, 'capture': 24, 'call_started': 24, 'decision_ready': 24, 'call_completed': 24, 'action_protection_added': 12, 'transaction_submitted': 12, 'action_protection_released': 12, 'timing_policy_loaded': 1, 'loop_start': 1, 'capture_guard_enter': 1, 'capture_guard_exit': 1})\\ndecisions Counter({'reject': 12, 'accept': 12})\\nreceipts Counter({'target_grab': 12})\\n\", \"wall_time_seconds\": 1.4842e-05}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 111,
+      "timestamp": "2026-10-18T18:26:17.310Z"
+    },
+    {
+      "arguments": "text(await tools.write_stdin({session_id:83673,chars:\"\",yield_time_ms:1000,max_output_tokens:500}));\ntext(await tools.exec_command({cmd:\"mkdir -p /app/output/code && cp /app/actor_runtime/actor_loop.py /app/actor_runtime/native_client.py /app/actor_runtime/timing.py /app/actor_runtime/simulate_timing.mjs /app/actor_runtime/decision.schema.json /app/output/code/ && cp /app/QUALITY_RULES.md /app/API_CONTRACT.md /app/contract.json /app/output/code/\",\"max_output_tokens\":500}));\n",
+      "call_id": "call_fc446ea9e0bb482f9f0b3cdef5708d29",
+      "event": "tool_call",
+      "source_line": 113,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:26:20.896Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_fc446ea9e0bb482f9f0b3cdef5708d29",
+      "content": [
+        {
+          "text": "Script completed\nWall time 5.1 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"2e1fae\", \"original_token_count\": 0, \"output\": \"\", \"session_id\": 83673, \"wall_time_seconds\": 5.002091953}",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"26997e\", \"exit_code\": 0, \"original_token_count\": 0, \"output\": \"\", \"wall_time_seconds\": 3.749e-06}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 116,
+      "timestamp": "2026-10-18T18:26:25.965Z"
+    },
+    {
+      "channel": "commentary",
+      "content": [
+        {
+          "text": "All 24 practice decisions are complete. Receipts show 12 correct defect rejects, with no normal rejects, empty actions, or collisions. I’ll use the same configuration for live once the practice export finishes.",
+          "type": "text"
+        }
+      ],
+      "event": "assistant_message",
+      "source_line": 121,
+      "timestamp": "2026-10-18T18:26:28.249Z"
+    },
+    {
+      "arguments": "text(await tools.write_stdin({session_id:83673,chars:\"\",yield_time_ms:1000,max_output_tokens:500}));\n",
+      "call_id": "call_aa06c74aeb0f41aeb0a0aaee5af29ca7",
+      "event": "tool_call",
+      "source_line": 122,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:26:28.758Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_aa06c74aeb0f41aeb0a0aaee5af29ca7",
+      "content": [
+        {
+          "text": "Script completed\nWall time 5.0 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"c21c21\", \"original_token_count\": 0, \"output\": \"\", \"session_id\": 83673, \"wall_time_seconds\": 5.001916256}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 124,
+      "timestamp": "2026-10-18T18:26:33.776Z"
+    },
+    {
+      "arguments": "{\"duration_ms\": 15000}",
+      "call_id": "call_2836e44956934111ab5731b23ad86e8f",
+      "event": "tool_call",
+      "source_line": 126,
+      "status": null,
+      "timestamp": "2026-10-18T18:26:36.139Z",
+      "tool": "sleep"
+    },
+    {
+      "call_id": "call_2836e44956934111ab5731b23ad86e8f",
+      "content": "Wall time: 15.0149 seconds\nSleep completed.",
+      "event": "tool_result",
+      "source_line": 130,
+      "timestamp": "2026-10-18T18:26:51.163Z"
+    },
+    {
+      "arguments": "text(await tools.write_stdin({session_id:83673,chars:\"\",yield_time_ms:1000,max_output_tokens:500}));\ntext(await tools.exec_command({cmd:\"tail -n 3 /app/output/practice/actor-calls.jsonl && cat /app/output/practice-console.log\",\"max_output_tokens\":800}));\n",
+      "call_id": "call_9c8af6be3ba242718867dda0fb19eaa7",
+      "event": "tool_call",
+      "source_line": 132,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:26:53.460Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_9c8af6be3ba242718867dda0fb19eaa7",
+      "content": [
+        {
+          "text": "Script completed\nWall time 0.0 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"2eb90f\", \"exit_code\": 0, \"original_token_count\": 0, \"output\": \"\", \"wall_time_seconds\": 1.917e-06}",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"fc94b5\", \"exit_code\": 0, \"original_token_count\": 124, \"output\": \"{\\\"event\\\": \\\"world_finished\\\", \\\"unix\\\": 1792348002.8440871, \\\"pending_without_model_calls\\\": 0, \\\"in_flight\\\": 0, \\\"clock_ms\\\": 180000.0}\\n{\\\"event\\\": \\\"export\\\", \\\"unix\\\": 1792348002.8488758, \\\"artifact\\\": \\\"/app/output/practice-session.json\\\", \\\"sha256\\\": \\\"82c630da7cad6f1519193d4be784aa36c50eada4de06cce7e555ed87527077c5\\\"}\\n{\\\"event\\\": \\\"loop_completed\\\", \\\"unix\\\": 1792348002.8706207, \\\"calls_started\\\": 24, \\\"carriers_seen\\\": 24}\\n{\\\"completed\\\": true, \\\"diagnose\\\": false, \\\"calls_started\\\": 24, \\\"output\\\": \\\"/app/output/practice\\\"}\\n\", \"wall_time_seconds\": 4.085e-06}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 135,
+      "timestamp": "2026-10-18T18:26:53.515Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:'python3 /app/actor_runtime/actor_loop.py --url \"$OPS_URL\" --output /app/output/live --artifact /app/output/session.json --timing-policy /app/output/timing-search/timing-policy.json --begin --workers 4 --max-calls 24 > /app/output/live-console.log 2>&1',yield_time_ms:1000,max_output_tokens:500}));\n",
+      "call_id": "call_07fdd25ffe2148898f91380bc48199cb",
+      "event": "tool_call",
+      "source_line": 137,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:26:56.400Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_07fdd25ffe2148898f91380bc48199cb",
+      "content": [
+        {
+          "text": "Script completed\nWall time 1.2 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"8220cb\", \"original_token_count\": 0, \"output\": \"\", \"session_id\": 49017, \"wall_time_seconds\": 1.00148225}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 139,
+      "timestamp": "2026-10-18T18:26:57.565Z"
+    },
+    {
+      "arguments": "{\"duration_ms\": 40000}",
+      "call_id": "call_9fa5fa078e60424d9f0711e95fbd26eb",
+      "event": "tool_call",
+      "source_line": 143,
+      "status": null,
+      "timestamp": "2026-10-18T18:26:59.508Z",
+      "tool": "sleep"
+    },
+    {
+      "call_id": "call_9fa5fa078e60424d9f0711e95fbd26eb",
+      "content": "Wall time: 40.0137 seconds\nSleep completed.",
+      "event": "tool_result",
+      "source_line": 146,
+      "timestamp": "2026-10-18T18:27:39.541Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:\"python3 - <<'PY'\\nimport json,collections\\nfor name in ['actor-calls','plan-events']:\\n es=[json.loads(l) for l in open('/app/output/live/'+name+'.jsonl')]\\n if name=='actor-calls':\\n  print(collections.Counter(e['event'] for e in es))\\n  for e in es:\\n   if e['event'] in ['call_failed','invalid_decision']:print(e)\\n else:print('receipts',collections.Counter(e['body']['result'] for e in es if e['event']=='atomic_response'))\\nPY\",\"max_output_tokens\":1000}));\n",
+      "call_id": "call_e643b61d52e44336a9bce89461db0287",
+      "event": "tool_call",
+      "source_line": 148,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:27:43.228Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_e643b61d52e44336a9bce89461db0287",
+      "content": [
+        {
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"0082c9\", \"exit_code\": 0, \"original_token_count\": 93, \"output\": \"Counter({'action_opportunity_reserved': 8, 'capture_request_started': 8, 'capture': 8, 'call_started': 8, 'decision_ready': 7, 'call_completed': 7, 'action_protection_added': 5, 'transaction_submitted': 5, 'action_protection_released': 2, 'timing_policy_loaded': 1, 'loop_start': 1, 'capture_guard_enter': 1, 'capture_guard_exit': 1})\\nreceipts Counter({'target_grab': 3})\\n\", \"wall_time_seconds\": 1.2839e-05}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 151,
+      "timestamp": "2026-10-18T18:27:43.315Z"
+    },
+    {
+      "channel": "commentary",
+      "content": [
+        {
+          "text": "The live run is underway. Seven visual decisions are complete, and the first three reject actions correctly caught defective boards. No call failures or actuator errors have appeared.",
+          "type": "text"
+        }
+      ],
+      "event": "assistant_message",
+      "source_line": 154,
+      "timestamp": "2026-10-18T18:27:45.701Z"
+    },
+    {
+      "arguments": "{\"duration_ms\": 40000}",
+      "call_id": "call_40bc933a87354e6b982edfe7abe388f1",
+      "event": "tool_call",
+      "source_line": 155,
+      "status": null,
+      "timestamp": "2026-10-18T18:27:45.849Z",
+      "tool": "sleep"
+    },
+    {
+      "call_id": "call_40bc933a87354e6b982edfe7abe388f1",
+      "content": "Wall time: 40.0162 seconds\nSleep completed.",
+      "event": "tool_result",
+      "source_line": 158,
+      "timestamp": "2026-10-18T18:28:25.778Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:\"python3 - <<'PY'\\nimport json,collections\\nes=[json.loads(l) for l in open('/app/output/live/actor-calls.jsonl')]\\nprint(collections.Counter(e['event'] for e in es))\\nfor e in es:\\n if e['event'] in ['call_failed','invalid_decision']:print(e)\\nps=[json.loads(l) for l in open('/app/output/live/plan-events.jsonl')]\\nprint('receipts',collections.Counter(e['body']['result'] for e in ps if e['event']=='atomic_response'))\\nPY\",\"max_output_tokens\":1000}));\n",
+      "call_id": "call_a5d18fb1a9a74259839dacf782fd4cd9",
+      "event": "tool_call",
+      "source_line": 160,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:28:29.167Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_a5d18fb1a9a74259839dacf782fd4cd9",
+      "content": [
+        {
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"be5e4a\", \"exit_code\": 0, \"original_token_count\": 95, \"output\": \"Counter({'action_opportunity_reserved': 16, 'capture_request_started': 16, 'capture': 16, 'call_started': 16, 'decision_ready': 14, 'call_completed': 14, 'action_protection_added': 8, 'transaction_submitted': 8, 'action_protection_released': 6, 'timing_policy_loaded': 1, 'loop_start': 1, 'capture_guard_enter': 1, 'capture_guard_exit': 1})\\nreceipts Counter({'target_grab': 8})\\n\", \"wall_time_seconds\": 3.629e-06}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 163,
+      "timestamp": "2026-10-18T18:28:29.234Z"
+    },
+    {
+      "channel": "commentary",
+      "content": [
+        {
+          "text": "Live receipts now show eight correct defect rejects, with no normal rejects, empty actions, or collisions. The workers are continuing to inspect each board against its reference.",
+          "type": "text"
+        }
+      ],
+      "event": "assistant_message",
+      "source_line": 166,
+      "timestamp": "2026-10-18T18:28:31.412Z"
+    },
+    {
+      "arguments": "{\"duration_ms\": 40000}",
+      "call_id": "call_339d2581c373431a8837cfd9900f8de8",
+      "event": "tool_call",
+      "source_line": 167,
+      "status": null,
+      "timestamp": "2026-10-18T18:28:31.488Z",
+      "tool": "sleep"
+    },
+    {
+      "call_id": "call_339d2581c373431a8837cfd9900f8de8",
+      "content": "Wall time: 40.0118 seconds\nSleep completed.",
+      "event": "tool_result",
+      "source_line": 170,
+      "timestamp": "2026-10-18T18:29:11.508Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:\"python3 - <<'PY'\\nimport json,collections\\nes=[json.loads(l) for l in open('/app/output/live/actor-calls.jsonl')]\\nprint(collections.Counter(e['event'] for e in es))\\nfor e in es:\\n if e['event'] in ['call_failed','invalid_decision']:print(e)\\nps=[json.loads(l) for l in open('/app/output/live/plan-events.jsonl')]\\nprint('receipts',collections.Counter(e['body']['result'] for e in ps if e['event']=='atomic_response'))\\nPY\",\"max_output_tokens\":1000}));\n",
+      "call_id": "call_153c896568f1435181553ff415b6f38d",
+      "event": "tool_call",
+      "source_line": 172,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:29:15.154Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_153c896568f1435181553ff415b6f38d",
+      "content": [
+        {
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"f17dfe\", \"exit_code\": 0, \"original_token_count\": 96, \"output\": \"Counter({'action_opportunity_reserved': 23, 'capture_request_started': 23, 'capture': 23, 'call_started': 23, 'decision_ready': 22, 'call_completed': 22, 'action_protection_added': 12, 'transaction_submitted': 12, 'action_protection_released': 10, 'capture_guard_enter': 2, 'capture_guard_exit': 2, 'timing_policy_loaded': 1, 'loop_start': 1})\\nreceipts Counter({'target_grab': 11})\\n\", \"wall_time_seconds\": 1.105e-05}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 175,
+      "timestamp": "2026-10-18T18:29:15.227Z"
+    },
+    {
+      "channel": "commentary",
+      "content": [
+        {
+          "text": "Eleven defective boards have been correctly rejected, with no recorded actuator errors or normal rejects. I’ll let the remaining inspections finish and keep the process running through the signed export.",
+          "type": "text"
+        }
+      ],
+      "event": "assistant_message",
+      "source_line": 180,
+      "timestamp": "2026-10-18T18:29:18.105Z"
+    },
+    {
+      "arguments": "{\"duration_ms\": 35000}",
+      "call_id": "call_2d9227e4b8ee459a9fef78641e1619fe",
+      "event": "tool_call",
+      "source_line": 181,
+      "status": null,
+      "timestamp": "2026-10-18T18:29:18.208Z",
+      "tool": "sleep"
+    },
+    {
+      "call_id": "call_2d9227e4b8ee459a9fef78641e1619fe",
+      "content": "Wall time: 35.0174 seconds\nSleep completed.",
+      "event": "tool_result",
+      "source_line": 184,
+      "timestamp": "2026-10-18T18:29:53.233Z"
+    },
+    {
+      "arguments": "text(await tools.write_stdin({session_id:49017,chars:\"\",yield_time_ms:1000,max_output_tokens:500}));\ntext(await tools.exec_command({cmd:\"tail -n 3 /app/output/live/actor-calls.jsonl\",\"max_output_tokens\":1000}));\n",
+      "call_id": "call_5e087307d1ff4fd4b3fd32e12135d10d",
+      "event": "tool_call",
+      "source_line": 186,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:29:55.674Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_5e087307d1ff4fd4b3fd32e12135d10d",
+      "content": [
+        {
+          "text": "Script completed\nWall time 3.0 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"81f715\", \"exit_code\": 0, \"original_token_count\": 0, \"output\": \"\", \"wall_time_seconds\": 2.988587243}",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"19d2e0\", \"exit_code\": 0, \"original_token_count\": 98, \"output\": \"{\\\"event\\\": \\\"world_finished\\\", \\\"unix\\\": 1792348198.524766, \\\"pending_without_model_calls\\\": 0, \\\"in_flight\\\": 0, \\\"clock_ms\\\": 180000.0}\\n{\\\"event\\\": \\\"export\\\", \\\"unix\\\": 1792348198.5275369, \\\"artifact\\\": \\\"/app/output/session.json\\\", \\\"sha256\\\": \\\"e0665113b815ecaab07c52f27ce29a83f925d8517b57e9ed365384d64c6876c2\\\"}\\n{\\\"event\\\": \\\"loop_completed\\\", \\\"unix\\\": 1792348198.5464504, \\\"calls_started\\\": 24, \\\"carriers_seen\\\": 24}\\n\", \"wall_time_seconds\": 2.0568e-05}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 190,
+      "timestamp": "2026-10-18T18:29:58.704Z"
+    },
+    {
+      "arguments": "text(await tools.exec_command({cmd:\"python3 - <<'PY'\\nimport json,collections,pathlib,hashlib\\nroot=pathlib.Path('/app/output')\\na=json.loads((root/'session.json').read_bytes())\\nassert set(a)=={'payload','signature'} and len(a['signature'])==64\\nsummary={}\\nfor mode in ['practice','live']:\\n es=[json.loads(l) for l in (root/mode/'actor-calls.jsonl').read_text().splitlines()]\\n ps=[json.loads(l) for l in (root/mode/'plan-events.jsonl').read_text().splitlines()]\\n calls=[e for e in es if e['event']=='call_completed']\\n summary[mode]={'calls_completed':len(calls),'usage_complete':all(e.get('usage_complete') for e in calls),'models':sorted(set((e['model'],e['effort']) for e in calls)),'total_tokens':sum(e['token_usage']['total']['totalTokens'] for e in calls),'receipts':dict(collections.Counter(e['body']['result'] for e in ps if e['event']=='atomic_response'))}\\nsummary['artifact_sha256']=hashlib.sha256((root/'session.json').read_bytes()).hexdigest()\\n(root/'audit-summary.json').write_text(json.dumps(summary,indent=2)+'\\\\n')\\nprint(json.dumps(summary,indent=2))\\nPY\",\"max_output_tokens\":1500}));\n",
+      "call_id": "call_1b91fd77b09b4849b842d15b41896b10",
+      "event": "tool_call",
+      "source_line": 192,
+      "status": "completed",
+      "timestamp": "2026-10-18T18:30:05.420Z",
+      "tool": "exec"
+    },
+    {
+      "call_id": "call_1b91fd77b09b4849b842d15b41896b10",
+      "content": [
+        {
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n",
+          "type": "text"
+        },
+        {
+          "text": "{\"chunk_id\": \"62abde\", \"exit_code\": 0, \"original_token_count\": 144, \"output\": \"{\\\"artifact_sha256\\\": \\\"e0665113b815ecaab07c52f27ce29a83f925d8517b57e9ed365384d64c6876c2\\\", \\\"live\\\": {\\\"calls_completed\\\": 24, \\\"models\\\": [[\\\"gpt-6-astra\\\", \\\"medium\\\"]], \\\"receipts\\\": {\\\"target_grab\\\": 11, \\\"wrong_grab\\\": 1}, \\\"total_tokens\\\": 172142, \\\"usage_complete\\\": true}, \\\"practice\\\": {\\\"calls_completed\\\": 24, \\\"models\\\": [[\\\"gpt-6-astra\\\", \\\"medium\\\"]], \\\"receipts\\\": {\\\"target_grab\\\": 12}, \\\"total_tokens\\\": 171893, \\\"usage_complete\\\": true}}\", \"wall_time_seconds\": 4.248e-06}",
+          "type": "text"
+        }
+      ],
+      "event": "tool_result",
+      "source_line": 195,
+      "timestamp": "2026-10-18T18:30:05.510Z"
+    },
+    {
+      "channel": "final",
+      "content": [
+        {
+          "text": "Saved the complete signed live recording unchanged to [session.json](/app/output/session.json).\n\nLive receipts meet the requested thresholds: 11 defective boards rejected, 1 normal board rejected, zero empty actions, and zero collisions.\n\nCode, images, prompts, outputs, timing logs, and complete native token usage are preserved in `/app/output/`.",
+          "type": "text"
+        }
+      ],
+      "event": "assistant_message",
+      "source_line": 198,
+      "timestamp": "2026-10-18T18:30:08.879Z"
+    }
+  ],
+  "native_session_metadata": {
+    "cli_version": "0.157.0",
+    "effort": "medium",
+    "model": "gpt-6-astra"
+  },
+  "policy": "Only native tool calls/results and explicitly marked assistant commentary/final. No reasoning, analysis, system messages, account metadata or original session file.",
+  "schema_version": 1,
+  "statistics": {
+    "omitted": {
+      "excluded_response_items": 8,
+      "nonpublic_or_unclassified_messages": 5
+    },
+    "tool_calls": 30,
+    "tool_results": 30,
+    "unmatched_tool_calls": 0,
+    "visible_assistant_messages": 9
+  }
+}

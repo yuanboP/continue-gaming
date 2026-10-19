@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c050684bfe286852c",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 149869.72,
+    "expires_ms": 150394.72,
+    "id": "pick-c050684bfe286852c",
+    "key": "j"
+  },
+  "visible_evidence": "One header pin is sharply bent sideways."
+}

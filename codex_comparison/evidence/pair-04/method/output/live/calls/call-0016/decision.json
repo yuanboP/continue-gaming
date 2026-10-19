@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cf93283487e530a32",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 110305.375,
+    "expires_ms": 110855.375,
+    "id": "pick-cf93283487e530a32",
+    "key": "k"
+  },
+  "visible_evidence": "The central chip is visibly broken, with a detached fragment across its lower pins."
+}

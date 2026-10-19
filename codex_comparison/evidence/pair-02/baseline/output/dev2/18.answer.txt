@@ -1,0 +1,1 @@
+{"reject":true,"reason":"The upper-center resistor is visibly broken, with exposed irregular material and debris between its solder pads."}

@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c6b77730f65bd9acb\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 70383.473, \"expires_ms\": 70908.473, \"id\": \"pick-c6b77730f65bd9acb\", \"key\": \"d\"}, \"visible_evidence\": \"The USB connector shell is visibly crumpled and heavily pitted.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792347402.068549,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 6.6556969779999235,
+    "ready_unix": 1792347402.066388,
+    "started_unix": 1792347395.4106925,
+    "thread_id": "01a1503a-d556-7de1-8004-9f9f9ecaa344",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7063,
+        "outputTokens": 135,
+        "reasoningOutputTokens": 48,
+        "totalTokens": 7198
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7063,
+        "outputTokens": 135,
+        "reasoningOutputTokens": 48,
+        "totalTokens": 7198
+      }
+    },
+    "turn_id": "01a1503a-d572-75d1-985a-dc03ac41a82c",
+    "usage_complete": true,
+    "wall_seconds": 6.657856190000075
+  }
+}

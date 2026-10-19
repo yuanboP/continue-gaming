@@ -1,0 +1,1 @@
+{"reject":true,"reason":"J1 header has visibly bent pins: one folds inward toward the adjacent pin, and the rightmost pin leans sharply outward."}

@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c9cfec7e6529443e4\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 46331.841, \"expires_ms\": 46856.841, \"id\": \"pick-c9cfec7e6529443e4\", \"key\": \"d\"}, \"visible_evidence\": \"The query's four connector pins are bent sharply sideways.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792347569.013991,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 6.5809616920000735,
+    "ready_unix": 1792347569.0053596,
+    "started_unix": 1792347562.4243996,
+    "thread_id": "01a1503d-61bc-7862-ab2e-364df9f09882",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7063,
+        "outputTokens": 125,
+        "reasoningOutputTokens": 41,
+        "totalTokens": 7188
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7063,
+        "outputTokens": 125,
+        "reasoningOutputTokens": 41,
+        "totalTokens": 7188
+      }
+    },
+    "turn_id": "01a1503d-61dd-7103-b2ab-c44d483087c3",
+    "usage_complete": true,
+    "wall_seconds": 6.589542989000165
+  }
+}

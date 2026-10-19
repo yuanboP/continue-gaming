@@ -1,0 +1,35 @@
+{
+  "clock_ms": 60221.668233,
+  "phase": "running",
+  "receipts": [
+    {
+      "clock_ms": 22245.926545,
+      "id": "reject-c4105cca7b53302fc",
+      "key": "d",
+      "result": "target_grab",
+      "session_id": "102d9c3b-3f70-4188-bf8f-85dd0c9d31b7"
+    },
+    {
+      "clock_ms": 25896.49331,
+      "id": "reject-c834c687a3acb6266",
+      "key": "f",
+      "result": "target_grab",
+      "session_id": "102d9c3b-3f70-4188-bf8f-85dd0c9d31b7"
+    },
+    {
+      "clock_ms": 30050.254918,
+      "id": "reject-c902a174f11fa2ac0",
+      "key": "j",
+      "result": "target_grab",
+      "session_id": "102d9c3b-3f70-4188-bf8f-85dd0c9d31b7"
+    },
+    {
+      "clock_ms": 46479.101132,
+      "id": "reject-c111b8aaa62f28d1a",
+      "key": "d",
+      "result": "target_grab",
+      "session_id": "102d9c3b-3f70-4188-bf8f-85dd0c9d31b7"
+    }
+  ],
+  "seen": 11
+}

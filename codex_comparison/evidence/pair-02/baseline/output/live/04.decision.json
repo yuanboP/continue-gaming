@@ -1,0 +1,5 @@
+{
+  "decided_wall": 1792346698.953687,
+  "reason": "Missing capacitor immediately left of the IC: two exposed solder pads are visible where the reference has a tan rectangular component.",
+  "reject": true
+}

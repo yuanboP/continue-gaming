@@ -1,0 +1,14 @@
+{
+  "clock_ms": 180000.0,
+  "phase": "finished",
+  "receipts": [
+    {
+      "clock_ms": 159123.285712,
+      "id": "reject-c6af72b708b6016a5",
+      "key": "k",
+      "result": "target_grab",
+      "session_id": "bdab30dd-f160-42aa-adc8-57ff078cce8c"
+    }
+  ],
+  "seen": 24
+}

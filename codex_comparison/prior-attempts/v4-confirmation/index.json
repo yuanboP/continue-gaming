@@ -1,0 +1,2335 @@
+{
+  "all_execution_totals": {
+    "attempt_starts_unresolved": 4,
+    "completed_model_attempts_failed": 5,
+    "completed_model_attempts_missing_artifact": 0,
+    "independent_model_attempts_started": 6,
+    "infrastructure_failures_before_model": 0,
+    "missing_trial_directories": 0,
+    "model_outputs_observed": 6,
+    "observed_trial_directories": 10,
+    "passed_model_trials": 1,
+    "passed_oracle_trials": 0,
+    "passed_trials": 1,
+    "planned_model_attempts": 10,
+    "planned_trials": 10
+  },
+  "all_model_accounting": {
+    "actor_requests_failed": 8,
+    "actor_requests_started": 125,
+    "confirmed_token_totals": {
+      "cached_input_tokens": 7796992,
+      "input_tokens": 8918537,
+      "output_tokens": 38166,
+      "reasoning_output_tokens": 7357,
+      "total_tokens": 8956703
+    },
+    "cost_usd": "Not recomputed from partial billing fields; Harbor outer recorded cost is retained separately.",
+    "errors": [],
+    "observed_token_totals": {
+      "cached_input_tokens": 7796992,
+      "input_tokens": 8918537,
+      "output_tokens": 38166,
+      "reasoning_output_tokens": 7357,
+      "total_tokens": 8956703
+    },
+    "threads_with_incomplete_accounting": 9,
+    "threads_with_missing_usage": 9,
+    "token_budget_matched": false,
+    "unconfirmed_reported_token_totals": {
+      "cached_input_tokens": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_output_tokens": 0,
+      "total_tokens": 0
+    }
+  },
+  "collected_at": "2026-10-18T11:19:25.613700+00:00",
+  "collector_sha256": "e4a65adcdf1d5767f71bbec93e27666360774a839a95c97b608f6714220faaa1",
+  "development_diagnostic_totals": {
+    "attempt_starts_unresolved": 0,
+    "completed_model_attempts_failed": 0,
+    "completed_model_attempts_missing_artifact": 0,
+    "independent_model_attempts_started": 0,
+    "infrastructure_failures_before_model": 0,
+    "missing_trial_directories": 0,
+    "model_outputs_observed": 0,
+    "observed_trial_directories": 0,
+    "passed_model_trials": 0,
+    "passed_oracle_trials": 0,
+    "passed_trials": 0,
+    "planned_model_attempts": 0,
+    "planned_trials": 0
+  },
+  "experiment_scope_totals": {
+    "development_diagnostic_model_attempts_started": 0,
+    "development_diagnostic_passes": 0,
+    "live_task_model_attempts_started": 6,
+    "live_task_model_passes": 1,
+    "note": "Do not use aggregate model trial counts as live task accuracy when this snapshot includes development diagnostics."
+  },
+  "harbor_reported_token_totals": {
+    "cost_usd": 14.245287999999999,
+    "n_cache_tokens": 7560448,
+    "n_input_tokens": 8099522,
+    "n_output_tokens": 25882
+  },
+  "jobs": [
+    {
+      "attempt_starts_unresolved": 0,
+      "completed": true,
+      "completed_model_attempts_failed": 1,
+      "completed_model_attempts_missing_artifact": 0,
+      "experiment_scope": "live_task",
+      "independent_model_attempts_started": 1,
+      "infrastructure_failures_before_model": 0,
+      "job_name": "v4-confirmation-01-baseline",
+      "job_wall_seconds": 16991.869847,
+      "missing_trial_directories": 0,
+      "mode": "baseline",
+      "model_outputs_observed": 1,
+      "observed_trial_directories": 1,
+      "passed_model_trials": 0,
+      "passed_oracle_trials": 0,
+      "passed_trials": 0,
+      "planned_model_attempts": 1,
+      "planned_trials": 1,
+      "task_integrity": {
+        "available": true,
+        "errors": [],
+        "expected_generated_files": 73,
+        "harbor_task_checksum": "1d014a4cc433d069eb1b273fb5b7fef2b979bdde42c69b232ac243c6c452335a",
+        "launcher_config_sha256_matches": true,
+        "provenance_sha256": "9ac4ff58d8b5fb847718de1fe5d595b29f454d21df3257160e46f25ebb863bba"
+      },
+      "trials": [
+        {
+          "agent_name": "codex",
+          "agent_phase_started": true,
+          "all_model_accounting_incomplete": 0,
+          "all_model_token_totals": {
+            "cached_input_tokens": 1126272,
+            "input_tokens": 1250253,
+            "output_tokens": 3487,
+            "reasoning_output_tokens": 284,
+            "total_tokens": 1253740
+          },
+          "all_model_usage": "jobs/v4-confirmation-01-baseline/visual-inspection-v4__roYu6Y4/all-model-usage.json",
+          "attempt_start_unresolved": false,
+          "canonical_artifact_present": true,
+          "completed": true,
+          "completed_model_attempt_failed": true,
+          "completed_model_attempt_missing_artifact": false,
+          "evidence_directory": "jobs/v4-confirmation-01-baseline/visual-inspection-v4__roYu6Y4",
+          "exception": null,
+          "executor_action_count": 0,
+          "executor_attribution": "not_established",
+          "independent_model_attempt_started": true,
+          "infrastructure_failure_before_model": false,
+          "integrity_errors": [],
+          "integrity_passed": true,
+          "mode": "baseline",
+          "model_output_observed": true,
+          "native_trajectory_statistics": {
+            "tool_calls": 29,
+            "tool_results": 29,
+            "unmatched_tool_calls": 0,
+            "visible_assistant_messages": 5
+          },
+          "oracle_model_samples": null,
+          "passed": false,
+          "reward": 0.0,
+          "scoring": {
+            "criteria": {
+              "complete_live_episode": true,
+              "defect_recall": false,
+              "empty_operation_budget": true,
+              "no_collisions": true,
+              "normal_false_rejection_budget": true,
+              "trace_integrity": true
+            },
+            "integrity_errors": [],
+            "item_outcomes": [
+              {
+                "action_ms": 22220.778799,
+                "arrival_ms": 22222.222222222223,
+                "carrier_id": "cd19a3707cdc90f75",
+                "rejected": true,
+                "timing_error_ms": -1.4434232222229184,
+                "truth": "defect"
+              },
+              {
+                "action_ms": 26243.207523,
+                "arrival_ms": 26239.145571,
+                "carrier_id": "ced6ca59d532857e7",
+                "rejected": true,
+                "timing_error_ms": 4.061952000000019,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 30043.09647381818,
+                "carrier_id": "c3d510f59902d51c0",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 38627.85601833333,
+                "carrier_id": "c99d66321a7e9e729",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 46394.778613222225,
+                "carrier_id": "c5cb011779a841a4d",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 50148.058023000005,
+                "carrier_id": "c5af36db74f6d19e6",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 54326.487332818186,
+                "carrier_id": "cc44ef2bffca0b31b",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 63123.35730133334,
+                "carrier_id": "cc72032fd0734a499",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 70056.49286422222,
+                "carrier_id": "c6b8685d201af3603",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 73738.08410400001,
+                "carrier_id": "c700476cbd2c069e8",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 78133.89526281819,
+                "carrier_id": "c0bf36bc43dca6c92",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 86748.60080433333,
+                "carrier_id": "c78304403c512c403",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 94394.00064222222,
+                "carrier_id": "c00ce47679d3acd23",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 98095.774178,
+                "carrier_id": "c1ef4ef2468405979",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 101980.11216081817,
+                "carrier_id": "c3419565055f3dc70",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 111024.65526133333,
+                "carrier_id": "cf04d4c79ea30f78c",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 118539.66721322222,
+                "carrier_id": "c2bb20ab51c9bfae0",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 122342.598901,
+                "carrier_id": "c98c199c5c6966b3d",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 126184.24404081817,
+                "carrier_id": "c4e97f4436c7e1012",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 135078.96264133335,
+                "carrier_id": "c80506aa202f43b2f",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 142506.0636742222,
+                "carrier_id": "cd0820cf7cd9b3219",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 146272.35850099998,
+                "carrier_id": "cdef868a630247a1a",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 150081.73941281816,
+                "carrier_id": "cc71096552ee33b17",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 158874.11255433335,
+                "carrier_id": "cc1de9da22d078203",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              }
+            ],
+            "metrics": {
+              "action_count": 2,
+              "capture_count": 24,
+              "collisions": 0,
+              "defect_count": 12,
+              "defect_grabs": 2,
+              "defect_recall": 0.16666666666666666,
+              "duration_ms": 180000.0,
+              "empty_grabs": 0,
+              "expired_actions": 0,
+              "missed_defects": 10,
+              "normal_count": 12,
+              "normal_grabs": 0,
+              "normal_preservation": 1.0,
+              "not_running_actions": 0,
+              "rejected_session_actions": 0
+            },
+            "passed": false
+          },
+          "tokens": {
+            "cost_usd": 2.540432,
+            "n_cache_tokens": 1126272,
+            "n_input_tokens": 1250253,
+            "n_output_tokens": 3487
+          },
+          "trial_name": "visual-inspection-v4__roYu6Y4",
+          "visual_decision_attribution": "not_established",
+          "wall_seconds": {
+            "agent_execution": 11810.868806,
+            "agent_setup": 0.305866,
+            "environment_setup": 568.229587,
+            "total": 16990.96788,
+            "verifier": 361.206621
+          }
+        }
+      ]
+    },
+    {
+      "attempt_starts_unresolved": 0,
+      "completed": true,
+      "completed_model_attempts_failed": 1,
+      "completed_model_attempts_missing_artifact": 0,
+      "experiment_scope": "live_task",
+      "independent_model_attempts_started": 1,
+      "infrastructure_failures_before_model": 0,
+      "job_name": "v4-confirmation-01-sooool",
+      "job_wall_seconds": 17820.816781,
+      "missing_trial_directories": 0,
+      "mode": "sooool",
+      "model_outputs_observed": 1,
+      "observed_trial_directories": 1,
+      "passed_model_trials": 0,
+      "passed_oracle_trials": 0,
+      "passed_trials": 0,
+      "planned_model_attempts": 1,
+      "planned_trials": 1,
+      "task_integrity": {
+        "available": true,
+        "errors": [],
+        "expected_generated_files": 91,
+        "harbor_task_checksum": "9766921a52cb7eec38102772b7af3c87590e8d61d295a0106383b99152b3c513",
+        "launcher_config_sha256_matches": true,
+        "provenance_sha256": "104bffd5aae20393ecc4ac4c3a9358a781131b303f96b4cf99bbeb02a776d106"
+      },
+      "trials": [
+        {
+          "agent_name": "codex",
+          "agent_phase_started": true,
+          "all_model_accounting_incomplete": 5,
+          "all_model_token_totals": {
+            "cached_input_tokens": 1506048,
+            "input_tokens": 1780971,
+            "output_tokens": 7929,
+            "reasoning_output_tokens": 1894,
+            "total_tokens": 1788900
+          },
+          "all_model_usage": "jobs/v4-confirmation-01-sooool/visual-inspection-v4__z4jEHEr/all-model-usage.json",
+          "attempt_start_unresolved": false,
+          "canonical_artifact_present": true,
+          "completed": true,
+          "completed_model_attempt_failed": true,
+          "completed_model_attempt_missing_artifact": false,
+          "evidence_directory": "jobs/v4-confirmation-01-sooool/visual-inspection-v4__z4jEHEr",
+          "exception": null,
+          "executor_action_count": 8,
+          "executor_attribution": "consistent",
+          "independent_model_attempt_started": true,
+          "infrastructure_failure_before_model": false,
+          "integrity_errors": [],
+          "integrity_passed": true,
+          "mode": "sooool",
+          "model_output_observed": true,
+          "native_trajectory_statistics": {
+            "tool_calls": 32,
+            "tool_results": 32,
+            "unmatched_tool_calls": 0,
+            "visible_assistant_messages": 8
+          },
+          "oracle_model_samples": null,
+          "passed": false,
+          "reward": 0.0,
+          "scoring": {
+            "criteria": {
+              "complete_live_episode": true,
+              "defect_recall": false,
+              "empty_operation_budget": true,
+              "no_collisions": true,
+              "normal_false_rejection_budget": true,
+              "trace_integrity": true
+            },
+            "integrity_errors": [],
+            "item_outcomes": [
+              {
+                "action_ms": null,
+                "arrival_ms": 22222.222222222223,
+                "carrier_id": "cd19a3707cdc90f75",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": 26198.243527,
+                "arrival_ms": 26239.145571,
+                "carrier_id": "ced6ca59d532857e7",
+                "rejected": true,
+                "timing_error_ms": -40.902044000002206,
+                "truth": "defect"
+              },
+              {
+                "action_ms": 29998.475309,
+                "arrival_ms": 30043.09647381818,
+                "carrier_id": "c3d510f59902d51c0",
+                "rejected": true,
+                "timing_error_ms": -44.62116481817793,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 38627.85601833333,
+                "carrier_id": "c99d66321a7e9e729",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 46394.778613222225,
+                "carrier_id": "c5cb011779a841a4d",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 50148.058023000005,
+                "carrier_id": "c5af36db74f6d19e6",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 54326.487332818186,
+                "carrier_id": "cc44ef2bffca0b31b",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 63123.35730133334,
+                "carrier_id": "cc72032fd0734a499",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 70012.080636,
+                "arrival_ms": 70056.49286422222,
+                "carrier_id": "c6b8685d201af3603",
+                "rejected": true,
+                "timing_error_ms": -44.41222822222335,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 73738.08410400001,
+                "carrier_id": "c700476cbd2c069e8",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": 78087.360178,
+                "arrival_ms": 78133.89526281819,
+                "carrier_id": "c0bf36bc43dca6c92",
+                "rejected": true,
+                "timing_error_ms": -46.53508481818426,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 86748.60080433333,
+                "carrier_id": "c78304403c512c403",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 94347.743985,
+                "arrival_ms": 94394.00064222222,
+                "carrier_id": "c00ce47679d3acd23",
+                "rejected": true,
+                "timing_error_ms": -46.25665722222766,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 98095.774178,
+                "carrier_id": "c1ef4ef2468405979",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 101980.11216081817,
+                "carrier_id": "c3419565055f3dc70",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 110977.839365,
+                "arrival_ms": 111024.65526133333,
+                "carrier_id": "cf04d4c79ea30f78c",
+                "rejected": true,
+                "timing_error_ms": -46.815896333326236,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 118539.66721322222,
+                "carrier_id": "c2bb20ab51c9bfae0",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 122342.598901,
+                "carrier_id": "c98c199c5c6966b3d",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 126184.24404081817,
+                "carrier_id": "c4e97f4436c7e1012",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 135032.033949,
+                "arrival_ms": 135078.96264133335,
+                "carrier_id": "c80506aa202f43b2f",
+                "rejected": true,
+                "timing_error_ms": -46.92869233334204,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 142506.0636742222,
+                "carrier_id": "cd0820cf7cd9b3219",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 146272.35850099998,
+                "carrier_id": "cdef868a630247a1a",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 150037.750059,
+                "arrival_ms": 150081.73941281816,
+                "carrier_id": "cc71096552ee33b17",
+                "rejected": true,
+                "timing_error_ms": -43.98935381814954,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 158874.11255433335,
+                "carrier_id": "cc1de9da22d078203",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              }
+            ],
+            "metrics": {
+              "action_count": 8,
+              "capture_count": 24,
+              "collisions": 0,
+              "defect_count": 12,
+              "defect_grabs": 8,
+              "defect_recall": 0.6666666666666666,
+              "duration_ms": 180000.0,
+              "empty_grabs": 0,
+              "expired_actions": 0,
+              "missed_defects": 4,
+              "normal_count": 12,
+              "normal_grabs": 0,
+              "normal_preservation": 1.0,
+              "not_running_actions": 0,
+              "rejected_session_actions": 0
+            },
+            "passed": false
+          },
+          "tokens": {
+            "cost_usd": 3.357814,
+            "n_cache_tokens": 1438464,
+            "n_input_tokens": 1604459,
+            "n_output_tokens": 5188
+          },
+          "trial_name": "visual-inspection-v4__z4jEHEr",
+          "visual_decision_attribution": "consistent",
+          "wall_seconds": {
+            "agent_execution": 17048.605245,
+            "agent_setup": 0.275261,
+            "environment_setup": 568.184372,
+            "total": 17820.323988,
+            "verifier": 19.239143
+          }
+        }
+      ]
+    },
+    {
+      "attempt_starts_unresolved": 1,
+      "completed": true,
+      "completed_model_attempts_failed": 0,
+      "completed_model_attempts_missing_artifact": 0,
+      "experiment_scope": "live_task",
+      "independent_model_attempts_started": 0,
+      "infrastructure_failures_before_model": 0,
+      "job_name": "v4-confirmation-02-baseline",
+      "job_wall_seconds": 1650.368377,
+      "missing_trial_directories": 0,
+      "mode": "baseline",
+      "model_outputs_observed": 0,
+      "observed_trial_directories": 1,
+      "passed_model_trials": 0,
+      "passed_oracle_trials": 0,
+      "passed_trials": 0,
+      "planned_model_attempts": 1,
+      "planned_trials": 1,
+      "task_integrity": {
+        "available": true,
+        "errors": [],
+        "expected_generated_files": 73,
+        "harbor_task_checksum": "47bf68baed7a3ec6978f6dc6b51555ac0c8f131fe9b6509dd0683b8eea978897",
+        "launcher_config_sha256_matches": true,
+        "provenance_sha256": "6711360f50acdb21651862402926d523a09e4b922d57b394efdd726251fc2d61"
+      },
+      "trials": [
+        {
+          "agent_name": "codex",
+          "agent_phase_started": false,
+          "all_model_accounting_incomplete": 0,
+          "all_model_token_totals": {
+            "cached_input_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 0
+          },
+          "all_model_usage": "jobs/v4-confirmation-02-baseline/visual-inspection-v4__re6Bf2H/all-model-usage.json",
+          "attempt_start_unresolved": true,
+          "canonical_artifact_present": false,
+          "completed": true,
+          "completed_model_attempt_failed": false,
+          "completed_model_attempt_missing_artifact": false,
+          "evidence_directory": "jobs/v4-confirmation-02-baseline/visual-inspection-v4__re6Bf2H",
+          "exception": {
+            "exception_message": "Docker compose command failed for environment visual-inspection-v4. Command: docker compose --project-name visual-inspection-v4__re6bf2h__env --project-directory <WORKSPACE>/visual_inspection_v4/tasks/confirmation-02/baseline/visual-inspection-v4/environment -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmp1vgao_ox/visual-inspection-v4__re6Bf2H__env-docker-compose-resources.json -f <HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker-compose-build.yaml -f <WORKSPACE>/visual_inspection_v4/tasks/confirmation-02/baseline/visual-inspection-v4/environment/docker-compose.yaml -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmpltahmmni/docker-compose-environment.json -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmp669x5iuz/docker-compose-mounts.json up --detach --wait. Return code: 17. Stdout: #0 building with \"default\" instance using docker driver\n\n#1 [main internal] load build definition from Dockerfile\n#1 transferring dockerfile: 425B done\n#1 DONE 0.0s\n\n#2 [main internal] load metadata for docker.io/library/python:3.13-slim-bookworm\n#2 ERROR: failed to authorize: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp: lookup auth.docker.io: i/o timeout\n------\n > [main internal] load metadata for docker.io/library/python:3.13-slim-bookworm:\n------\nfailed to solve: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp: lookup auth.docker.io: i/o timeout\n. Stderr: None. ",
+            "exception_traceback": "Traceback (most recent call last):\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 351, in run\n    await self._prepare()\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 385, in _prepare\n    await self._setup_agent_environment()\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 1148, in _setup_agent_environment\n    await self._start_agent_environment()\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 1154, in _start_agent_environment\n    await asyncio.wait_for(\n    ...<4 lines>...\n    )\n  File \"<HOME>/.local/share/uv/python/cpython-3.13.11-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"<WORKSPACE>/harbor_suite/docker_copy.py\", line 27, in start\n    await super().start(force_build=force_build)\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 908, in start\n    await self._run_docker_compose_command([\"up\", \"--detach\", \"--wait\"])\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 656, in _run_docker_compose_command\n    raise RuntimeError(\n    ...<5 lines>...\n    )\nRuntimeError: Docker compose command failed for environment visual-inspection-v4. Command: docker compose --project-name visual-inspection-v4__re6bf2h__env --project-directory <WORKSPACE>/visual_inspection_v4/tasks/confirmation-02/baseline/visual-inspection-v4/environment -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmp1vgao_ox/visual-inspection-v4__re6Bf2H__env-docker-compose-resources.json -f <HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker-compose-build.yaml -f <WORKSPACE>/visual_inspection_v4/tasks/confirmation-02/baseline/visual-inspection-v4/environment/docker-compose.yaml -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmpltahmmni/docker-compose-environment.json -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmp669x5iuz/docker-compose-mounts.json up --detach --wait. Return code: 17. Stdout: #0 building with \"default\" instance using docker driver\n\n#1 [main internal] load build definition from Dockerfile\n#1 transferring dockerfile: 425B done\n#1 DONE 0.0s\n\n#2 [main internal] load metadata for docker.io/library/python:3.13-slim-bookworm\n#2 ERROR: failed to authorize: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp: lookup auth.docker.io: i/o timeout\n------\n > [main internal] load metadata for docker.io/library/python:3.13-slim-bookworm:\n------\nfailed to solve: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp: lookup auth.docker.io: i/o timeout\n. Stderr: None. \n",
+            "exception_type": "RuntimeError",
+            "occurred_at": "2026-10-18T01:23:57.129863"
+          },
+          "executor_action_count": 0,
+          "executor_attribution": "not_established",
+          "independent_model_attempt_started": false,
+          "infrastructure_failure_before_model": false,
+          "integrity_errors": [],
+          "integrity_passed": null,
+          "mode": "baseline",
+          "model_output_observed": false,
+          "native_trajectory_statistics": {},
+          "oracle_model_samples": null,
+          "passed": false,
+          "reward": null,
+          "scoring": null,
+          "tokens": {
+            "cost_usd": null,
+            "n_cache_tokens": null,
+            "n_input_tokens": null,
+            "n_output_tokens": null
+          },
+          "trial_name": "visual-inspection-v4__re6Bf2H",
+          "visual_decision_attribution": "not_established",
+          "wall_seconds": {
+            "agent_execution": null,
+            "agent_setup": null,
+            "environment_setup": 1646.544316,
+            "total": 1649.887525,
+            "verifier": null
+          }
+        }
+      ]
+    },
+    {
+      "attempt_starts_unresolved": 1,
+      "completed": true,
+      "completed_model_attempts_failed": 0,
+      "completed_model_attempts_missing_artifact": 0,
+      "experiment_scope": "live_task",
+      "independent_model_attempts_started": 0,
+      "infrastructure_failures_before_model": 0,
+      "job_name": "v4-confirmation-02-sooool",
+      "job_wall_seconds": 1650.368376,
+      "missing_trial_directories": 0,
+      "mode": "sooool",
+      "model_outputs_observed": 0,
+      "observed_trial_directories": 1,
+      "passed_model_trials": 0,
+      "passed_oracle_trials": 0,
+      "passed_trials": 0,
+      "planned_model_attempts": 1,
+      "planned_trials": 1,
+      "task_integrity": {
+        "available": true,
+        "errors": [],
+        "expected_generated_files": 91,
+        "harbor_task_checksum": "e1406446086e5517d8135288c154907460e51321bcba6957065a13c7c7688c95",
+        "launcher_config_sha256_matches": true,
+        "provenance_sha256": "51ed3eaf3fba72b4c8136e125b6dfdd8987448ba65b3891b1c5a80d9ce39248b"
+      },
+      "trials": [
+        {
+          "agent_name": "codex",
+          "agent_phase_started": false,
+          "all_model_accounting_incomplete": 0,
+          "all_model_token_totals": {
+            "cached_input_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 0
+          },
+          "all_model_usage": "jobs/v4-confirmation-02-sooool/visual-inspection-v4__5pkeBnH/all-model-usage.json",
+          "attempt_start_unresolved": true,
+          "canonical_artifact_present": false,
+          "completed": true,
+          "completed_model_attempt_failed": false,
+          "completed_model_attempt_missing_artifact": false,
+          "evidence_directory": "jobs/v4-confirmation-02-sooool/visual-inspection-v4__5pkeBnH",
+          "exception": {
+            "exception_message": "Docker compose command failed for environment visual-inspection-v4. Command: docker compose --project-name visual-inspection-v4__5pkebnh__env --project-directory <WORKSPACE>/visual_inspection_v4/tasks/confirmation-02/sooool/visual-inspection-v4/environment -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmpa41s1_s7/visual-inspection-v4__5pkeBnH__env-docker-compose-resources.json -f <HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker-compose-build.yaml -f <WORKSPACE>/visual_inspection_v4/tasks/confirmation-02/sooool/visual-inspection-v4/environment/docker-compose.yaml -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmp4jp9r9fh/docker-compose-environment.json -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmpzll_rvzy/docker-compose-mounts.json up --detach --wait. Return code: 17. Stdout: #0 building with \"default\" instance using docker driver\n\n#1 [main internal] load build definition from Dockerfile\n#1 transferring dockerfile: 425B done\n#1 DONE 0.1s\n\n#2 [main internal] load metadata for docker.io/library/python:3.13-slim-bookworm\n#2 ERROR: failed to authorize: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp: lookup auth.docker.io: i/o timeout\n------\n > [main internal] load metadata for docker.io/library/python:3.13-slim-bookworm:\n------\nfailed to solve: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp: lookup auth.docker.io: i/o timeout\n. Stderr: None. ",
+            "exception_traceback": "Traceback (most recent call last):\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 351, in run\n    await self._prepare()\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 385, in _prepare\n    await self._setup_agent_environment()\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 1148, in _setup_agent_environment\n    await self._start_agent_environment()\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 1154, in _start_agent_environment\n    await asyncio.wait_for(\n    ...<4 lines>...\n    )\n  File \"<HOME>/.local/share/uv/python/cpython-3.13.11-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"<WORKSPACE>/harbor_suite/docker_copy.py\", line 27, in start\n    await super().start(force_build=force_build)\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 908, in start\n    await self._run_docker_compose_command([\"up\", \"--detach\", \"--wait\"])\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 656, in _run_docker_compose_command\n    raise RuntimeError(\n    ...<5 lines>...\n    )\nRuntimeError: Docker compose command failed for environment visual-inspection-v4. Command: docker compose --project-name visual-inspection-v4__5pkebnh__env --project-directory <WORKSPACE>/visual_inspection_v4/tasks/confirmation-02/sooool/visual-inspection-v4/environment -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmpa41s1_s7/visual-inspection-v4__5pkeBnH__env-docker-compose-resources.json -f <HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker-compose-build.yaml -f <WORKSPACE>/visual_inspection_v4/tasks/confirmation-02/sooool/visual-inspection-v4/environment/docker-compose.yaml -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmp4jp9r9fh/docker-compose-environment.json -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmpzll_rvzy/docker-compose-mounts.json up --detach --wait. Return code: 17. Stdout: #0 building with \"default\" instance using docker driver\n\n#1 [main internal] load build definition from Dockerfile\n#1 transferring dockerfile: 425B done\n#1 DONE 0.1s\n\n#2 [main internal] load metadata for docker.io/library/python:3.13-slim-bookworm\n#2 ERROR: failed to authorize: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp: lookup auth.docker.io: i/o timeout\n------\n > [main internal] load metadata for docker.io/library/python:3.13-slim-bookworm:\n------\nfailed to solve: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp: lookup auth.docker.io: i/o timeout\n. Stderr: None. \n",
+            "exception_type": "RuntimeError",
+            "occurred_at": "2026-10-18T01:23:57.126968"
+          },
+          "executor_action_count": 0,
+          "executor_attribution": "not_established",
+          "independent_model_attempt_started": false,
+          "infrastructure_failure_before_model": false,
+          "integrity_errors": [],
+          "integrity_passed": null,
+          "mode": "sooool",
+          "model_output_observed": false,
+          "native_trajectory_statistics": {},
+          "oracle_model_samples": null,
+          "passed": false,
+          "reward": null,
+          "scoring": null,
+          "tokens": {
+            "cost_usd": null,
+            "n_cache_tokens": null,
+            "n_input_tokens": null,
+            "n_output_tokens": null
+          },
+          "trial_name": "visual-inspection-v4__5pkeBnH",
+          "visual_decision_attribution": "not_established",
+          "wall_seconds": {
+            "agent_execution": null,
+            "agent_setup": null,
+            "environment_setup": 1646.53688,
+            "total": 1649.894829,
+            "verifier": null
+          }
+        }
+      ]
+    },
+    {
+      "attempt_starts_unresolved": 1,
+      "completed": true,
+      "completed_model_attempts_failed": 0,
+      "completed_model_attempts_missing_artifact": 0,
+      "experiment_scope": "live_task",
+      "independent_model_attempts_started": 0,
+      "infrastructure_failures_before_model": 0,
+      "job_name": "v4-confirmation-03-baseline",
+      "job_wall_seconds": 2224.850871,
+      "missing_trial_directories": 0,
+      "mode": "baseline",
+      "model_outputs_observed": 0,
+      "observed_trial_directories": 1,
+      "passed_model_trials": 0,
+      "passed_oracle_trials": 0,
+      "passed_trials": 0,
+      "planned_model_attempts": 1,
+      "planned_trials": 1,
+      "task_integrity": {
+        "available": true,
+        "errors": [],
+        "expected_generated_files": 73,
+        "harbor_task_checksum": "9c127ee26c59686eb1674618228b658e9ad010b2c9ecaac4bc59c1787da03baf",
+        "launcher_config_sha256_matches": true,
+        "provenance_sha256": "6b09359b09b1889411464a69283394762441b9f95e72b64f1a964b75d50899e8"
+      },
+      "trials": [
+        {
+          "agent_name": "codex",
+          "agent_phase_started": false,
+          "all_model_accounting_incomplete": 0,
+          "all_model_token_totals": {
+            "cached_input_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 0
+          },
+          "all_model_usage": "jobs/v4-confirmation-03-baseline/visual-inspection-v4__cccptf7/all-model-usage.json",
+          "attempt_start_unresolved": true,
+          "canonical_artifact_present": false,
+          "completed": true,
+          "completed_model_attempt_failed": false,
+          "completed_model_attempt_missing_artifact": false,
+          "evidence_directory": "jobs/v4-confirmation-03-baseline/visual-inspection-v4__cccptf7",
+          "exception": {
+            "exception_message": "Docker compose command failed for environment visual-inspection-v4. Command: docker compose --project-name visual-inspection-v4__cccptf7__env --project-directory <WORKSPACE>/visual_inspection_v4/tasks/confirmation-03/baseline/visual-inspection-v4/environment -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmp5gqf_811/visual-inspection-v4__cccptf7__env-docker-compose-resources.json -f <HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker-compose-build.yaml -f <WORKSPACE>/visual_inspection_v4/tasks/confirmation-03/baseline/visual-inspection-v4/environment/docker-compose.yaml -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmpemmu79y3/docker-compose-environment.json -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmpjsq2yt5_/docker-compose-mounts.json build. Return code: 17. Stdout: #0 building with \"default\" instance using docker driver\n\n#1 [world internal] load build definition from Dockerfile\n#1 transferring dockerfile: 407B done\n#1 DONE 0.0s\n\n#2 [dev internal] load build definition from Dockerfile\n#2 transferring dockerfile: 407B done\n#2 DONE 0.0s\n\n#3 [dev internal] load metadata for docker.io/library/python:3.13-slim-bookworm\n#3 ERROR: failed to authorize: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp [2606:4700:4403::ac40:904e]:443: connect: no route to host\n------\n > [dev internal] load metadata for docker.io/library/python:3.13-slim-bookworm:\n------\nfailed to solve: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp [2606:4700:4403::ac40:904e]:443: connect: no route to host\n. Stderr: None. ",
+            "exception_traceback": "Traceback (most recent call last):\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 351, in run\n    await self._prepare()\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 385, in _prepare\n    await self._setup_agent_environment()\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 1148, in _setup_agent_environment\n    await self._start_agent_environment()\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 1154, in _start_agent_environment\n    await asyncio.wait_for(\n    ...<4 lines>...\n    )\n  File \"<HOME>/.local/share/uv/python/cpython-3.13.11-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"<WORKSPACE>/harbor_suite/docker_copy.py\", line 27, in start\n    await super().start(force_build=force_build)\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 891, in start\n    await self._run_docker_compose_command([\"build\"])\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 656, in _run_docker_compose_command\n    raise RuntimeError(\n    ...<5 lines>...\n    )\nRuntimeError: Docker compose command failed for environment visual-inspection-v4. Command: docker compose --project-name visual-inspection-v4__cccptf7__env --project-directory <WORKSPACE>/visual_inspection_v4/tasks/confirmation-03/baseline/visual-inspection-v4/environment -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmp5gqf_811/visual-inspection-v4__cccptf7__env-docker-compose-resources.json -f <HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker-compose-build.yaml -f <WORKSPACE>/visual_inspection_v4/tasks/confirmation-03/baseline/visual-inspection-v4/environment/docker-compose.yaml -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmpemmu79y3/docker-compose-environment.json -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmpjsq2yt5_/docker-compose-mounts.json build. Return code: 17. Stdout: #0 building with \"default\" instance using docker driver\n\n#1 [world internal] load build definition from Dockerfile\n#1 transferring dockerfile: 407B done\n#1 DONE 0.0s\n\n#2 [dev internal] load build definition from Dockerfile\n#2 transferring dockerfile: 407B done\n#2 DONE 0.0s\n\n#3 [dev internal] load metadata for docker.io/library/python:3.13-slim-bookworm\n#3 ERROR: failed to authorize: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp [2606:4700:4403::ac40:904e]:443: connect: no route to host\n------\n > [dev internal] load metadata for docker.io/library/python:3.13-slim-bookworm:\n------\nfailed to solve: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp [2606:4700:4403::ac40:904e]:443: connect: no route to host\n. Stderr: None. \n",
+            "exception_type": "RuntimeError",
+            "occurred_at": "2026-10-18T02:05:40.660539"
+          },
+          "executor_action_count": 0,
+          "executor_attribution": "not_established",
+          "independent_model_attempt_started": false,
+          "infrastructure_failure_before_model": false,
+          "integrity_errors": [],
+          "integrity_passed": null,
+          "mode": "baseline",
+          "model_output_observed": false,
+          "native_trajectory_statistics": {},
+          "oracle_model_samples": null,
+          "passed": false,
+          "reward": null,
+          "scoring": null,
+          "tokens": {
+            "cost_usd": null,
+            "n_cache_tokens": null,
+            "n_input_tokens": null,
+            "n_output_tokens": null
+          },
+          "trial_name": "visual-inspection-v4__cccptf7",
+          "visual_decision_attribution": "not_established",
+          "wall_seconds": {
+            "agent_execution": null,
+            "agent_setup": null,
+            "environment_setup": 2219.828066,
+            "total": 2224.390417,
+            "verifier": null
+          }
+        }
+      ]
+    },
+    {
+      "attempt_starts_unresolved": 1,
+      "completed": true,
+      "completed_model_attempts_failed": 0,
+      "completed_model_attempts_missing_artifact": 0,
+      "experiment_scope": "live_task",
+      "independent_model_attempts_started": 0,
+      "infrastructure_failures_before_model": 0,
+      "job_name": "v4-confirmation-03-sooool",
+      "job_wall_seconds": 2224.935998,
+      "missing_trial_directories": 0,
+      "mode": "sooool",
+      "model_outputs_observed": 0,
+      "observed_trial_directories": 1,
+      "passed_model_trials": 0,
+      "passed_oracle_trials": 0,
+      "passed_trials": 0,
+      "planned_model_attempts": 1,
+      "planned_trials": 1,
+      "task_integrity": {
+        "available": true,
+        "errors": [],
+        "expected_generated_files": 91,
+        "harbor_task_checksum": "4f8cbd88300ecf52698338ba9958efe1f553f803e5d11950e7bfd485ec632b42",
+        "launcher_config_sha256_matches": true,
+        "provenance_sha256": "36e773f29bb2e879b9a4ec33458c02d53bf6088455116148e1eb9a0ace7b1f2b"
+      },
+      "trials": [
+        {
+          "agent_name": "codex",
+          "agent_phase_started": false,
+          "all_model_accounting_incomplete": 0,
+          "all_model_token_totals": {
+            "cached_input_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 0
+          },
+          "all_model_usage": "jobs/v4-confirmation-03-sooool/visual-inspection-v4__f3w45iv/all-model-usage.json",
+          "attempt_start_unresolved": true,
+          "canonical_artifact_present": false,
+          "completed": true,
+          "completed_model_attempt_failed": false,
+          "completed_model_attempt_missing_artifact": false,
+          "evidence_directory": "jobs/v4-confirmation-03-sooool/visual-inspection-v4__f3w45iv",
+          "exception": {
+            "exception_message": "Docker compose command failed for environment visual-inspection-v4. Command: docker compose --project-name visual-inspection-v4__f3w45iv__env --project-directory <WORKSPACE>/visual_inspection_v4/tasks/confirmation-03/sooool/visual-inspection-v4/environment -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmpiijmdei4/visual-inspection-v4__f3w45iv__env-docker-compose-resources.json -f <HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker-compose-build.yaml -f <WORKSPACE>/visual_inspection_v4/tasks/confirmation-03/sooool/visual-inspection-v4/environment/docker-compose.yaml -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmp11m5k6sp/docker-compose-environment.json -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmpu1vlald5/docker-compose-mounts.json build. Return code: 17. Stdout: #0 building with \"default\" instance using docker driver\n\n#1 [world internal] load build definition from Dockerfile\n#1 transferring dockerfile: 407B done\n#1 DONE 0.0s\n\n#2 [dev internal] load build definition from Dockerfile\n#2 transferring dockerfile: 407B done\n#2 DONE 0.0s\n\n#3 [dev internal] load metadata for docker.io/library/python:3.13-slim-bookworm\n#3 ERROR: failed to authorize: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp [2606:4700:4403::ac40:904e]:443: connect: no route to host\n------\n > [dev internal] load metadata for docker.io/library/python:3.13-slim-bookworm:\n------\nfailed to solve: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp [2606:4700:4403::ac40:904e]:443: connect: no route to host\n. Stderr: None. ",
+            "exception_traceback": "Traceback (most recent call last):\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 351, in run\n    await self._prepare()\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 385, in _prepare\n    await self._setup_agent_environment()\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 1148, in _setup_agent_environment\n    await self._start_agent_environment()\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 1154, in _start_agent_environment\n    await asyncio.wait_for(\n    ...<4 lines>...\n    )\n  File \"<HOME>/.local/share/uv/python/cpython-3.13.11-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"<WORKSPACE>/harbor_suite/docker_copy.py\", line 27, in start\n    await super().start(force_build=force_build)\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 891, in start\n    await self._run_docker_compose_command([\"build\"])\n  File \"<HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 656, in _run_docker_compose_command\n    raise RuntimeError(\n    ...<5 lines>...\n    )\nRuntimeError: Docker compose command failed for environment visual-inspection-v4. Command: docker compose --project-name visual-inspection-v4__f3w45iv__env --project-directory <WORKSPACE>/visual_inspection_v4/tasks/confirmation-03/sooool/visual-inspection-v4/environment -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmpiijmdei4/visual-inspection-v4__f3w45iv__env-docker-compose-resources.json -f <HOME>/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker-compose-build.yaml -f <WORKSPACE>/visual_inspection_v4/tasks/confirmation-03/sooool/visual-inspection-v4/environment/docker-compose.yaml -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmp11m5k6sp/docker-compose-environment.json -f /private/var/folders/t0/f5xfx1c10bqfzwtrsqmdv4140000gn/T/tmpu1vlald5/docker-compose-mounts.json build. Return code: 17. Stdout: #0 building with \"default\" instance using docker driver\n\n#1 [world internal] load build definition from Dockerfile\n#1 transferring dockerfile: 407B done\n#1 DONE 0.0s\n\n#2 [dev internal] load build definition from Dockerfile\n#2 transferring dockerfile: 407B done\n#2 DONE 0.0s\n\n#3 [dev internal] load metadata for docker.io/library/python:3.13-slim-bookworm\n#3 ERROR: failed to authorize: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp [2606:4700:4403::ac40:904e]:443: connect: no route to host\n------\n > [dev internal] load metadata for docker.io/library/python:3.13-slim-bookworm:\n------\nfailed to solve: failed to fetch anonymous token: Get \"https://auth.docker.io/token?scope=repository%3Alibrary%2Fpython%3Apull&service=registry.docker.io\": dial tcp [2606:4700:4403::ac40:904e]:443: connect: no route to host\n. Stderr: None. \n",
+            "exception_type": "RuntimeError",
+            "occurred_at": "2026-10-18T02:05:40.840884"
+          },
+          "executor_action_count": 0,
+          "executor_attribution": "not_established",
+          "independent_model_attempt_started": false,
+          "infrastructure_failure_before_model": false,
+          "integrity_errors": [],
+          "integrity_passed": null,
+          "mode": "sooool",
+          "model_output_observed": false,
+          "native_trajectory_statistics": {},
+          "oracle_model_samples": null,
+          "passed": false,
+          "reward": null,
+          "scoring": null,
+          "tokens": {
+            "cost_usd": null,
+            "n_cache_tokens": null,
+            "n_input_tokens": null,
+            "n_output_tokens": null
+          },
+          "trial_name": "visual-inspection-v4__f3w45iv",
+          "visual_decision_attribution": "not_established",
+          "wall_seconds": {
+            "agent_execution": null,
+            "agent_setup": null,
+            "environment_setup": 2220.026463,
+            "total": 2224.486442,
+            "verifier": null
+          }
+        }
+      ]
+    },
+    {
+      "attempt_starts_unresolved": 0,
+      "completed": true,
+      "completed_model_attempts_failed": 1,
+      "completed_model_attempts_missing_artifact": 0,
+      "experiment_scope": "live_task",
+      "independent_model_attempts_started": 1,
+      "infrastructure_failures_before_model": 0,
+      "job_name": "v4-confirmation-04-baseline",
+      "job_wall_seconds": 5382.988392,
+      "missing_trial_directories": 0,
+      "mode": "baseline",
+      "model_outputs_observed": 1,
+      "observed_trial_directories": 1,
+      "passed_model_trials": 0,
+      "passed_oracle_trials": 0,
+      "passed_trials": 0,
+      "planned_model_attempts": 1,
+      "planned_trials": 1,
+      "task_integrity": {
+        "available": true,
+        "errors": [],
+        "expected_generated_files": 73,
+        "harbor_task_checksum": "aa90a5a2f63e7d675d8dbdd754507013e23cdeffc699c89e6b072954b41a9dfe",
+        "launcher_config_sha256_matches": true,
+        "provenance_sha256": "56e8daa8605d87a483de5767dd257bc7d280ec2a2bbbbc6aa46309bf6f7f0612"
+      },
+      "trials": [
+        {
+          "agent_name": "codex",
+          "agent_phase_started": true,
+          "all_model_accounting_incomplete": 0,
+          "all_model_token_totals": {
+            "cached_input_tokens": 1096064,
+            "input_tokens": 1195824,
+            "output_tokens": 3232,
+            "reasoning_output_tokens": 307,
+            "total_tokens": 1199056
+          },
+          "all_model_usage": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/all-model-usage.json",
+          "attempt_start_unresolved": false,
+          "canonical_artifact_present": true,
+          "completed": true,
+          "completed_model_attempt_failed": true,
+          "completed_model_attempt_missing_artifact": false,
+          "evidence_directory": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT",
+          "exception": null,
+          "executor_action_count": 0,
+          "executor_attribution": "not_established",
+          "independent_model_attempt_started": true,
+          "infrastructure_failure_before_model": false,
+          "integrity_errors": [],
+          "integrity_passed": true,
+          "mode": "baseline",
+          "model_output_observed": true,
+          "native_trajectory_statistics": {
+            "tool_calls": 27,
+            "tool_results": 27,
+            "unmatched_tool_calls": 0,
+            "visible_assistant_messages": 6
+          },
+          "oracle_model_samples": null,
+          "passed": false,
+          "reward": 0.0,
+          "scoring": {
+            "criteria": {
+              "complete_live_episode": true,
+              "defect_recall": false,
+              "empty_operation_budget": true,
+              "no_collisions": true,
+              "normal_false_rejection_budget": true,
+              "trace_integrity": true
+            },
+            "integrity_errors": [],
+            "item_outcomes": [
+              {
+                "action_ms": 22229.057555,
+                "arrival_ms": 22222.222222222223,
+                "carrier_id": "ce6ab149e81b1acb6",
+                "rejected": true,
+                "timing_error_ms": 6.8353327777767845,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 25659.661631,
+                "carrier_id": "c54128a0af79c1c5a",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 30489.10331381818,
+                "carrier_id": "cf0a50229c3d68d74",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 38679.772378333335,
+                "carrier_id": "cf2d988fbc7a005bc",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 46364.66199822222,
+                "carrier_id": "c13c3196198f466ae",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 50230.699363,
+                "carrier_id": "c318c824f45b0a064",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 54407.53387681818,
+                "carrier_id": "c55b7f530d4a169f1",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 63182.52439433333,
+                "carrier_id": "c04ff245cc7026dd7",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 69904.62343622222,
+                "carrier_id": "c8648a9598f933863",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 73685.82435499999,
+                "carrier_id": "c9fd452ff1f93a00b",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 78197.16911581818,
+                "carrier_id": "cccc6ffb59aaa306e",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 86915.43401033332,
+                "carrier_id": "c59f7cfeae1734682",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 94569.52112122222,
+                "carrier_id": "c9595762517989e21",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 97762.468569,
+                "carrier_id": "c70fb7e4060e68468",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 102505.92878681817,
+                "carrier_id": "c770878fe009309b7",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 110767.68361133333,
+                "carrier_id": "cbda83e46a03937df",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 118311.21417722222,
+                "carrier_id": "ccd2fc8d6d7dd51c2",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 121936.603408,
+                "carrier_id": "c1d60214ee3ce224b",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 126530.36752781818,
+                "carrier_id": "cab0dc10d8f42afff",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 134579.14613933334,
+                "carrier_id": "ca4cf7a5639962fdc",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 142263.43501022222,
+                "carrier_id": "c3d68aeb15d639998",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 146029.646813,
+                "carrier_id": "cc6df91b60d5aeec5",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 150470.10444181817,
+                "carrier_id": "c041a4228f8d57ecf",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 159036.46124633335,
+                "carrier_id": "c0f6240404acc9cf2",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              }
+            ],
+            "metrics": {
+              "action_count": 1,
+              "capture_count": 24,
+              "collisions": 0,
+              "defect_count": 12,
+              "defect_grabs": 1,
+              "defect_recall": 0.08333333333333333,
+              "duration_ms": 180000.0,
+              "empty_grabs": 0,
+              "expired_actions": 0,
+              "missed_defects": 11,
+              "normal_count": 12,
+              "normal_grabs": 0,
+              "normal_preservation": 1.0,
+              "not_running_actions": 0,
+              "rejected_session_actions": 0
+            },
+            "passed": false
+          },
+          "tokens": {
+            "cost_usd": 2.255264,
+            "n_cache_tokens": 1096064,
+            "n_input_tokens": 1195824,
+            "n_output_tokens": 3232
+          },
+          "trial_name": "visual-inspection-v4__nS2tivT",
+          "visual_decision_attribution": "not_established",
+          "wall_seconds": {
+            "agent_execution": 4991.935386,
+            "agent_setup": 0.959546,
+            "environment_setup": 332.452612,
+            "total": 5381.112943,
+            "verifier": 21.438684
+          }
+        }
+      ]
+    },
+    {
+      "attempt_starts_unresolved": 0,
+      "completed": true,
+      "completed_model_attempts_failed": 1,
+      "completed_model_attempts_missing_artifact": 0,
+      "experiment_scope": "live_task",
+      "independent_model_attempts_started": 1,
+      "infrastructure_failures_before_model": 0,
+      "job_name": "v4-confirmation-04-sooool",
+      "job_wall_seconds": 5233.194658,
+      "missing_trial_directories": 0,
+      "mode": "sooool",
+      "model_outputs_observed": 1,
+      "observed_trial_directories": 1,
+      "passed_model_trials": 0,
+      "passed_oracle_trials": 0,
+      "passed_trials": 0,
+      "planned_model_attempts": 1,
+      "planned_trials": 1,
+      "task_integrity": {
+        "available": true,
+        "errors": [],
+        "expected_generated_files": 91,
+        "harbor_task_checksum": "c77ba5dcfa57c9823be9e03bd22e8da979a1fa19293c30e8693b25f46f8fcebe",
+        "launcher_config_sha256_matches": true,
+        "provenance_sha256": "f66d7aa7e55c7dd80c1d0f598804407eabe8be6f073515e54ef9da97cef1e8ff"
+      },
+      "trials": [
+        {
+          "agent_name": "codex",
+          "agent_phase_started": true,
+          "all_model_accounting_incomplete": 4,
+          "all_model_token_totals": {
+            "cached_input_tokens": 1879552,
+            "input_tokens": 2155573,
+            "output_tokens": 10035,
+            "reasoning_output_tokens": 2039,
+            "total_tokens": 2165608
+          },
+          "all_model_usage": "jobs/v4-confirmation-04-sooool/visual-inspection-v4__EYPHZqE/all-model-usage.json",
+          "attempt_start_unresolved": false,
+          "canonical_artifact_present": true,
+          "completed": true,
+          "completed_model_attempt_failed": true,
+          "completed_model_attempt_missing_artifact": false,
+          "evidence_directory": "jobs/v4-confirmation-04-sooool/visual-inspection-v4__EYPHZqE",
+          "exception": null,
+          "executor_action_count": 8,
+          "executor_attribution": "consistent",
+          "independent_model_attempt_started": true,
+          "infrastructure_failure_before_model": false,
+          "integrity_errors": [],
+          "integrity_passed": true,
+          "mode": "sooool",
+          "model_output_observed": true,
+          "native_trajectory_statistics": {
+            "tool_calls": 40,
+            "tool_results": 40,
+            "unmatched_tool_calls": 0,
+            "visible_assistant_messages": 9
+          },
+          "oracle_model_samples": null,
+          "passed": false,
+          "reward": 0.0,
+          "scoring": {
+            "criteria": {
+              "complete_live_episode": true,
+              "defect_recall": false,
+              "empty_operation_budget": true,
+              "no_collisions": true,
+              "normal_false_rejection_budget": true,
+              "trace_integrity": true
+            },
+            "integrity_errors": [],
+            "item_outcomes": [
+              {
+                "action_ms": 22278.863246,
+                "arrival_ms": 22222.222222222223,
+                "carrier_id": "ce6ab149e81b1acb6",
+                "rejected": true,
+                "timing_error_ms": 56.64102377777817,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 25659.661631,
+                "carrier_id": "c54128a0af79c1c5a",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 30489.10331381818,
+                "carrier_id": "cf0a50229c3d68d74",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 38679.772378333335,
+                "carrier_id": "cf2d988fbc7a005bc",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 46364.66199822222,
+                "carrier_id": "c13c3196198f466ae",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 50242.718923,
+                "arrival_ms": 50230.699363,
+                "carrier_id": "c318c824f45b0a064",
+                "rejected": true,
+                "timing_error_ms": 12.019560000000638,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 54407.53387681818,
+                "carrier_id": "c55b7f530d4a169f1",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 63182.52439433333,
+                "carrier_id": "c04ff245cc7026dd7",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 69965.60582,
+                "arrival_ms": 69904.62343622222,
+                "carrier_id": "c8648a9598f933863",
+                "rejected": true,
+                "timing_error_ms": 60.98238377778034,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 73685.82435499999,
+                "carrier_id": "c9fd452ff1f93a00b",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 78197.16911581818,
+                "carrier_id": "cccc6ffb59aaa306e",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 86924.145419,
+                "arrival_ms": 86915.43401033332,
+                "carrier_id": "c59f7cfeae1734682",
+                "rejected": true,
+                "timing_error_ms": 8.71140866666974,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 94569.52112122222,
+                "carrier_id": "c9595762517989e21",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 97762.468569,
+                "carrier_id": "c70fb7e4060e68468",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 102505.92878681817,
+                "carrier_id": "c770878fe009309b7",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": 110784.59408,
+                "arrival_ms": 110767.68361133333,
+                "carrier_id": "cbda83e46a03937df",
+                "rejected": true,
+                "timing_error_ms": 16.91046866666875,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 118311.21417722222,
+                "carrier_id": "ccd2fc8d6d7dd51c2",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 121946.296611,
+                "arrival_ms": 121936.603408,
+                "carrier_id": "c1d60214ee3ce224b",
+                "rejected": true,
+                "timing_error_ms": 9.69320300000254,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 126530.36752781818,
+                "carrier_id": "cab0dc10d8f42afff",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 134655.571789,
+                "arrival_ms": 134579.14613933334,
+                "carrier_id": "ca4cf7a5639962fdc",
+                "rejected": true,
+                "timing_error_ms": 76.42564966666396,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 142263.43501022222,
+                "carrier_id": "c3d68aeb15d639998",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 146029.646813,
+                "carrier_id": "cc6df91b60d5aeec5",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 150470.10444181817,
+                "carrier_id": "c041a4228f8d57ecf",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 159036.46124633335,
+                "carrier_id": "c0f6240404acc9cf2",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              }
+            ],
+            "metrics": {
+              "action_count": 8,
+              "capture_count": 24,
+              "collisions": 0,
+              "defect_count": 12,
+              "defect_grabs": 7,
+              "defect_recall": 0.5833333333333334,
+              "duration_ms": 180000.0,
+              "empty_grabs": 0,
+              "expired_actions": 1,
+              "missed_defects": 5,
+              "normal_count": 12,
+              "normal_grabs": 0,
+              "normal_preservation": 1.0,
+              "not_running_actions": 0,
+              "rejected_session_actions": 0
+            },
+            "passed": false
+          },
+          "tokens": {
+            "cost_usd": 2.592424,
+            "n_cache_tokens": 1800704,
+            "n_input_tokens": 1851961,
+            "n_output_tokens": 5583
+          },
+          "trial_name": "visual-inspection-v4__EYPHZqE",
+          "visual_decision_attribution": "consistent",
+          "wall_seconds": {
+            "agent_execution": 4690.753344,
+            "agent_setup": 0.833147,
+            "environment_setup": 332.649163,
+            "total": 5231.949541,
+            "verifier": 18.735031
+          }
+        }
+      ]
+    },
+    {
+      "attempt_starts_unresolved": 0,
+      "completed": true,
+      "completed_model_attempts_failed": 1,
+      "completed_model_attempts_missing_artifact": 0,
+      "experiment_scope": "live_task",
+      "independent_model_attempts_started": 1,
+      "infrastructure_failures_before_model": 0,
+      "job_name": "v4-confirmation-05-baseline",
+      "job_wall_seconds": 2547.170759,
+      "missing_trial_directories": 0,
+      "mode": "baseline",
+      "model_outputs_observed": 1,
+      "observed_trial_directories": 1,
+      "passed_model_trials": 0,
+      "passed_oracle_trials": 0,
+      "passed_trials": 0,
+      "planned_model_attempts": 1,
+      "planned_trials": 1,
+      "task_integrity": {
+        "available": true,
+        "errors": [],
+        "expected_generated_files": 73,
+        "harbor_task_checksum": "f6507681149f497cc5d2254393d8c346d5e6c6a21e092fade4a4c7d553267991",
+        "launcher_config_sha256_matches": true,
+        "provenance_sha256": "5bec14a74586712c2a8719ac71303d7ae1fb20f7eb2e2c931578b651138f3c16"
+      },
+      "trials": [
+        {
+          "agent_name": "codex",
+          "agent_phase_started": true,
+          "all_model_accounting_incomplete": 0,
+          "all_model_token_totals": {
+            "cached_input_tokens": 1304960,
+            "input_tokens": 1345677,
+            "output_tokens": 5219,
+            "reasoning_output_tokens": 997,
+            "total_tokens": 1350896
+          },
+          "all_model_usage": "jobs/v4-confirmation-05-baseline/visual-inspection-v4__naEeLzk/all-model-usage.json",
+          "attempt_start_unresolved": false,
+          "canonical_artifact_present": true,
+          "completed": true,
+          "completed_model_attempt_failed": true,
+          "completed_model_attempt_missing_artifact": false,
+          "evidence_directory": "jobs/v4-confirmation-05-baseline/visual-inspection-v4__naEeLzk",
+          "exception": null,
+          "executor_action_count": 0,
+          "executor_attribution": "not_established",
+          "independent_model_attempt_started": true,
+          "infrastructure_failure_before_model": false,
+          "integrity_errors": [],
+          "integrity_passed": true,
+          "mode": "baseline",
+          "model_output_observed": true,
+          "native_trajectory_statistics": {
+            "tool_calls": 37,
+            "tool_results": 37,
+            "unmatched_tool_calls": 0,
+            "visible_assistant_messages": 11
+          },
+          "oracle_model_samples": null,
+          "passed": false,
+          "reward": 0.0,
+          "scoring": {
+            "criteria": {
+              "complete_live_episode": true,
+              "defect_recall": false,
+              "empty_operation_budget": true,
+              "no_collisions": true,
+              "normal_false_rejection_budget": true,
+              "trace_integrity": true
+            },
+            "integrity_errors": [],
+            "item_outcomes": [
+              {
+                "action_ms": 22219.547678,
+                "arrival_ms": 22222.222222222223,
+                "carrier_id": "ce0da402512c36a56",
+                "rejected": true,
+                "timing_error_ms": -2.6745442222236306,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 25797.035852,
+                "carrier_id": "cf4e27cf96adbaaa3",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 30089.71822981818,
+                "carrier_id": "c0125e4268410e984",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 38620.73188,
+                "arrival_ms": 38634.189801333334,
+                "carrier_id": "cb8dc608af6836e90",
+                "rejected": true,
+                "timing_error_ms": -13.457921333334525,
+                "truth": "defect"
+              },
+              {
+                "action_ms": 45895.202178,
+                "arrival_ms": 45904.46967122222,
+                "carrier_id": "c51700fb28d32f4be",
+                "rejected": true,
+                "timing_error_ms": -9.267493222221674,
+                "truth": "defect"
+              },
+              {
+                "action_ms": 49957.941191,
+                "arrival_ms": 49963.963956,
+                "carrier_id": "c3970f019cd4c8981",
+                "rejected": true,
+                "timing_error_ms": -6.022765000001527,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 54055.26281681818,
+                "carrier_id": "c0c931d5fe4dc02c3",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 62654.556816,
+                "arrival_ms": 62661.45167833334,
+                "carrier_id": "cf93c7e6acfc1673b",
+                "rejected": true,
+                "timing_error_ms": -6.8948623333417345,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 70470.14156422223,
+                "carrier_id": "ca06aa74a43612330",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 74050.493224,
+                "carrier_id": "c82506cb2344344fa",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 78141.90482581819,
+                "carrier_id": "caf9e8c5407088a30",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 87062.15026833332,
+                "carrier_id": "cf8f771406ab50acc",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 94388.21583022222,
+                "carrier_id": "c953eb3b3525ce7bf",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 98133.2354,
+                "arrival_ms": 98143.584189,
+                "carrier_id": "c842f3bcf5ce00c73",
+                "rejected": true,
+                "timing_error_ms": -10.348788999996032,
+                "truth": "defect"
+              },
+              {
+                "action_ms": 102453.755131,
+                "arrival_ms": 102162.52185281817,
+                "carrier_id": "c0cf3d2be3474d297",
+                "rejected": true,
+                "timing_error_ms": 291.2332781818259,
+                "truth": "defect"
+              },
+              {
+                "action_ms": 111071.576192,
+                "arrival_ms": 111104.90388933333,
+                "carrier_id": "cf439930c75a83c76",
+                "rejected": true,
+                "timing_error_ms": -33.32769733334135,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 117899.18661622221,
+                "carrier_id": "c38c21a4843fdb924",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 121813.323591,
+                "carrier_id": "c3507a6a1d3239bf5",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 125862.46365381818,
+                "carrier_id": "c665dadbb13e8e1aa",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 134857.474741,
+                "arrival_ms": 134827.72475133333,
+                "carrier_id": "c87118c8adf314bf0",
+                "rejected": true,
+                "timing_error_ms": 29.749989666684996,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 141911.9309422222,
+                "carrier_id": "c16092005064e636f",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 146142.479143,
+                "carrier_id": "c3631da1607005d39",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 149863.671897,
+                "arrival_ms": 149874.63865881818,
+                "carrier_id": "cdd98f2f39962851b",
+                "rejected": true,
+                "timing_error_ms": -10.96676181818475,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 159077.80474133336,
+                "carrier_id": "c71258b28c1d137e4",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              }
+            ],
+            "metrics": {
+              "action_count": 11,
+              "capture_count": 24,
+              "collisions": 0,
+              "defect_count": 12,
+              "defect_grabs": 10,
+              "defect_recall": 0.8333333333333334,
+              "duration_ms": 180000.0,
+              "empty_grabs": 0,
+              "expired_actions": 1,
+              "missed_defects": 2,
+              "normal_count": 12,
+              "normal_grabs": 0,
+              "normal_preservation": 1.0,
+              "not_running_actions": 0,
+              "rejected_session_actions": 0
+            },
+            "passed": false
+          },
+          "tokens": {
+            "cost_usd": 1.97308,
+            "n_cache_tokens": 1304960,
+            "n_input_tokens": 1345677,
+            "n_output_tokens": 5219
+          },
+          "trial_name": "visual-inspection-v4__naEeLzk",
+          "visual_decision_attribution": "not_established",
+          "wall_seconds": {
+            "agent_execution": 2473.173406,
+            "agent_setup": 0.405317,
+            "environment_setup": 27.508667,
+            "total": 2546.737467,
+            "verifier": 18.04198
+          }
+        }
+      ]
+    },
+    {
+      "attempt_starts_unresolved": 0,
+      "completed": true,
+      "completed_model_attempts_failed": 0,
+      "completed_model_attempts_missing_artifact": 0,
+      "experiment_scope": "live_task",
+      "independent_model_attempts_started": 1,
+      "infrastructure_failures_before_model": 0,
+      "job_name": "v4-confirmation-05-sooool",
+      "job_wall_seconds": 518.828233,
+      "missing_trial_directories": 0,
+      "mode": "sooool",
+      "model_outputs_observed": 1,
+      "observed_trial_directories": 1,
+      "passed_model_trials": 1,
+      "passed_oracle_trials": 0,
+      "passed_trials": 1,
+      "planned_model_attempts": 1,
+      "planned_trials": 1,
+      "task_integrity": {
+        "available": true,
+        "errors": [],
+        "expected_generated_files": 91,
+        "harbor_task_checksum": "652c144bef337c1158ed4714ba604ae1bba5e7e4f14156be13b596dad24ff185",
+        "launcher_config_sha256_matches": true,
+        "provenance_sha256": "5fb8f0f4b1c772e1e2f3642d1c6d23d956fb5d7ab9eaff2d05da322f7e1ae961"
+      },
+      "trials": [
+        {
+          "agent_name": "codex",
+          "agent_phase_started": true,
+          "all_model_accounting_incomplete": 0,
+          "all_model_token_totals": {
+            "cached_input_tokens": 884096,
+            "input_tokens": 1190239,
+            "output_tokens": 8264,
+            "reasoning_output_tokens": 1836,
+            "total_tokens": 1198503
+          },
+          "all_model_usage": "jobs/v4-confirmation-05-sooool/visual-inspection-v4__zoNw3y4/all-model-usage.json",
+          "attempt_start_unresolved": false,
+          "canonical_artifact_present": true,
+          "completed": true,
+          "completed_model_attempt_failed": false,
+          "completed_model_attempt_missing_artifact": false,
+          "evidence_directory": "jobs/v4-confirmation-05-sooool/visual-inspection-v4__zoNw3y4",
+          "exception": null,
+          "executor_action_count": 11,
+          "executor_attribution": "consistent",
+          "independent_model_attempt_started": true,
+          "infrastructure_failure_before_model": false,
+          "integrity_errors": [],
+          "integrity_passed": true,
+          "mode": "sooool",
+          "model_output_observed": true,
+          "native_trajectory_statistics": {
+            "tool_calls": 24,
+            "tool_results": 24,
+            "unmatched_tool_calls": 0,
+            "visible_assistant_messages": 10
+          },
+          "oracle_model_samples": null,
+          "passed": true,
+          "reward": 1.0,
+          "scoring": {
+            "criteria": {
+              "complete_live_episode": true,
+              "defect_recall": true,
+              "empty_operation_budget": true,
+              "no_collisions": true,
+              "normal_false_rejection_budget": true,
+              "trace_integrity": true
+            },
+            "integrity_errors": [],
+            "item_outcomes": [
+              {
+                "action_ms": 22052.064044,
+                "arrival_ms": 22222.222222222223,
+                "carrier_id": "ce0da402512c36a56",
+                "rejected": true,
+                "timing_error_ms": -170.1581782222238,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 25797.035852,
+                "carrier_id": "cf4e27cf96adbaaa3",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 30089.71822981818,
+                "carrier_id": "c0125e4268410e984",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 38463.851308,
+                "arrival_ms": 38634.189801333334,
+                "carrier_id": "cb8dc608af6836e90",
+                "rejected": true,
+                "timing_error_ms": -170.33849333333637,
+                "truth": "defect"
+              },
+              {
+                "action_ms": 45732.413724,
+                "arrival_ms": 45904.46967122222,
+                "carrier_id": "c51700fb28d32f4be",
+                "rejected": true,
+                "timing_error_ms": -172.05594722222304,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 49963.963956,
+                "carrier_id": "c3970f019cd4c8981",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 54055.26281681818,
+                "carrier_id": "c0c931d5fe4dc02c3",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 62489.754537,
+                "arrival_ms": 62661.45167833334,
+                "carrier_id": "cf93c7e6acfc1673b",
+                "rejected": true,
+                "timing_error_ms": -171.69714133333764,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 70470.14156422223,
+                "carrier_id": "ca06aa74a43612330",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 74050.493224,
+                "carrier_id": "c82506cb2344344fa",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 78141.90482581819,
+                "carrier_id": "caf9e8c5407088a30",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 87062.15026833332,
+                "carrier_id": "cf8f771406ab50acc",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 94388.21583022222,
+                "carrier_id": "c953eb3b3525ce7bf",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 97972.235327,
+                "arrival_ms": 98143.584189,
+                "carrier_id": "c842f3bcf5ce00c73",
+                "rejected": true,
+                "timing_error_ms": -171.34886199999892,
+                "truth": "defect"
+              },
+              {
+                "action_ms": 101999.150113,
+                "arrival_ms": 102162.52185281817,
+                "carrier_id": "c0cf3d2be3474d297",
+                "rejected": true,
+                "timing_error_ms": -163.37173981817614,
+                "truth": "defect"
+              },
+              {
+                "action_ms": 110935.582783,
+                "arrival_ms": 111104.90388933333,
+                "carrier_id": "cf439930c75a83c76",
+                "rejected": true,
+                "timing_error_ms": -169.32110633332923,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 117899.18661622221,
+                "carrier_id": "c38c21a4843fdb924",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 121643.582162,
+                "arrival_ms": 121813.323591,
+                "carrier_id": "c3507a6a1d3239bf5",
+                "rejected": true,
+                "timing_error_ms": -169.74142899998697,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 125862.46365381818,
+                "carrier_id": "c665dadbb13e8e1aa",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 134657.873455,
+                "arrival_ms": 134827.72475133333,
+                "carrier_id": "c87118c8adf314bf0",
+                "rejected": true,
+                "timing_error_ms": -169.85129633333418,
+                "truth": "defect"
+              },
+              {
+                "action_ms": 141743.010876,
+                "arrival_ms": 141911.9309422222,
+                "carrier_id": "c16092005064e636f",
+                "rejected": true,
+                "timing_error_ms": -168.92006622222834,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 146142.479143,
+                "carrier_id": "c3631da1607005d39",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              },
+              {
+                "action_ms": 149710.870263,
+                "arrival_ms": 149874.63865881818,
+                "carrier_id": "cdd98f2f39962851b",
+                "rejected": true,
+                "timing_error_ms": -163.76839581818786,
+                "truth": "defect"
+              },
+              {
+                "action_ms": null,
+                "arrival_ms": 159077.80474133336,
+                "carrier_id": "c71258b28c1d137e4",
+                "rejected": false,
+                "timing_error_ms": null,
+                "truth": "normal"
+              }
+            ],
+            "metrics": {
+              "action_count": 11,
+              "capture_count": 24,
+              "collisions": 0,
+              "defect_count": 12,
+              "defect_grabs": 11,
+              "defect_recall": 0.9166666666666666,
+              "duration_ms": 180000.0,
+              "empty_grabs": 0,
+              "expired_actions": 0,
+              "missed_defects": 1,
+              "normal_count": 12,
+              "normal_grabs": 0,
+              "normal_preservation": 1.0,
+              "not_running_actions": 0,
+              "rejected_session_actions": 0
+            },
+            "passed": true
+          },
+          "tokens": {
+            "cost_usd": 1.526274,
+            "n_cache_tokens": 793984,
+            "n_input_tokens": 851348,
+            "n_output_tokens": 3173
+          },
+          "trial_name": "visual-inspection-v4__zoNw3y4",
+          "visual_decision_attribution": "consistent",
+          "wall_seconds": {
+            "agent_execution": 436.306935,
+            "agent_setup": 0.281593,
+            "environment_setup": 27.507137,
+            "total": 518.427781,
+            "verifier": 22.245332
+          }
+        }
+      ]
+    }
+  ],
+  "json_read_warnings": [],
+  "nested_collector_sha256": "2d66db7fdebea098414b8809e6f484c398573a70a1ae4a046f5a4a75e6515279",
+  "notes": [
+    "Original Harbor jobs remain unchanged. No experiment was run by this collector.",
+    "Oracle episodes count as zero independent model samples. Unstarted/missing/infrastructure-failed attempts remain visible.",
+    "Native token totals are reported as recorded; reasoning token counts may be included numerically, but reasoning text is never published.",
+    "v3 adds recursive and ephemeral model usage; unknown usage remains explicit and no same-total-token claim is made.",
+    "A completed model attempt with no canonical artifact remains a failed model attempt. Infrastructure exclusion requires an exception during an unfinished environment/agent setup phase and no observed model start; ambiguous starts remain unresolved.",
+    "totals contains only live-task/oracle trials; development_diagnostic_totals is separate. all_execution_totals and all_model_accounting include every diagnostic model call and observed token."
+  ],
+  "omissions": [
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/live/01.decision"
+    },
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/live/02.decision"
+    },
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/live/03.decision"
+    },
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/live/04.decision"
+    },
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/live/05.decision"
+    },
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/live/06.decision"
+    },
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/live/07.decision"
+    },
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/live/08.decision"
+    },
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/live/09.decision"
+    },
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/live/10.decision"
+    },
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/live/11.decision"
+    },
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/live/12.decision"
+    },
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/practice/02.decision"
+    },
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/practice/03.decision"
+    },
+    {
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-confirmation-04-baseline/visual-inspection-v4__nS2tivT/artifacts/app/output/practice/04.decision"
+    }
+  ],
+  "redactions": {
+    "credential_assignments": 0,
+    "credential_strings": 0,
+    "host_paths": 396
+  },
+  "schema_version": 2,
+  "token_records_missing": 4,
+  "totals": {
+    "attempt_starts_unresolved": 4,
+    "completed_model_attempts_failed": 5,
+    "completed_model_attempts_missing_artifact": 0,
+    "independent_model_attempts_started": 6,
+    "infrastructure_failures_before_model": 0,
+    "missing_trial_directories": 0,
+    "model_outputs_observed": 6,
+    "observed_trial_directories": 10,
+    "passed_model_trials": 1,
+    "passed_oracle_trials": 0,
+    "passed_trials": 1,
+    "planned_model_attempts": 10,
+    "planned_trials": 10
+  }
+}

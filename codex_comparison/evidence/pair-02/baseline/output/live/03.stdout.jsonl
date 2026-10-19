@@ -1,0 +1,4 @@
+{"thread_id": "01a1502f-f510-7ad1-91c4-dec9a210650f", "type": "thread.started"}
+{"type": "turn.started"}
+{"item": {"id": "item_0", "text": "{\"reason\": \"The query’s USB connector has a visibly bent, lifted metal shell tab and conspicuous dark contamination across the housing.\", \"reject\": true}", "type": "agent_message"}, "type": "item.completed"}
+{"type": "turn.completed", "usage": {"cache_write_input_tokens": 0, "cached_input_tokens": 12160, "input_tokens": 16868, "output_tokens": 94, "reasoning_output_tokens": 57}}

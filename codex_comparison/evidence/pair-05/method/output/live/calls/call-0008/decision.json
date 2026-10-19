@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c13b35b42db917b7a",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 62931.324,
+    "expires_ms": 63456.324,
+    "id": "pick-c13b35b42db917b7a",
+    "key": "k"
+  },
+  "visible_evidence": "The black IC has a conspicuous gouged, gray damaged area on its surface."
+}

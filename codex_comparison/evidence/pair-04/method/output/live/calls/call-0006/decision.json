@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c78576ce3e425d43e",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 49697.964467,
+    "expires_ms": 50247.964467,
+    "id": "pick-c78576ce3e425d43e",
+    "key": "f"
+  },
+  "visible_evidence": "The USB connector’s metal shell is visibly bent and crumpled at its upper-left edge."
+}

@@ -1,0 +1,318 @@
+{
+  "collector_sha256": "36f5fcf0b38f3127d0078c11b4756629fafe8ee719848b3dc125ab2ad7aa8a65",
+  "created_at": "2026-10-18T18:51:05.966079+00:00",
+  "eligible_omissions": [
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/01.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/01.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/02.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/02.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/03.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/03.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/04.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/04.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/05.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/05.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/06.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/06.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/07.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/07.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/08.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/08.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/09.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/09.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/10.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/10.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/11.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/11.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/12.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/12.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/13.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/13.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/14.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/14.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/dev/15.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/dev/15.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/01.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/01.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/02.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/02.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/03.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/03.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/04.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/04.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/05.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/05.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/06.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/06.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/07.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/07.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/08.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/08.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/09.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/09.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/10.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/10.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/11.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/11.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/12.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/12.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/13.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/13.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/14.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/14.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/15.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/15.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/16.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/16.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/17.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/17.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/18.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/18.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/19.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/19.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/20.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/20.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/21.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/21.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/22.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/22.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/23.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/23.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    },
+    {
+      "job_name": "v4-repro-awake-v1-01-baseline",
+      "path": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/output/live/24.decision",
+      "reason": "not a public code/log/image format",
+      "source": "jobs/v4-repro-awake-v1-01-baseline/visual-inspection-v4__WSGAZJF/artifacts/app/output/live/24.decision",
+      "trial_name": "visual-inspection-v4__WSGAZJF"
+    }
+  ],
+  "extraction": "Exact parent extension omissions; short public decision validation; unchanged Collector.add and sanitizer.",
+  "file_count": 39,
+  "frozen_collector_sha256": "e4a65adcdf1d5767f71bbec93e27666360774a839a95c97b608f6714220faaa1",
+  "kind": "awake-decision-supplement",
+  "new_episodes": 0,
+  "new_model_calls": 0,
+  "omission_reason": "not a public code/log/image format",
+  "original_snapshot_omissions_retained": true,
+  "parent_index_sha256": "9661a33917e896b58de9d46abc126dce7c7a6a7e21a8c392444682899e505498",
+  "parent_manifest_sha256": "be9121ce32477b5dd3fa72186c2f42f18c97f16343da02cd99d83a4b5b46f265",
+  "parent_snapshot": "final",
+  "per_job_file_counts": {
+    "v4-repro-awake-v1-01-baseline": 39,
+    "v4-repro-awake-v1-01-sooool": 0,
+    "v4-repro-awake-v1-02-baseline": 0,
+    "v4-repro-awake-v1-02-sooool": 0,
+    "v4-repro-awake-v1-03-baseline": 0,
+    "v4-repro-awake-v1-03-sooool": 0,
+    "v4-repro-awake-v1-04-baseline": 0,
+    "v4-repro-awake-v1-04-sooool": 0,
+    "v4-repro-awake-v1-05-baseline": 0,
+    "v4-repro-awake-v1-05-sooool": 0
+  },
+  "purpose": "Complete public decision evidence without editing the frozen collector or original snapshot.",
+  "registered_jobs": [
+    "v4-repro-awake-v1-01-baseline",
+    "v4-repro-awake-v1-01-sooool",
+    "v4-repro-awake-v1-02-baseline",
+    "v4-repro-awake-v1-02-sooool",
+    "v4-repro-awake-v1-03-baseline",
+    "v4-repro-awake-v1-03-sooool",
+    "v4-repro-awake-v1-04-baseline",
+    "v4-repro-awake-v1-04-sooool",
+    "v4-repro-awake-v1-05-baseline",
+    "v4-repro-awake-v1-05-sooool"
+  ],
+  "registration_sha256": "19dc6c5db0621e5a235e373ddd5e3e3229c7b5ae7a02558c2080fd3e81746bd1",
+  "schema_version": 2,
+  "source_bytes": 1110
+}

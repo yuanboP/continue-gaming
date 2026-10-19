@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c902a174f11fa2ac0",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 29859.146,
+    "expires_ms": 30384.146,
+    "id": "pick-c902a174f11fa2ac0",
+    "key": "j"
+  },
+  "visible_evidence": "The rightmost connector pin is bent downward across the board."
+}

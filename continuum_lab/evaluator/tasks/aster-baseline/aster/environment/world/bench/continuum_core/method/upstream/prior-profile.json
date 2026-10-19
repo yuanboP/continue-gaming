@@ -1,0 +1,1400 @@
+{
+  "kind": "modeled_early_prompt_transport",
+  "control_age_kind": "modeled_early_prompt_transport",
+  "version": 1,
+  "k": 4,
+  "not_serial_fastest_api_profile": true,
+  "not_observed_concurrent_profile": true,
+  "latency_metric": "legal_action_s",
+  "joint_delay_vectors_s": [
+    [
+      2.9354569629726472,
+      3.1120914179850376,
+      3.1271132369951817,
+      3.2229912010156556
+    ],
+    [
+      2.117606130983681,
+      2.18349143400183,
+      2.300707414020785,
+      2.399965856983094
+    ],
+    [
+      2.537953734557735,
+      2.736902077286194,
+      2.295469252070143,
+      3.147227616038853
+    ],
+    [
+      3.2573272419031207,
+      3.0227692185054607,
+      3.4671779152460527,
+      3.4804829709790046
+    ],
+    [
+      3.2488126473282843,
+      3.6586247127187947,
+      3.359377021142364,
+      3.156617822387811
+    ],
+    [
+      3.006112333945727,
+      2.86710330820605,
+      4.101374265411323,
+      3.488952077935103
+    ],
+    [
+      2.180113047494146,
+      2.6626685134556407,
+      3.3408639098309663,
+      3.5842159501661324
+    ],
+    [
+      2.651225863866136,
+      2.283402449877345,
+      2.751096534516304,
+      2.6989607621988547
+    ],
+    [
+      3.3538630598816637,
+      3.330539508650435,
+      2.3548681589052767,
+      3.211033155876752
+    ],
+    [
+      2.5267256875000976,
+      1.9406648284057852,
+      2.133068208938007,
+      3.1021465176022933
+    ],
+    [
+      2.7550863279110507,
+      2.314483167203808,
+      3.327996442139759,
+      2.3706663545102424
+    ],
+    [
+      1.9115380060925167,
+      1.9608140255793003,
+      2.1250405877346905,
+      2.3425105775952373
+    ],
+    [
+      3.1362209203586104,
+      3.291817529836348,
+      3.2542489826473626,
+      2.9401181704085495
+    ],
+    [
+      2.7977336217982147,
+      3.3970222749534074,
+      2.86812538601498,
+      2.668509443185832
+    ],
+    [
+      2.722945955504367,
+      3.2110155238152345,
+      2.7265714879329606,
+      3.5503889031147136
+    ],
+    [
+      2.6803369197238176,
+      2.97127028368563,
+      3.298061031945131,
+      3.574442672054666
+    ],
+    [
+      3.619616397136107,
+      3.286671563020877,
+      3.495267651928127,
+      3.0512266102391266
+    ],
+    [
+      2.815747478407124,
+      2.70666866368944,
+      2.5896044310373507,
+      3.1905936084893436
+    ],
+    [
+      2.6415851217554773,
+      2.5739827493396272,
+      3.1157420979120816,
+      3.3052169474402184
+    ]
+  ],
+  "joint_terminal_delay_vectors_s": [
+    [
+      3.8651619059750817,
+      3.9900535050041515,
+      3.6692262119981467,
+      3.85541839799448
+    ],
+    [
+      2.4492915339963517,
+      2.534023245012854,
+      2.5824930309921044,
+      2.7041163519918925
+    ],
+    [
+      2.988127377567938,
+      3.8441200962810935,
+      2.7338905050686666,
+      3.8659876070346026
+    ],
+    [
+      5.227968049897762,
+      4.287487874497062,
+      5.443721982247721,
+      4.327267070944593
+    ],
+    [
+      4.125203865343044,
+      4.114113195732846,
+      4.167368315128925,
+      4.017720401374713
+    ],
+    [
+      3.778702859947022,
+      3.802931111189163,
+      5.268140999390198,
+      5.040507359963961
+    ],
+    [
+      2.482630632484856,
+      2.9770766574670358,
+      4.037892412798408,
+      4.191397959166231
+    ],
+    [
+      2.996282004865213,
+      2.8286026448662103,
+      3.0478927505054654,
+      2.9213830041888436
+    ],
+    [
+      4.463187447883942,
+      4.377908331648104,
+      2.702045751913659,
+      3.5773017158760503
+    ],
+    [
+      3.176960113493501,
+      2.333243965404178,
+      2.525872645934819,
+      3.512211394613175
+    ],
+    [
+      3.1958587709313013,
+      2.768872940192897,
+      3.5789167311612102,
+      2.9739589455360624
+    ],
+    [
+      2.408979994123431,
+      2.5053857405789204,
+      2.54853907273922,
+      2.4955168145663604
+    ],
+    [
+      3.6501713483527425,
+      3.81103394784071,
+      3.7723912606334067,
+      3.3159156194084964
+    ],
+    [
+      3.3016896488070406,
+      4.367947783980846,
+      3.7691984620205394,
+      3.2607577641728143
+    ],
+    [
+      3.163971348529851,
+      3.919730784833604,
+      3.1615310519126067,
+      4.079429528084352
+    ],
+    [
+      3.3553253936930965,
+      3.364044141695235,
+      4.184768628949847,
+      4.233371866058242
+    ],
+    [
+      4.172407851150475,
+      4.252559353013726,
+      4.237385749915386,
+      4.223482323236993
+    ],
+    [
+      3.3217963563925736,
+      4.106891106675418,
+      3.992008604023631,
+      4.139373089457713
+    ],
+    [
+      2.995029923253449,
+      3.0680939878236653,
+      3.503081906395457,
+      3.6879599959509655
+    ]
+  ],
+  "image_counts": [
+    1,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "apply_overhead_s": 0.08067407849011943,
+  "control_age_p50_s": 2.67027850952747,
+  "control_age_p95_s": 3.142439809944114,
+  "samples_s": [
+    1.4673933510202914,
+    1.4944132410164457,
+    1.663125489023514,
+    1.836506734980503,
+    1.8945635819982272,
+    1.9152206300059333,
+    2.0890067179861944,
+    2.1764483930019196,
+    2.199451004009461,
+    2.2829649630002677,
+    2.3468748930026777,
+    2.3644874049932696,
+    2.4220581609988585,
+    2.5558915859728586,
+    2.6644107650208753,
+    2.7060089980077464,
+    2.710605029016733,
+    2.9078503279888537,
+    3.3751535180199426
+  ],
+  "p50_s": 2.2829649630002677,
+  "p95_s": 2.9545806469919618,
+  "serial_configuration": {
+    "model": "gpt-6.1-sol",
+    "tier": "ultrafast",
+    "effort": "low",
+    "max_output_tokens": 512,
+    "detail": "high",
+    "schema_sha256": "defd8c6b11a876bb52f9e64286da223dc8eed5a89cf63e89d0c7b38c20a6f660"
+  },
+  "singleton_constant_image_counts": [
+    1,
+    2
+  ],
+  "marginal_sample_counts": {
+    "past_real": {
+      "1": 4,
+      "2": 4,
+      "3": 68
+    },
+    "new_serial": {
+      "1": 1,
+      "2": 1,
+      "3": 19
+    }
+  },
+  "provenance": {
+    "past_real_joint_profile": "profile-control-early-study-v1.json",
+    "past_real_joint_sha256": "083045439b4e956618032ce42f200033554852f4c1923d074bea71091a248831",
+    "new_serial_profile": "profile-tracking-safe-intercept-v2-serial-v1.jsonl",
+    "new_serial_sha256": "d1f15b83cd98fa535701a896596c46b163c1c49370ac8093fc6c0b771a1b79d0",
+    "past_real_sources": [
+      {
+        "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+        "clock_offset_s": 3.3427546290052117,
+        "issued_candidates": 76,
+        "applied_count": 18,
+        "cohorts": 19,
+        "excluded_tail_cohorts": [],
+        "modeled_terminal_tail_cohorts": [
+          72
+        ],
+        "modeled_tail_poll_lag_s": 0.14284693851368502,
+        "source_sha256": {
+          "config.json": "0fc6603bb878d45b0f1d52138369d707a4953e1dcc95098f34b35d4e69fc4b39",
+          "summary.json": "ae5436b90445dceac68d8429e52577a7e2c3836531a1f7a855ed2cdc1a23f537",
+          "issued.jsonl": "6f722f76ca402492b90af5e058a1fb742f382ec53ef5cdebba71de654b36d15f",
+          "decisions.jsonl": "99224bc6b57cde17ffe0ffd2db1d7f7f5ad2dbc2493b45c5004d0fa155842a07",
+          "actions.jsonl": "a482febfb466c41a45e4f55bd9693f3c35bf5d41678abe842f35769a366d864d"
+        },
+        "early_file_sha256": {
+          "decision_00000/early_result.json": "1e34b03bb50222fabac5c483afb66b3e95ef2624f7482f7bef4a931177173675",
+          "decision_00001/early_result.json": "58258c517ee88804fc8d13d597f97e34a602230cf87434e6c815e3f0aa7a77b9",
+          "decision_00002/early_result.json": "f0975af74850c618e02a6fe5f9cedac58e922a75eef7a69b7ffca658f6fbeb87",
+          "decision_00003/early_result.json": "840be9d4fdd336141aca22addaab7c45e68806e66241a259259139ba206f4eac",
+          "decision_00004/early_result.json": "d83261ef46202c038439aee40f8e24617a5187b38dce8c9706ba472deae43cf2",
+          "decision_00005/early_result.json": "9eae6d5d621722b93454f68a7e3788f056bf335f5cb17dbd196d442effd04b0c",
+          "decision_00006/early_result.json": "e40622675a3900a4a12b57f7b67791cc2bd8b87f1a05163dee52d659f46edb06",
+          "decision_00007/early_result.json": "b009fd1b4a1959ef468b21707353461a92dea7633fc753eb487543432f4e052e",
+          "decision_00008/early_result.json": "f8d537bada3d9e0d0180025f03b905438dc526c5aa87d90e236c4047967cbeb1",
+          "decision_00009/early_result.json": "e541f16136d011b103c62a7a673e43ccc3910e125a404f3693d10d970817c298",
+          "decision_00010/early_result.json": "9f43711be3d9a9146c4411c28d72f93620f724c0cd310e24e47722b8f7436e87",
+          "decision_00011/early_result.json": "165e0b8d5ad39af001f6baf6f697d43aca2198410e266a2ff8e2c961c117b096",
+          "decision_00012/early_result.json": "614aaf455aa985ffbebb8cf15bc6cf5407f54fd30a1941925af6756ae8624192",
+          "decision_00013/early_result.json": "44e5aa5f620180d9e5863626392a0b1c66046d97751eb0aae499fdf7a5b405d1",
+          "decision_00014/early_result.json": "15203fef4b1d681a3a3d2499d45665701c01618f5cabbc25f7f31d58de42c8e0",
+          "decision_00015/early_result.json": "be9ddf8df21309f7eece975f318e18473123edb7edab457b39d570947ca378a1",
+          "decision_00016/early_result.json": "b3f87bc2a1e00039c1c1febeae4fff68b55e3fc8f2bcbec677f156fbe33355e3",
+          "decision_00017/early_result.json": "086cb33030310aee9f4894ea93b3e80fbce7b360b5187187e8d8c6931d27ea37",
+          "decision_00018/early_result.json": "1f343c99099233dcbf8ba790c68475fbb5c03254df953deed524ba681e49861e",
+          "decision_00019/early_result.json": "79e2972fa8130966bbc40d7b82537f5710c49a109f69daa676c29d765fa25741",
+          "decision_00020/early_result.json": "08dbab44153689ece4e27b404bf901303540b1bb33e3da0a3397ba564acf19a3",
+          "decision_00021/early_result.json": "bbcd34728d116c471e1185f36c6f25fce2eb51c94808ddc8714f50aed04a04e3",
+          "decision_00022/early_result.json": "773ad66c4c24526a1f3c239f464e48c92228820917c9b7eeb40a8d494a51a9b8",
+          "decision_00023/early_result.json": "586246f9cd185b4ddb958b736332b2a1e4bc4518717ce75b498e08d7ff329f29",
+          "decision_00024/early_result.json": "4645ff086063ee71b994a5170e1232b42d572c6a09ff57f01e479085492f0913",
+          "decision_00025/early_result.json": "9b819918751f430f536b6a7193288beb856cc8c6334b8a555c2f5b34cf931a45",
+          "decision_00026/early_result.json": "1c2df124ea38495b6bfa89203eff57d32388d30ab31d8d32c33c2ec126d59bf3",
+          "decision_00027/early_result.json": "61225ee7429df89a4e184d372716baed18d4a74c12087732b4fe4d70be517f97",
+          "decision_00028/early_result.json": "9d32ce2bf2f41323688be4d1355c96d45a1b97f6b315ad679afce0e5b5ca3dd3",
+          "decision_00029/early_result.json": "e09bc9f5a16a3008d541d4d5b3d865a32ab4f9c6af4b52e652f1826e65bb154d",
+          "decision_00030/early_result.json": "eeabc5464d4bbdf61793437129e872651d81ead3fb499e178a8527c75c93b02b",
+          "decision_00031/early_result.json": "ec4c5b6e8e4aca59ca4032bf363ece41c4fc50dadeb1e64e1ac7fa5ef4eec481",
+          "decision_00032/early_result.json": "88cff28e13a36b4d9b66d95c059c50549d6c94545b44921c6978a4419ed16626",
+          "decision_00033/early_result.json": "798b9a78ae70d8a01644803d7f8592a23d39979e1ebee1e791c3669b90d94665",
+          "decision_00034/early_result.json": "26f7fa26d62bb8e6cc398740538d9f8ef05bb6c4a2e5e19f98fac223d72a267a",
+          "decision_00035/early_result.json": "11cb9b8df02897f1324ae65ca3ea60a9f5371e75cb2f943151ad6b10e9e99bec",
+          "decision_00036/early_result.json": "d1b237a39730b4f91acb32e94b431ea9e531d329bb426ce7870c4fd34d9af3e7",
+          "decision_00037/early_result.json": "ccaed554b8d95c5904edd61eed6492665e65987bb70a91289ba8a48f856f007e",
+          "decision_00038/early_result.json": "b0bc6e5bf9b27d4d5d5ff9e9bc9901e2303e78f5366ebb5eed4795cb70b937fd",
+          "decision_00039/early_result.json": "ff6f0e0d0c26b9f9c4849700acf4f93a4dcb410c12d98d50ede5d3d38a62e3f6",
+          "decision_00040/early_result.json": "150b861681a08e870742dca3bf839677cbb58308a1e11bff34dbbd7c85933290",
+          "decision_00041/early_result.json": "d7148474aec160af40e36b21b3bc7d00e7a0cb748cc0ed1d5a79b2019938d15b",
+          "decision_00042/early_result.json": "7b67ea7e2f626db2d3254c2425d9b0f7ccc27e9196eef060253b7ea095d8cff6",
+          "decision_00043/early_result.json": "32cf0437c8a5b93a9d0fab9a1b8934a9dd709246f7e1495c180d0b4b45e56e23",
+          "decision_00044/early_result.json": "fdd25d015228e744b991637e289aef71b8c26421837bdeac220424003b5bd9a3",
+          "decision_00045/early_result.json": "9e89809d14818a65bc1db83dd1fc934433da5d09c6b0afc5ef5115078e23d37f",
+          "decision_00046/early_result.json": "013e69da328a72cb5eb11e2cb2722d83332beb54b392ae3615a8ba92b1942eaa",
+          "decision_00047/early_result.json": "9af779cbe5e9f6a543a0c81dacde5c99ccce6a2db51e8adb1ba9bec1cabc886d",
+          "decision_00048/early_result.json": "f9c70fb0e42b4d99e72be472bbac0959ee3039926543547ea33b253d703796a9",
+          "decision_00049/early_result.json": "c78cb0c3db27045a1ea0b1524b79a1f3341ed37ff0cd88deaad12b1faf0b15d4",
+          "decision_00050/early_result.json": "4d3c53e51bc7011c48600305bb0a942b70c5fbf8a9d064df51c738b1505283c9",
+          "decision_00051/early_result.json": "ca91186b00b6a2d7acbb92607e0a17f58756c4adec0c61556d6410ec848f912a",
+          "decision_00052/early_result.json": "72fd4be000eacab20b1cb8c958f15c3f4251367803dde9f256ab168484afc125",
+          "decision_00053/early_result.json": "34352c608d156a75fcf49f8defcd97e46d0f5d51667e3e5790e15bc23e5da206",
+          "decision_00054/early_result.json": "763a2469ded3f86fb6cca9fadac1df9c28ca98fedb11a71bc2007a3aef1a166e",
+          "decision_00055/early_result.json": "2fde31722e0f00cd89e876d90dd04d7134b9c0623e4ff32c8779a9e4a687a79a",
+          "decision_00056/early_result.json": "e82cde79b614f82199c8d79b31473a8243f0f98771ccb772bef4fbb85b970aae",
+          "decision_00057/early_result.json": "cfa1da0eeafa9a5948c25943a68af836ad29665920b67a1f51b988069a0081bb",
+          "decision_00058/early_result.json": "273754f5a842a41077e4cee0c3a65c5d59ffbd91d41a3f4089f7b5bf316fa033",
+          "decision_00059/early_result.json": "b567680aad5f75f6b5562677f645fbb9bbc9fff3c0b09fffc77d8b0aa450f5af",
+          "decision_00060/early_result.json": "760351618632fc23907d3f8c9c69d56c128cb3754b9214bb49f806f796bdb3e6",
+          "decision_00061/early_result.json": "6151714c47b71e18c7d183c5e3751c42efe2b3c0ae7828386641d94be4144f08",
+          "decision_00062/early_result.json": "21deac35e1a25df1836ecb9ff29c01bac4778827f7bb28e1192542f123c305ec",
+          "decision_00063/early_result.json": "f74878a0d30a17698dabaee6c8ad922565f3a0a69500c1a432c74842f0c642bf",
+          "decision_00064/early_result.json": "5770f7032fae24504af67ceaf8fdb870c8700b583b1c8b138c2a451be48f699e",
+          "decision_00065/early_result.json": "2513a0361f63a60546b5b4826c899a70d05b486ac5691baac4c9a37c03bb3fd5",
+          "decision_00066/early_result.json": "afd13547a6e32703397fdb18c2bcb64ebba50ecee713a477e3208b7b08e9a791",
+          "decision_00067/early_result.json": "2f26aec30d7049aeded362f3e2a9765aa6539593eec38ac32808f1498c655dc7",
+          "decision_00068/early_result.json": "400e35bd4b7a53070c3a20c20d0a106736e43cf6913460af4e6a9b93de2ec9d3",
+          "decision_00069/early_result.json": "5489f7006cb4dd56853a56a94d38ac865459aeda574436e32d85b695ce43544f",
+          "decision_00070/early_result.json": "1bbec33476a7d127fc719064a69997bf3cec02aab5ab3a072b631631b88db47a",
+          "decision_00071/early_result.json": "144ce877c3bf79645056a2b6c3dbe089bb4e038ba7285be7b91526018953a7a3",
+          "decision_00072/early_result.json": "affd7c0c75a66185bb338873a46fb7c72b754421ee470e8b1f35d2ea445e365c",
+          "decision_00073/early_result.json": "1c18de02c7aff67d9aca8ff438232849492eab0adcb2cafb46f9b486d92355b9",
+          "decision_00074/early_result.json": "89945a2b828b6e5caf858c4cb5aabe5610caf718047e1a665c43b021b620094c",
+          "decision_00075/early_result.json": "d70a5b5c03844f53aa61dc11ce1b2e271d83dc208207f4fe91b2a2a746489021"
+        }
+      }
+    ]
+  },
+  "delay_definition": "Map same-image historical early legal-action midranks to new serial legal-action durations; preserve capture-to-network and callback-publication residuals plus paired terminal-ready tails.",
+  "assumptions": [
+    "Declared prompt-dependent transport model, not measured new concurrent API timing.",
+    "Historical early legal durations include callback validation setup; serial legal_action_s measures completed JSON detection. Their small detection/validation difference is not recalibrated.",
+    "Historical source hashes and reconstructed readiness/terminal vectors must match before transport.",
+    "Historical within-stratum legal ranks/copula are retained monotonically; residual addition can change winners.",
+    "Singleton new strata collapse to a constant legal duration and do not estimate slow tails.",
+    "Historical network launch/preparation, publication, coordinator terminal tails and explicitly modeled censored tails are retained.",
+    "Linear empirical quantiles do not extrapolate unseen rare tails. New service concurrency effects are unknown.",
+    "No sampled request latency, private state, future trajectories or source screenshots may be sent to the actor."
+  ],
+  "actor_context": "Delay statistics below are a declared model for this candidate prompt: its serial API legal-action durations were mapped onto historical concurrent early-action ranks, retaining historical launch/publication residuals and paired terminal tails. These are modeled aggregate ages, not newly measured concurrent performance and not the sampled delay of this request. Single-sample image strata cannot characterize slow tails.",
+  "transport_audit": [
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 0,
+      "image_count": 1,
+      "slots": [
+        {
+          "seq": 0,
+          "legal_s": 1.753340596013004,
+          "capture_to_network_s": 0.5794237559970941,
+          "publication_residual_s": 0.01527113898191601,
+          "terminal_ready_tail_s": 0.9297049430024344,
+          "legal_midrank_cdf": 0.375,
+          "modeled_legal_s": 2.340762067993637,
+          "modeled_readiness_s": 2.9354569629726472,
+          "modeled_terminal_s": 3.8651619059750817
+        },
+        {
+          "seq": 1,
+          "legal_s": 1.6284567069960758,
+          "capture_to_network_s": 0.7505884420028894,
+          "publication_residual_s": 0.020740907988511026,
+          "terminal_ready_tail_s": 0.8779620870191138,
+          "legal_midrank_cdf": 0.125,
+          "modeled_legal_s": 2.340762067993637,
+          "modeled_readiness_s": 3.1120914179850376,
+          "modeled_terminal_s": 3.9900535050041515
+        },
+        {
+          "seq": 2,
+          "legal_s": 1.9493658400024287,
+          "capture_to_network_s": 0.6839030170016929,
+          "publication_residual_s": 0.10244815199985169,
+          "terminal_ready_tail_s": 0.542112975002965,
+          "legal_midrank_cdf": 0.875,
+          "modeled_legal_s": 2.340762067993637,
+          "modeled_readiness_s": 3.1271132369951817,
+          "modeled_terminal_s": 3.6692262119981467
+        },
+        {
+          "seq": 3,
+          "legal_s": 1.7631797140056733,
+          "capture_to_network_s": 0.8582248539973523,
+          "publication_residual_s": 0.024004279024666175,
+          "terminal_ready_tail_s": 0.6324271969788242,
+          "legal_midrank_cdf": 0.625,
+          "modeled_legal_s": 2.340762067993637,
+          "modeled_readiness_s": 3.2229912010156556,
+          "modeled_terminal_s": 3.85541839799448
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 4,
+      "image_count": 2,
+      "slots": [
+        {
+          "seq": 4,
+          "legal_s": 1.5832093890057877,
+          "capture_to_network_s": 0.3700167539957917,
+          "publication_residual_s": 0.006217179994564503,
+          "terminal_ready_tail_s": 0.3316854030126706,
+          "legal_midrank_cdf": 0.375,
+          "modeled_legal_s": 1.741372196993325,
+          "modeled_readiness_s": 2.117606130983681,
+          "modeled_terminal_s": 2.4492915339963517
+        },
+        {
+          "seq": 5,
+          "legal_s": 1.6269868969975505,
+          "capture_to_network_s": 0.43086301899375457,
+          "publication_residual_s": 0.01125621801475063,
+          "terminal_ready_tail_s": 0.3505318110110238,
+          "legal_midrank_cdf": 0.625,
+          "modeled_legal_s": 1.741372196993325,
+          "modeled_readiness_s": 2.18349143400183,
+          "modeled_terminal_s": 2.534023245012854
+        },
+        {
+          "seq": 6,
+          "legal_s": 1.898907055001473,
+          "capture_to_network_s": 0.551569578007097,
+          "publication_residual_s": 0.007765639020362869,
+          "terminal_ready_tail_s": 0.28178561697131954,
+          "legal_midrank_cdf": 0.875,
+          "modeled_legal_s": 1.741372196993325,
+          "modeled_readiness_s": 2.300707414020785,
+          "modeled_terminal_s": 2.5824930309921044
+        },
+        {
+          "seq": 7,
+          "legal_s": 1.5226663750072476,
+          "capture_to_network_s": 0.6410410109986557,
+          "publication_residual_s": 0.01755264899111353,
+          "terminal_ready_tail_s": 0.3041504950087983,
+          "legal_midrank_cdf": 0.125,
+          "modeled_legal_s": 1.741372196993325,
+          "modeled_readiness_s": 2.399965856983094,
+          "modeled_terminal_s": 2.7041163519918925
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 8,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 8,
+          "legal_s": 2.0956527779926546,
+          "capture_to_network_s": 0.29526630998309855,
+          "publication_residual_s": 0.05372290499508381,
+          "terminal_ready_tail_s": 0.4501736430102028,
+          "legal_midrank_cdf": 0.41911764705882354,
+          "modeled_legal_s": 2.1889645195795526,
+          "modeled_readiness_s": 2.537953734557735,
+          "modeled_terminal_s": 2.988127377567938
+        },
+        {
+          "seq": 9,
+          "legal_s": 2.1167570560064632,
+          "capture_to_network_s": 0.5245240809717231,
+          "publication_residual_s": 0.006786260026274249,
+          "terminal_ready_tail_s": 1.1072180189948995,
+          "legal_midrank_cdf": 0.4485294117647059,
+          "modeled_legal_s": 2.2055917362881967,
+          "modeled_readiness_s": 2.736902077286194,
+          "modeled_terminal_s": 3.8441200962810935
+        },
+        {
+          "seq": 10,
+          "legal_s": 1.777044312999351,
+          "capture_to_network_s": 0.6656266899926138,
+          "publication_residual_s": 0.013857259997166693,
+          "terminal_ready_tail_s": 0.4384212529985234,
+          "legal_midrank_cdf": 0.09558823529411764,
+          "modeled_legal_s": 1.6159853020803625,
+          "modeled_readiness_s": 2.295469252070143,
+          "modeled_terminal_s": 2.7338905050686666
+        },
+        {
+          "seq": 11,
+          "legal_s": 2.2145636879722588,
+          "capture_to_network_s": 0.8046163579828587,
+          "publication_residual_s": 0.017352959024719894,
+          "terminal_ready_tail_s": 0.7187599909957498,
+          "legal_midrank_cdf": 0.5367647058823529,
+          "modeled_legal_s": 2.3252582990312742,
+          "modeled_readiness_s": 3.147227616038853,
+          "modeled_terminal_s": 3.8659876070346026
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 12,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 12,
+          "legal_s": 3.1014035049884114,
+          "capture_to_network_s": 0.35322781599569275,
+          "publication_residual_s": 0.033957758016185835,
+          "terminal_ready_tail_s": 1.9706408079946414,
+          "legal_midrank_cdf": 0.9338235294117647,
+          "modeled_legal_s": 2.870141667891242,
+          "modeled_readiness_s": 3.2573272419031207,
+          "modeled_terminal_s": 5.227968049897762
+        },
+        {
+          "seq": 13,
+          "legal_s": 2.4408683099900372,
+          "capture_to_network_s": 0.5167293529931936,
+          "publication_residual_s": 0.0072242990136146545,
+          "terminal_ready_tail_s": 1.2647186559916008,
+          "legal_midrank_cdf": 0.6985294117647058,
+          "modeled_legal_s": 2.4988155664986524,
+          "modeled_readiness_s": 3.0227692185054607,
+          "modeled_terminal_s": 4.287487874497062
+        },
+        {
+          "seq": 14,
+          "legal_s": 2.724972316005733,
+          "capture_to_network_s": 0.6222305939856465,
+          "publication_residual_s": 0.1354912999959197,
+          "terminal_ready_tail_s": 1.9765440670016687,
+          "legal_midrank_cdf": 0.875,
+          "modeled_legal_s": 2.7094560212644865,
+          "modeled_readiness_s": 3.4671779152460527,
+          "modeled_terminal_s": 5.443721982247721
+        },
+        {
+          "seq": 15,
+          "legal_s": 2.5785826869832817,
+          "capture_to_network_s": 0.7606420339990887,
+          "publication_residual_s": 0.04870104603469372,
+          "terminal_ready_tail_s": 0.8467840999655891,
+          "legal_midrank_cdf": 0.7867647058823529,
+          "modeled_legal_s": 2.671139890945222,
+          "modeled_readiness_s": 3.4804829709790046,
+          "modeled_terminal_s": 4.327267070944593
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 16,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 16,
+          "legal_s": 2.480671215977054,
+          "capture_to_network_s": 0.6807154489757963,
+          "publication_residual_s": 0.03385513700777665,
+          "terminal_ready_tail_s": 0.8763912180147599,
+          "legal_midrank_cdf": 0.7132352941176471,
+          "modeled_legal_s": 2.5342420613447114,
+          "modeled_readiness_s": 3.2488126473282843,
+          "modeled_terminal_s": 4.125203865343044
+        },
+        {
+          "seq": 17,
+          "legal_s": 2.3520067460194696,
+          "capture_to_network_s": 1.0427465689969253,
+          "publication_residual_s": 0.22175873196101747,
+          "terminal_ready_tail_s": 0.45548848301405087,
+          "legal_midrank_cdf": 0.6397058823529411,
+          "modeled_legal_s": 2.394119411760852,
+          "modeled_readiness_s": 3.6586247127187947,
+          "modeled_terminal_s": 4.114113195732846
+        },
+        {
+          "seq": 18,
+          "legal_s": 2.087520657980349,
+          "capture_to_network_s": 1.1444380509743937,
+          "publication_residual_s": 0.03206337703159079,
+          "terminal_ready_tail_s": 0.8079912939865608,
+          "legal_midrank_cdf": 0.40441176470588236,
+          "modeled_legal_s": 2.1828755931363797,
+          "modeled_readiness_s": 3.359377021142364,
+          "modeled_terminal_s": 4.167368315128925
+        },
+        {
+          "seq": 19,
+          "legal_s": 1.908735903998604,
+          "capture_to_network_s": 1.2798628489796542,
+          "publication_residual_s": 0.022318918025121093,
+          "terminal_ready_tail_s": 0.8611025789869018,
+          "legal_midrank_cdf": 0.18382352941176472,
+          "modeled_legal_s": 1.8544360553830355,
+          "modeled_readiness_s": 3.156617822387811,
+          "modeled_terminal_s": 4.017720401374713
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 20,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 20,
+          "legal_s": 2.497437254001852,
+          "capture_to_network_s": 0.3773661739786647,
+          "publication_residual_s": 0.03295781699125655,
+          "terminal_ready_tail_s": 0.7725905260012951,
+          "legal_midrank_cdf": 0.7426470588235294,
+          "modeled_legal_s": 2.5957883429758057,
+          "modeled_readiness_s": 3.006112333945727,
+          "modeled_terminal_s": 3.778702859947022
+        },
+        {
+          "seq": 21,
+          "legal_s": 2.1688499609881546,
+          "capture_to_network_s": 0.5121495429729137,
+          "publication_residual_s": 0.06353013502666727,
+          "terminal_ready_tail_s": 0.9358278029831126,
+          "legal_midrank_cdf": 0.5073529411764706,
+          "modeled_legal_s": 2.291423630206469,
+          "modeled_readiness_s": 2.86710330820605,
+          "modeled_terminal_s": 3.802931111189163
+        },
+        {
+          "seq": 22,
+          "legal_s": 3.534306998975808,
+          "capture_to_network_s": 0.703725516966081,
+          "publication_residual_s": 0.08434418204706162,
+          "terminal_ready_tail_s": 1.166766733978875,
+          "legal_midrank_cdf": 0.9926470588235294,
+          "modeled_legal_s": 3.3133045663981804,
+          "modeled_readiness_s": 4.101374265411323,
+          "modeled_terminal_s": 5.268140999390198
+        },
+        {
+          "seq": 23,
+          "legal_s": 2.30168211000273,
+          "capture_to_network_s": 0.8861536319844916,
+          "publication_residual_s": 0.22391835195594467,
+          "terminal_ready_tail_s": 1.5515552820288576,
+          "legal_midrank_cdf": 0.625,
+          "modeled_legal_s": 2.378880093994667,
+          "modeled_readiness_s": 3.488952077935103,
+          "modeled_terminal_s": 5.040507359963961
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 24,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 24,
+          "legal_s": 1.8187456400191877,
+          "capture_to_network_s": 0.45840283798496273,
+          "publication_residual_s": 0.015239408996421844,
+          "terminal_ready_tail_s": 0.30251758499071,
+          "legal_midrank_cdf": 0.125,
+          "modeled_legal_s": 1.7064708005127613,
+          "modeled_readiness_s": 2.180113047494146,
+          "modeled_terminal_s": 2.482630632484856
+        },
+        {
+          "seq": 25,
+          "legal_s": 1.872567465994507,
+          "capture_to_network_s": 0.8123720790117517,
+          "publication_residual_s": 0.011228367977309972,
+          "terminal_ready_tail_s": 0.31440814401139505,
+          "legal_midrank_cdf": 0.16911764705882354,
+          "modeled_legal_s": 1.8390680664665793,
+          "modeled_readiness_s": 2.6626685134556407,
+          "modeled_terminal_s": 2.9770766574670358
+        },
+        {
+          "seq": 26,
+          "legal_s": 1.9847205860132817,
+          "capture_to_network_s": 1.4310542880066208,
+          "publication_residual_s": 0.0131195790017955,
+          "terminal_ready_tail_s": 0.6970285029674415,
+          "legal_midrank_cdf": 0.22794117647058823,
+          "modeled_legal_s": 1.89669004282255,
+          "modeled_readiness_s": 3.3408639098309663,
+          "modeled_terminal_s": 4.037892412798408
+        },
+        {
+          "seq": 27,
+          "legal_s": 2.036697992007248,
+          "capture_to_network_s": 1.56666192599549,
+          "publication_residual_s": 0.02821873899665661,
+          "terminal_ready_tail_s": 0.6071820090000983,
+          "legal_midrank_cdf": 0.3014705882352941,
+          "modeled_legal_s": 1.9893352851739858,
+          "modeled_readiness_s": 3.5842159501661324,
+          "modeled_terminal_s": 4.191397959166231
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 28,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 28,
+          "legal_s": 2.2496278650069144,
+          "capture_to_network_s": 0.26843192500178503,
+          "publication_residual_s": 0.032551947981119156,
+          "terminal_ready_tail_s": 0.3450561409990769,
+          "legal_midrank_cdf": 0.5661764705882353,
+          "modeled_legal_s": 2.350241990883232,
+          "modeled_readiness_s": 2.651225863866136,
+          "modeled_terminal_s": 2.996282004865213
+        },
+        {
+          "seq": 29,
+          "legal_s": 1.8653346760256682,
+          "capture_to_network_s": 0.4707546189799885,
+          "publication_residual_s": 0.014386958995601162,
+          "terminal_ready_tail_s": 0.5452001949888654,
+          "legal_midrank_cdf": 0.15441176470588236,
+          "modeled_legal_s": 1.7982608719017554,
+          "modeled_readiness_s": 2.283402449877345,
+          "modeled_terminal_s": 2.8286026448662103
+        },
+        {
+          "seq": 30,
+          "legal_s": 2.0617008699919097,
+          "capture_to_network_s": 0.6005699179857018,
+          "publication_residual_s": 0.019084968022070825,
+          "terminal_ready_tail_s": 0.2967962159891613,
+          "legal_midrank_cdf": 0.3602941176470588,
+          "modeled_legal_s": 2.1314416485085315,
+          "modeled_readiness_s": 2.751096534516304,
+          "modeled_terminal_s": 3.0478927505054654
+        },
+        {
+          "seq": 31,
+          "legal_s": 1.9419479510106612,
+          "capture_to_network_s": 0.7178190579777564,
+          "publication_residual_s": 0.0959696710051503,
+          "terminal_ready_tail_s": 0.22242224198998883,
+          "legal_midrank_cdf": 0.21323529411764705,
+          "modeled_legal_s": 1.8851720332159483,
+          "modeled_readiness_s": 2.6989607621988547,
+          "modeled_terminal_s": 2.9213830041888436
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 32,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 32,
+          "legal_s": 3.1409495410043746,
+          "capture_to_network_s": 0.27514384998148245,
+          "publication_residual_s": 0.012810449989046901,
+          "terminal_ready_tail_s": 1.1093243880022783,
+          "legal_midrank_cdf": 0.9632352941176471,
+          "modeled_legal_s": 3.0659087599111343,
+          "modeled_readiness_s": 3.3538630598816637,
+          "modeled_terminal_s": 4.463187447883942
+        },
+        {
+          "seq": 33,
+          "legal_s": 3.1025396139884833,
+          "capture_to_network_s": 0.369510132991941,
+          "publication_residual_s": 0.018818518990883604,
+          "terminal_ready_tail_s": 1.0473688229976688,
+          "legal_midrank_cdf": 0.9485294117647058,
+          "modeled_legal_s": 2.9422108566676104,
+          "modeled_readiness_s": 3.330539508650435,
+          "modeled_terminal_s": 4.377908331648104
+        },
+        {
+          "seq": 34,
+          "legal_s": 1.985428297019098,
+          "capture_to_network_s": 0.4343468279673246,
+          "publication_residual_s": 0.01836324599571526,
+          "terminal_ready_tail_s": 0.34717759300838225,
+          "legal_midrank_cdf": 0.2426470588235294,
+          "modeled_legal_s": 1.9021580849422368,
+          "modeled_readiness_s": 2.3548681589052767,
+          "modeled_terminal_s": 2.702045751913659
+        },
+        {
+          "seq": 35,
+          "legal_s": 2.585922815982485,
+          "capture_to_network_s": 0.5068264519774814,
+          "publication_residual_s": 0.011044219019822776,
+          "terminal_ready_tail_s": 0.3662685599992983,
+          "legal_midrank_cdf": 0.8161764705882353,
+          "modeled_legal_s": 2.6931624848794478,
+          "modeled_readiness_s": 3.211033155876752,
+          "modeled_terminal_s": 3.5773017158760503
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 36,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 36,
+          "legal_s": 2.1363862039870583,
+          "capture_to_network_s": 0.2784028670161476,
+          "publication_residual_s": 0.02062444799230434,
+          "terminal_ready_tail_s": 0.6502344259934034,
+          "legal_midrank_cdf": 0.4632352941176471,
+          "modeled_legal_s": 2.2276983724916457,
+          "modeled_readiness_s": 2.5267256875000976,
+          "modeled_terminal_s": 3.176960113493501
+        },
+        {
+          "seq": 37,
+          "legal_s": 1.6182672060094774,
+          "capture_to_network_s": 0.42868172501260204,
+          "publication_residual_s": 0.019556618994101882,
+          "terminal_ready_tail_s": 0.39257913699839264,
+          "legal_midrank_cdf": 0.051470588235294115,
+          "modeled_legal_s": 1.4924264843990813,
+          "modeled_readiness_s": 1.9406648284057852,
+          "modeled_terminal_s": 2.333243965404178
+        },
+        {
+          "seq": 38,
+          "legal_s": 1.404187493986683,
+          "capture_to_network_s": 0.6335678080089835,
+          "publication_residual_s": 0.028530887997476384,
+          "terminal_ready_tail_s": 0.392804436996812,
+          "legal_midrank_cdf": 0.007352941176470588,
+          "modeled_legal_s": 1.4709695129315472,
+          "modeled_readiness_s": 2.133068208938007,
+          "modeled_terminal_s": 2.525872645934819
+        },
+        {
+          "seq": 39,
+          "legal_s": 2.2096358090057038,
+          "capture_to_network_s": 0.7549882780171444,
+          "publication_residual_s": 0.03881727496627718,
+          "terminal_ready_tail_s": 0.4100648770108819,
+          "legal_midrank_cdf": 0.5220588235294118,
+          "modeled_legal_s": 2.3083409646188717,
+          "modeled_readiness_s": 3.1021465176022933,
+          "modeled_terminal_s": 3.512211394613175
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 40,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 40,
+          "legal_s": 2.2765680819866247,
+          "capture_to_network_s": 0.3789727569720682,
+          "publication_residual_s": 0.016547309001907706,
+          "terminal_ready_tail_s": 0.44077244302025065,
+          "legal_midrank_cdf": 0.5955882352941176,
+          "modeled_legal_s": 2.3595662619370747,
+          "modeled_readiness_s": 2.7550863279110507,
+          "modeled_terminal_s": 3.1958587709313013
+        },
+        {
+          "seq": 41,
+          "legal_s": 1.8417439080076292,
+          "capture_to_network_s": 0.5295387439883754,
+          "publication_residual_s": 0.03257858700817451,
+          "terminal_ready_tail_s": 0.45438977298908867,
+          "legal_midrank_cdf": 0.13970588235294118,
+          "modeled_legal_s": 1.7523658362072585,
+          "modeled_readiness_s": 2.314483167203808,
+          "modeled_terminal_s": 2.768872940192897
+        },
+        {
+          "seq": 42,
+          "legal_s": 2.825151797005674,
+          "capture_to_network_s": 0.6017247379687589,
+          "publication_residual_s": 0.012766008992912248,
+          "terminal_ready_tail_s": 0.250920289021451,
+          "legal_midrank_cdf": 0.8897058823529411,
+          "modeled_legal_s": 2.713505695178088,
+          "modeled_readiness_s": 3.327996442139759,
+          "modeled_terminal_s": 3.5789167311612102
+        },
+        {
+          "seq": 43,
+          "legal_s": 1.7996370519977063,
+          "capture_to_network_s": 0.672998801984356,
+          "publication_residual_s": 0.03702312597306445,
+          "terminal_ready_tail_s": 0.60329259102582,
+          "legal_midrank_cdf": 0.11029411764705882,
+          "modeled_legal_s": 1.660644426552822,
+          "modeled_readiness_s": 2.3706663545102424,
+          "modeled_terminal_s": 2.9739589455360624
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 44,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 44,
+          "legal_s": 1.6356170850049239,
+          "capture_to_network_s": 0.3416519659818107,
+          "publication_residual_s": 0.04321898697526194,
+          "terminal_ready_tail_s": 0.4974419880309142,
+          "legal_midrank_cdf": 0.0661764705882353,
+          "modeled_legal_s": 1.526667053135444,
+          "modeled_readiness_s": 1.9115380060925167,
+          "modeled_terminal_s": 2.408979994123431
+        },
+        {
+          "seq": 45,
+          "legal_s": 1.5638820309832226,
+          "capture_to_network_s": 0.45358819698006414,
+          "publication_residual_s": 0.021951668022666126,
+          "terminal_ready_tail_s": 0.5445717149996199,
+          "legal_midrank_cdf": 0.03676470588235294,
+          "modeled_legal_s": 1.48527416057657,
+          "modeled_readiness_s": 1.9608140255793003,
+          "modeled_terminal_s": 2.5053857405789204
+        },
+        {
+          "seq": 46,
+          "legal_s": 1.546501642005751,
+          "capture_to_network_s": 0.5977746449948711,
+          "publication_residual_s": 0.04914410598576069,
+          "terminal_ready_tail_s": 0.42349848500452936,
+          "legal_midrank_cdf": 0.022058823529411766,
+          "modeled_legal_s": 1.4781218367540585,
+          "modeled_readiness_s": 2.1250405877346905,
+          "modeled_terminal_s": 2.54853907273922
+        },
+        {
+          "seq": 47,
+          "legal_s": 1.7513368560175877,
+          "capture_to_network_s": 0.7154347559858536,
+          "publication_residual_s": 0.05574964400148019,
+          "terminal_ready_tail_s": 0.15300623697112314,
+          "legal_midrank_cdf": 0.08088235294117647,
+          "modeled_legal_s": 1.5713261776079033,
+          "modeled_readiness_s": 2.3425105775952373,
+          "modeled_terminal_s": 2.4955168145663604
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 48,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 48,
+          "legal_s": 2.708540156017989,
+          "capture_to_network_s": 0.3663118269911507,
+          "publication_residual_s": 0.06288626499008387,
+          "terminal_ready_tail_s": 0.513950427994132,
+          "legal_midrank_cdf": 0.8455882352941176,
+          "modeled_legal_s": 2.707022828377376,
+          "modeled_readiness_s": 3.1362209203586104,
+          "modeled_terminal_s": 3.6501713483527425
+        },
+        {
+          "seq": 49,
+          "legal_s": 2.627690702996915,
+          "capture_to_network_s": 0.5174068039783748,
+          "publication_residual_s": 0.07023694401141256,
+          "terminal_ready_tail_s": 0.5192164180043619,
+          "legal_midrank_cdf": 0.8308823529411765,
+          "modeled_legal_s": 2.7041737818465608,
+          "modeled_readiness_s": 3.291817529836348,
+          "modeled_terminal_s": 3.81103394784071
+        },
+        {
+          "seq": 50,
+          "legal_s": 2.425556400005007,
+          "capture_to_network_s": 0.7298887569783261,
+          "publication_residual_s": 0.0609711540164426,
+          "terminal_ready_tail_s": 0.5181422779860441,
+          "legal_midrank_cdf": 0.6838235294117647,
+          "modeled_legal_s": 2.463389071652594,
+          "modeled_readiness_s": 3.2542489826473626,
+          "modeled_terminal_s": 3.7723912606334067
+        },
+        {
+          "seq": 51,
+          "legal_s": 2.0275349419971462,
+          "capture_to_network_s": 0.9183674020029144,
+          "publication_residual_s": 0.07841768299113028,
+          "terminal_ready_tail_s": 0.37579744899994694,
+          "legal_midrank_cdf": 0.2867647058823529,
+          "modeled_legal_s": 1.9433330854145048,
+          "modeled_readiness_s": 2.9401181704085495,
+          "modeled_terminal_s": 3.3159156194084964
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 52,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 52,
+          "legal_s": 2.4010220719792414,
+          "capture_to_network_s": 0.35057411598903343,
+          "publication_residual_s": 0.019196929002646357,
+          "terminal_ready_tail_s": 0.5039560270088259,
+          "legal_midrank_cdf": 0.6691176470588235,
+          "modeled_legal_s": 2.427962576806535,
+          "modeled_readiness_s": 2.7977336217982147,
+          "modeled_terminal_s": 3.3016896488070406
+        },
+        {
+          "seq": 53,
+          "legal_s": 3.091635443997802,
+          "capture_to_network_s": 0.5397652809908635,
+          "publication_residual_s": 0.0393273169756867,
+          "terminal_ready_tail_s": 0.9709255090274382,
+          "legal_midrank_cdf": 0.9191176470588235,
+          "modeled_legal_s": 2.817929676986857,
+          "modeled_readiness_s": 3.3970222749534074,
+          "modeled_terminal_s": 4.367947783980846
+        },
+        {
+          "seq": 54,
+          "legal_s": 2.100319255987415,
+          "capture_to_network_s": 0.6583087009778268,
+          "publication_residual_s": 0.014763239014428109,
+          "terminal_ready_tail_s": 0.9010730760055594,
+          "legal_midrank_cdf": 0.4338235294117647,
+          "modeled_legal_s": 2.195053446022725,
+          "modeled_readiness_s": 2.86812538601498,
+          "modeled_terminal_s": 3.7691984620205394
+        },
+        {
+          "seq": 55,
+          "legal_s": 2.0132510529947467,
+          "capture_to_network_s": 0.7312845249827973,
+          "publication_residual_s": 0.02413074902142398,
+          "terminal_ready_tail_s": 0.5922483209869824,
+          "legal_midrank_cdf": 0.27205882352941174,
+          "modeled_legal_s": 1.9130941691816106,
+          "modeled_readiness_s": 2.668509443185832,
+          "modeled_terminal_s": 3.2607577641728143
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 56,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 56,
+          "legal_s": 2.372861793002812,
+          "capture_to_network_s": 0.299639815992208,
+          "publication_residual_s": 0.01394740998512134,
+          "terminal_ready_tail_s": 0.44102539302548394,
+          "legal_midrank_cdf": 0.6544117647058824,
+          "modeled_legal_s": 2.4093587295270376,
+          "modeled_readiness_s": 2.722945955504367,
+          "modeled_terminal_s": 3.163971348529851
+        },
+        {
+          "seq": 57,
+          "legal_s": 2.718752994987881,
+          "capture_to_network_s": 0.4922203199858757,
+          "publication_residual_s": 0.010555779008427635,
+          "terminal_ready_tail_s": 0.7087152610183693,
+          "legal_midrank_cdf": 0.8602941176470589,
+          "modeled_legal_s": 2.708239424820931,
+          "modeled_readiness_s": 3.2110155238152345,
+          "modeled_terminal_s": 3.919730784833604
+        },
+        {
+          "seq": 58,
+          "legal_s": 2.048979220999172,
+          "capture_to_network_s": 0.6783869940009879,
+          "publication_residual_s": 0.012847008998505771,
+          "terminal_ready_tail_s": 0.4349595639796462,
+          "legal_midrank_cdf": 0.3161764705882353,
+          "modeled_legal_s": 2.035337484933467,
+          "modeled_readiness_s": 2.7265714879329606,
+          "modeled_terminal_s": 3.1615310519126067
+        },
+        {
+          "seq": 59,
+          "legal_s": 2.8352492849808186,
+          "capture_to_network_s": 0.7621592269898372,
+          "publication_residual_s": 0.02251199004240334,
+          "terminal_ready_tail_s": 0.5290406249696389,
+          "legal_midrank_cdf": 0.9044117647058824,
+          "modeled_legal_s": 2.765717686082473,
+          "modeled_readiness_s": 3.5503889031147136,
+          "modeled_terminal_s": 4.079429528084352
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 60,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 60,
+          "legal_s": 2.081896377989324,
+          "capture_to_network_s": 0.460167015997925,
+          "publication_residual_s": 0.04338323703268543,
+          "terminal_ready_tail_s": 0.6749884739692789,
+          "legal_midrank_cdf": 0.3897058823529412,
+          "modeled_legal_s": 2.176786666693207,
+          "modeled_readiness_s": 2.6803369197238176,
+          "modeled_terminal_s": 3.3553253936930965
+        },
+        {
+          "seq": 61,
+          "legal_s": 2.146203662006883,
+          "capture_to_network_s": 0.611071603991789,
+          "publication_residual_s": 0.11039367099874653,
+          "terminal_ready_tail_s": 0.39277385800960474,
+          "legal_midrank_cdf": 0.47794117647058826,
+          "modeled_legal_s": 2.2498050086950947,
+          "modeled_readiness_s": 2.97127028368563,
+          "modeled_terminal_s": 3.364044141695235
+        },
+        {
+          "seq": 62,
+          "legal_s": 2.4886584139894694,
+          "capture_to_network_s": 0.7200037849913343,
+          "publication_residual_s": 0.010994569020112976,
+          "terminal_ready_tail_s": 0.8867075970047154,
+          "legal_midrank_cdf": 0.7279411764705882,
+          "modeled_legal_s": 2.567062677933684,
+          "modeled_readiness_s": 3.298061031945131,
+          "modeled_terminal_s": 4.184768628949847
+        },
+        {
+          "seq": 63,
+          "legal_s": 2.526330060994951,
+          "capture_to_network_s": 0.8948787500055033,
+          "publication_residual_s": 0.026324248989112675,
+          "terminal_ready_tail_s": 0.6589291940035764,
+          "legal_midrank_cdf": 0.7720588235294118,
+          "modeled_legal_s": 2.65323967306005,
+          "modeled_readiness_s": 3.574442672054666,
+          "modeled_terminal_s": 4.233371866058242
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 64,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 64,
+          "legal_s": 3.153514189994894,
+          "capture_to_network_s": 0.3979149769961339,
+          "publication_residual_s": 0.03209475698531605,
+          "terminal_ready_tail_s": 0.5527914540143684,
+          "legal_midrank_cdf": 0.9779411764705882,
+          "modeled_legal_s": 3.189606663154657,
+          "modeled_readiness_s": 3.619616397136107,
+          "modeled_terminal_s": 4.172407851150475
+        },
+        {
+          "seq": 65,
+          "legal_s": 2.5082781630044337,
+          "capture_to_network_s": 0.545459955007999,
+          "publication_residual_s": 0.11669759999495,
+          "terminal_ready_tail_s": 0.9658877899928484,
+          "legal_midrank_cdf": 0.7573529411764706,
+          "modeled_legal_s": 2.624514008017928,
+          "modeled_readiness_s": 3.286671563020877,
+          "modeled_terminal_s": 4.252559353013726
+        },
+        {
+          "seq": 66,
+          "legal_s": 2.581095295987325,
+          "capture_to_network_s": 0.7294725499900494,
+          "publication_residual_s": 0.08364391402574256,
+          "terminal_ready_tail_s": 0.7421180979872588,
+          "legal_midrank_cdf": 0.8014705882352942,
+          "modeled_legal_s": 2.682151187912335,
+          "modeled_readiness_s": 3.495267651928127,
+          "modeled_terminal_s": 4.237385749915386
+        },
+        {
+          "seq": 67,
+          "legal_s": 2.0674409990024287,
+          "capture_to_network_s": 0.8846382770074968,
+          "publication_residual_s": 0.01200035898364149,
+          "terminal_ready_tail_s": 1.1722557129978668,
+          "legal_midrank_cdf": 0.375,
+          "modeled_legal_s": 2.1545879742479883,
+          "modeled_readiness_s": 3.0512266102391266,
+          "modeled_terminal_s": 4.223482323236993
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 68,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 68,
+          "legal_s": 2.2534316329983994,
+          "capture_to_network_s": 0.454791142990814,
+          "publication_residual_s": 0.006052209006156772,
+          "terminal_ready_tail_s": 0.5060488779854495,
+          "legal_midrank_cdf": 0.5808823529411765,
+          "modeled_legal_s": 2.3549041264101533,
+          "modeled_readiness_s": 2.815747478407124,
+          "modeled_terminal_s": 3.3217963563925736
+        },
+        {
+          "seq": 69,
+          "legal_s": 2.0494463499926496,
+          "capture_to_network_s": 0.6080250299782506,
+          "publication_residual_s": 0.017303949018241838,
+          "terminal_ready_tail_s": 1.400222442985978,
+          "legal_midrank_cdf": 0.33088235294117646,
+          "modeled_legal_s": 2.0813396846929475,
+          "modeled_readiness_s": 2.70666866368944,
+          "modeled_terminal_s": 4.106891106675418
+        },
+        {
+          "seq": 70,
+          "legal_s": 1.9906248050101567,
+          "capture_to_network_s": 0.6629005449721603,
+          "publication_residual_s": 0.019077759003266692,
+          "terminal_ready_tail_s": 1.4024041729862802,
+          "legal_midrank_cdf": 0.25735294117647056,
+          "modeled_legal_s": 1.9076261270619237,
+          "modeled_readiness_s": 2.5896044310373507,
+          "modeled_terminal_s": 3.992008604023631
+        },
+        {
+          "seq": 71,
+          "legal_s": 2.2998686999781057,
+          "capture_to_network_s": 0.7682660259960699,
+          "publication_residual_s": 0.05809918502927758,
+          "terminal_ready_tail_s": 0.9487794809683692,
+          "legal_midrank_cdf": 0.6102941176470589,
+          "modeled_legal_s": 2.364228397463996,
+          "modeled_readiness_s": 3.1905936084893436,
+          "modeled_terminal_s": 4.139373089457713
+        }
+      ]
+    },
+    {
+      "episode": "/home/zihan/.codex/visualizations/2026/10/15/01a13e38-8ae9-7c13-8e41-d214caeb01a5/kaguya-api-win/api-real-human-adaptive-early-v1-seed1",
+      "cohort_id": 72,
+      "image_count": 3,
+      "slots": [
+        {
+          "seq": 72,
+          "legal_s": 2.0519043400126975,
+          "capture_to_network_s": 0.5230213900066474,
+          "publication_residual_s": 0.010268408979754895,
+          "terminal_ready_tail_s": 0.35344480149797164,
+          "legal_midrank_cdf": 0.34558823529411764,
+          "modeled_legal_s": 2.108295322769075,
+          "modeled_readiness_s": 2.6415851217554773,
+          "modeled_terminal_s": 2.995029923253449
+        },
+        {
+          "seq": 73,
+          "legal_s": 1.935994329978712,
+          "capture_to_network_s": 0.6973580559860011,
+          "publication_residual_s": 0.006820649054134265,
+          "terminal_ready_tail_s": 0.49411123848403804,
+          "legal_midrank_cdf": 0.19852941176470587,
+          "modeled_legal_s": 1.8698040442994919,
+          "modeled_readiness_s": 2.5739827493396272,
+          "modeled_terminal_s": 3.0680939878236653
+        },
+        {
+          "seq": 74,
+          "legal_s": 2.1617037410032935,
+          "capture_to_network_s": 0.8356140539834769,
+          "publication_residual_s": 0.008216399030061439,
+          "terminal_ready_tail_s": 0.38733980848337524,
+          "legal_midrank_cdf": 0.49264705882352944,
+          "modeled_legal_s": 2.2719116448985432,
+          "modeled_readiness_s": 3.1157420979120816,
+          "modeled_terminal_s": 3.503081906395457
+        },
+        {
+          "seq": 75,
+          "legal_s": 2.2267397550167516,
+          "capture_to_network_s": 0.9376504559912746,
+          "publication_residual_s": 0.025390858005266637,
+          "terminal_ready_tail_s": 0.38274304851074703,
+          "legal_midrank_cdf": 0.5514705882352942,
+          "modeled_legal_s": 2.342175633443677,
+          "modeled_readiness_s": 3.3052169474402184,
+          "modeled_terminal_s": 3.6879599959509655
+        }
+      ]
+    }
+  ]
+}

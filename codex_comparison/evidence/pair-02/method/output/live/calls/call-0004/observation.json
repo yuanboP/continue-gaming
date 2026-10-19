@@ -1,0 +1,75 @@
+{
+  "calibration": {
+    "arm_cooldown_ms": 800,
+    "defect_count": 12,
+    "distance_to_gate_mm": 1000,
+    "entry_interval_ms": 6000,
+    "entry_jitter_ms": 350,
+    "grab_window_ms": 350,
+    "height": 1200,
+    "horizon_ms": 180000,
+    "lane_keys": [
+      "d",
+      "f",
+      "j",
+      "k"
+    ],
+    "lane_speed_mm_s": {
+      "d": 45,
+      "f": 50,
+      "j": 55,
+      "k": 48
+    },
+    "maximum_collisions": 0,
+    "maximum_empty_grabs": 2,
+    "maximum_normal_grabs": 1,
+    "minimum_defect_grabs": 11,
+    "normal_count": 12,
+    "schema_version": "visual-inspection-v3.1",
+    "task_rule": "Compare each query board with its independent known-normal reference. Reject visibly defective boards at their lane's gate; let normal boards pass.",
+    "width": 1920
+  },
+  "carriers": [
+    {
+      "carrier_id": "cece4bcb8e7993eca",
+      "entry_ms": 0.0,
+      "inspection_url": "/inspection/cece4bcb8e7993eca.png",
+      "lane": "d",
+      "sku": "board_a"
+    },
+    {
+      "carrier_id": "c32cbe755afdcd403",
+      "entry_ms": 6077.636029,
+      "inspection_url": "/inspection/c32cbe755afdcd403.png",
+      "lane": "f",
+      "sku": "board_a"
+    },
+    {
+      "carrier_id": "c78b4a2f3b2394d0a",
+      "entry_ms": 11785.260243,
+      "inspection_url": "/inspection/c78b4a2f3b2394d0a.png",
+      "lane": "j",
+      "sku": "board_b"
+    },
+    {
+      "carrier_id": "c2dfa3917cbea29b6",
+      "entry_ms": 18033.02317,
+      "inspection_url": "/inspection/c2dfa3917cbea29b6.png",
+      "lane": "k",
+      "sku": "board_b"
+    }
+  ],
+  "clock_ms": 18074.945016,
+  "clock_rate": 1.0,
+  "episode_counts": {
+    "defect": 12,
+    "normal": 12
+  },
+  "frame_url": "/frame.png",
+  "horizon_ms": 180000,
+  "mode": "live",
+  "phase": "running",
+  "receipts": [],
+  "schema_version": "visual-inspection-v3.1",
+  "session_id": "4585484a-5406-45c3-8fe3-78890b383d12"
+}

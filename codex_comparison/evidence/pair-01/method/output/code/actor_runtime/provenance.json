@@ -1,0 +1,44 @@
+{
+  "adaptations": [
+    "Parameterize and verify native model/effort, default gpt-6-astra/medium.",
+    "Remove credential-copy option; native Codex handles its existing login.",
+    "Do not poll account rate limits per visual call.",
+    "Expose complete structured answer before turn termination, measuring both times.",
+    "Retain public agent messages, turn and usage events only; no internal reasoning.",
+    "Record native thread/turn identifiers and usage; remove unused AsyncProvider.",
+    "On failure interrupt known native turn, drain bounded public terminal/usage events, retain unknown consumption and retire transport."
+  ],
+  "adapted_sha256": "9a362454d3ecd45da59635bfef7ccec759ca38910dc348926b395eaec6ecbc05",
+  "credential_policy": "No credential content is read, printed, copied, or packaged by this adapter.",
+  "limitations": [
+    "This is a new method candidate, not a measured v4 success.",
+    "Development scheduling probes do not measure native model response latency or semantic accuracy.",
+    "Finite empirical timing envelopes do not guarantee future tails; shared-world lock contention remains unchanged.",
+    "Per-carrier short fresh context, task decomposition, concurrency, model-call volume and provided engineering all vary jointly from the standard outer-agent workflow.",
+    "No claim that SOOOOL alone, queue alone, concurrency alone, or profile alone accounts for an outcome."
+  ],
+  "revision": "458a14500fb4f4b52fcb5a31e9dbca76126350ab",
+  "shared_queue_sources": {
+    "visual_inspection_v3/plan_runtime/executor.js": "45852fb2a6fbcbeb7676f14fd0f28bb2cb526d48dc39886ff75625623759897f",
+    "visual_inspection_v3/plan_runtime/runner.js": "a3a1125e920629c1bd8b95f909feda073b551a898245e2ee5209c7c851a65b4a",
+    "visual_inspection_v3/plan_runtime/upstream/model-executor.js": "3b0c38c81ae163fc1ff56dc26943484e8121a47f90ce4d3c7f2be221547e1b28"
+  },
+  "upstream_file": "runtime/subscription.py",
+  "upstream_repository": "https://github.com/sooool-project/sooool",
+  "upstream_sha256": "d8a5247c721b729c758c53c28d795eafd89ece2dba73687f653ff6b390636ff4",
+  "v4_local_adaptations": [
+    "DEV-only raw public act/PNG transport probes, preserving requests, responses, timing and unknown failures; no model calls.",
+    "Local schedule-search adapter executes the unchanged SOOOOL timed-key executor under a virtual clock; no upstream visual simulator or training claim.",
+    "The measured lead and public full-window expiry are instructions for the model; literal timestamps remain unmodified.",
+    "Public opportunity reservation before capture/request prevents late-model-callback capture races; accept/uncertain/invalid/failure release provisional reservations only. Model-bound taps retain protection until server receipt or finite expiry; no callback is held for PNG.",
+    "Four native workers by default, no hedging or additional semantic review; fresh thread per carrier inherited from v3.",
+    "Require observed clock_rate=1 initially and on every execution loop; never apply a speed-1 DEV policy to an accelerated clock."
+  ],
+  "v4_local_source_sha256": {
+    "SOOOOL_SKILL.md": "cda92b615d01450a4f21ca28c12f7b0c65f6062413355246b186dfbc7339b31c",
+    "actor_runtime/actor_loop.py": "887600e3f3468a7b6c9f55dda9f31d335bcba60f485544713b4700821999008a",
+    "actor_runtime/simulate_timing.mjs": "e70b5ae8735f3c2d21eace5ff90c700e09cf8a368e0491317076f81800a2ea84",
+    "actor_runtime/timing.py": "c77d2f4b7894e184fcc3df7294946cfdeb618a24c1d14bc48c4a278a134f75c7"
+  },
+  "v4_native_transport_status": "Copied byte-for-byte from v3; no new transport, model, effort, or nested tool changes."
+}

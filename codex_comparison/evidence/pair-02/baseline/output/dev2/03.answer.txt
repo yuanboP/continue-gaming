@@ -1,0 +1,1 @@
+{"reject":true,"reason":"The rightmost J1 header pin is severely bent downward across the board instead of extending upward like the other three pins."}

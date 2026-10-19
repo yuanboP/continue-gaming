@@ -1,0 +1,993 @@
+{
+  "artifact": {
+    "bytes": 17623,
+    "envelope_structure_valid": true,
+    "path": "/app/output/session.json",
+    "sha256": "4d7f3ed5289d9f75e9763667e61dd6ccd3516c52c6e40b0bea53e30c0ae10917",
+    "signature_verification": "Reserved for independent verifier"
+  },
+  "live": {
+    "completed_calls": 24,
+    "latency_seconds": [
+      9.788003120000212,
+      7.059865215000173,
+      8.071848880000289,
+      11.528593584000191,
+      7.339450681000017,
+      6.548153646999708,
+      5.475444926999444,
+      7.327209054999912,
+      6.891875375000382,
+      7.037118449000445,
+      6.380764008999904,
+      7.883118673000354,
+      5.5965743749993635,
+      6.099754493000546,
+      5.853267366000182,
+      8.045961635999447,
+      9.060632233999968,
+      7.102577462999761,
+      5.729783008000595,
+      5.168262721999781,
+      7.406055744000696,
+      6.42292931800057,
+      7.573143420000633,
+      5.255668767000316
+    ],
+    "native_completion_verified": true,
+    "outcomes": {
+      "target_grab": 11
+    },
+    "token_usage": [
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7064,
+          "outputTokens": 139,
+          "reasoningOutputTokens": 54,
+          "totalTokens": 7203
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7064,
+          "outputTokens": 139,
+          "reasoningOutputTokens": 54,
+          "totalTokens": 7203
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7064,
+          "outputTokens": 144,
+          "reasoningOutputTokens": 53,
+          "totalTokens": 7208
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7064,
+          "outputTokens": 144,
+          "reasoningOutputTokens": 53,
+          "totalTokens": 7208
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7062,
+          "outputTokens": 124,
+          "reasoningOutputTokens": 44,
+          "totalTokens": 7186
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7062,
+          "outputTokens": 124,
+          "reasoningOutputTokens": 44,
+          "totalTokens": 7186
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 88,
+          "reasoningOutputTokens": 34,
+          "totalTokens": 7146
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 88,
+          "reasoningOutputTokens": 34,
+          "totalTokens": 7146
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 150,
+          "reasoningOutputTokens": 66,
+          "totalTokens": 7208
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 150,
+          "reasoningOutputTokens": 66,
+          "totalTokens": 7208
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7061,
+          "outputTokens": 105,
+          "reasoningOutputTokens": 48,
+          "totalTokens": 7166
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7061,
+          "outputTokens": 105,
+          "reasoningOutputTokens": 48,
+          "totalTokens": 7166
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7059,
+          "outputTokens": 79,
+          "reasoningOutputTokens": 24,
+          "totalTokens": 7138
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7059,
+          "outputTokens": 79,
+          "reasoningOutputTokens": 24,
+          "totalTokens": 7138
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7064,
+          "outputTokens": 145,
+          "reasoningOutputTokens": 55,
+          "totalTokens": 7209
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7064,
+          "outputTokens": 145,
+          "reasoningOutputTokens": 55,
+          "totalTokens": 7209
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7064,
+          "outputTokens": 80,
+          "reasoningOutputTokens": 23,
+          "totalTokens": 7144
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7064,
+          "outputTokens": 80,
+          "reasoningOutputTokens": 23,
+          "totalTokens": 7144
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 83,
+          "reasoningOutputTokens": 27,
+          "totalTokens": 7141
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 83,
+          "reasoningOutputTokens": 27,
+          "totalTokens": 7141
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7067,
+          "outputTokens": 130,
+          "reasoningOutputTokens": 44,
+          "totalTokens": 7197
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7067,
+          "outputTokens": 130,
+          "reasoningOutputTokens": 44,
+          "totalTokens": 7197
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7061,
+          "outputTokens": 125,
+          "reasoningOutputTokens": 43,
+          "totalTokens": 7186
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7061,
+          "outputTokens": 125,
+          "reasoningOutputTokens": 43,
+          "totalTokens": 7186
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7061,
+          "outputTokens": 80,
+          "reasoningOutputTokens": 23,
+          "totalTokens": 7141
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7061,
+          "outputTokens": 80,
+          "reasoningOutputTokens": 23,
+          "totalTokens": 7141
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7061,
+          "outputTokens": 112,
+          "reasoningOutputTokens": 29,
+          "totalTokens": 7173
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7061,
+          "outputTokens": 112,
+          "reasoningOutputTokens": 29,
+          "totalTokens": 7173
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7060,
+          "outputTokens": 86,
+          "reasoningOutputTokens": 30,
+          "totalTokens": 7146
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7060,
+          "outputTokens": 86,
+          "reasoningOutputTokens": 30,
+          "totalTokens": 7146
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7055,
+          "outputTokens": 106,
+          "reasoningOutputTokens": 28,
+          "totalTokens": 7161
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7055,
+          "outputTokens": 106,
+          "reasoningOutputTokens": 28,
+          "totalTokens": 7161
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 162,
+          "reasoningOutputTokens": 77,
+          "totalTokens": 7220
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 162,
+          "reasoningOutputTokens": 77,
+          "totalTokens": 7220
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7064,
+          "outputTokens": 80,
+          "reasoningOutputTokens": 24,
+          "totalTokens": 7144
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7064,
+          "outputTokens": 80,
+          "reasoningOutputTokens": 24,
+          "totalTokens": 7144
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 85,
+          "reasoningOutputTokens": 26,
+          "totalTokens": 7143
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 85,
+          "reasoningOutputTokens": 26,
+          "totalTokens": 7143
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7061,
+          "outputTokens": 75,
+          "reasoningOutputTokens": 19,
+          "totalTokens": 7136
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7061,
+          "outputTokens": 75,
+          "reasoningOutputTokens": 19,
+          "totalTokens": 7136
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7060,
+          "outputTokens": 127,
+          "reasoningOutputTokens": 40,
+          "totalTokens": 7187
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7060,
+          "outputTokens": 127,
+          "reasoningOutputTokens": 40,
+          "totalTokens": 7187
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7057,
+          "outputTokens": 75,
+          "reasoningOutputTokens": 21,
+          "totalTokens": 7132
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7057,
+          "outputTokens": 75,
+          "reasoningOutputTokens": 21,
+          "totalTokens": 7132
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7061,
+          "outputTokens": 84,
+          "reasoningOutputTokens": 27,
+          "totalTokens": 7145
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7061,
+          "outputTokens": 84,
+          "reasoningOutputTokens": 27,
+          "totalTokens": 7145
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7052,
+          "outputTokens": 78,
+          "reasoningOutputTokens": 26,
+          "totalTokens": 7130
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7052,
+          "outputTokens": 78,
+          "reasoningOutputTokens": 26,
+          "totalTokens": 7130
+        }
+      }
+    ],
+    "usage_complete": true
+  },
+  "practice": {
+    "completed_calls": 24,
+    "latency_seconds": [
+      8.558416738000233,
+      7.518914977999884,
+      7.997880261999853,
+      6.292945606000103,
+      6.715973241000029,
+      5.1754177009997875,
+      7.293443702999866,
+      6.814906734000033,
+      7.724022002999845,
+      6.293138240000189,
+      6.336833852999916,
+      6.683192129999952,
+      6.189092337999682,
+      8.218244463000701,
+      5.950728601999799,
+      7.123272550000365,
+      7.431322005999391,
+      6.285669880000569,
+      6.388342468000701,
+      6.24083962900022,
+      8.378765618000216,
+      6.3616624710002725,
+      7.172189888000503,
+      5.750010404000022
+    ],
+    "native_completion_verified": true,
+    "outcomes": {
+      "target_grab": 12
+    },
+    "token_usage": [
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7057,
+          "outputTokens": 106,
+          "reasoningOutputTokens": 28,
+          "totalTokens": 7163
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7057,
+          "outputTokens": 106,
+          "reasoningOutputTokens": 28,
+          "totalTokens": 7163
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7060,
+          "outputTokens": 113,
+          "reasoningOutputTokens": 29,
+          "totalTokens": 7173
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7060,
+          "outputTokens": 113,
+          "reasoningOutputTokens": 29,
+          "totalTokens": 7173
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7060,
+          "outputTokens": 127,
+          "reasoningOutputTokens": 44,
+          "totalTokens": 7187
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7060,
+          "outputTokens": 127,
+          "reasoningOutputTokens": 44,
+          "totalTokens": 7187
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7061,
+          "outputTokens": 77,
+          "reasoningOutputTokens": 22,
+          "totalTokens": 7138
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7061,
+          "outputTokens": 77,
+          "reasoningOutputTokens": 22,
+          "totalTokens": 7138
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7064,
+          "outputTokens": 137,
+          "reasoningOutputTokens": 47,
+          "totalTokens": 7201
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7064,
+          "outputTokens": 137,
+          "reasoningOutputTokens": 47,
+          "totalTokens": 7201
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7059,
+          "outputTokens": 84,
+          "reasoningOutputTokens": 27,
+          "totalTokens": 7143
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7059,
+          "outputTokens": 84,
+          "reasoningOutputTokens": 27,
+          "totalTokens": 7143
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7059,
+          "outputTokens": 82,
+          "reasoningOutputTokens": 28,
+          "totalTokens": 7141
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7059,
+          "outputTokens": 82,
+          "reasoningOutputTokens": 28,
+          "totalTokens": 7141
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 161,
+          "reasoningOutputTokens": 75,
+          "totalTokens": 7219
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 161,
+          "reasoningOutputTokens": 75,
+          "totalTokens": 7219
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7064,
+          "outputTokens": 158,
+          "reasoningOutputTokens": 64,
+          "totalTokens": 7222
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7064,
+          "outputTokens": 158,
+          "reasoningOutputTokens": 64,
+          "totalTokens": 7222
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7057,
+          "outputTokens": 80,
+          "reasoningOutputTokens": 24,
+          "totalTokens": 7137
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7057,
+          "outputTokens": 80,
+          "reasoningOutputTokens": 24,
+          "totalTokens": 7137
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7054,
+          "outputTokens": 126,
+          "reasoningOutputTokens": 43,
+          "totalTokens": 7180
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7054,
+          "outputTokens": 126,
+          "reasoningOutputTokens": 43,
+          "totalTokens": 7180
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7061,
+          "outputTokens": 84,
+          "reasoningOutputTokens": 26,
+          "totalTokens": 7145
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7061,
+          "outputTokens": 84,
+          "reasoningOutputTokens": 26,
+          "totalTokens": 7145
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7060,
+          "outputTokens": 86,
+          "reasoningOutputTokens": 31,
+          "totalTokens": 7146
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7060,
+          "outputTokens": 86,
+          "reasoningOutputTokens": 31,
+          "totalTokens": 7146
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7062,
+          "outputTokens": 125,
+          "reasoningOutputTokens": 33,
+          "totalTokens": 7187
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7062,
+          "outputTokens": 125,
+          "reasoningOutputTokens": 33,
+          "totalTokens": 7187
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7063,
+          "outputTokens": 86,
+          "reasoningOutputTokens": 30,
+          "totalTokens": 7149
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7063,
+          "outputTokens": 86,
+          "reasoningOutputTokens": 30,
+          "totalTokens": 7149
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7068,
+          "outputTokens": 129,
+          "reasoningOutputTokens": 42,
+          "totalTokens": 7197
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7068,
+          "outputTokens": 129,
+          "reasoningOutputTokens": 42,
+          "totalTokens": 7197
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 71,
+          "reasoningOutputTokens": 15,
+          "totalTokens": 7129
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 71,
+          "reasoningOutputTokens": 15,
+          "totalTokens": 7129
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7065,
+          "outputTokens": 134,
+          "reasoningOutputTokens": 43,
+          "totalTokens": 7199
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7065,
+          "outputTokens": 134,
+          "reasoningOutputTokens": 43,
+          "totalTokens": 7199
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7066,
+          "outputTokens": 76,
+          "reasoningOutputTokens": 19,
+          "totalTokens": 7142
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7066,
+          "outputTokens": 76,
+          "reasoningOutputTokens": 19,
+          "totalTokens": 7142
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7061,
+          "outputTokens": 126,
+          "reasoningOutputTokens": 44,
+          "totalTokens": 7187
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7061,
+          "outputTokens": 126,
+          "reasoningOutputTokens": 44,
+          "totalTokens": 7187
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7055,
+          "outputTokens": 97,
+          "reasoningOutputTokens": 42,
+          "totalTokens": 7152
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7055,
+          "outputTokens": 97,
+          "reasoningOutputTokens": 42,
+          "totalTokens": 7152
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7054,
+          "outputTokens": 71,
+          "reasoningOutputTokens": 21,
+          "totalTokens": 7125
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 7054,
+          "outputTokens": 71,
+          "reasoningOutputTokens": 21,
+          "totalTokens": 7125
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7054,
+          "outputTokens": 118,
+          "reasoningOutputTokens": 43,
+          "totalTokens": 7172
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7054,
+          "outputTokens": 118,
+          "reasoningOutputTokens": 43,
+          "totalTokens": 7172
+        }
+      },
+      {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 83,
+          "reasoningOutputTokens": 27,
+          "totalTokens": 7141
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 2816,
+          "inputTokens": 7058,
+          "outputTokens": 83,
+          "reasoningOutputTokens": 27,
+          "totalTokens": 7141
+        }
+      }
+    ],
+    "usage_complete": true
+  }
+}

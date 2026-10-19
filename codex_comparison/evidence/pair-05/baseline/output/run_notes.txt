@@ -1,0 +1,1 @@
+Visual judgments made directly by the outer agent from public query/reference images. No nested model calls were made. Practice image captured from public DEV_OPS_URL. Live controller captured all 24 images. Several decisions were late; late actions were skipped. Canonical session.json is the unmodified public export response.

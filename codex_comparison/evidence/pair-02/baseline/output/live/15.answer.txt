@@ -1,0 +1,1 @@
+{"reject":true,"reason":"Two rightmost J1 header pins are severely bent sideways and converge, unlike the straight, parallel reference pins."}

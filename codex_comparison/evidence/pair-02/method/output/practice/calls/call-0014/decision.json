@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cb4ff00ae3f1347de",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 97557.594176,
+    "expires_ms": 98082.594176,
+    "id": "pick-cb4ff00ae3f1347de",
+    "key": "f"
+  },
+  "visible_evidence": "The component immediately left of the IC is broken, with conspicuous debris around it."
+}

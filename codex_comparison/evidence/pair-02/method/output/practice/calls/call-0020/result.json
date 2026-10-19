@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"cfd7410696bb6a3de\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 134389.889, \"expires_ms\": 134914.889, \"id\": \"pick-cfd7410696bb6a3de\", \"key\": \"k\"}, \"visible_evidence\": \"One connector pin is bent downward across the board.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345929.4005752,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 7.89476521000006,
+    "ready_unix": 1792345929.3941855,
+    "started_unix": 1792345921.6115608,
+    "thread_id": "01a15024-5851-7ef3-8edc-85e34ac63138",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7061,
+        "outputTokens": 123,
+        "reasoningOutputTokens": 42,
+        "totalTokens": 7184
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7061,
+        "outputTokens": 123,
+        "reasoningOutputTokens": 42,
+        "totalTokens": 7184
+      }
+    },
+    "turn_id": "01a15024-5870-7bf0-a32c-26a6e8861ab7",
+    "usage_complete": true,
+    "wall_seconds": 7.901153471000043
+  }
+}

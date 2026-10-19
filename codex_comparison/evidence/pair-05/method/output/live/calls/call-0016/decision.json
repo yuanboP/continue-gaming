@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c16bfbc864207380c",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 110669.193364,
+    "expires_ms": 111194.193364,
+    "id": "pick-c16bfbc864207380c",
+    "key": "k"
+  },
+  "visible_evidence": "The four connector pins are visibly bent sideways."
+}

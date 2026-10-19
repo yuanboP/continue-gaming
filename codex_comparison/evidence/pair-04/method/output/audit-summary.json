@@ -1,0 +1,32 @@
+{
+  "artifact_sha256": "e0665113b815ecaab07c52f27ce29a83f925d8517b57e9ed365384d64c6876c2",
+  "live": {
+    "calls_completed": 24,
+    "models": [
+      [
+        "gpt-6-astra",
+        "medium"
+      ]
+    ],
+    "receipts": {
+      "target_grab": 11,
+      "wrong_grab": 1
+    },
+    "total_tokens": 172142,
+    "usage_complete": true
+  },
+  "practice": {
+    "calls_completed": 24,
+    "models": [
+      [
+        "gpt-6-astra",
+        "medium"
+      ]
+    ],
+    "receipts": {
+      "target_grab": 12
+    },
+    "total_tokens": 171893,
+    "usage_complete": true
+  }
+}

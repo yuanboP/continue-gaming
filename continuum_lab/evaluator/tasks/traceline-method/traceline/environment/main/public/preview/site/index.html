@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TraceLine · 巡检线</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#"><span class="mark" aria-hidden="true">∿</span> TRACELINE <small>巡检线</small></a>
+    <div class="session-tag"><span id="connection-dot" class="dot"></span><span id="connection">静态预览</span></div>
+  </header>
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow">REAL-TIME VISUAL INSPECTION · 01</p><h1>看清差异。<br><span>在正确的时刻行动。</span></h1><p class="lede">四条传送带，二十四块电路板。对照正常样本识别结构缺陷，<br class="desktop">在下游分拣门触发对应通道；让正常品继续前进。</p></div>
+      <div class="targets"><div><strong>180<span>s</span></strong><small>连续运行</small></div><div><strong>±350<span>ms</span></strong><small>有效动作窗口</small></div><div><strong>11<span>/12</span></strong><small>最低缺陷拦截</small></div></div>
+    </section>
+    <div id="notice" class="notice">静态设计预览 · 显示开发场景的一张完整查询／参考图，不运行时钟、不执行动作、不代表实测成绩。</div>
+    <section class="workspace">
+      <aside class="sidebar">
+        <div class="panel-title"><span>传送通道</span><span class="muted">LANES</span></div>
+        <div id="lanes" class="lanes"></div>
+        <div class="rules"><p class="eyebrow">PASS CRITERIA</p><p><strong>≥ 11</strong> 缺陷品正确拦截</p><p><strong>≤ 1</strong> 正常品误拦截</p><p><strong>≤ 2</strong> 空操作</p><p><strong>0</strong> 执行器冲突</p><p class="rule-note">每条通道冷却时间 800 ms。判断依据为完整照片；姿态、印字、光照差异本身不算缺陷。</p></div>
+      </aside>
+      <section class="camera-panel">
+        <div class="panel-title"><div><span class="amber-dot"></span> <strong id="inspection-title">通道 K · 检视台</strong><span id="sku" class="pill">board_a</span></div><button id="expand" class="text-button" type="button">查看原图 ↗</button></div>
+        <div class="image-wrap"><img id="inspection-image" src="assets/inspection-preview.png" alt="完整查询电路板与独立正常参考电路板的对照图"><div id="empty-view" class="empty-view" hidden>等待载具进入检测区域</div></div>
+        <div class="camera-footer"><span><span class="legend query"></span>左侧：待检样本</span><span><span class="legend reference"></span>右侧：独立正常参考</span><span id="sensor-time" class="sensor-time">入线 18.155 s → 预计过门 38.988 s</span></div>
+      </section>
+    </section>
+    <section class="transport"><div class="panel-title"><span>公开编码器视图</span><span id="clock-label" class="clock">037.000 <small>/ 180.000 s</small></span></div><div id="tracks" class="tracks"></div><div class="timeline"><div id="timeline-fill"></div></div></section>
+    <section class="controls"><div class="controls-caption"><strong id="phase-label">预览模式</strong><span id="control-help">按键仅在已连接的运行场景中生效。</span></div><div class="action-buttons"><button id="begin" class="primary" disabled>开始运行</button><button class="act" data-key="d" disabled><kbd>D</kbd> 拦截</button><button class="act" data-key="f" disabled><kbd>F</kbd> 拦截</button><button class="act" data-key="j" disabled><kbd>J</kbd> 拦截</button><button class="act" data-key="k" disabled><kbd>K</kbd> 拦截</button><button id="export" disabled>导出记录 ↓</button></div></section>
+    <section class="feedback"><div class="panel-title"><span>动作回执</span><span class="muted">仅显示已发生的动作</span></div><div id="receipts" class="receipt-list"><span class="muted">尚无动作</span></div></section>
+    <footer><span>TraceLine · 巡检线</span><span>视觉检测与实时操作测试 · 模拟环境</span></footer>
+  </main>
+  <dialog id="image-dialog"><button id="close-dialog">关闭 ×</button><img id="expanded-image" alt="完整检视图"></dialog>
+  <script src="app.js"></script>
+</body>
+</html>

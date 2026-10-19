@@ -1,0 +1,22 @@
+{
+  "artifact": {
+    "bytes": 17636,
+    "envelope_preserved": true,
+    "path": "/app/output/session.json",
+    "sha256": "5155860a3e3808089f89656510201ff4432526c610d141d3370055d0dafec17b"
+  },
+  "live": {
+    "completed_calls": 24,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "total_reported_tokens": 172026,
+    "usage_complete": true
+  },
+  "practice": {
+    "completed_calls": 24,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "total_reported_tokens": 171949,
+    "usage_complete": true
+  }
+}

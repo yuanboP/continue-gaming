@@ -1,0 +1,5 @@
+{
+  "decided_wall": 1792346530.7795672,
+  "reason": "The right-side capacitor beside the IC is visibly damaged and displaced, with dark debris and contamination around its pads.",
+  "reject": true
+}

@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c834c687a3acb6266",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 25670.694052,
+    "expires_ms": 26220.694052,
+    "id": "pick-c834c687a3acb6266",
+    "key": "f"
+  },
+  "visible_evidence": "The query board has visibly bent header pins."
+}

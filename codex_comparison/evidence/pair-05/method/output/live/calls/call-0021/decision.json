@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cf63688619b23ea6e",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 142005.137,
+    "expires_ms": 142530.137,
+    "id": "pick-cf63688619b23ea6e",
+    "key": "d"
+  },
+  "visible_evidence": "The query's main chip is visibly broken, with fragments across its lower-left pins."
+}

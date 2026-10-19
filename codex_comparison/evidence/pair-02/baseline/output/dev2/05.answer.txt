@@ -1,0 +1,1 @@
+{"reject":true,"reason":"The central IC has visible damage or foreign material covering its upper-right corner and adjacent pins, unlike the intact reference."}

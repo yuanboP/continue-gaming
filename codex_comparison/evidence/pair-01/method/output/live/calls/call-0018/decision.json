@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cd5b8dd8a7ca00964",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 122106.856,
+    "expires_ms": 122656.856,
+    "id": "pick-cd5b8dd8a7ca00964",
+    "key": "f"
+  },
+  "visible_evidence": "The USB connector shell is visibly bent and deformed near its upper-left opening."
+}

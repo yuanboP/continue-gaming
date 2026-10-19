@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "experiment_id": "awake-v1",
+  "created_at": "2026-10-18T10:37:19.902699+00:00",
+  "status": "design_registered_before_original_v4_pair_05_result_and_before_any_reproduction_models",
+  "seed_source": "Python secrets.randbits(63), unique positive values; no outcome-based replacement",
+  "seeds": [
+    7037366414473945580,
+    1790877487054988409,
+    8092602318835151827,
+    5861831608737519041,
+    8294549927489000694
+  ],
+  "method": "Same frozen v4 sources; no vision/timing/Skill edits for this independent reproduction.",
+  "source_sha256": {
+    "visual_inspection_v4/registry/method-v1-freeze.json": "2c9b38a40723025d83147fdce1f32d75b95f75a7a9ed1a10bc058715adf06750",
+    "visual_inspection_v4/confirmation-v1/pair-01/pair-completed.json": "9c908f028a0f6a36edc1b53bafde3311d395377694044723c79f99e1485ceb6b",
+    "visual_inspection_v4/confirmation-v1/pair-02/pair-completed.json": "5eacead0cbb762b7364550bb5b30d62172828a31beb32486dc13dd424c43c46b",
+    "visual_inspection_v4/confirmation-v1/pair-03/pair-completed.json": "355f90b7c948c4f7118a3b87236e2293f822c9c6a31419c71e6b5526ebcd69f3",
+    "visual_inspection_v4/confirmation-v1/pair-04/pair-completed.json": "358dc00deb47fb0750e3ada45ba4c6398bef68dc211c6e5c79165fe77273c1f5",
+    "visual_inspection_v3/confirmation-v1/summary.json": "a47bfe083b284cff7c3333feaa0dda7d9fa44efe4bf531561501d6f3e5d2bcb2"
+  },
+  "hypothesis": "The same v4 workflow can repeatedly pass when host execution is continuously available. Interrupted original trials remain reported failures/unverified attempts.",
+  "registration_entry": "visual_inspection_v4/reproduce.py (final reviewed entry hash to be bound by its registration)",
+  "execution_order": "Five pairs, alternating first arm, arms run sequentially; exactly one attempt per arm; max retries 0.",
+  "changed_conditions": [
+    "AC power and task-scoped idle/system sleep assertions; periodic runtime observations retained",
+    "One trial at a time instead of original two concurrent arms, reducing shared resource contention equally for both arms"
+  ],
+  "unchanged_conditions": [
+    "gpt-6-astra medium, Codex CLI 0.157.0",
+    "Configured 900-second agent timeout; actual elapsed and any suspend evidence separately disclosed",
+    "Same 24 live photos, public rules, world/API/scorer and exact pass thresholds",
+    "Same frozen v4 actor/Skill/original Sooool queue",
+    "Full programming/tools/subcall permissions and no-GT rule in both arms"
+  ],
+  "criterion": {
+    "method_signed_passes": 5,
+    "baseline_max_signed_passes": 1,
+    "required_pairs": 5,
+    "baseline_all_attempts_admissible": true,
+    "all_attempts_retained": true,
+    "runtime_observation": "No observed host suspend or sampled loss of AC during the batch; sampling cannot prove absence of every interruption. Any detected violation invalidates the clean-runtime claim without deleting task outcomes."
+  },
+  "decision_rule": "Run and count all five pairs regardless of intermediate task outcome. No modified prompts, replacement seed, retry or exclusion of failure. Do not launch concurrently with unfinished original confirmation. If interrupted, preserve existing dispatch markers and inspect; do not restart an unresolved arm.",
+  "limits": [
+    "Adaptive environmental follow-up motivated by measured interruption, not an untouched initial confirmation",
+    "Fresh schedules reuse the same 24 images; no new-image/hardware generalization",
+    "Sequential resource condition differs from original paired concurrency",
+    "Same timeout does not mean equal actual tokens or calls; all nested development/live/failed usage retained"
+  ],
+  "new_model_calls": 0,
+  "new_episodes": 0
+}

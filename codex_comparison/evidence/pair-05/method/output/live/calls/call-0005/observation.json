@@ -1,0 +1,83 @@
+{
+  "calibration": {
+    "arm_cooldown_ms": 800,
+    "defect_count": 12,
+    "distance_to_gate_mm": 1000,
+    "entry_interval_ms": 6000,
+    "entry_jitter_ms": 350,
+    "grab_window_ms": 350,
+    "height": 1200,
+    "horizon_ms": 180000,
+    "lane_keys": [
+      "d",
+      "f",
+      "j",
+      "k"
+    ],
+    "lane_speed_mm_s": {
+      "d": 45,
+      "f": 50,
+      "j": 55,
+      "k": 48
+    },
+    "maximum_collisions": 0,
+    "maximum_empty_grabs": 2,
+    "maximum_normal_grabs": 1,
+    "minimum_defect_grabs": 11,
+    "normal_count": 12,
+    "schema_version": "visual-inspection-v3.1",
+    "task_rule": "Compare each query board with its independent known-normal reference. Reject visibly defective boards at their lane's gate; let normal boards pass.",
+    "width": 1920
+  },
+  "carriers": [
+    {
+      "carrier_id": "c6c66fcba240b6d28",
+      "entry_ms": 6289.90963,
+      "inspection_url": "/inspection/c6c66fcba240b6d28.png",
+      "lane": "f",
+      "sku": "board_b"
+    },
+    {
+      "carrier_id": "ca0fdbc51d76b5479",
+      "entry_ms": 12016.573769,
+      "inspection_url": "/inspection/ca0fdbc51d76b5479.png",
+      "lane": "j",
+      "sku": "board_a"
+    },
+    {
+      "carrier_id": "c48fb0342d1043351",
+      "entry_ms": 17824.918421,
+      "inspection_url": "/inspection/c48fb0342d1043351.png",
+      "lane": "k",
+      "sku": "board_a"
+    },
+    {
+      "carrier_id": "c13633e897657b2ff",
+      "entry_ms": 24324.172627,
+      "inspection_url": "/inspection/c13633e897657b2ff.png",
+      "lane": "d",
+      "sku": "board_b"
+    }
+  ],
+  "clock_ms": 24382.18178,
+  "clock_rate": 1.0,
+  "episode_counts": {
+    "defect": 12,
+    "normal": 12
+  },
+  "frame_url": "/frame.png",
+  "horizon_ms": 180000,
+  "mode": "live",
+  "phase": "running",
+  "receipts": [
+    {
+      "clock_ms": 22059.570807,
+      "id": "pick-c42b60e8d006f94a7",
+      "key": "d",
+      "result": "target_grab",
+      "session_id": "99c3759f-035e-4948-a01a-27bbc939fc19"
+    }
+  ],
+  "schema_version": "visual-inspection-v3.1",
+  "session_id": "99c3759f-035e-4948-a01a-27bbc939fc19"
+}

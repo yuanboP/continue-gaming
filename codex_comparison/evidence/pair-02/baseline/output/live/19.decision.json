@@ -1,0 +1,5 @@
+{
+  "decided_wall": 1792346786.9842577,
+  "reason": "The rightmost GND pin on header J1 is severely bent outward, unlike the other three upright pins.",
+  "reject": true
+}

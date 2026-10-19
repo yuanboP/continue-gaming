@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c32d03fdda123f501\", \"decision\": \"accept\", \"tap\": null, \"visible_evidence\": \"Components, pins, USB connector and board edges appear intact, with no conspicuous contamination.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345867.3336298,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 5.522578845999988,
+    "ready_unix": 1792345867.3317251,
+    "started_unix": 1792345861.809148,
+    "thread_id": "01a15023-6eb5-70f1-9765-df18fa331bbb",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7057,
+        "outputTokens": 81,
+        "reasoningOutputTokens": 25,
+        "totalTokens": 7138
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7057,
+        "outputTokens": 81,
+        "reasoningOutputTokens": 25,
+        "totalTokens": 7138
+      }
+    },
+    "turn_id": "01a15023-6ed4-7291-85cf-501d408e0c87",
+    "usage_complete": true,
+    "wall_seconds": 5.524481327999865
+  }
+}

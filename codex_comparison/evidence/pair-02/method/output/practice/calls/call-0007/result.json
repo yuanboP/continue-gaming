@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"ced52a24135b00a54\", \"decision\": \"accept\", \"tap\": null, \"visible_evidence\": \"Components and four connector pins appear intact, with no visible structural damage or foreign material.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345851.3778608,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 7.527346796000074,
+    "ready_unix": 1792345851.3759956,
+    "started_unix": 1792345843.8486505,
+    "thread_id": "01a15023-288f-7391-9890-bc30346cce2f",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7060,
+        "outputTokens": 80,
+        "reasoningOutputTokens": 25,
+        "totalTokens": 7140
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7060,
+        "outputTokens": 80,
+        "reasoningOutputTokens": 25,
+        "totalTokens": 7140
+      }
+    },
+    "turn_id": "01a15023-28b3-7d50-8be1-88b620a99701",
+    "usage_complete": true,
+    "wall_seconds": 7.529209968000032
+  }
+}

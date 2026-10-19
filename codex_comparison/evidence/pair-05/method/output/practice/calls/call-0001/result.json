@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c4105cca7b53302fc\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 22047.222, \"expires_ms\": 22572.222, \"id\": \"pick-c4105cca7b53302fc\", \"key\": \"d\"}, \"visible_evidence\": \"The two left connector pins are visibly bent.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792348932.1516395,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 8.549775794000197,
+    "ready_unix": 1792348932.1429968,
+    "started_unix": 1792348923.693612,
+    "thread_id": "01a15052-2731-71f3-9284-9d549b493b33",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7057,
+        "outputTokens": 106,
+        "reasoningOutputTokens": 28,
+        "totalTokens": 7163
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7057,
+        "outputTokens": 106,
+        "reasoningOutputTokens": 28,
+        "totalTokens": 7163
+      }
+    },
+    "turn_id": "01a15052-2757-7e31-ae4a-dc43ef74677e",
+    "usage_complete": true,
+    "wall_seconds": 8.558416738000233
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "services": {
+    "dev": {
+      "build": {
+        "context": "./world"
+      },
+      "cap_drop": [
+        "ALL"
+      ],
+      "command": [
+        "python3",
+        "/world/server.py",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8765",
+        "--seed",
+        "1",
+        "--mode",
+        "dev",
+        "--task-id",
+        "traceline:developer",
+        "--key-file",
+        "/private/signing.key",
+        "--contract-file",
+        "/world/contract.json",
+        "--asset-catalog",
+        "/world/assets/catalog.json",
+        "--asset-root",
+        "/world/assets"
+      ],
+      "healthcheck": {
+        "interval": "2s",
+        "retries": 30,
+        "start_period": "2s",
+        "test": [
+          "CMD",
+          "python3",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8765/observe',timeout=2).read()"
+        ],
+        "timeout": "3s"
+      },
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "tmpfs": [
+        "/tmp:rw,size=128m"
+      ]
+    },
+    "main": {
+      "build": {
+        "context": "./main"
+      },
+      "depends_on": {
+        "dev": {
+          "condition": "service_healthy"
+        },
+        "world": {
+          "condition": "service_healthy"
+        }
+      },
+      "environment": {
+        "DEV_OPS_URL": "http://dev:8765",
+        "OPS_URL": "http://world:8765"
+      }
+    },
+    "world": {
+      "build": {
+        "context": "./world"
+      },
+      "cap_drop": [
+        "ALL"
+      ],
+      "command": [
+        "python3",
+        "/world/server.py",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8765",
+        "--seed",
+        "74021",
+        "--mode",
+        "live",
+        "--task-id",
+        "traceline:traceline-prepared-v1",
+        "--key-file",
+        "/private/signing.key",
+        "--contract-file",
+        "/world/contract.json",
+        "--asset-catalog",
+        "/world/assets/catalog.json",
+        "--asset-root",
+        "/world/assets"
+      ],
+      "healthcheck": {
+        "interval": "2s",
+        "retries": 30,
+        "start_period": "2s",
+        "test": [
+          "CMD",
+          "python3",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8765/observe',timeout=2).read()"
+        ],
+        "timeout": "3s"
+      },
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "tmpfs": [
+        "/tmp:rw,size=128m"
+      ]
+    }
+  }
+}

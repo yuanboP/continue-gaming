@@ -1,0 +1,5 @@
+{
+  "decided_wall": 1792346426.2168553,
+  "reason": "The small bottom-center resistor is visibly damaged, with an irregular fragmented body and solder-like debris instead of the intact rectangular component shown in the reference.",
+  "reject": true
+}

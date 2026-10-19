@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cfe03f753219cc747",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 145819.555046,
+    "expires_ms": 146344.555046,
+    "id": "pick-cfe03f753219cc747",
+    "key": "f"
+  },
+  "visible_evidence": "The rightmost connector pin is visibly bent outward."
+}

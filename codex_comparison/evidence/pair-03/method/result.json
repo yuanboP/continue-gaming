@@ -1,0 +1,124 @@
+{
+  "agent_execution": {
+    "finished_at": "2026-10-18T18:22:12.622178Z",
+    "started_at": "2026-10-18T18:15:14.939690Z"
+  },
+  "agent_info": {
+    "model_info": {
+      "name": "gpt-6-astra",
+      "provider": "openai"
+    },
+    "name": "codex",
+    "version": "0.157.0"
+  },
+  "agent_result": {
+    "cost_usd": 1.490878,
+    "metadata": null,
+    "n_cache_tokens": 976768,
+    "n_input_tokens": 1014374,
+    "n_output_tokens": 2761,
+    "rollout_details": null
+  },
+  "agent_setup": {
+    "finished_at": "2026-10-18T18:15:14.939304Z",
+    "started_at": "2026-10-18T18:15:14.642606Z"
+  },
+  "config": {
+    "agent": {
+      "concurrency_group": null,
+      "env": {
+        "CODEX_AUTH_JSON_PATH": "${CODEX_AUTH_JSON_PATH}",
+        "CODEX_EXTRA_CONFIG": "",
+        "OPENAI_BASE_URL": ""
+      },
+      "extra_allowed_hosts": [],
+      "import_path": null,
+      "kwargs": {
+        "prompt_template_path": "<WORKSPACE>/visual_inspection_v4/harness/skill-prompt.j2",
+        "reasoning_effort": "medium",
+        "version": "0.157.0"
+      },
+      "load_trajectory": null,
+      "max_timeout_sec": null,
+      "mcp_servers": [],
+      "model_name": "openai/gpt-6-astra",
+      "n_concurrent": null,
+      "name": "codex",
+      "override_setup_timeout_sec": null,
+      "override_timeout_sec": null,
+      "resume_trajectory": false,
+      "skills": [
+        "<WORKSPACE>/visual_inspection_v4/reproduction/awake-v1/tasks/pair-03/sooool/visual-inspection-v4/method/sooool-realtime"
+      ]
+    },
+    "agent_setup_timeout_multiplier": null,
+    "agent_timeout_multiplier": null,
+    "artifacts": [],
+    "environment": {
+      "cpu_enforcement_policy": "auto",
+      "delete": true,
+      "extra_allowed_hosts": [],
+      "extra_docker_compose": [],
+      "force_build": false,
+      "import_path": "harbor_suite.docker_copy:CopyDocker",
+      "kwargs": {},
+      "memory_enforcement_policy": "auto",
+      "mounts": null,
+      "override_cpus": null,
+      "override_gpus": null,
+      "override_memory_mb": null,
+      "override_storage_mb": null,
+      "override_tpu": null,
+      "type": null
+    },
+    "environment_build_timeout_multiplier": null,
+    "extra_instruction_paths": [],
+    "install_only": false,
+    "job_id": "7e54cbd5-89d7-4c00-965b-2dab0b207c3c",
+    "task": {
+      "download_dir": null,
+      "git_commit_id": null,
+      "git_url": null,
+      "name": null,
+      "overwrite": false,
+      "path": "<WORKSPACE>/visual_inspection_v4/reproduction/awake-v1/tasks/pair-03/sooool/visual-inspection-v4",
+      "ref": null,
+      "source": null
+    },
+    "timeout_multiplier": 1.0,
+    "trial_name": "visual-inspection-v4__xCDjfad",
+    "trials_dir": "<JOBS>/v4-repro-awake-v1-03-sooool",
+    "verifier": {
+      "disable": false,
+      "max_timeout_sec": null,
+      "override_timeout_sec": null
+    },
+    "verifier_timeout_multiplier": null
+  },
+  "environment_setup": {
+    "finished_at": "2026-10-18T18:15:14.316089Z",
+    "started_at": "2026-10-18T18:14:55.446091Z"
+  },
+  "exception_info": null,
+  "finished_at": "2026-10-18T18:22:54.889816Z",
+  "id": "0139d179-1b65-46f9-97bb-6a36aa03d18e",
+  "source": null,
+  "started_at": "2026-10-18T18:14:55.355490Z",
+  "step_results": null,
+  "task_checksum": "fb318b8b8639e6123964a9eaaf873d5171666d108e8f98e1580b06a0481bb985",
+  "task_id": {
+    "path": "<WORKSPACE>/visual_inspection_v4/reproduction/awake-v1/tasks/pair-03/sooool/visual-inspection-v4"
+  },
+  "task_name": "visual-inspection-v4",
+  "trial_name": "visual-inspection-v4__xCDjfad",
+  "trial_uri": "file://<JOBS>/v4-repro-awake-v1-03-sooool/visual-inspection-v4__xCDjfad",
+  "verifier": {
+    "finished_at": "2026-10-18T18:22:54.889754Z",
+    "started_at": "2026-10-18T18:22:37.360370Z"
+  },
+  "verifier_result": {
+    "rewards": {
+      "reward": 1.0
+    }
+  }
+}

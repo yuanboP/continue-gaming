@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cfd7410696bb6a3de",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 134389.889,
+    "expires_ms": 134914.889,
+    "id": "pick-cfd7410696bb6a3de",
+    "key": "k"
+  },
+  "visible_evidence": "One header pin is bent sharply downward over the board."
+}

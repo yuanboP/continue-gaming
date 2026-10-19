@@ -1,0 +1,16 @@
+{
+  "artifact_sha256": "eaf305e77e4c97386925c93f364131bfabf95e8de8459616b0f4dd7b51a678fd",
+  "canonical_artifact": "/app/output/session.json",
+  "clock_ms": 180000.0,
+  "late_defect_decisions": 1,
+  "mode": "live",
+  "nested_calls": 49,
+  "notes": "One defect decision arrived late; another defect was not rejected. No replay attempted. Counts derive from public action receipts.",
+  "pass_threshold_met": false,
+  "phase": "finished",
+  "receipts": {
+    "target_grab": 10
+  },
+  "required_defect_rejections": 11,
+  "session_id": "e3123c78-6053-4224-8969-c07799a6e27d"
+}

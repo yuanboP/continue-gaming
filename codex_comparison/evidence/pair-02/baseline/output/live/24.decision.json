@@ -1,0 +1,5 @@
+{
+  "decided_wall": 1792346817.5998912,
+  "reason": "Multiple J1 header pins are severely bent and cross over one another, unlike the straight, separated reference pins.",
+  "reject": true
+}

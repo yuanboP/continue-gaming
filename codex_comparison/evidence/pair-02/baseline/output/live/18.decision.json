@@ -1,0 +1,5 @@
+{
+  "decided_wall": 1792346780.1775012,
+  "reason": "Two rightmost J1 header pins are severely bent downward over the board instead of extending straight upward.",
+  "reject": true
+}

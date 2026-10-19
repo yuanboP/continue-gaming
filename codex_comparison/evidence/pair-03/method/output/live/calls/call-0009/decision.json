@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cac7f4545bd7a8f1f",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 70371.381,
+    "expires_ms": 70896.381,
+    "id": "pick-cac7f4545bd7a8f1f",
+    "key": "d"
+  },
+  "visible_evidence": "Two connector pins are bent downward over the central chip."
+}

@@ -1,0 +1,42 @@
+{
+  "agent": {
+    "env": {
+      "CODEX_AUTH_JSON_PATH": "${CODEX_AUTH_JSON_PATH}",
+      "CODEX_EXTRA_CONFIG": "",
+      "OPENAI_BASE_URL": ""
+    },
+    "extra_allowed_hosts": [],
+    "kwargs": {
+      "reasoning_effort": "medium",
+      "version": "0.157.0"
+    },
+    "mcp_servers": [],
+    "model_name": "openai/gpt-6-astra",
+    "name": "codex",
+    "resume_trajectory": false,
+    "skills": []
+  },
+  "environment": {
+    "cpu_enforcement_policy": "auto",
+    "delete": true,
+    "extra_allowed_hosts": [],
+    "extra_docker_compose": [],
+    "force_build": false,
+    "import_path": "harbor_suite.docker_copy:CopyDocker",
+    "kwargs": {},
+    "memory_enforcement_policy": "auto"
+  },
+  "install_only": false,
+  "schema_version": 1,
+  "skills": [],
+  "task": {
+    "digest": "sha256:2323030cafb22d1182c1b699940af1e02f0bf9cf014ff2dd3d2ed2d9d5ac0764",
+    "name": "visual-inspection-v4",
+    "path": "<WORKSPACE>/visual_inspection_v4/reproduction/awake-v1/tasks/pair-05/baseline/visual-inspection-v4",
+    "type": "local"
+  },
+  "timeout_multiplier": 1.0,
+  "verifier": {
+    "disable": false
+  }
+}

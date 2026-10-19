@@ -1,0 +1,11 @@
+{
+  "carrier_id": "ca0fdbc51d76b5479",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 30023.392,
+    "expires_ms": 30548.392,
+    "id": "pick-ca0fdbc51d76b5479",
+    "key": "j"
+  },
+  "visible_evidence": "Several connector pins are visibly bent and crossing."
+}

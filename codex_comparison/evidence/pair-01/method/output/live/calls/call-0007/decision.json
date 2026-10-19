@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c626df91ddfb64a03",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 53819.175,
+    "expires_ms": 54369.175,
+    "id": "pick-c626df91ddfb64a03",
+    "key": "j"
+  },
+  "visible_evidence": "The capacitor immediately left of the main chip is missing, leaving two exposed solder pads."
+}

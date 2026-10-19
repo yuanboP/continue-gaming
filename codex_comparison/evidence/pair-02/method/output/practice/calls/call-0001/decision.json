@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c4105cca7b53302fc",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 22047.222,
+    "expires_ms": 22572.222,
+    "id": "pick-c4105cca7b53302fc",
+    "key": "d"
+  },
+  "visible_evidence": "Two left connector pins are visibly bent compared with the straight reference pins."
+}

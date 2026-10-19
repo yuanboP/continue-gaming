@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111a20">
+  <title>星航 · ASTER</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <canvas id="game" width="960" height="720" aria-label="星航：移动飞行器穿过弹幕，在六十秒内击破目标。仅存活不算通过。"></canvas>
+    <nav class="controls" aria-label="游戏控制">
+      <span><kbd>↑↓←→</kbd> 移动 <kbd>Z</kbd> 射击 <kbd>Shift</kbd> 精细移动 <kbd>X</kbd> 清屏</span>
+      <div><button id="start">开始航行</button><button id="pause" disabled>暂停</button><button id="restart">重新开始</button></div>
+    </nav>
+  </main>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>

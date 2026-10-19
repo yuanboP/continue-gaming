@@ -1,0 +1,655 @@
+{
+  "actor_requests_completed": 0,
+  "actor_requests_failed": 0,
+  "actor_requests_started": 0,
+  "confirmed_token_totals": {
+    "cached_input_tokens": 1443712,
+    "input_tokens": 1513949,
+    "output_tokens": 3831,
+    "reasoning_output_tokens": 263,
+    "total_tokens": 1517780
+  },
+  "errors": [],
+  "limits": [
+    "Observed tokens are a lower bound when any usage is missing or requests fail.",
+    "Native session response records are deduplicated by response_id; ephemeral threads use their last cumulative total.",
+    "The same native thread in a session, actor ledger and app-server events contributes once.",
+    "Agent-produced app-server notifications are consistency evidence, not cryptographic billing attestation.",
+    "Unlogged ephemeral calls or deliberately changed CODEX_HOME cannot be ruled out from exported evidence alone.",
+    "Inner requests are model calls, not independent task attempts. Wall budget is matched; total tokens are measured, not matched."
+  ],
+  "missing_outer_native_capture": false,
+  "model_threads_observed": 1,
+  "native_response_records": 37,
+  "observed_token_totals": {
+    "cached_input_tokens": 1443712,
+    "input_tokens": 1513949,
+    "output_tokens": 3831,
+    "reasoning_output_tokens": 263,
+    "total_tokens": 1517780
+  },
+  "oracle_model_samples": null,
+  "outer_classification_basis": "Harbor ATIF session_id",
+  "outer_thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+  "schema_version": 1,
+  "threads": [
+    {
+      "accounting_incomplete": false,
+      "actor_calls": [],
+      "appserver_notifications": null,
+      "issues": [],
+      "kind": "outer",
+      "native_evidence_confirmed": true,
+      "native_session": {
+        "completed_turn_ids": [
+          "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+        ],
+        "efforts": [
+          "medium"
+        ],
+        "finished_at": "2026-10-18T18:40:29.071Z",
+        "models": [
+          "gpt-6-astra"
+        ],
+        "responses": [
+          {
+            "response_id": "resp_049822510a16ed72016ad511bb52e481989d4fe45ac9c84a06",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 14,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:36:45.825Z",
+            "tokens": {
+              "cached_input_tokens": 12160,
+              "input_tokens": 14905,
+              "output_tokens": 91,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 14996
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad511be2f9c81989339bf8cf30edf3a",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 22,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:36:49.469Z",
+            "tokens": {
+              "cached_input_tokens": 14720,
+              "input_tokens": 17203,
+              "output_tokens": 85,
+              "reasoning_output_tokens": 40,
+              "total_tokens": 17288
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad511c1b8748198851eea005a65f650",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 29,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:36:52.998Z",
+            "tokens": {
+              "cached_input_tokens": 17024,
+              "input_tokens": 17897,
+              "output_tokens": 105,
+              "reasoning_output_tokens": 53,
+              "total_tokens": 18002
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad511c690a481989901157983147bd1",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 34,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:36:57.683Z",
+            "tokens": {
+              "cached_input_tokens": 17664,
+              "input_tokens": 20214,
+              "output_tokens": 100,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 20314
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad511cbd19081988d4fd1fe231b5648",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 44,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:37:18.871Z",
+            "tokens": {
+              "cached_input_tokens": 20096,
+              "input_tokens": 22891,
+              "output_tokens": 987,
+              "reasoning_output_tokens": 62,
+              "total_tokens": 23878
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad511e062b481989d9089937a88f1b5",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 49,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:37:23.592Z",
+            "tokens": {
+              "cached_input_tokens": 22272,
+              "input_tokens": 23937,
+              "output_tokens": 31,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 23968
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad511e667e481988c51d86c97627720",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 55,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:37:29.532Z",
+            "tokens": {
+              "cached_input_tokens": 23808,
+              "input_tokens": 25774,
+              "output_tokens": 84,
+              "reasoning_output_tokens": 15,
+              "total_tokens": 25858
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad511e9dc488198b8d65544af7189ae",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 60,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:37:31.582Z",
+            "tokens": {
+              "cached_input_tokens": 25344,
+              "input_tokens": 25916,
+              "output_tokens": 31,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 25947
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad511eda42c81989a05acaa871f755e",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 66,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:37:36.622Z",
+            "tokens": {
+              "cached_input_tokens": 25728,
+              "input_tokens": 26895,
+              "output_tokens": 65,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 26960
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad511f0ded0819890ea51644e5dfee9",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 70,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:37:39.141Z",
+            "tokens": {
+              "cached_input_tokens": 26624,
+              "input_tokens": 27017,
+              "output_tokens": 31,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 27048
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad511f52e588198a4ba6c4ab26bb633",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 75,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:37:43.874Z",
+            "tokens": {
+              "cached_input_tokens": 26880,
+              "input_tokens": 29592,
+              "output_tokens": 64,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 29656
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad511f812808198ab3c6ffb37cd73e9",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 81,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:37:47.104Z",
+            "tokens": {
+              "cached_input_tokens": 29056,
+              "input_tokens": 29712,
+              "output_tokens": 51,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 29763
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad511fd81308198a55dbfaf930612e5",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 86,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:37:52.482Z",
+            "tokens": {
+              "cached_input_tokens": 29568,
+              "input_tokens": 30878,
+              "output_tokens": 57,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 30935
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad51202dd10819880171000799ae52b",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 94,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:37:57.930Z",
+            "tokens": {
+              "cached_input_tokens": 30848,
+              "input_tokens": 32781,
+              "output_tokens": 100,
+              "reasoning_output_tokens": 12,
+              "total_tokens": 32881
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad512088e7081988be1d84e814820cb",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 102,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:38:04.126Z",
+            "tokens": {
+              "cached_input_tokens": 32384,
+              "input_tokens": 35459,
+              "output_tokens": 103,
+              "reasoning_output_tokens": 14,
+              "total_tokens": 35562
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad5120e164c8198980d106ed4784ac2",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 108,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:38:09.685Z",
+            "tokens": {
+              "cached_input_tokens": 34944,
+              "input_tokens": 36544,
+              "output_tokens": 65,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 36609
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad5121206008198980aec8b76c870bc",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 113,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:38:11.892Z",
+            "tokens": {
+              "cached_input_tokens": 36224,
+              "input_tokens": 36665,
+              "output_tokens": 31,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 36696
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad51215b32c8198a1fb434be6d57911",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 119,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:38:17.336Z",
+            "tokens": {
+              "cached_input_tokens": 36480,
+              "input_tokens": 37648,
+              "output_tokens": 70,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 37718
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad51219db048198be519156e8fd0c72",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 124,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:38:20.363Z",
+            "tokens": {
+              "cached_input_tokens": 37248,
+              "input_tokens": 37774,
+              "output_tokens": 55,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 37829
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad5121ed50081989ce2721eee14473d",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 135,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:38:27.915Z",
+            "tokens": {
+              "cached_input_tokens": 37632,
+              "input_tokens": 40517,
+              "output_tokens": 136,
+              "reasoning_output_tokens": 19,
+              "total_tokens": 40653
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad5122aaddc8198b5d2d0e561874f20",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 142,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:38:39.328Z",
+            "tokens": {
+              "cached_input_tokens": 40448,
+              "input_tokens": 43394,
+              "output_tokens": 102,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 43496
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad5123316b08198b8b6f4121d3f6f53",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 146,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:38:48.068Z",
+            "tokens": {
+              "cached_input_tokens": 43136,
+              "input_tokens": 46074,
+              "output_tokens": 64,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 46138
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad51238c4388198a4e1017450e09f4d",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 151,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:38:51.508Z",
+            "tokens": {
+              "cached_input_tokens": 45440,
+              "input_tokens": 46194,
+              "output_tokens": 31,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 46225
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad5123efe7c8198b59d3d18a288ed39",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 156,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:38:59.574Z",
+            "tokens": {
+              "cached_input_tokens": 46080,
+              "input_tokens": 48038,
+              "output_tokens": 64,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 48102
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad51244573c8198b2f1c57163ed7635",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 162,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:39:03.670Z",
+            "tokens": {
+              "cached_input_tokens": 47616,
+              "input_tokens": 48159,
+              "output_tokens": 31,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 48190
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad5124a6f988198978077963b80427d",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 167,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:39:14.128Z",
+            "tokens": {
+              "cached_input_tokens": 48000,
+              "input_tokens": 49993,
+              "output_tokens": 64,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 50057
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad512526f988198a0ed0ba84c4fabd3",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 172,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:39:17.294Z",
+            "tokens": {
+              "cached_input_tokens": 49536,
+              "input_tokens": 50115,
+              "output_tokens": 31,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 50146
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad51257a5a481989be32ed39a9758f2",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 176,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:39:23.973Z",
+            "tokens": {
+              "cached_input_tokens": 49920,
+              "input_tokens": 52690,
+              "output_tokens": 86,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 52776
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad5125e6f68819899ab7315621672f0",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 182,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:39:29.806Z",
+            "tokens": {
+              "cached_input_tokens": 52096,
+              "input_tokens": 53723,
+              "output_tokens": 65,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 53788
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad5126230cc8198a6ed8835452845a6",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 188,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:39:33.086Z",
+            "tokens": {
+              "cached_input_tokens": 53504,
+              "input_tokens": 53846,
+              "output_tokens": 31,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 53877
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad51267ba3c8198b6b59d2fd43dae00",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 192,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:39:41.000Z",
+            "tokens": {
+              "cached_input_tokens": 53760,
+              "input_tokens": 54789,
+              "output_tokens": 64,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 54853
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad5126dfcb081989fa8fad6df4742a3",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 197,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:39:45.301Z",
+            "tokens": {
+              "cached_input_tokens": 54528,
+              "input_tokens": 54911,
+              "output_tokens": 55,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 54966
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad51272c3948198bd16802dadc10596",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 205,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:39:52.776Z",
+            "tokens": {
+              "cached_input_tokens": 54784,
+              "input_tokens": 57615,
+              "output_tokens": 186,
+              "reasoning_output_tokens": 23,
+              "total_tokens": 57801
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad5128286fc81988c077c1aa52e5f6f",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 216,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:40:09.235Z",
+            "tokens": {
+              "cached_input_tokens": 57472,
+              "input_tokens": 69198,
+              "output_tokens": 135,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 69333
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad51289a16c8198aaad24ec5aead178",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 223,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:40:14.804Z",
+            "tokens": {
+              "cached_input_tokens": 68736,
+              "input_tokens": 69933,
+              "output_tokens": 124,
+              "reasoning_output_tokens": 13,
+              "total_tokens": 70057
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad5128f275881989f28726cbadee2aa",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 233,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:40:24.398Z",
+            "tokens": {
+              "cached_input_tokens": 69760,
+              "input_tokens": 72319,
+              "output_tokens": 291,
+              "reasoning_output_tokens": 12,
+              "total_tokens": 72610
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          },
+          {
+            "response_id": "resp_049822510a16ed72016ad51298ea088198bc182c3cba12f015",
+            "source": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "source_line": 239,
+            "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+            "timestamp": "2026-10-18T18:40:29.060Z",
+            "tokens": {
+              "cached_input_tokens": 72192,
+              "input_tokens": 72739,
+              "output_tokens": 65,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 72804
+            },
+            "turn_id": "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+          }
+        ],
+        "sources": [
+          {
+            "path": "agent/sessions/2026/10/18/rollout-2026-10-18T18-36-38-01a1504d-30fd-7d90-9d6c-b69993719fb7.jsonl",
+            "sha256": "951ac3a266ed6edc984d165ead093ebaf6a4c3fa7283f33a0cbb9abd3911d084"
+          }
+        ],
+        "started_at": "2026-10-18T18:36:38.554Z",
+        "started_turn_ids": [
+          "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+        ],
+        "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+        "tokens": {
+          "cached_input_tokens": 1443712,
+          "input_tokens": 1513949,
+          "output_tokens": 3831,
+          "reasoning_output_tokens": 263,
+          "total_tokens": 1517780
+        },
+        "turn_ids": [
+          "01a1504d-3114-7bd3-bf7f-593bb2f537b2"
+        ],
+        "usage_source": "deduplicated_native_response_usage"
+      },
+      "thread_id": "01a1504d-30fd-7d90-9d6c-b69993719fb7",
+      "tokens": {
+        "cached_input_tokens": 1443712,
+        "input_tokens": 1513949,
+        "output_tokens": 3831,
+        "reasoning_output_tokens": 263,
+        "total_tokens": 1517780
+      },
+      "usage_source": "deduplicated_native_response_usage"
+    }
+  ],
+  "threads_with_incomplete_accounting": 0,
+  "threads_with_missing_usage": 0,
+  "trial_name": "visual-inspection-v4__VA7pDxq",
+  "unconfirmed_reported_token_totals": {
+    "cached_input_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_output_tokens": 0,
+    "total_tokens": 0
+  }
+}

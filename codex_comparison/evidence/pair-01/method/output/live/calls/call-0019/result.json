@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c8c0306b898c2058a\", \"decision\": \"accept\", \"tap\": null, \"visible_evidence\": \"Components, connector and chip pins appear intact; no visible structural damage or foreign material.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345655.2187986,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 19.739211117999957,
+    "ready_unix": 1792345655.2164588,
+    "started_unix": 1792345635.5779855,
+    "thread_id": "01a1501f-fafe-70c2-8be3-fcf679099633",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7061,
+        "outputTokens": 89,
+        "reasoningOutputTokens": 32,
+        "totalTokens": 7150
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7061,
+        "outputTokens": 89,
+        "reasoningOutputTokens": 32,
+        "totalTokens": 7150
+      }
+    },
+    "turn_id": "01a1501f-fb1b-7071-9fe1-31843a4c01a7",
+    "usage_complete": true,
+    "wall_seconds": 19.74154867900006
+  }
+}

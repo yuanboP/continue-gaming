@@ -1,0 +1,72 @@
+{
+  "artifact_sha256": "374b4a3aa2d0eb8c3481fab7734814738363615c45fce640975d8a316fa593dc",
+  "integrity_passed": null,
+  "limits": "Local event consistency, not signed live success or independent proof of visual correctness.",
+  "passed": true,
+  "scope": "Transport and retained-evidence consistency only. No claim about live task success or defect-recognition accuracy.",
+  "scoring": {
+    "criteria": {
+      "two_native_visual_calls_completed": true
+    },
+    "integrity_errors": [],
+    "metrics": {
+      "completed_nested_calls": 2,
+      "started_nested_calls": 2
+    },
+    "passed": true
+  },
+  "verified_calls": [
+    {
+      "call_id": "call-0001",
+      "ready_seconds": 5.935021520999726,
+      "thread_id": "01a14cb0-cc6e-7ce3-a377-48464e2512b6",
+      "token_usage": {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 6835,
+          "outputTokens": 84,
+          "reasoningOutputTokens": 28,
+          "totalTokens": 6919
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 6835,
+          "outputTokens": 84,
+          "reasoningOutputTokens": 28,
+          "totalTokens": 6919
+        }
+      },
+      "turn_id": "01a14cb0-cc9c-74f0-b262-c8f5ab603206",
+      "wall_seconds": 5.940496978999818
+    },
+    {
+      "call_id": "call-0002",
+      "ready_seconds": 6.367598858999827,
+      "thread_id": "01a14cb0-dfb2-7632-b1ce-f89dd06e3bf0",
+      "token_usage": {
+        "last": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 6839,
+          "outputTokens": 85,
+          "reasoningOutputTokens": 26,
+          "totalTokens": 6924
+        },
+        "modelContextWindow": 258400,
+        "total": {
+          "cacheWriteInputTokens": 0,
+          "cachedInputTokens": 0,
+          "inputTokens": 6839,
+          "outputTokens": 85,
+          "reasoningOutputTokens": 26,
+          "totalTokens": 6924
+        }
+      },
+      "turn_id": "01a14cb0-dfcf-7c00-842e-18ac0dd9094d",
+      "wall_seconds": 6.369080233999739
+    }
+  ]
+}

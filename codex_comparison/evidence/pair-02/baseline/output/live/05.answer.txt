@@ -1,0 +1,1 @@
+{"reject":false,"reason":"All visible components and four header pins appear intact; no clear cracks, physical damage, foreign material, or damaging contamination."}

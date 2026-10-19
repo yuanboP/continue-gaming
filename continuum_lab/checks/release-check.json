@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "legacy_identifier_matches": 0,
+  "files_scanned": 739,
+  "ui_checks_passed": 23,
+  "models_called": 0,
+  "scope": "delivery_package_only",
+  "third_party_notices_retained": true
+}

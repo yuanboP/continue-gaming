@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"cfd7410696bb6a3de\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 134389.889, \"expires_ms\": 134914.889, \"id\": \"pick-cfd7410696bb6a3de\", \"key\": \"k\"}, \"visible_evidence\": \"One header pin is bent sharply downward over the board.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792347467.6128137,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 6.948161820999758,
+    "ready_unix": 1792347467.6061807,
+    "started_unix": 1792347460.6580195,
+    "thread_id": "01a1503b-d436-74c2-b00c-547f3763d6e3",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7061,
+        "outputTokens": 123,
+        "reasoningOutputTokens": 41,
+        "totalTokens": 7184
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7061,
+        "outputTokens": 123,
+        "reasoningOutputTokens": 41,
+        "totalTokens": 7184
+      }
+    },
+    "turn_id": "01a1503b-d455-7c23-8e89-9a98a20de1b2",
+    "usage_complete": true,
+    "wall_seconds": 6.954794047999712
+  }
+}

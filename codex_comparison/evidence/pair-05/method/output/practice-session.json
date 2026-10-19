@@ -1,0 +1,705 @@
+{
+  "payload": {
+    "actions": [
+      {
+        "clock_ms": 22058.114461,
+        "hit_id": "c4105cca7b53302fc",
+        "phase": "running",
+        "receipt": {
+          "clock_ms": 22058.114461,
+          "id": "pick-c4105cca7b53302fc",
+          "key": "d",
+          "result": "target_grab",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        },
+        "request": {
+          "expires_ms": 22572.222,
+          "id": "pick-c4105cca7b53302fc",
+          "key": "d",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        }
+      },
+      {
+        "clock_ms": 25703.746972,
+        "hit_id": "c834c687a3acb6266",
+        "phase": "running",
+        "receipt": {
+          "clock_ms": 25703.746972,
+          "id": "pick-c834c687a3acb6266",
+          "key": "f",
+          "result": "target_grab",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        },
+        "request": {
+          "expires_ms": 26220.694052,
+          "id": "pick-c834c687a3acb6266",
+          "key": "f",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        }
+      },
+      {
+        "clock_ms": 29866.282243,
+        "hit_id": "c902a174f11fa2ac0",
+        "phase": "running",
+        "receipt": {
+          "clock_ms": 29866.282243,
+          "id": "pick-c902a174f11fa2ac0",
+          "key": "j",
+          "result": "target_grab",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        },
+        "request": {
+          "expires_ms": 30384.146,
+          "id": "pick-c902a174f11fa2ac0",
+          "key": "j",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        }
+      },
+      {
+        "clock_ms": 46293.847776,
+        "hit_id": "c111b8aaa62f28d1a",
+        "phase": "running",
+        "receipt": {
+          "clock_ms": 46293.847776,
+          "id": "pick-c111b8aaa62f28d1a",
+          "key": "d",
+          "result": "target_grab",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        },
+        "request": {
+          "expires_ms": 46814.831,
+          "id": "pick-c111b8aaa62f28d1a",
+          "key": "d",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        }
+      },
+      {
+        "clock_ms": 62954.687981,
+        "hit_id": "c601e5b4578511608",
+        "phase": "running",
+        "receipt": {
+          "clock_ms": 62954.687981,
+          "id": "pick-c601e5b4578511608",
+          "key": "k",
+          "result": "target_grab",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        },
+        "request": {
+          "expires_ms": 63470.524,
+          "id": "pick-c601e5b4578511608",
+          "key": "k",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        }
+      },
+      {
+        "clock_ms": 70389.092571,
+        "hit_id": "c6b77730f65bd9acb",
+        "phase": "running",
+        "receipt": {
+          "clock_ms": 70389.092571,
+          "id": "pick-c6b77730f65bd9acb",
+          "key": "d",
+          "result": "target_grab",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        },
+        "request": {
+          "expires_ms": 70908.473481,
+          "id": "pick-c6b77730f65bd9acb",
+          "key": "d",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        }
+      },
+      {
+        "clock_ms": 78210.393533,
+        "hit_id": "c563e9bed45100358",
+        "phase": "running",
+        "receipt": {
+          "clock_ms": 78210.393533,
+          "id": "pick-c563e9bed45100358",
+          "key": "j",
+          "result": "target_grab",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        },
+        "request": {
+          "expires_ms": 78726.776,
+          "id": "pick-c563e9bed45100358",
+          "key": "j",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        }
+      },
+      {
+        "clock_ms": 97561.172406,
+        "hit_id": "cb4ff00ae3f1347de",
+        "phase": "running",
+        "receipt": {
+          "clock_ms": 97561.172406,
+          "id": "pick-cb4ff00ae3f1347de",
+          "key": "f",
+          "result": "target_grab",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        },
+        "request": {
+          "expires_ms": 98082.594176,
+          "id": "pick-cb4ff00ae3f1347de",
+          "key": "f",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        }
+      },
+      {
+        "clock_ms": 110878.910037,
+        "hit_id": "cae9ca08b2d7c5048",
+        "phase": "running",
+        "receipt": {
+          "clock_ms": 110878.910037,
+          "id": "pick-cae9ca08b2d7c5048",
+          "key": "k",
+          "result": "target_grab",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        },
+        "request": {
+          "expires_ms": 111391.248391,
+          "id": "pick-cae9ca08b2d7c5048",
+          "key": "k",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        }
+      },
+      {
+        "clock_ms": 121613.253385,
+        "hit_id": "cc4ff64debb5d6b48",
+        "phase": "running",
+        "receipt": {
+          "clock_ms": 121613.253385,
+          "id": "pick-cc4ff64debb5d6b48",
+          "key": "f",
+          "result": "target_grab",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        },
+        "request": {
+          "expires_ms": 122133.479091,
+          "id": "pick-cc4ff64debb5d6b48",
+          "key": "f",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        }
+      },
+      {
+        "clock_ms": 134393.876772,
+        "hit_id": "cfd7410696bb6a3de",
+        "phase": "running",
+        "receipt": {
+          "clock_ms": 134393.876772,
+          "id": "pick-cfd7410696bb6a3de",
+          "key": "k",
+          "result": "target_grab",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        },
+        "request": {
+          "expires_ms": 134914.889,
+          "id": "pick-cfd7410696bb6a3de",
+          "key": "k",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        }
+      },
+      {
+        "clock_ms": 149882.48994,
+        "hit_id": "c050684bfe286852c",
+        "phase": "running",
+        "receipt": {
+          "clock_ms": 149882.48994,
+          "id": "pick-c050684bfe286852c",
+          "key": "j",
+          "result": "target_grab",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        },
+        "request": {
+          "expires_ms": 150394.72,
+          "id": "pick-c050684bfe286852c",
+          "key": "j",
+          "session_id": "954149ef-857f-4f02-b109-b2de831741aa"
+        }
+      }
+    ],
+    "captures": [
+      {
+        "carrier_id": "c4105cca7b53302fc",
+        "clock_ms": 2373.176397,
+        "kind": "inspection",
+        "sha256": "ec4d0e3ae6603001076896197ba9c548f87d7cdc292e75fc3cb294f23e970b13"
+      },
+      {
+        "carrier_id": "c834c687a3acb6266",
+        "clock_ms": 6006.455064,
+        "kind": "inspection",
+        "sha256": "2ce93a1c75caad36edc31e238a700171469ff091e6df9fc4e88e83bf2ee6954e"
+      },
+      {
+        "carrier_id": "c902a174f11fa2ac0",
+        "clock_ms": 11986.917953,
+        "kind": "inspection",
+        "sha256": "a9f8ff01704aa8b3068af5b5bf5ad257899a113740158512c1014368323ec338"
+      },
+      {
+        "carrier_id": "c1b98fbe466809a11",
+        "clock_ms": 18296.815172,
+        "kind": "inspection",
+        "sha256": "5de64bf73ef592fcc64a6e6cce9dfb23a7be18fa83c5cb0c279f86e486e96847"
+      },
+      {
+        "carrier_id": "c111b8aaa62f28d1a",
+        "clock_ms": 24303.136337,
+        "kind": "inspection",
+        "sha256": "55b753feba72a15555feb7cb24e4684bc2e12e656ce6c42a16be5ea91d0e4aef"
+      },
+      {
+        "carrier_id": "caf5570eed8e94b15",
+        "clock_ms": 30450.057823,
+        "kind": "inspection",
+        "sha256": "0aaf4bc046930ca93a976e64a33542639576d6a596a663630bdee9cbc34417e0"
+      },
+      {
+        "carrier_id": "ced52a24135b00a54",
+        "clock_ms": 35721.139148,
+        "kind": "inspection",
+        "sha256": "05482914fab58ccbc3a9396b905cb9b7cbb421ed5788f2f3165a89eb43d805d4"
+      },
+      {
+        "carrier_id": "c601e5b4578511608",
+        "clock_ms": 42320.915551,
+        "kind": "inspection",
+        "sha256": "f50bc6d46e80f4627b88b6b8c55a8d6793435b667303e0ab6102669bcc1ce738"
+      },
+      {
+        "carrier_id": "c6b77730f65bd9acb",
+        "clock_ms": 48405.128091,
+        "kind": "inspection",
+        "sha256": "774211181c925eb043b25690e9269484676e7d350acd1591637a968e926e19be"
+      },
+      {
+        "carrier_id": "c32d03fdda123f501",
+        "clock_ms": 53791.233587,
+        "kind": "inspection",
+        "sha256": "962545a4b389e0317c93e588f06586de651bbac417211e7bcfc5feac85332c5f"
+      },
+      {
+        "carrier_id": "c563e9bed45100358",
+        "clock_ms": 60311.578633,
+        "kind": "inspection",
+        "sha256": "e167d89e9d7fe899c2cbef392f6933479eb9d4f4e35b747ab905615152baf3be"
+      },
+      {
+        "carrier_id": "c03e0d681552454f1",
+        "clock_ms": 65759.363245,
+        "kind": "inspection",
+        "sha256": "2289eed5b01708ed5b2a1621792d7dc832346adb5d0e83358e08f012a882dc27"
+      },
+      {
+        "carrier_id": "cec3fbf4dc20ef164",
+        "clock_ms": 72432.926367,
+        "kind": "inspection",
+        "sha256": "7cc7d8ecdccc6a78742b34c9c069b04e4e6f96a3f59e0c15e6b9e50347f370d9"
+      },
+      {
+        "carrier_id": "cb4ff00ae3f1347de",
+        "clock_ms": 78325.224362,
+        "kind": "inspection",
+        "sha256": "652c9000d2af97182bae65cadfa57ed28a97e4c6c8137607de60b3bd90cba171"
+      },
+      {
+        "carrier_id": "c77064c2c0f552c94",
+        "clock_ms": 83857.967684,
+        "kind": "inspection",
+        "sha256": "7b424b740fb72e427d9698bdc87588242278a945b832087e5b4e72d281bc5ec8"
+      },
+      {
+        "carrier_id": "cae9ca08b2d7c5048",
+        "clock_ms": 90285.346289,
+        "kind": "inspection",
+        "sha256": "6afd4a56db1a892cd27ee14a1ecc93bedb9b5eaabfbc47b921f0102fd5e745d0"
+      },
+      {
+        "carrier_id": "c82450164728a6fcf",
+        "clock_ms": 96125.925375,
+        "kind": "inspection",
+        "sha256": "b5c0bef5e771e45a9fb2a9a7a9d58092c722058ae5ef4db94f7722d92d4e9af9"
+      },
+      {
+        "carrier_id": "cc4ff64debb5d6b48",
+        "clock_ms": 101850.365772,
+        "kind": "inspection",
+        "sha256": "890f295aab1f90164de69f9fcd07c0ad9ce8c38de8f5e25eebf15fe74be055d3"
+      },
+      {
+        "carrier_id": "c623d8eb7a4ca83b2",
+        "clock_ms": 107885.506074,
+        "kind": "inspection",
+        "sha256": "83346918f9d9268825d74b6e132553ba21ac106abb099c7f4456b0d57a91407c"
+      },
+      {
+        "carrier_id": "cfd7410696bb6a3de",
+        "clock_ms": 113744.18467,
+        "kind": "inspection",
+        "sha256": "96236400f60c5a52c635a93e52ef659c080413b831f8d969c38e0fb39a86685f"
+      },
+      {
+        "carrier_id": "cdd44fd3645114889",
+        "clock_ms": 119890.817294,
+        "kind": "inspection",
+        "sha256": "fad7d680fb129864cf160dcdb46eb412aced89c3ebaacc108a66969237ba43d8"
+      },
+      {
+        "carrier_id": "c97bdd982cdac6046",
+        "clock_ms": 126380.636723,
+        "kind": "inspection",
+        "sha256": "d250ba65bc6392a9c2b8e6a6b3bf9b95cf51d5fbceaea8f92268c89bff639286"
+      },
+      {
+        "carrier_id": "c050684bfe286852c",
+        "clock_ms": 131946.687806,
+        "kind": "inspection",
+        "sha256": "e20aca8c07e04b22f62c73c12852b52fc25a8cd0e52adcc9e7887c0370798adf"
+      },
+      {
+        "carrier_id": "cfeef16e964ef2ebe",
+        "clock_ms": 137822.187319,
+        "kind": "inspection",
+        "sha256": "cbb0205a7e4b256f48daf559102b95aa4de2eae761f8369eb2b2bffee8c0c6c6"
+      }
+    ],
+    "catalog_sha256": "784fabdb99fed5509f13871e499977e25231dd88f8c04aa9e519a1078d5d3d27",
+    "contract": {
+      "arm_cooldown_ms": 800,
+      "defect_count": 12,
+      "distance_to_gate_mm": 1000,
+      "entry_interval_ms": 6000,
+      "entry_jitter_ms": 350,
+      "grab_window_ms": 350,
+      "height": 1200,
+      "horizon_ms": 180000,
+      "lane_keys": [
+        "d",
+        "f",
+        "j",
+        "k"
+      ],
+      "lane_speed_mm_s": {
+        "d": 45,
+        "f": 50,
+        "j": 55,
+        "k": 48
+      },
+      "maximum_collisions": 0,
+      "maximum_empty_grabs": 2,
+      "maximum_normal_grabs": 1,
+      "minimum_defect_grabs": 11,
+      "normal_count": 12,
+      "schema_version": "visual-inspection-v3.1",
+      "task_rule": "Compare each query board with its independent known-normal reference. Reject visibly defective boards at their lane's gate; let normal boards pass.",
+      "width": 1920
+    },
+    "created_unix": 1792348921.0141149,
+    "duration_ms": 180000.0,
+    "events": [
+      {
+        "clock_ms": 0.0,
+        "kind": "begin"
+      }
+    ],
+    "manifest": [
+      {
+        "asset_id": "v3_1c3dc3ed8c186c7915a7",
+        "carrier_id": "c4105cca7b53302fc",
+        "entry_ms": 0.0,
+        "image_sha256": "bfcd89d6ab46ec653bc1314f4c4236d57c7e2c406a5da5650c04bc46aff6a09f",
+        "label": "defect",
+        "lane": "d",
+        "reference_asset_id": "v3_a9887591be43ec954389",
+        "reference_sha256": "a1e063d253c69e1d74b1cf1a035032956c9e546c1a20201bbaaddf1e20be52eb",
+        "sku": "board_a",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_ee463c9e53007df632cf",
+        "carrier_id": "c834c687a3acb6266",
+        "entry_ms": 5870.694052,
+        "image_sha256": "a90ddede4ed4a59793e712ac53e9d63d858a3b24d9856b503d9f08904309d436",
+        "label": "defect",
+        "lane": "f",
+        "reference_asset_id": "v3_a9887591be43ec954389",
+        "reference_sha256": "a1e063d253c69e1d74b1cf1a035032956c9e546c1a20201bbaaddf1e20be52eb",
+        "sku": "board_a",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_e126367a08c34b71c31d",
+        "carrier_id": "c902a174f11fa2ac0",
+        "entry_ms": 11852.327963,
+        "image_sha256": "82a1561872c6500ba99f573457c381eca244a3f8bef94a4aee351a08905ec1ee",
+        "label": "defect",
+        "lane": "j",
+        "reference_asset_id": "v3_a9887591be43ec954389",
+        "reference_sha256": "a1e063d253c69e1d74b1cf1a035032956c9e546c1a20201bbaaddf1e20be52eb",
+        "sku": "board_a",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_e47ef5f49a649376f6cb",
+        "carrier_id": "c1b98fbe466809a11",
+        "entry_ms": 18186.40152,
+        "image_sha256": "03a527405a3854c084caab21793880c7f5b107f7b8715b99b0b6876de4c47c8b",
+        "label": "normal",
+        "lane": "k",
+        "reference_asset_id": "v3_ca303deba0c0dec98487",
+        "reference_sha256": "45f31b56aa2485408acc0794dab5481f8f5f82bd0d9044a015585bffdd15e9da",
+        "sku": "board_b",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_47f4925dc1acbdc68dca",
+        "carrier_id": "c111b8aaa62f28d1a",
+        "entry_ms": 24242.608535,
+        "image_sha256": "15fc2ca5fc2949df30a686d8ab07075128c9c62ced77dcd0fe977593a5f0340f",
+        "label": "defect",
+        "lane": "d",
+        "reference_asset_id": "v3_ca303deba0c0dec98487",
+        "reference_sha256": "45f31b56aa2485408acc0794dab5481f8f5f82bd0d9044a015585bffdd15e9da",
+        "sku": "board_b",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_198e635aa6b18bad9491",
+        "carrier_id": "caf5570eed8e94b15",
+        "entry_ms": 30320.629668,
+        "image_sha256": "6472bb42f7e4c73835b5fb28a229a5fa5feb360599c945f6505bd88cf4e2bf8b",
+        "label": "normal",
+        "lane": "f",
+        "reference_asset_id": "v3_ca303deba0c0dec98487",
+        "reference_sha256": "45f31b56aa2485408acc0794dab5481f8f5f82bd0d9044a015585bffdd15e9da",
+        "sku": "board_b",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_0ab2a05c6484de2f796f",
+        "carrier_id": "ced52a24135b00a54",
+        "entry_ms": 35650.381456,
+        "image_sha256": "faf937e9dfd55bd763dfb19332cccfddcf810f5920ee7e467f63dae13dce82dc",
+        "label": "normal",
+        "lane": "j",
+        "reference_asset_id": "v3_a9887591be43ec954389",
+        "reference_sha256": "a1e063d253c69e1d74b1cf1a035032956c9e546c1a20201bbaaddf1e20be52eb",
+        "sku": "board_a",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_3a4786fd97ff0685304e",
+        "carrier_id": "c601e5b4578511608",
+        "entry_ms": 42287.19035,
+        "image_sha256": "404ba5c732fbcd373e4823b077727f3a393bfa23267344b21599a794bbf57240",
+        "label": "defect",
+        "lane": "k",
+        "reference_asset_id": "v3_ca303deba0c0dec98487",
+        "reference_sha256": "45f31b56aa2485408acc0794dab5481f8f5f82bd0d9044a015585bffdd15e9da",
+        "sku": "board_b",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_ebce925e404652e48638",
+        "carrier_id": "c6b77730f65bd9acb",
+        "entry_ms": 48336.251259,
+        "image_sha256": "68c786dbe5bb7e3e135ccf0753eaf6923cbce2511d837f83022b37456447e27d",
+        "label": "defect",
+        "lane": "d",
+        "reference_asset_id": "v3_ca303deba0c0dec98487",
+        "reference_sha256": "45f31b56aa2485408acc0794dab5481f8f5f82bd0d9044a015585bffdd15e9da",
+        "sku": "board_b",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_593f016362a4fa96343a",
+        "carrier_id": "c32d03fdda123f501",
+        "entry_ms": 53701.126841,
+        "image_sha256": "9347df31f7c597190341d1280cfea9bdeb465edfe6789bfe81f9dda731b5fbfb",
+        "label": "normal",
+        "lane": "f",
+        "reference_asset_id": "v3_ca303deba0c0dec98487",
+        "reference_sha256": "45f31b56aa2485408acc0794dab5481f8f5f82bd0d9044a015585bffdd15e9da",
+        "sku": "board_b",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_26cde43c408ccc1b5922",
+        "carrier_id": "c563e9bed45100358",
+        "entry_ms": 60194.957601,
+        "image_sha256": "8922643da7d32139ece690e3d74ec897de883659dd13c123fead51282d8f339a",
+        "label": "defect",
+        "lane": "j",
+        "reference_asset_id": "v3_ca303deba0c0dec98487",
+        "reference_sha256": "45f31b56aa2485408acc0794dab5481f8f5f82bd0d9044a015585bffdd15e9da",
+        "sku": "board_b",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_a6974726c2ed71597358",
+        "carrier_id": "c03e0d681552454f1",
+        "entry_ms": 65711.000939,
+        "image_sha256": "02685b1614fa127cb570b518e8c5dc87fb5260382a2470aa9ab747a4909d1403",
+        "label": "normal",
+        "lane": "k",
+        "reference_asset_id": "v3_ca303deba0c0dec98487",
+        "reference_sha256": "45f31b56aa2485408acc0794dab5481f8f5f82bd0d9044a015585bffdd15e9da",
+        "sku": "board_b",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_d5e99e2899c3c671c3ca",
+        "carrier_id": "cec3fbf4dc20ef164",
+        "entry_ms": 72324.853352,
+        "image_sha256": "27795d0a0e916e19f52e0f50431098a63ab787f5ebc2cb66a8c88f4f125830e6",
+        "label": "normal",
+        "lane": "d",
+        "reference_asset_id": "v3_ca303deba0c0dec98487",
+        "reference_sha256": "45f31b56aa2485408acc0794dab5481f8f5f82bd0d9044a015585bffdd15e9da",
+        "sku": "board_b",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_211a7c151a49052e008d",
+        "carrier_id": "cb4ff00ae3f1347de",
+        "entry_ms": 77732.594176,
+        "image_sha256": "71d235d6d989c4b8ecfb74da6d08421f2363f0dd5bbc9e7df55685f9272afc6c",
+        "label": "defect",
+        "lane": "f",
+        "reference_asset_id": "v3_ca303deba0c0dec98487",
+        "reference_sha256": "45f31b56aa2485408acc0794dab5481f8f5f82bd0d9044a015585bffdd15e9da",
+        "sku": "board_b",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_070fa5d1276b75102b96",
+        "carrier_id": "c77064c2c0f552c94",
+        "entry_ms": 83720.732416,
+        "image_sha256": "4c07c9519347e93b9488c19ce4e4c372bfa4e4eade395919c24bbd1ba4d93ffa",
+        "label": "normal",
+        "lane": "j",
+        "reference_asset_id": "v3_a9887591be43ec954389",
+        "reference_sha256": "a1e063d253c69e1d74b1cf1a035032956c9e546c1a20201bbaaddf1e20be52eb",
+        "sku": "board_a",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_286a0901423d557ba700",
+        "carrier_id": "cae9ca08b2d7c5048",
+        "entry_ms": 90207.915058,
+        "image_sha256": "9afa2a980c86c5fadce69ba5eabd9516237852bdd71dcd62dd4531be70c74b30",
+        "label": "defect",
+        "lane": "k",
+        "reference_asset_id": "v3_a9887591be43ec954389",
+        "reference_sha256": "a1e063d253c69e1d74b1cf1a035032956c9e546c1a20201bbaaddf1e20be52eb",
+        "sku": "board_a",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_a4481a755e1367f79ee7",
+        "carrier_id": "c82450164728a6fcf",
+        "entry_ms": 96041.506599,
+        "image_sha256": "2a01c7ae885b144b2354b5d0d266b525600ce98fdb00d2dc78034776bd168f21",
+        "label": "normal",
+        "lane": "d",
+        "reference_asset_id": "v3_a9887591be43ec954389",
+        "reference_sha256": "a1e063d253c69e1d74b1cf1a035032956c9e546c1a20201bbaaddf1e20be52eb",
+        "sku": "board_a",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_6662c386fc931b837c78",
+        "carrier_id": "cc4ff64debb5d6b48",
+        "entry_ms": 101783.479091,
+        "image_sha256": "f501ebaf21a79fe889f03301f6788a6e0cebbb71605e8a9a8dd60c4970af5c54",
+        "label": "defect",
+        "lane": "f",
+        "reference_asset_id": "v3_ca303deba0c0dec98487",
+        "reference_sha256": "45f31b56aa2485408acc0794dab5481f8f5f82bd0d9044a015585bffdd15e9da",
+        "sku": "board_b",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_af2f99a3a07993c69fe8",
+        "carrier_id": "c623d8eb7a4ca83b2",
+        "entry_ms": 107741.676959,
+        "image_sha256": "399841e9fe16d051a57f0db19c34f40add4d4ac9ebfe39b9da266ab5beee03e5",
+        "label": "normal",
+        "lane": "j",
+        "reference_asset_id": "v3_a9887591be43ec954389",
+        "reference_sha256": "a1e063d253c69e1d74b1cf1a035032956c9e546c1a20201bbaaddf1e20be52eb",
+        "sku": "board_a",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_3817699d0b7d1bd64430",
+        "carrier_id": "cfd7410696bb6a3de",
+        "entry_ms": 113731.555591,
+        "image_sha256": "a495485188665c9c487f49970dfb748a0b62bfc57fc5a0dc215eecdbe06abb75",
+        "label": "defect",
+        "lane": "k",
+        "reference_asset_id": "v3_a9887591be43ec954389",
+        "reference_sha256": "a1e063d253c69e1d74b1cf1a035032956c9e546c1a20201bbaaddf1e20be52eb",
+        "sku": "board_a",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_e1656880a777a0da3198",
+        "carrier_id": "cdd44fd3645114889",
+        "entry_ms": 119799.005971,
+        "image_sha256": "5d8ff5be7b9dc804470cdb3816b3143c2157745effac22f8375b94c8361cebc5",
+        "label": "normal",
+        "lane": "d",
+        "reference_asset_id": "v3_a9887591be43ec954389",
+        "reference_sha256": "a1e063d253c69e1d74b1cf1a035032956c9e546c1a20201bbaaddf1e20be52eb",
+        "sku": "board_a",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_9b2f544f6be3181b77c5",
+        "carrier_id": "c97bdd982cdac6046",
+        "entry_ms": 126329.650339,
+        "image_sha256": "40d51a7aba9a1073e93628fed291dc94af06a4d80a8b022588b878e4c65ddc56",
+        "label": "normal",
+        "lane": "f",
+        "reference_asset_id": "v3_a9887591be43ec954389",
+        "reference_sha256": "a1e063d253c69e1d74b1cf1a035032956c9e546c1a20201bbaaddf1e20be52eb",
+        "sku": "board_a",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_4d8537062005a90deeb1",
+        "carrier_id": "c050684bfe286852c",
+        "entry_ms": 131862.901605,
+        "image_sha256": "29fe5878e6af52863552f07e669fa2fc73340012242ca60bf302612a91b892ac",
+        "label": "defect",
+        "lane": "j",
+        "reference_asset_id": "v3_a9887591be43ec954389",
+        "reference_sha256": "a1e063d253c69e1d74b1cf1a035032956c9e546c1a20201bbaaddf1e20be52eb",
+        "sku": "board_a",
+        "split": "dev"
+      },
+      {
+        "asset_id": "v3_ca4629c7ba6ab9e544c7",
+        "carrier_id": "cfeef16e964ef2ebe",
+        "entry_ms": 137797.497155,
+        "image_sha256": "3e5ccdc01e1da62942660f1783f46c3cbd1d292b08d7e30b043c88517a54317c",
+        "label": "normal",
+        "lane": "k",
+        "reference_asset_id": "v3_ca303deba0c0dec98487",
+        "reference_sha256": "45f31b56aa2485408acc0794dab5481f8f5f82bd0d9044a015585bffdd15e9da",
+        "sku": "board_b",
+        "split": "dev"
+      }
+    ],
+    "mode": "dev",
+    "schema_version": "visual-inspection-v3.1",
+    "seed": 11,
+    "session_id": "954149ef-857f-4f02-b109-b2de831741aa",
+    "speed": 1.0,
+    "started_unix": 1792348921.0149438,
+    "task_id": "visual-inspection-v4:developer"
+  },
+  "signature": "fea13c5a51e6a908a56042f1c4c5adacb71dffe34f787d1b54fcc27fb43f56ce"
+}

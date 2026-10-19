@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"cac7f4545bd7a8f1f\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 70371.381, \"expires_ms\": 70896.381, \"id\": \"pick-cac7f4545bd7a8f1f\", \"key\": \"d\"}, \"visible_evidence\": \"Two connector pins are bent downward over the central chip.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792347593.512844,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 7.1915288209997925,
+    "ready_unix": 1792347593.5021589,
+    "started_unix": 1792347586.3106313,
+    "thread_id": "01a1503d-bf0a-7050-9254-bba549edf53e",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7068,
+        "outputTokens": 132,
+        "reasoningOutputTokens": 45,
+        "totalTokens": 7200
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7068,
+        "outputTokens": 132,
+        "reasoningOutputTokens": 45,
+        "totalTokens": 7200
+      }
+    },
+    "turn_id": "01a1503d-bf26-76a1-9022-7483a43d4dfe",
+    "usage_complete": true,
+    "wall_seconds": 7.202212380999754
+  }
+}

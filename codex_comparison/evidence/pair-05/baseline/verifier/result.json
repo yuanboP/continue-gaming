@@ -1,0 +1,231 @@
+{
+  "artifact_sha256": "a130913f9592f35c73fa62c2d7ccc1343eb0e98deeff5c02456ea38ea9bbcc3c",
+  "integrity_passed": true,
+  "passed": false,
+  "schema_version": 1,
+  "scoring": {
+    "criteria": {
+      "complete_live_episode": true,
+      "defect_recall": false,
+      "empty_operation_budget": true,
+      "no_collisions": true,
+      "normal_false_rejection_budget": true,
+      "trace_integrity": true
+    },
+    "integrity_errors": [],
+    "item_outcomes": [
+      {
+        "action_ms": 22229.89238,
+        "arrival_ms": 22222.222222222223,
+        "carrier_id": "c42b60e8d006f94a7",
+        "rejected": true,
+        "timing_error_ms": 7.670157777778513,
+        "truth": "defect"
+      },
+      {
+        "action_ms": 26295.693886,
+        "arrival_ms": 26289.909630000002,
+        "carrier_id": "c6c66fcba240b6d28",
+        "rejected": true,
+        "timing_error_ms": 5.784255999999004,
+        "truth": "defect"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 30198.39195081818,
+        "carrier_id": "ca0fdbc51d76b5479",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "defect"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 38658.25175433333,
+        "carrier_id": "c48fb0342d1043351",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "normal"
+      },
+      {
+        "action_ms": 46554.189963,
+        "arrival_ms": 46546.394849222226,
+        "carrier_id": "c13633e897657b2ff",
+        "rejected": true,
+        "timing_error_ms": 7.795113777770894,
+        "truth": "defect"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 50139.392537,
+        "carrier_id": "c93418333b44dcd8f",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "defect"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 54098.56923181818,
+        "carrier_id": "ce809e53edd4830a9",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "normal"
+      },
+      {
+        "action_ms": 63110.198049,
+        "arrival_ms": 63106.32404333333,
+        "carrier_id": "c13b35b42db917b7a",
+        "rejected": true,
+        "timing_error_ms": 3.8740056666720193,
+        "truth": "defect"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 70266.16859422222,
+        "carrier_id": "c0e1516b93a302ad3",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "normal"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 73971.019882,
+        "carrier_id": "c637b9284db69455c",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "normal"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 78233.20942981818,
+        "carrier_id": "c2f9c05c328f8e271",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "defect"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 87089.16780433332,
+        "carrier_id": "c34b46929c3ead35c",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "defect"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 94368.23272122222,
+        "carrier_id": "c534a4fb10716ba1e",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "normal"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 98183.838252,
+        "carrier_id": "c612a1c9aa897d814",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "defect"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 102345.12940081817,
+        "carrier_id": "cea993679cc5e2e91",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "normal"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 110844.19336433333,
+        "carrier_id": "c16bfbc864207380c",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "defect"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 118089.03351922221,
+        "carrier_id": "c939db1f51168bd19",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "defect"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 121990.933741,
+        "carrier_id": "c09445e8f5beecb99",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "normal"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 126135.27449181817,
+        "carrier_id": "c199b2ef588412c08",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "normal"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 134967.42512033333,
+        "carrier_id": "c253967fa3f39d0ac",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "normal"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 142180.13741222222,
+        "carrier_id": "cf63688619b23ea6e",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "defect"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 145699.918436,
+        "carrier_id": "cc18badc828498ce9",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "normal"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 150498.5645408182,
+        "carrier_id": "c2957e24373a132e4",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "normal"
+      },
+      {
+        "action_ms": null,
+        "arrival_ms": 159057.52521433335,
+        "carrier_id": "cb816225021cb107c",
+        "rejected": false,
+        "timing_error_ms": null,
+        "truth": "normal"
+      }
+    ],
+    "metrics": {
+      "action_count": 5,
+      "capture_count": 24,
+      "collisions": 0,
+      "defect_count": 12,
+      "defect_grabs": 4,
+      "defect_recall": 0.3333333333333333,
+      "duration_ms": 180000.0,
+      "empty_grabs": 0,
+      "expired_actions": 1,
+      "missed_defects": 8,
+      "normal_count": 12,
+      "normal_grabs": 0,
+      "normal_preservation": 1.0,
+      "not_running_actions": 0,
+      "rejected_session_actions": 0
+    },
+    "passed": false
+  },
+  "signed_payload_sha256": "88bd044d51779d9a9f1a690f25f3efc2039bc6fd1e8367a2d28d3ec111048615",
+  "task_id": "visual-inspection-v4:pair-05:8294549927489000694"
+}

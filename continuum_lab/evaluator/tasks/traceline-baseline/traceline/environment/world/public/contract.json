@@ -1,0 +1,20 @@
+{
+  "schema_version": "visual-inspection-v3.1",
+  "horizon_ms": 180000,
+  "width": 1920,
+  "height": 1200,
+  "lane_keys": ["d", "f", "j", "k"],
+  "distance_to_gate_mm": 1000,
+  "lane_speed_mm_s": {"d": 45, "f": 50, "j": 55, "k": 48},
+  "grab_window_ms": 350,
+  "arm_cooldown_ms": 800,
+  "entry_interval_ms": 6000,
+  "entry_jitter_ms": 350,
+  "defect_count": 12,
+  "normal_count": 12,
+  "minimum_defect_grabs": 11,
+  "maximum_normal_grabs": 1,
+  "maximum_empty_grabs": 2,
+  "maximum_collisions": 0,
+  "task_rule": "Compare each query board with its independent known-normal reference. Reject visibly defective boards at their lane's gate; let normal boards pass."
+}

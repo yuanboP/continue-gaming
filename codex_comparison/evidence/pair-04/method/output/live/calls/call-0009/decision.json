@@ -1,0 +1,11 @@
+{
+  "carrier_id": "ce812217c3fa23398",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 69789.321,
+    "expires_ms": 70339.321,
+    "id": "pick-ce812217c3fa23398",
+    "key": "d"
+  },
+  "visible_evidence": "The rightmost connector pin is bent sharply outward."
+}

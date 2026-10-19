@@ -1,0 +1,90 @@
+{
+  "calibration": {
+    "arm_cooldown_ms": 800,
+    "defect_count": 12,
+    "distance_to_gate_mm": 1000,
+    "entry_interval_ms": 6000,
+    "entry_jitter_ms": 350,
+    "grab_window_ms": 350,
+    "height": 1200,
+    "horizon_ms": 180000,
+    "lane_keys": [
+      "d",
+      "f",
+      "j",
+      "k"
+    ],
+    "lane_speed_mm_s": {
+      "d": 45,
+      "f": 50,
+      "j": 55,
+      "k": 48
+    },
+    "maximum_collisions": 0,
+    "maximum_empty_grabs": 2,
+    "maximum_normal_grabs": 1,
+    "minimum_defect_grabs": 11,
+    "normal_count": 12,
+    "schema_version": "visual-inspection-v3.1",
+    "task_rule": "Compare each query board with its independent known-normal reference. Reject visibly defective boards at their lane's gate; let normal boards pass.",
+    "width": 1920
+  },
+  "carriers": [
+    {
+      "carrier_id": "c7774308475700a1e",
+      "entry_ms": 41996.930971,
+      "inspection_url": "/inspection/c7774308475700a1e.png",
+      "lane": "k",
+      "sku": "board_a"
+    },
+    {
+      "carrier_id": "ccb56d3e5564e4a32",
+      "entry_ms": 48319.517242,
+      "inspection_url": "/inspection/ccb56d3e5564e4a32.png",
+      "lane": "d",
+      "sku": "board_a"
+    },
+    {
+      "carrier_id": "cd1c16bc02b461d05",
+      "entry_ms": 54027.773475,
+      "inspection_url": "/inspection/cd1c16bc02b461d05.png",
+      "lane": "f",
+      "sku": "board_b"
+    }
+  ],
+  "clock_ms": 54146.866445,
+  "clock_rate": 1.0,
+  "episode_counts": {
+    "defect": 12,
+    "normal": 12
+  },
+  "frame_url": "/frame.png",
+  "horizon_ms": 180000,
+  "mode": "live",
+  "phase": "running",
+  "receipts": [
+    {
+      "clock_ms": 22030.141394,
+      "id": "pick-c4f0eb5658808f969",
+      "key": "d",
+      "result": "target_grab",
+      "session_id": "64271d6a-9bfe-4861-aca2-a750a2e9cc99"
+    },
+    {
+      "clock_ms": 38532.878815,
+      "id": "pick-ca6932c3d5f89f28b",
+      "key": "k",
+      "result": "target_grab",
+      "session_id": "64271d6a-9bfe-4861-aca2-a750a2e9cc99"
+    },
+    {
+      "clock_ms": 53826.636212,
+      "id": "pick-c626df91ddfb64a03",
+      "key": "j",
+      "result": "target_grab",
+      "session_id": "64271d6a-9bfe-4861-aca2-a750a2e9cc99"
+    }
+  ],
+  "schema_version": "visual-inspection-v3.1",
+  "session_id": "64271d6a-9bfe-4861-aca2-a750a2e9cc99"
+}

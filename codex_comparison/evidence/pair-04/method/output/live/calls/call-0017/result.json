@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"ca83f3ad7d1515def\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 118264.978, \"expires_ms\": 118814.978, \"id\": \"pick-ca83f3ad7d1515def\", \"key\": \"d\"}, \"visible_evidence\": \"Two connector pins are sharply bent sideways.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792348120.9865844,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 5.888063908000277,
+    "ready_unix": 1792348120.9825177,
+    "started_unix": 1792348115.0944545,
+    "thread_id": "01a15045-d09b-7953-b119-8412d050e68f",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7060,
+        "outputTokens": 120,
+        "reasoningOutputTokens": 41,
+        "totalTokens": 7180
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7060,
+        "outputTokens": 120,
+        "reasoningOutputTokens": 41,
+        "totalTokens": 7180
+      }
+    },
+    "turn_id": "01a15045-d0bb-7212-991f-8f13ebe65bda",
+    "usage_complete": true,
+    "wall_seconds": 5.892129544999989
+  }
+}

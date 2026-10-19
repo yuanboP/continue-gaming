@@ -1,0 +1,29 @@
+{
+  "contract": {
+    "allow_blur": false,
+    "allow_external_pause": false,
+    "canonical_artifact": "/app/output/session.json",
+    "engine_sha256": "348e81340d4a09f8b488193daf0b4e395afa2755d34f249585ff5e1ffe787aa4",
+    "fps": 60,
+    "game": "aster",
+    "max_engine_ticks": 3600,
+    "max_raf_gap_ms": 500,
+    "mode": "realtime",
+    "speed": 1,
+    "success_status": "won"
+  },
+  "expected_controller_manifest": null,
+  "expected_method_bundle_sha256": null,
+  "require_controller_commitment": true,
+  "seed": 74021,
+  "source_sha256": {
+    "app.mjs": "bda5b52ffdb8286f3011430fc26c5b85b741afd98d48becdc0fbf4471f34e545",
+    "bench/bootstrap.mjs": "9bb1d0961639df2d37734c883c3708c6f7062273abcbc7d46a353ca1aee97f12",
+    "bench/instrument.mjs": "f12848846e27caa5ebfeaaca55c1e951e607b52f1c5c9fa8a4d6cdedcf137c07",
+    "engine.mjs": "348e81340d4a09f8b488193daf0b4e395afa2755d34f249585ff5e1ffe787aa4",
+    "index.html": "655cad8eb8f22fcdbd320ca833f101dd48b40f1bd9e9b8afe31a7955c7a47d8f",
+    "renderer.mjs": "5a2751e6cbf37687639e260e3d58558eb804ad07f7b57bd22a95a829494ba3fd",
+    "style.css": "72df15d1e72b056043a41ced08ab492829ef5e929a82f12f9bd0161b9bfb3e35"
+  },
+  "task_id": "aster:aster-prepared-v1:method"
+}

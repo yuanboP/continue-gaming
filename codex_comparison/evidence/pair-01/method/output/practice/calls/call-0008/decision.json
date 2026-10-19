@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c601e5b4578511608",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 62920.524,
+    "expires_ms": 63470.524,
+    "id": "pick-c601e5b4578511608",
+    "key": "k"
+  },
+  "visible_evidence": "The small bottom-edge resistor has a visibly broken, jagged body."
+}

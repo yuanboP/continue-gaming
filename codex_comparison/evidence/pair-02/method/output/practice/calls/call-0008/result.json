@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c601e5b4578511608\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 62945.524, \"expires_ms\": 63470.524, \"id\": \"pick-c601e5b4578511608\", \"key\": \"k\"}, \"visible_evidence\": \"The small component along the bottom edge is visibly broken and mangled.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345859.1855204,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 8.793501881999873,
+    "ready_unix": 1792345859.1836874,
+    "started_unix": 1792345850.4924624,
+    "thread_id": "01a15023-4280-7ba2-8ef8-c63d1b05eaf4",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7058,
+        "outputTokens": 137,
+        "reasoningOutputTokens": 54,
+        "totalTokens": 7195
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7058,
+        "outputTokens": 137,
+        "reasoningOutputTokens": 54,
+        "totalTokens": 7195
+      }
+    },
+    "turn_id": "01a15023-429e-7e51-85d8-9971f8a59c80",
+    "usage_complete": true,
+    "wall_seconds": 8.795333389999996
+  }
+}

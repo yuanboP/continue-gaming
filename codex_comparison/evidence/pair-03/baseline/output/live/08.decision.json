@@ -1,0 +1,4 @@
+{
+  "reason": "Missing resistor beneath left LED; visibly damaged connector shell",
+  "reject": true
+}

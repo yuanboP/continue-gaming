@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c563e9bed45100358",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 78176.776,
+    "expires_ms": 78726.776,
+    "id": "pick-c563e9bed45100358",
+    "key": "j"
+  },
+  "visible_evidence": "The right-side capacitor is visibly broken, with dark exposed material."
+}

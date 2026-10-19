@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c7b00ecb90a57ae9d\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 78066.877, \"expires_ms\": 78616.877, \"id\": \"pick-c7b00ecb90a57ae9d\", \"key\": \"j\"}, \"visible_evidence\": \"The USB connector shell is visibly bent, and a small resistor beneath the left LED is missing.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345596.5124168,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 8.559235983999997,
+    "ready_unix": 1792345596.4942093,
+    "started_unix": 1792345587.9349742,
+    "thread_id": "01a1501f-40e4-7173-a9be-11716e3d209f",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7066,
+        "outputTokens": 155,
+        "reasoningOutputTokens": 61,
+        "totalTokens": 7221
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7066,
+        "outputTokens": 155,
+        "reasoningOutputTokens": 61,
+        "totalTokens": 7221
+      }
+    },
+    "turn_id": "01a1501f-40fc-7cb2-9e87-58e85eabc34c",
+    "usage_complete": true,
+    "wall_seconds": 8.577442089999977
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c979a7a2f839987d8",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 101802.196,
+    "expires_ms": 102352.196,
+    "id": "pick-c979a7a2f839987d8",
+    "key": "j"
+  },
+  "visible_evidence": "Two connector pins are visibly bent sideways."
+}

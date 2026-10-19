@@ -1,0 +1,1 @@
+{"reject":true,"reason":"The main IC has a conspicuous irregular gouge or adhered foreign material across its top surface, unlike the intact reference package."}

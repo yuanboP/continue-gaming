@@ -1,0 +1,30 @@
+{
+  "all_not_ac_or_unknown_samples": 0,
+  "caffeinate_early_exit": false,
+  "caffeinate_start_failed": false,
+  "child_exit_code": 0,
+  "child_started": true,
+  "explicit_signals": [],
+  "final_power": {
+    "ac_connected": true,
+    "battery_percent": 100,
+    "battery_state": "charged",
+    "charging": false,
+    "source": "AC Power"
+  },
+  "finished_at": "2026-10-18T18:49:13.914673+00:00",
+  "initial_power": {
+    "ac_connected": true,
+    "battery_percent": 97,
+    "battery_state": "charging",
+    "charging": true,
+    "source": "AC Power"
+  },
+  "note": "Observer/launcher exit is not a verified task result or a proof of uninterrupted wakefulness.",
+  "observer_failed": false,
+  "periodic_not_ac_or_unknown_samples": 0,
+  "periodic_samples": 154,
+  "runtime_condition_observed_met": true,
+  "sampling_gap_count": 0,
+  "wall_monotonic_divergence_count": 0
+}

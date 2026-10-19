@@ -1,0 +1,24 @@
+{
+  "adaptations": [
+    "executor.js hosts the unchanged browser script in Node vm and pairs emitted key events with its own execution receipts.",
+    "runner.js forwards executed keys through the same immediate public action API available to the baseline.",
+    "No image processing, target detection, action-time correction, hidden environment state, or task-specific policy is included."
+  ],
+  "schema_version": 1,
+  "unmodified_files": [
+    {
+      "role": "Actual runtime action queue; model-owned absolute timestamps, IDs, versions and expiry.",
+      "sha256": "3b0c38c81ae163fc1ff56dc26943484e8121a47f90ce4d3c7f2be221547e1b28",
+      "source": "environments/rhythm/dist/model-executor.js",
+      "vendored": "upstream/model-executor.js"
+    },
+    {
+      "role": "Optional developer delay simulation utility; not used to impose latency in live runs.",
+      "sha256": "b914347071f709a2f4ffbedd9d50299e8ce8fe8d6f7ef8f83db628acb18bb043",
+      "source": "environments/tabletennis/simulation.py",
+      "vendored": "upstream/simulation.py"
+    }
+  ],
+  "upstream_repository": "https://github.com/sooool-project/sooool",
+  "upstream_revision": "458a14500fb4f4b52fcb5a31e9dbca76126350ab"
+}

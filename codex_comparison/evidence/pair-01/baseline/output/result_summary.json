@@ -1,0 +1,15 @@
+{
+  "collisions": 0,
+  "correct_rejections": 2,
+  "empty_actions": 0,
+  "expired_commands": 10,
+  "export_byte_for_byte_verified": true,
+  "failure": "Visual decisions arrived after gate windows.",
+  "finished": true,
+  "inspection_method": "Outer agent visually compared supplied query/reference photographs; no nested model calls.",
+  "mode": "live",
+  "nested_model_calls": [],
+  "passed": false,
+  "recording_sha256": "14ab5f3b30c2e1445ec44c941417fbb6e931c8956d01080d2fe1b726167a2298",
+  "wrong_rejections": 0
+}

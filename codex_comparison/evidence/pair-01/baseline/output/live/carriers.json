@@ -1,0 +1,218 @@
+[
+  {
+    "carrier_id": "c4f0eb5658808f969",
+    "entry_ms": 0.0,
+    "gate_ms": 22222.222222222223,
+    "index": 1,
+    "inspection_url": "/inspection/c4f0eb5658808f969.png",
+    "lane": "d",
+    "sku": "board_b"
+  },
+  {
+    "carrier_id": "c1780090abed4a3c7",
+    "entry_ms": 5905.216009,
+    "gate_ms": 25905.216009,
+    "index": 2,
+    "inspection_url": "/inspection/c1780090abed4a3c7.png",
+    "lane": "f",
+    "sku": "board_a"
+  },
+  {
+    "carrier_id": "c54bb131153d0565e",
+    "entry_ms": 12311.174553,
+    "gate_ms": 30492.99273481818,
+    "index": 3,
+    "inspection_url": "/inspection/c54bb131153d0565e.png",
+    "lane": "j",
+    "sku": "board_b"
+  },
+  {
+    "carrier_id": "ca6932c3d5f89f28b",
+    "entry_ms": 17891.383205,
+    "gate_ms": 38724.716538333334,
+    "index": 4,
+    "inspection_url": "/inspection/ca6932c3d5f89f28b.png",
+    "lane": "k",
+    "sku": "board_a"
+  },
+  {
+    "carrier_id": "c80d15cf666fed4a6",
+    "entry_ms": 23652.925832,
+    "gate_ms": 45875.14805422223,
+    "index": 5,
+    "inspection_url": "/inspection/c80d15cf666fed4a6.png",
+    "lane": "d",
+    "sku": "board_a"
+  },
+  {
+    "carrier_id": "c1b332686dcb3d867",
+    "entry_ms": 29852.579464,
+    "gate_ms": 49852.579463999995,
+    "index": 6,
+    "inspection_url": "/inspection/c1b332686dcb3d867.png",
+    "lane": "f",
+    "sku": "board_b"
+  },
+  {
+    "carrier_id": "c626df91ddfb64a03",
+    "entry_ms": 35837.357053,
+    "gate_ms": 54019.175234818176,
+    "index": 7,
+    "inspection_url": "/inspection/c626df91ddfb64a03.png",
+    "lane": "j",
+    "sku": "board_b"
+  },
+  {
+    "carrier_id": "c7774308475700a1e",
+    "entry_ms": 41996.930971,
+    "gate_ms": 62830.26430433334,
+    "index": 8,
+    "inspection_url": "/inspection/c7774308475700a1e.png",
+    "lane": "k",
+    "sku": "board_a"
+  },
+  {
+    "carrier_id": "ccb56d3e5564e4a32",
+    "entry_ms": 48319.517242,
+    "gate_ms": 70541.73946422222,
+    "index": 9,
+    "inspection_url": "/inspection/ccb56d3e5564e4a32.png",
+    "lane": "d",
+    "sku": "board_a"
+  },
+  {
+    "carrier_id": "cd1c16bc02b461d05",
+    "entry_ms": 54027.773475,
+    "gate_ms": 74027.773475,
+    "index": 10,
+    "inspection_url": "/inspection/cd1c16bc02b461d05.png",
+    "lane": "f",
+    "sku": "board_b"
+  },
+  {
+    "carrier_id": "c7b00ecb90a57ae9d",
+    "entry_ms": 60085.058757,
+    "gate_ms": 78266.87693881818,
+    "index": 11,
+    "inspection_url": "/inspection/c7b00ecb90a57ae9d.png",
+    "lane": "j",
+    "sku": "board_b"
+  },
+  {
+    "carrier_id": "ce6cde6ddc4a3f286",
+    "entry_ms": 66248.058148,
+    "gate_ms": 87081.39148133332,
+    "index": 12,
+    "inspection_url": "/inspection/ce6cde6ddc4a3f286.png",
+    "lane": "k",
+    "sku": "board_a"
+  },
+  {
+    "carrier_id": "cf7fb3ff1acb7d42e",
+    "entry_ms": 71706.440382,
+    "gate_ms": 93928.66260422222,
+    "index": 13,
+    "inspection_url": "/inspection/cf7fb3ff1acb7d42e.png",
+    "lane": "d",
+    "sku": "board_a"
+  },
+  {
+    "carrier_id": "c041a531b01d80ff4",
+    "entry_ms": 77702.114728,
+    "gate_ms": 97702.114728,
+    "index": 14,
+    "inspection_url": "/inspection/c041a531b01d80ff4.png",
+    "lane": "f",
+    "sku": "board_a"
+  },
+  {
+    "carrier_id": "c979a7a2f839987d8",
+    "entry_ms": 83820.377613,
+    "gate_ms": 102002.19579481818,
+    "index": 15,
+    "inspection_url": "/inspection/c979a7a2f839987d8.png",
+    "lane": "j",
+    "sku": "board_a"
+  },
+  {
+    "carrier_id": "c4dc5f7ed032c72b8",
+    "entry_ms": 89959.155091,
+    "gate_ms": 110792.48842433332,
+    "index": 16,
+    "inspection_url": "/inspection/c4dc5f7ed032c72b8.png",
+    "lane": "k",
+    "sku": "board_b"
+  },
+  {
+    "carrier_id": "c63d277cf4b7ec073",
+    "entry_ms": 96045.915667,
+    "gate_ms": 118268.13788922221,
+    "index": 17,
+    "inspection_url": "/inspection/c63d277cf4b7ec073.png",
+    "lane": "d",
+    "sku": "board_b"
+  },
+  {
+    "carrier_id": "cd5b8dd8a7ca00964",
+    "entry_ms": 102306.855709,
+    "gate_ms": 122306.855709,
+    "index": 18,
+    "inspection_url": "/inspection/cd5b8dd8a7ca00964.png",
+    "lane": "f",
+    "sku": "board_b"
+  },
+  {
+    "carrier_id": "c8c0306b898c2058a",
+    "entry_ms": 107787.446497,
+    "gate_ms": 125969.26467881817,
+    "index": 19,
+    "inspection_url": "/inspection/c8c0306b898c2058a.png",
+    "lane": "j",
+    "sku": "board_b"
+  },
+  {
+    "carrier_id": "cd36618e5452c152d",
+    "entry_ms": 114273.004297,
+    "gate_ms": 135106.33763033335,
+    "index": 20,
+    "inspection_url": "/inspection/cd36618e5452c152d.png",
+    "lane": "k",
+    "sku": "board_b"
+  },
+  {
+    "carrier_id": "c407aff6a8205be26",
+    "entry_ms": 119972.253319,
+    "gate_ms": 142194.47554122223,
+    "index": 21,
+    "inspection_url": "/inspection/c407aff6a8205be26.png",
+    "lane": "d",
+    "sku": "board_a"
+  },
+  {
+    "carrier_id": "c8fe2c7f4c1c04582",
+    "entry_ms": 125906.47276,
+    "gate_ms": 145906.47276,
+    "index": 22,
+    "inspection_url": "/inspection/c8fe2c7f4c1c04582.png",
+    "lane": "f",
+    "sku": "board_a"
+  },
+  {
+    "carrier_id": "cfd9febc77087be06",
+    "entry_ms": 131817.282606,
+    "gate_ms": 149999.10078781817,
+    "index": 23,
+    "inspection_url": "/inspection/cfd9febc77087be06.png",
+    "lane": "j",
+    "sku": "board_b"
+  },
+  {
+    "carrier_id": "cf896c54739ceb72a",
+    "entry_ms": 137730.959727,
+    "gate_ms": 158564.29306033335,
+    "index": 24,
+    "inspection_url": "/inspection/cf896c54739ceb72a.png",
+    "lane": "k",
+    "sku": "board_a"
+  }
+]

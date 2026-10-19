@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c111b8aaa62f28d1a\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 46289.831, \"expires_ms\": 46814.831, \"id\": \"pick-c111b8aaa62f28d1a\", \"key\": \"d\"}, \"visible_evidence\": \"The query's main chip has a visibly broken upper-right corner with debris over its pins.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345841.2321157,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 8.859336513000017,
+    "ready_unix": 1792345841.2272184,
+    "started_unix": 1792345832.3678834,
+    "thread_id": "01a15022-fbb4-7f60-a87a-23d1dfb46dc3",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7064,
+        "outputTokens": 134,
+        "reasoningOutputTokens": 43,
+        "totalTokens": 7198
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7064,
+        "outputTokens": 134,
+        "reasoningOutputTokens": 43,
+        "totalTokens": 7198
+      }
+    },
+    "turn_id": "01a15022-fbd5-75b3-834a-310fca37ffa2",
+    "usage_complete": true,
+    "wall_seconds": 8.864228081999954
+  }
+}

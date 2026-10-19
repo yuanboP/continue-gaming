@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c13b35b42db917b7a\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 62931.324, \"expires_ms\": 63456.324, \"id\": \"pick-c13b35b42db917b7a\", \"key\": \"k\"}, \"visible_evidence\": \"The black IC has a conspicuous gouged, gray damaged area on its surface.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792349162.3194513,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 7.324903042999722,
+    "ready_unix": 1792349162.3171434,
+    "started_unix": 1792349155.0968206,
+    "thread_id": "01a15055-af1c-75a2-8f68-7cbc9450ee86",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7064,
+        "outputTokens": 145,
+        "reasoningOutputTokens": 55,
+        "totalTokens": 7209
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7064,
+        "outputTokens": 145,
+        "reasoningOutputTokens": 55,
+        "totalTokens": 7209
+      }
+    },
+    "turn_id": "01a15055-af3c-7651-b179-e6249f05c45e",
+    "usage_complete": true,
+    "wall_seconds": 7.327209054999912
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "services": {
+    "dev": {
+      "build": {
+        "context": "./world"
+      },
+      "cap_drop": [
+        "ALL"
+      ],
+      "environment": {
+        "GAME_ASSET_ROOT": "/opt/game",
+        "GAME_CONFIG": "/private/dev.json",
+        "SIGNING_KEY_FILE": "/private/signing.key"
+      },
+      "healthcheck": {
+        "interval": "2s",
+        "retries": 60,
+        "start_period": "10s",
+        "test": [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health',timeout=2).read()"
+        ],
+        "timeout": "3s"
+      },
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "shm_size": "256m",
+      "tmpfs": [
+        "/tmp:rw,size=512m"
+      ]
+    },
+    "main": {
+      "build": {
+        "context": "./main"
+      },
+      "depends_on": {
+        "dev": {
+          "condition": "service_healthy"
+        },
+        "world": {
+          "condition": "service_healthy"
+        }
+      },
+      "environment": {
+        "BENCH_PHASE": "live",
+        "DEV_GAME_URL": "http://dev:8080",
+        "GAME_URL": "http://world:8080",
+        "MODEL_BROKER_DEV_LIMIT": "160",
+        "MODEL_BROKER_LIVE_LIMIT": "100",
+        "MODEL_BROKER_OUTPUT": "/app/output/model-broker",
+        "MODEL_BROKER_URL": "http://127.0.0.1:8090",
+        "MODEL_BROKER_WORKERS": "4",
+        "NATIVE_SUBSCRIPTION_SOURCE": "/app/native_transport/subscription.py",
+        "SOL_QUOTA_STOP_PERCENT": "100"
+      }
+    },
+    "world": {
+      "build": {
+        "context": "./world"
+      },
+      "cap_drop": [
+        "ALL"
+      ],
+      "environment": {
+        "GAME_ASSET_ROOT": "/opt/game",
+        "GAME_CONFIG": "/private/live.json",
+        "SIGNING_KEY_FILE": "/private/signing.key"
+      },
+      "healthcheck": {
+        "interval": "2s",
+        "retries": 60,
+        "start_period": "10s",
+        "test": [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health',timeout=2).read()"
+        ],
+        "timeout": "3s"
+      },
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "shm_size": "256m",
+      "tmpfs": [
+        "/tmp:rw,size=512m"
+      ]
+    }
+  }
+}

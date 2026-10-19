@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-18T10:44:15.879498+00:00",
+  "experiment_id": "awake-v1",
+  "review": "Root read the source and gates. Independent online_harbor_harness and sooool_reuse_audit approved the same runtime observer. 26 pure structural checks passed. Same frozen v4 actor/world/model; serial arms and continuously observed AC are disclosed changed conditions. All original trials retained. No observed runtime anomaly allowed for clean-condition claim; observations do not prove every instant was uninterrupted.",
+  "source_sha256": {
+    "visual_inspection_v4/awake-confirmation-v1/plan.json": "e792d4e638ccf4fdb899bf7484855d0fb6c85351570663444512f6edb3b72455",
+    "visual_inspection_v4/reproduction/awake-v1/design.json": "e25be60d48635396cfda11d5ba13f59597fcc011649f91d83059bfe387943a3a",
+    "visual_inspection_v4/reproduction/awake-v1/registration.json": "19dc6c5db0621e5a235e373ddd5e3e3229c7b5ae7a02558c2080fd3e81746bd1",
+    "visual_inspection_v4/reproduce.py": "7948dfccc75dd14eb5dcd8b0c8a7841ee6766afb97064dbe02b36a29af0e47ae",
+    "visual_inspection_v4/runtime_watch.py": "55d27e1323061ade043b6d9d2e3bcf5e1d5b14122a040787cba0a9b869689366",
+    "visual_inspection_v4/registry/method-v1-freeze.json": "2c9b38a40723025d83147fdce1f32d75b95f75a7a9ed1a10bc058715adf06750"
+  },
+  "model_launches_at_review": 0,
+  "episodes_at_review": 0,
+  "prelaunch_requirements": [
+    "Original five-pair v4 summary and all ten consistent exits must exist; runtime_watch enforces this.",
+    "Collect original completed evidence before starting new model work to avoid bulk collection contention.",
+    "Initial AC positively observed; default no global power changes.",
+    "No changes to reviewed entry, observer, plan or original frozen method."
+  ],
+  "criterion_unchanged": {
+    "method_passes": 5,
+    "baseline_passes_at_most": 1,
+    "all_baseline_attempts_admissible": true,
+    "runtime_condition_observed_met": true
+  },
+  "test_results": {
+    "runtime_watch_pure_checks": 26,
+    "models": 0,
+    "episodes": 0
+  }
+}

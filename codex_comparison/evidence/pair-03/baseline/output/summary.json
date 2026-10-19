@@ -1,0 +1,14 @@
+{
+  "envelope_keys": [
+    "payload",
+    "signature"
+  ],
+  "export_bytes": 14113,
+  "failure": "Inspection decisions were recorded after gate deadlines; live cannot be replayed.",
+  "nested_model_calls": 0,
+  "phase": "finished",
+  "receipts": {
+    "target_grab": 1
+  },
+  "sha256": "762c253e1c97d4f365017b5689073594e6b21584aceb53705dff0ec2e2659121"
+}

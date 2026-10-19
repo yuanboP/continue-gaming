@@ -1,0 +1,11 @@
+{
+  "carrier_id": "ccdd3fc69b134a790",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 134592.341342,
+    "expires_ms": 135117.341342,
+    "id": "pick-ccdd3fc69b134a790",
+    "key": "k"
+  },
+  "visible_evidence": "The query's main chip has a broken, crumbled lower-left corner."
+}

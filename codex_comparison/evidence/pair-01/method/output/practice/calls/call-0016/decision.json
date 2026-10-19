@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cae9ca08b2d7c5048",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 110841.248,
+    "expires_ms": 111391.248,
+    "id": "pick-cae9ca08b2d7c5048",
+    "key": "k"
+  },
+  "visible_evidence": "The query board has visibly bent header pins."
+}

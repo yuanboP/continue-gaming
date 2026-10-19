@@ -1,0 +1,4319 @@
+{
+  "candidates": [
+    {
+      "feasible": false,
+      "lead_ms": 0,
+      "min_slack_ms": -90.01265400004195,
+      "passes": 8,
+      "total": 11
+    },
+    {
+      "feasible": false,
+      "lead_ms": 25,
+      "min_slack_ms": -65.01265400004195,
+      "passes": 9,
+      "total": 11
+    },
+    {
+      "feasible": false,
+      "lead_ms": 50,
+      "min_slack_ms": -40.01265400004195,
+      "passes": 9,
+      "total": 11
+    },
+    {
+      "feasible": false,
+      "lead_ms": 75,
+      "min_slack_ms": -15.012654000041948,
+      "passes": 9,
+      "total": 11
+    },
+    {
+      "feasible": false,
+      "lead_ms": 100,
+      "min_slack_ms": 9.987345999958052,
+      "passes": 10,
+      "total": 11
+    },
+    {
+      "feasible": true,
+      "lead_ms": 125,
+      "min_slack_ms": 34.98734599995805,
+      "passes": 11,
+      "total": 11
+    },
+    {
+      "feasible": true,
+      "lead_ms": 150,
+      "min_slack_ms": 59.98734599995805,
+      "passes": 11,
+      "total": 11
+    },
+    {
+      "feasible": true,
+      "lead_ms": 175,
+      "min_slack_ms": 84.98734599995805,
+      "passes": 11,
+      "total": 11
+    },
+    {
+      "feasible": true,
+      "lead_ms": 200,
+      "min_slack_ms": 109.98734599995805,
+      "passes": 11,
+      "total": 11
+    },
+    {
+      "feasible": true,
+      "lead_ms": 225,
+      "min_slack_ms": 100,
+      "passes": 11,
+      "total": 11
+    },
+    {
+      "feasible": true,
+      "lead_ms": 250,
+      "min_slack_ms": 75,
+      "passes": 11,
+      "total": 11
+    },
+    {
+      "feasible": true,
+      "lead_ms": 275,
+      "min_slack_ms": 50,
+      "passes": 11,
+      "total": 11
+    },
+    {
+      "feasible": true,
+      "lead_ms": 300,
+      "min_slack_ms": 25,
+      "passes": 11,
+      "total": 11
+    },
+    {
+      "feasible": false,
+      "lead_ms": 325,
+      "min_slack_ms": 0,
+      "passes": 10,
+      "total": 11
+    }
+  ],
+  "scenarios": [
+    {
+      "jitter": 2.99382200000764,
+      "name": "sample-0",
+      "network": 1.1993880000378283
+    },
+    {
+      "jitter": 2,
+      "name": "sample-1",
+      "network": 413.01265400004104
+    },
+    {
+      "jitter": 4.3220980001024145,
+      "name": "sample-2",
+      "network": 2.17905799994287
+    },
+    {
+      "jitter": 2,
+      "name": "sample-3",
+      "network": 338.10822299989786
+    },
+    {
+      "jitter": 2,
+      "name": "sample-4",
+      "network": 2.3904840000313925
+    },
+    {
+      "jitter": 2,
+      "name": "sample-5",
+      "network": 314.261766000026
+    },
+    {
+      "jitter": 2,
+      "name": "sample-6",
+      "network": 2.4994160000987904
+    },
+    {
+      "jitter": 2,
+      "name": "sample-7",
+      "network": 320.57066799995937
+    },
+    {
+      "jitter": 0,
+      "name": "zero-delay",
+      "network": 0
+    },
+    {
+      "jitter": 0,
+      "name": "lower-envelope",
+      "network": -25
+    },
+    {
+      "jitter": 0,
+      "name": "upper-envelope",
+      "network": 440.01265400004104
+    }
+  ],
+  "trace": [
+    {
+      "admission": "accepted",
+      "lead_ms": 0,
+      "literal": {
+        "at_ms": 10000,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 345.8067899999551,
+      "scenario": "sample-0",
+      "server_arrival_ms": 10004.193210000045,
+      "upstream_receipts": [
+        {
+          "actual_ms": 10002.993822000008,
+          "admitted_version": 1,
+          "at_ms": 10000,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 0,
+      "literal": {
+        "at_ms": 10000,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": false,
+      "physical_slack_ms": -65.01265400004195,
+      "scenario": "sample-1",
+      "server_arrival_ms": 10415.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 10002,
+          "admitted_version": 1,
+          "at_ms": 10000,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 0,
+      "literal": {
+        "at_ms": 10000,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 343.49884399995426,
+      "scenario": "sample-2",
+      "server_arrival_ms": 10006.501156000046,
+      "upstream_receipts": [
+        {
+          "actual_ms": 10004.322098000102,
+          "admitted_version": 1,
+          "at_ms": 10000,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 0,
+      "literal": {
+        "at_ms": 10000,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": false,
+      "physical_slack_ms": 9.891777000102593,
+      "scenario": "sample-3",
+      "server_arrival_ms": 10340.108222999897,
+      "upstream_receipts": [
+        {
+          "actual_ms": 10002,
+          "admitted_version": 1,
+          "at_ms": 10000,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 0,
+      "literal": {
+        "at_ms": 10000,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 345.6095159999677,
+      "scenario": "sample-4",
+      "server_arrival_ms": 10004.390484000032,
+      "upstream_receipts": [
+        {
+          "actual_ms": 10002,
+          "admitted_version": 1,
+          "at_ms": 10000,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 0,
+      "literal": {
+        "at_ms": 10000,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 33.73823399997491,
+      "scenario": "sample-5",
+      "server_arrival_ms": 10316.261766000025,
+      "upstream_receipts": [
+        {
+          "actual_ms": 10002,
+          "admitted_version": 1,
+          "at_ms": 10000,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 0,
+      "literal": {
+        "at_ms": 10000,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 345.5005839999012,
+      "scenario": "sample-6",
+      "server_arrival_ms": 10004.499416000099,
+      "upstream_receipts": [
+        {
+          "actual_ms": 10002,
+          "admitted_version": 1,
+          "at_ms": 10000,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 0,
+      "literal": {
+        "at_ms": 10000,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 27.42933200003972,
+      "scenario": "sample-7",
+      "server_arrival_ms": 10322.57066799996,
+      "upstream_receipts": [
+        {
+          "actual_ms": 10002,
+          "admitted_version": 1,
+          "at_ms": 10000,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 0,
+      "literal": {
+        "at_ms": 10000,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 350,
+      "scenario": "zero-delay",
+      "server_arrival_ms": 10000,
+      "upstream_receipts": [
+        {
+          "actual_ms": 10000,
+          "admitted_version": 1,
+          "at_ms": 10000,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 0,
+      "literal": {
+        "at_ms": 10000,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 325,
+      "scenario": "lower-envelope",
+      "server_arrival_ms": 9975,
+      "upstream_receipts": [
+        {
+          "actual_ms": 10000,
+          "admitted_version": 1,
+          "at_ms": 10000,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 0,
+      "literal": {
+        "at_ms": 10000,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": false,
+      "physical_slack_ms": -90.01265400004195,
+      "scenario": "upper-envelope",
+      "server_arrival_ms": 10440.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 10000,
+          "admitted_version": 1,
+          "at_ms": 10000,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 25,
+      "literal": {
+        "at_ms": 9975,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 329.1932100000449,
+      "scenario": "sample-0",
+      "server_arrival_ms": 9979.193210000045,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9977.993822000008,
+          "admitted_version": 1,
+          "at_ms": 9975,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 25,
+      "literal": {
+        "at_ms": 9975,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": false,
+      "physical_slack_ms": -40.01265400004195,
+      "scenario": "sample-1",
+      "server_arrival_ms": 10390.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9977,
+          "admitted_version": 1,
+          "at_ms": 9975,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 25,
+      "literal": {
+        "at_ms": 9975,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 331.50115600004574,
+      "scenario": "sample-2",
+      "server_arrival_ms": 9981.501156000046,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9979.322098000102,
+          "admitted_version": 1,
+          "at_ms": 9975,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 25,
+      "literal": {
+        "at_ms": 9975,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 34.89177700010259,
+      "scenario": "sample-3",
+      "server_arrival_ms": 10315.108222999897,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9977,
+          "admitted_version": 1,
+          "at_ms": 9975,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 25,
+      "literal": {
+        "at_ms": 9975,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 329.3904840000323,
+      "scenario": "sample-4",
+      "server_arrival_ms": 9979.390484000032,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9977,
+          "admitted_version": 1,
+          "at_ms": 9975,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 25,
+      "literal": {
+        "at_ms": 9975,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 58.73823399997491,
+      "scenario": "sample-5",
+      "server_arrival_ms": 10291.261766000025,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9977,
+          "admitted_version": 1,
+          "at_ms": 9975,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 25,
+      "literal": {
+        "at_ms": 9975,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 329.4994160000988,
+      "scenario": "sample-6",
+      "server_arrival_ms": 9979.499416000099,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9977,
+          "admitted_version": 1,
+          "at_ms": 9975,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 25,
+      "literal": {
+        "at_ms": 9975,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 52.42933200003972,
+      "scenario": "sample-7",
+      "server_arrival_ms": 10297.57066799996,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9977,
+          "admitted_version": 1,
+          "at_ms": 9975,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 25,
+      "literal": {
+        "at_ms": 9975,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 325,
+      "scenario": "zero-delay",
+      "server_arrival_ms": 9975,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9975,
+          "admitted_version": 1,
+          "at_ms": 9975,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 25,
+      "literal": {
+        "at_ms": 9975,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 300,
+      "scenario": "lower-envelope",
+      "server_arrival_ms": 9950,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9975,
+          "admitted_version": 1,
+          "at_ms": 9975,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 25,
+      "literal": {
+        "at_ms": 9975,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": false,
+      "physical_slack_ms": -65.01265400004195,
+      "scenario": "upper-envelope",
+      "server_arrival_ms": 10415.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9975,
+          "admitted_version": 1,
+          "at_ms": 9975,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 50,
+      "literal": {
+        "at_ms": 9950,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 304.1932100000449,
+      "scenario": "sample-0",
+      "server_arrival_ms": 9954.193210000045,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9952.993822000008,
+          "admitted_version": 1,
+          "at_ms": 9950,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 50,
+      "literal": {
+        "at_ms": 9950,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": false,
+      "physical_slack_ms": -15.012654000041948,
+      "scenario": "sample-1",
+      "server_arrival_ms": 10365.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9952,
+          "admitted_version": 1,
+          "at_ms": 9950,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 50,
+      "literal": {
+        "at_ms": 9950,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 306.50115600004574,
+      "scenario": "sample-2",
+      "server_arrival_ms": 9956.501156000046,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9954.322098000102,
+          "admitted_version": 1,
+          "at_ms": 9950,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 50,
+      "literal": {
+        "at_ms": 9950,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 59.89177700010259,
+      "scenario": "sample-3",
+      "server_arrival_ms": 10290.108222999897,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9952,
+          "admitted_version": 1,
+          "at_ms": 9950,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 50,
+      "literal": {
+        "at_ms": 9950,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 304.3904840000323,
+      "scenario": "sample-4",
+      "server_arrival_ms": 9954.390484000032,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9952,
+          "admitted_version": 1,
+          "at_ms": 9950,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 50,
+      "literal": {
+        "at_ms": 9950,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 83.73823399997491,
+      "scenario": "sample-5",
+      "server_arrival_ms": 10266.261766000025,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9952,
+          "admitted_version": 1,
+          "at_ms": 9950,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 50,
+      "literal": {
+        "at_ms": 9950,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 304.4994160000988,
+      "scenario": "sample-6",
+      "server_arrival_ms": 9954.499416000099,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9952,
+          "admitted_version": 1,
+          "at_ms": 9950,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 50,
+      "literal": {
+        "at_ms": 9950,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 77.42933200003972,
+      "scenario": "sample-7",
+      "server_arrival_ms": 10272.57066799996,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9952,
+          "admitted_version": 1,
+          "at_ms": 9950,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 50,
+      "literal": {
+        "at_ms": 9950,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 300,
+      "scenario": "zero-delay",
+      "server_arrival_ms": 9950,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9950,
+          "admitted_version": 1,
+          "at_ms": 9950,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 50,
+      "literal": {
+        "at_ms": 9950,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 275,
+      "scenario": "lower-envelope",
+      "server_arrival_ms": 9925,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9950,
+          "admitted_version": 1,
+          "at_ms": 9950,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 50,
+      "literal": {
+        "at_ms": 9950,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": false,
+      "physical_slack_ms": -40.01265400004195,
+      "scenario": "upper-envelope",
+      "server_arrival_ms": 10390.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9950,
+          "admitted_version": 1,
+          "at_ms": 9950,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 75,
+      "literal": {
+        "at_ms": 9925,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 279.1932100000449,
+      "scenario": "sample-0",
+      "server_arrival_ms": 9929.193210000045,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9927.993822000008,
+          "admitted_version": 1,
+          "at_ms": 9925,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 75,
+      "literal": {
+        "at_ms": 9925,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": false,
+      "physical_slack_ms": 9.987345999958052,
+      "scenario": "sample-1",
+      "server_arrival_ms": 10340.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9927,
+          "admitted_version": 1,
+          "at_ms": 9925,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 75,
+      "literal": {
+        "at_ms": 9925,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 281.50115600004574,
+      "scenario": "sample-2",
+      "server_arrival_ms": 9931.501156000046,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9929.322098000102,
+          "admitted_version": 1,
+          "at_ms": 9925,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 75,
+      "literal": {
+        "at_ms": 9925,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 84.89177700010259,
+      "scenario": "sample-3",
+      "server_arrival_ms": 10265.108222999897,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9927,
+          "admitted_version": 1,
+          "at_ms": 9925,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 75,
+      "literal": {
+        "at_ms": 9925,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 279.3904840000323,
+      "scenario": "sample-4",
+      "server_arrival_ms": 9929.390484000032,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9927,
+          "admitted_version": 1,
+          "at_ms": 9925,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 75,
+      "literal": {
+        "at_ms": 9925,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 108.73823399997491,
+      "scenario": "sample-5",
+      "server_arrival_ms": 10241.261766000025,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9927,
+          "admitted_version": 1,
+          "at_ms": 9925,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 75,
+      "literal": {
+        "at_ms": 9925,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 279.4994160000988,
+      "scenario": "sample-6",
+      "server_arrival_ms": 9929.499416000099,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9927,
+          "admitted_version": 1,
+          "at_ms": 9925,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 75,
+      "literal": {
+        "at_ms": 9925,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 102.42933200003972,
+      "scenario": "sample-7",
+      "server_arrival_ms": 10247.57066799996,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9927,
+          "admitted_version": 1,
+          "at_ms": 9925,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 75,
+      "literal": {
+        "at_ms": 9925,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 275,
+      "scenario": "zero-delay",
+      "server_arrival_ms": 9925,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9925,
+          "admitted_version": 1,
+          "at_ms": 9925,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 75,
+      "literal": {
+        "at_ms": 9925,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 250,
+      "scenario": "lower-envelope",
+      "server_arrival_ms": 9900,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9925,
+          "admitted_version": 1,
+          "at_ms": 9925,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 75,
+      "literal": {
+        "at_ms": 9925,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": false,
+      "physical_slack_ms": -15.012654000041948,
+      "scenario": "upper-envelope",
+      "server_arrival_ms": 10365.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9925,
+          "admitted_version": 1,
+          "at_ms": 9925,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 100,
+      "literal": {
+        "at_ms": 9900,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 254.19321000004493,
+      "scenario": "sample-0",
+      "server_arrival_ms": 9904.193210000045,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9902.993822000008,
+          "admitted_version": 1,
+          "at_ms": 9900,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 100,
+      "literal": {
+        "at_ms": 9900,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 34.98734599995805,
+      "scenario": "sample-1",
+      "server_arrival_ms": 10315.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9902,
+          "admitted_version": 1,
+          "at_ms": 9900,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 100,
+      "literal": {
+        "at_ms": 9900,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 256.50115600004574,
+      "scenario": "sample-2",
+      "server_arrival_ms": 9906.501156000046,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9904.322098000102,
+          "admitted_version": 1,
+          "at_ms": 9900,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 100,
+      "literal": {
+        "at_ms": 9900,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 109.89177700010259,
+      "scenario": "sample-3",
+      "server_arrival_ms": 10240.108222999897,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9902,
+          "admitted_version": 1,
+          "at_ms": 9900,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 100,
+      "literal": {
+        "at_ms": 9900,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 254.3904840000323,
+      "scenario": "sample-4",
+      "server_arrival_ms": 9904.390484000032,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9902,
+          "admitted_version": 1,
+          "at_ms": 9900,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 100,
+      "literal": {
+        "at_ms": 9900,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 133.7382339999749,
+      "scenario": "sample-5",
+      "server_arrival_ms": 10216.261766000025,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9902,
+          "admitted_version": 1,
+          "at_ms": 9900,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 100,
+      "literal": {
+        "at_ms": 9900,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 254.4994160000988,
+      "scenario": "sample-6",
+      "server_arrival_ms": 9904.499416000099,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9902,
+          "admitted_version": 1,
+          "at_ms": 9900,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 100,
+      "literal": {
+        "at_ms": 9900,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 127.42933200003972,
+      "scenario": "sample-7",
+      "server_arrival_ms": 10222.57066799996,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9902,
+          "admitted_version": 1,
+          "at_ms": 9900,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 100,
+      "literal": {
+        "at_ms": 9900,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 250,
+      "scenario": "zero-delay",
+      "server_arrival_ms": 9900,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9900,
+          "admitted_version": 1,
+          "at_ms": 9900,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 100,
+      "literal": {
+        "at_ms": 9900,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 225,
+      "scenario": "lower-envelope",
+      "server_arrival_ms": 9875,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9900,
+          "admitted_version": 1,
+          "at_ms": 9900,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 100,
+      "literal": {
+        "at_ms": 9900,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": false,
+      "physical_slack_ms": 9.987345999958052,
+      "scenario": "upper-envelope",
+      "server_arrival_ms": 10340.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9900,
+          "admitted_version": 1,
+          "at_ms": 9900,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 125,
+      "literal": {
+        "at_ms": 9875,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 229.19321000004493,
+      "scenario": "sample-0",
+      "server_arrival_ms": 9879.193210000045,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9877.993822000008,
+          "admitted_version": 1,
+          "at_ms": 9875,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 125,
+      "literal": {
+        "at_ms": 9875,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 59.98734599995805,
+      "scenario": "sample-1",
+      "server_arrival_ms": 10290.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9877,
+          "admitted_version": 1,
+          "at_ms": 9875,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 125,
+      "literal": {
+        "at_ms": 9875,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 231.50115600004574,
+      "scenario": "sample-2",
+      "server_arrival_ms": 9881.501156000046,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9879.322098000102,
+          "admitted_version": 1,
+          "at_ms": 9875,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 125,
+      "literal": {
+        "at_ms": 9875,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 134.8917770001026,
+      "scenario": "sample-3",
+      "server_arrival_ms": 10215.108222999897,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9877,
+          "admitted_version": 1,
+          "at_ms": 9875,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 125,
+      "literal": {
+        "at_ms": 9875,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 229.3904840000323,
+      "scenario": "sample-4",
+      "server_arrival_ms": 9879.390484000032,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9877,
+          "admitted_version": 1,
+          "at_ms": 9875,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 125,
+      "literal": {
+        "at_ms": 9875,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 158.7382339999749,
+      "scenario": "sample-5",
+      "server_arrival_ms": 10191.261766000025,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9877,
+          "admitted_version": 1,
+          "at_ms": 9875,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 125,
+      "literal": {
+        "at_ms": 9875,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 229.4994160000988,
+      "scenario": "sample-6",
+      "server_arrival_ms": 9879.499416000099,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9877,
+          "admitted_version": 1,
+          "at_ms": 9875,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 125,
+      "literal": {
+        "at_ms": 9875,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 152.42933200003972,
+      "scenario": "sample-7",
+      "server_arrival_ms": 10197.57066799996,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9877,
+          "admitted_version": 1,
+          "at_ms": 9875,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 125,
+      "literal": {
+        "at_ms": 9875,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 225,
+      "scenario": "zero-delay",
+      "server_arrival_ms": 9875,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9875,
+          "admitted_version": 1,
+          "at_ms": 9875,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 125,
+      "literal": {
+        "at_ms": 9875,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 200,
+      "scenario": "lower-envelope",
+      "server_arrival_ms": 9850,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9875,
+          "admitted_version": 1,
+          "at_ms": 9875,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 125,
+      "literal": {
+        "at_ms": 9875,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 34.98734599995805,
+      "scenario": "upper-envelope",
+      "server_arrival_ms": 10315.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9875,
+          "admitted_version": 1,
+          "at_ms": 9875,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 150,
+      "literal": {
+        "at_ms": 9850,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 204.19321000004493,
+      "scenario": "sample-0",
+      "server_arrival_ms": 9854.193210000045,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9852.993822000008,
+          "admitted_version": 1,
+          "at_ms": 9850,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 150,
+      "literal": {
+        "at_ms": 9850,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 84.98734599995805,
+      "scenario": "sample-1",
+      "server_arrival_ms": 10265.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9852,
+          "admitted_version": 1,
+          "at_ms": 9850,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 150,
+      "literal": {
+        "at_ms": 9850,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 206.50115600004574,
+      "scenario": "sample-2",
+      "server_arrival_ms": 9856.501156000046,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9854.322098000102,
+          "admitted_version": 1,
+          "at_ms": 9850,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 150,
+      "literal": {
+        "at_ms": 9850,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 159.8917770001026,
+      "scenario": "sample-3",
+      "server_arrival_ms": 10190.108222999897,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9852,
+          "admitted_version": 1,
+          "at_ms": 9850,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 150,
+      "literal": {
+        "at_ms": 9850,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 204.3904840000323,
+      "scenario": "sample-4",
+      "server_arrival_ms": 9854.390484000032,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9852,
+          "admitted_version": 1,
+          "at_ms": 9850,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 150,
+      "literal": {
+        "at_ms": 9850,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 183.7382339999749,
+      "scenario": "sample-5",
+      "server_arrival_ms": 10166.261766000025,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9852,
+          "admitted_version": 1,
+          "at_ms": 9850,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 150,
+      "literal": {
+        "at_ms": 9850,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 204.4994160000988,
+      "scenario": "sample-6",
+      "server_arrival_ms": 9854.499416000099,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9852,
+          "admitted_version": 1,
+          "at_ms": 9850,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 150,
+      "literal": {
+        "at_ms": 9850,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 177.42933200003972,
+      "scenario": "sample-7",
+      "server_arrival_ms": 10172.57066799996,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9852,
+          "admitted_version": 1,
+          "at_ms": 9850,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 150,
+      "literal": {
+        "at_ms": 9850,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 200,
+      "scenario": "zero-delay",
+      "server_arrival_ms": 9850,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9850,
+          "admitted_version": 1,
+          "at_ms": 9850,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 150,
+      "literal": {
+        "at_ms": 9850,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 175,
+      "scenario": "lower-envelope",
+      "server_arrival_ms": 9825,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9850,
+          "admitted_version": 1,
+          "at_ms": 9850,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 150,
+      "literal": {
+        "at_ms": 9850,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 59.98734599995805,
+      "scenario": "upper-envelope",
+      "server_arrival_ms": 10290.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9850,
+          "admitted_version": 1,
+          "at_ms": 9850,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 175,
+      "literal": {
+        "at_ms": 9825,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 179.19321000004493,
+      "scenario": "sample-0",
+      "server_arrival_ms": 9829.193210000045,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9827.993822000008,
+          "admitted_version": 1,
+          "at_ms": 9825,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 175,
+      "literal": {
+        "at_ms": 9825,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 109.98734599995805,
+      "scenario": "sample-1",
+      "server_arrival_ms": 10240.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9827,
+          "admitted_version": 1,
+          "at_ms": 9825,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 175,
+      "literal": {
+        "at_ms": 9825,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 181.50115600004574,
+      "scenario": "sample-2",
+      "server_arrival_ms": 9831.501156000046,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9829.322098000102,
+          "admitted_version": 1,
+          "at_ms": 9825,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 175,
+      "literal": {
+        "at_ms": 9825,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 184.8917770001026,
+      "scenario": "sample-3",
+      "server_arrival_ms": 10165.108222999897,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9827,
+          "admitted_version": 1,
+          "at_ms": 9825,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 175,
+      "literal": {
+        "at_ms": 9825,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 179.3904840000323,
+      "scenario": "sample-4",
+      "server_arrival_ms": 9829.390484000032,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9827,
+          "admitted_version": 1,
+          "at_ms": 9825,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 175,
+      "literal": {
+        "at_ms": 9825,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 208.7382339999749,
+      "scenario": "sample-5",
+      "server_arrival_ms": 10141.261766000025,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9827,
+          "admitted_version": 1,
+          "at_ms": 9825,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 175,
+      "literal": {
+        "at_ms": 9825,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 179.4994160000988,
+      "scenario": "sample-6",
+      "server_arrival_ms": 9829.499416000099,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9827,
+          "admitted_version": 1,
+          "at_ms": 9825,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 175,
+      "literal": {
+        "at_ms": 9825,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 202.42933200003972,
+      "scenario": "sample-7",
+      "server_arrival_ms": 10147.57066799996,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9827,
+          "admitted_version": 1,
+          "at_ms": 9825,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 175,
+      "literal": {
+        "at_ms": 9825,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 175,
+      "scenario": "zero-delay",
+      "server_arrival_ms": 9825,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9825,
+          "admitted_version": 1,
+          "at_ms": 9825,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 175,
+      "literal": {
+        "at_ms": 9825,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 150,
+      "scenario": "lower-envelope",
+      "server_arrival_ms": 9800,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9825,
+          "admitted_version": 1,
+          "at_ms": 9825,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 175,
+      "literal": {
+        "at_ms": 9825,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 84.98734599995805,
+      "scenario": "upper-envelope",
+      "server_arrival_ms": 10265.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9825,
+          "admitted_version": 1,
+          "at_ms": 9825,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 200,
+      "literal": {
+        "at_ms": 9800,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 154.19321000004493,
+      "scenario": "sample-0",
+      "server_arrival_ms": 9804.193210000045,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9802.993822000008,
+          "admitted_version": 1,
+          "at_ms": 9800,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 200,
+      "literal": {
+        "at_ms": 9800,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 134.98734599995805,
+      "scenario": "sample-1",
+      "server_arrival_ms": 10215.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9802,
+          "admitted_version": 1,
+          "at_ms": 9800,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 200,
+      "literal": {
+        "at_ms": 9800,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 156.50115600004574,
+      "scenario": "sample-2",
+      "server_arrival_ms": 9806.501156000046,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9804.322098000102,
+          "admitted_version": 1,
+          "at_ms": 9800,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 200,
+      "literal": {
+        "at_ms": 9800,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 209.8917770001026,
+      "scenario": "sample-3",
+      "server_arrival_ms": 10140.108222999897,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9802,
+          "admitted_version": 1,
+          "at_ms": 9800,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 200,
+      "literal": {
+        "at_ms": 9800,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 154.3904840000323,
+      "scenario": "sample-4",
+      "server_arrival_ms": 9804.390484000032,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9802,
+          "admitted_version": 1,
+          "at_ms": 9800,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 200,
+      "literal": {
+        "at_ms": 9800,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 233.7382339999749,
+      "scenario": "sample-5",
+      "server_arrival_ms": 10116.261766000025,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9802,
+          "admitted_version": 1,
+          "at_ms": 9800,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 200,
+      "literal": {
+        "at_ms": 9800,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 154.4994160000988,
+      "scenario": "sample-6",
+      "server_arrival_ms": 9804.499416000099,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9802,
+          "admitted_version": 1,
+          "at_ms": 9800,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 200,
+      "literal": {
+        "at_ms": 9800,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 227.42933200003972,
+      "scenario": "sample-7",
+      "server_arrival_ms": 10122.57066799996,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9802,
+          "admitted_version": 1,
+          "at_ms": 9800,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 200,
+      "literal": {
+        "at_ms": 9800,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 150,
+      "scenario": "zero-delay",
+      "server_arrival_ms": 9800,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9800,
+          "admitted_version": 1,
+          "at_ms": 9800,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 200,
+      "literal": {
+        "at_ms": 9800,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 125,
+      "scenario": "lower-envelope",
+      "server_arrival_ms": 9775,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9800,
+          "admitted_version": 1,
+          "at_ms": 9800,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 200,
+      "literal": {
+        "at_ms": 9800,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 109.98734599995805,
+      "scenario": "upper-envelope",
+      "server_arrival_ms": 10240.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9800,
+          "admitted_version": 1,
+          "at_ms": 9800,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 225,
+      "literal": {
+        "at_ms": 9775,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 129.19321000004493,
+      "scenario": "sample-0",
+      "server_arrival_ms": 9779.193210000045,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9777.993822000008,
+          "admitted_version": 1,
+          "at_ms": 9775,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 225,
+      "literal": {
+        "at_ms": 9775,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 159.98734599995805,
+      "scenario": "sample-1",
+      "server_arrival_ms": 10190.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9777,
+          "admitted_version": 1,
+          "at_ms": 9775,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 225,
+      "literal": {
+        "at_ms": 9775,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 131.50115600004574,
+      "scenario": "sample-2",
+      "server_arrival_ms": 9781.501156000046,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9779.322098000102,
+          "admitted_version": 1,
+          "at_ms": 9775,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 225,
+      "literal": {
+        "at_ms": 9775,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 234.8917770001026,
+      "scenario": "sample-3",
+      "server_arrival_ms": 10115.108222999897,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9777,
+          "admitted_version": 1,
+          "at_ms": 9775,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 225,
+      "literal": {
+        "at_ms": 9775,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 129.3904840000323,
+      "scenario": "sample-4",
+      "server_arrival_ms": 9779.390484000032,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9777,
+          "admitted_version": 1,
+          "at_ms": 9775,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 225,
+      "literal": {
+        "at_ms": 9775,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 258.7382339999749,
+      "scenario": "sample-5",
+      "server_arrival_ms": 10091.261766000025,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9777,
+          "admitted_version": 1,
+          "at_ms": 9775,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 225,
+      "literal": {
+        "at_ms": 9775,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 129.4994160000988,
+      "scenario": "sample-6",
+      "server_arrival_ms": 9779.499416000099,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9777,
+          "admitted_version": 1,
+          "at_ms": 9775,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 225,
+      "literal": {
+        "at_ms": 9775,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 252.42933200003972,
+      "scenario": "sample-7",
+      "server_arrival_ms": 10097.57066799996,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9777,
+          "admitted_version": 1,
+          "at_ms": 9775,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 225,
+      "literal": {
+        "at_ms": 9775,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 125,
+      "scenario": "zero-delay",
+      "server_arrival_ms": 9775,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9775,
+          "admitted_version": 1,
+          "at_ms": 9775,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 225,
+      "literal": {
+        "at_ms": 9775,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 100,
+      "scenario": "lower-envelope",
+      "server_arrival_ms": 9750,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9775,
+          "admitted_version": 1,
+          "at_ms": 9775,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 225,
+      "literal": {
+        "at_ms": 9775,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 134.98734599995805,
+      "scenario": "upper-envelope",
+      "server_arrival_ms": 10215.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9775,
+          "admitted_version": 1,
+          "at_ms": 9775,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 250,
+      "literal": {
+        "at_ms": 9750,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 104.19321000004493,
+      "scenario": "sample-0",
+      "server_arrival_ms": 9754.193210000045,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9752.993822000008,
+          "admitted_version": 1,
+          "at_ms": 9750,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 250,
+      "literal": {
+        "at_ms": 9750,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 184.98734599995805,
+      "scenario": "sample-1",
+      "server_arrival_ms": 10165.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9752,
+          "admitted_version": 1,
+          "at_ms": 9750,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 250,
+      "literal": {
+        "at_ms": 9750,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 106.50115600004574,
+      "scenario": "sample-2",
+      "server_arrival_ms": 9756.501156000046,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9754.322098000102,
+          "admitted_version": 1,
+          "at_ms": 9750,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 250,
+      "literal": {
+        "at_ms": 9750,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 259.8917770001026,
+      "scenario": "sample-3",
+      "server_arrival_ms": 10090.108222999897,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9752,
+          "admitted_version": 1,
+          "at_ms": 9750,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 250,
+      "literal": {
+        "at_ms": 9750,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 104.3904840000323,
+      "scenario": "sample-4",
+      "server_arrival_ms": 9754.390484000032,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9752,
+          "admitted_version": 1,
+          "at_ms": 9750,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 250,
+      "literal": {
+        "at_ms": 9750,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 283.7382339999749,
+      "scenario": "sample-5",
+      "server_arrival_ms": 10066.261766000025,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9752,
+          "admitted_version": 1,
+          "at_ms": 9750,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 250,
+      "literal": {
+        "at_ms": 9750,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 104.49941600009879,
+      "scenario": "sample-6",
+      "server_arrival_ms": 9754.499416000099,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9752,
+          "admitted_version": 1,
+          "at_ms": 9750,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 250,
+      "literal": {
+        "at_ms": 9750,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 277.4293320000397,
+      "scenario": "sample-7",
+      "server_arrival_ms": 10072.57066799996,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9752,
+          "admitted_version": 1,
+          "at_ms": 9750,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 250,
+      "literal": {
+        "at_ms": 9750,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 100,
+      "scenario": "zero-delay",
+      "server_arrival_ms": 9750,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9750,
+          "admitted_version": 1,
+          "at_ms": 9750,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 250,
+      "literal": {
+        "at_ms": 9750,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 75,
+      "scenario": "lower-envelope",
+      "server_arrival_ms": 9725,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9750,
+          "admitted_version": 1,
+          "at_ms": 9750,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 250,
+      "literal": {
+        "at_ms": 9750,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 159.98734599995805,
+      "scenario": "upper-envelope",
+      "server_arrival_ms": 10190.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9750,
+          "admitted_version": 1,
+          "at_ms": 9750,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 275,
+      "literal": {
+        "at_ms": 9725,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 79.19321000004493,
+      "scenario": "sample-0",
+      "server_arrival_ms": 9729.193210000045,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9727.993822000008,
+          "admitted_version": 1,
+          "at_ms": 9725,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 275,
+      "literal": {
+        "at_ms": 9725,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 209.98734599995805,
+      "scenario": "sample-1",
+      "server_arrival_ms": 10140.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9727,
+          "admitted_version": 1,
+          "at_ms": 9725,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 275,
+      "literal": {
+        "at_ms": 9725,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 81.50115600004574,
+      "scenario": "sample-2",
+      "server_arrival_ms": 9731.501156000046,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9729.322098000102,
+          "admitted_version": 1,
+          "at_ms": 9725,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 275,
+      "literal": {
+        "at_ms": 9725,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 284.8917770001026,
+      "scenario": "sample-3",
+      "server_arrival_ms": 10065.108222999897,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9727,
+          "admitted_version": 1,
+          "at_ms": 9725,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 275,
+      "literal": {
+        "at_ms": 9725,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 79.3904840000323,
+      "scenario": "sample-4",
+      "server_arrival_ms": 9729.390484000032,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9727,
+          "admitted_version": 1,
+          "at_ms": 9725,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 275,
+      "literal": {
+        "at_ms": 9725,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 308.7382339999749,
+      "scenario": "sample-5",
+      "server_arrival_ms": 10041.261766000025,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9727,
+          "admitted_version": 1,
+          "at_ms": 9725,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 275,
+      "literal": {
+        "at_ms": 9725,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 79.49941600009879,
+      "scenario": "sample-6",
+      "server_arrival_ms": 9729.499416000099,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9727,
+          "admitted_version": 1,
+          "at_ms": 9725,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 275,
+      "literal": {
+        "at_ms": 9725,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 302.4293320000397,
+      "scenario": "sample-7",
+      "server_arrival_ms": 10047.57066799996,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9727,
+          "admitted_version": 1,
+          "at_ms": 9725,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 275,
+      "literal": {
+        "at_ms": 9725,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 75,
+      "scenario": "zero-delay",
+      "server_arrival_ms": 9725,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9725,
+          "admitted_version": 1,
+          "at_ms": 9725,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 275,
+      "literal": {
+        "at_ms": 9725,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 50,
+      "scenario": "lower-envelope",
+      "server_arrival_ms": 9700,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9725,
+          "admitted_version": 1,
+          "at_ms": 9725,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 275,
+      "literal": {
+        "at_ms": 9725,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 184.98734599995805,
+      "scenario": "upper-envelope",
+      "server_arrival_ms": 10165.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9725,
+          "admitted_version": 1,
+          "at_ms": 9725,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 300,
+      "literal": {
+        "at_ms": 9700,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 54.19321000004493,
+      "scenario": "sample-0",
+      "server_arrival_ms": 9704.193210000045,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9702.993822000008,
+          "admitted_version": 1,
+          "at_ms": 9700,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 300,
+      "literal": {
+        "at_ms": 9700,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 234.98734599995805,
+      "scenario": "sample-1",
+      "server_arrival_ms": 10115.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9702,
+          "admitted_version": 1,
+          "at_ms": 9700,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 300,
+      "literal": {
+        "at_ms": 9700,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 56.50115600004574,
+      "scenario": "sample-2",
+      "server_arrival_ms": 9706.501156000046,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9704.322098000102,
+          "admitted_version": 1,
+          "at_ms": 9700,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 300,
+      "literal": {
+        "at_ms": 9700,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 309.8917770001026,
+      "scenario": "sample-3",
+      "server_arrival_ms": 10040.108222999897,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9702,
+          "admitted_version": 1,
+          "at_ms": 9700,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 300,
+      "literal": {
+        "at_ms": 9700,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 54.3904840000323,
+      "scenario": "sample-4",
+      "server_arrival_ms": 9704.390484000032,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9702,
+          "admitted_version": 1,
+          "at_ms": 9700,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 300,
+      "literal": {
+        "at_ms": 9700,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 333.7382339999749,
+      "scenario": "sample-5",
+      "server_arrival_ms": 10016.261766000025,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9702,
+          "admitted_version": 1,
+          "at_ms": 9700,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 300,
+      "literal": {
+        "at_ms": 9700,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 54.49941600009879,
+      "scenario": "sample-6",
+      "server_arrival_ms": 9704.499416000099,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9702,
+          "admitted_version": 1,
+          "at_ms": 9700,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 300,
+      "literal": {
+        "at_ms": 9700,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 327.4293320000397,
+      "scenario": "sample-7",
+      "server_arrival_ms": 10022.57066799996,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9702,
+          "admitted_version": 1,
+          "at_ms": 9700,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 300,
+      "literal": {
+        "at_ms": 9700,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 50,
+      "scenario": "zero-delay",
+      "server_arrival_ms": 9700,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9700,
+          "admitted_version": 1,
+          "at_ms": 9700,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 300,
+      "literal": {
+        "at_ms": 9700,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 25,
+      "scenario": "lower-envelope",
+      "server_arrival_ms": 9675,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9700,
+          "admitted_version": 1,
+          "at_ms": 9700,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 300,
+      "literal": {
+        "at_ms": 9700,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 209.98734599995805,
+      "scenario": "upper-envelope",
+      "server_arrival_ms": 10140.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9700,
+          "admitted_version": 1,
+          "at_ms": 9700,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 325,
+      "literal": {
+        "at_ms": 9675,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 29.193210000044928,
+      "scenario": "sample-0",
+      "server_arrival_ms": 9679.193210000045,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9677.993822000008,
+          "admitted_version": 1,
+          "at_ms": 9675,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 325,
+      "literal": {
+        "at_ms": 9675,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 259.98734599995805,
+      "scenario": "sample-1",
+      "server_arrival_ms": 10090.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9677,
+          "admitted_version": 1,
+          "at_ms": 9675,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 325,
+      "literal": {
+        "at_ms": 9675,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 31.50115600004574,
+      "scenario": "sample-2",
+      "server_arrival_ms": 9681.501156000046,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9679.322098000102,
+          "admitted_version": 1,
+          "at_ms": 9675,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 325,
+      "literal": {
+        "at_ms": 9675,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 334.8917770001026,
+      "scenario": "sample-3",
+      "server_arrival_ms": 10015.108222999897,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9677,
+          "admitted_version": 1,
+          "at_ms": 9675,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 325,
+      "literal": {
+        "at_ms": 9675,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 29.390484000032302,
+      "scenario": "sample-4",
+      "server_arrival_ms": 9679.390484000032,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9677,
+          "admitted_version": 1,
+          "at_ms": 9675,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 325,
+      "literal": {
+        "at_ms": 9675,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 341.2617660000251,
+      "scenario": "sample-5",
+      "server_arrival_ms": 9991.261766000025,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9677,
+          "admitted_version": 1,
+          "at_ms": 9675,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 325,
+      "literal": {
+        "at_ms": 9675,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 29.49941600009879,
+      "scenario": "sample-6",
+      "server_arrival_ms": 9679.499416000099,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9677,
+          "admitted_version": 1,
+          "at_ms": 9675,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 325,
+      "literal": {
+        "at_ms": 9675,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 347.5706679999603,
+      "scenario": "sample-7",
+      "server_arrival_ms": 9997.57066799996,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9677,
+          "admitted_version": 1,
+          "at_ms": 9675,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 325,
+      "literal": {
+        "at_ms": 9675,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 25,
+      "scenario": "zero-delay",
+      "server_arrival_ms": 9675,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9675,
+          "admitted_version": 1,
+          "at_ms": 9675,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 325,
+      "literal": {
+        "at_ms": 9675,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": false,
+      "physical_slack_ms": 0,
+      "scenario": "lower-envelope",
+      "server_arrival_ms": 9650,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9675,
+          "admitted_version": 1,
+          "at_ms": 9675,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "admission": "accepted",
+      "lead_ms": 325,
+      "literal": {
+        "at_ms": 9675,
+        "expires_ms": 10350,
+        "id": "fixture",
+        "key": "d"
+      },
+      "passed": true,
+      "physical_slack_ms": 234.98734599995805,
+      "scenario": "upper-envelope",
+      "server_arrival_ms": 10115.012654000042,
+      "upstream_receipts": [
+        {
+          "actual_ms": 9675,
+          "admitted_version": 1,
+          "at_ms": 9675,
+          "expires_ms": 10350,
+          "id": "fixture",
+          "key": "d",
+          "seq": 2,
+          "status": "executed",
+          "version": 1
+        }
+      ]
+    }
+  ]
+}

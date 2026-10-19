@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"cb4ff00ae3f1347de\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 97557.594176, \"expires_ms\": 98082.594176, \"id\": \"pick-cb4ff00ae3f1347de\", \"key\": \"f\"}, \"visible_evidence\": \"The component immediately left of the IC is broken, with conspicuous debris around it.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345892.652503,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 7.019215933999931,
+    "ready_unix": 1792345892.6502476,
+    "started_unix": 1792345885.7331448,
+    "thread_id": "01a15023-cc29-7170-9a50-57bba007df2e",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7062,
+        "outputTokens": 145,
+        "reasoningOutputTokens": 54,
+        "totalTokens": 7207
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7062,
+        "outputTokens": 145,
+        "reasoningOutputTokens": 54,
+        "totalTokens": 7207
+      }
+    },
+    "turn_id": "01a15023-cc46-7851-82a5-41e876a7193f",
+    "usage_complete": true,
+    "wall_seconds": 7.021469796000019
+  }
+}

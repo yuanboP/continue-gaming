@@ -1,0 +1,1 @@
+{"reject":true,"reason":"Multiple J1 header pins are severely bent and cross over one another, unlike the straight, separated reference pins."}

@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c601e5b4578511608\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 62945.524, \"expires_ms\": 63470.524, \"id\": \"pick-c601e5b4578511608\", \"key\": \"k\"}, \"visible_evidence\": \"The small component along the bottom edge is visibly broken, with an irregular exposed center.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792348970.0634644,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 6.813202924000507,
+    "ready_unix": 1792348970.0617588,
+    "started_unix": 1792348963.3494024,
+    "thread_id": "01a15052-c21a-72b1-971e-0a7e0956c2b9",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7058,
+        "outputTokens": 161,
+        "reasoningOutputTokens": 75,
+        "totalTokens": 7219
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7058,
+        "outputTokens": 161,
+        "reasoningOutputTokens": 75,
+        "totalTokens": 7219
+      }
+    },
+    "turn_id": "01a15052-c234-7261-acbd-c3536be0edce",
+    "usage_complete": true,
+    "wall_seconds": 6.814906734000033
+  }
+}

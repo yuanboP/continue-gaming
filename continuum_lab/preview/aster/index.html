@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111a20">
+  <title>星航 · ASTER</title>
+  <style>:root{color-scheme:dark;font-family:Inter,"Helvetica Neue",Arial,"PingFang SC",sans-serif;color:#edf0e8;background:#0b1217;font-synthesis:none}*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 20%,#24343b55,transparent 65%),#0b1217}.game-shell{width:min(960px,100vw);margin:12px auto;border:1px solid #7a8d9729;background:#111a20;box-shadow:0 24px 100px #0005}canvas{display:block;width:100%;height:auto;aspect-ratio:4/3}.controls{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 20px;border-top:1px solid #8c9a9e24;color:#a4b0b5;font-size:11px;line-height:1.6}.controls div{display:flex;gap:7px}kbd{font-family:inherit;color:#e0e7e5;font-size:10px;padding:2px 4px;background:#243138;border:1px solid #50616a44;border-radius:3px;margin-right:3px}button{font:inherit;font-size:11px;border:1px solid #60737b66;border-radius:4px;background:#1b2b32;color:#d6e1df;padding:8px 12px;white-space:nowrap;cursor:pointer}button:first-child{background:#bce9d4;color:#14292a;border-color:#bce9d4}button:hover{filter:brightness(1.12)}button:focus-visible{outline:2px solid #e0f7ee;outline-offset:3px}button:disabled{opacity:.35;cursor:default}body[data-research] .controls{display:none}body[data-research] .game-shell{margin:0;border:0;box-shadow:none}@media(max-width:640px){.game-shell{margin:0;border:0}.controls{flex-direction:column;gap:9px;padding:12px 10px}.controls>span{font-size:9px}}
+</style>
+</head>
+<body>
+  <main class="game-shell">
+    <canvas id="game" width="960" height="720" aria-label="星航：移动飞行器穿过弹幕，在六十秒内击破目标。仅存活不算通过。"></canvas>
+    <nav class="controls" aria-label="游戏控制">
+      <span><kbd>↑↓←→</kbd> 移动 <kbd>Z</kbd> 射击 <kbd>Shift</kbd> 精细移动 <kbd>X</kbd> 清屏</span>
+      <div><button id="start">开始航行</button><button id="pause" disabled>暂停</button><button id="restart">重新开始</button></div>
+    </nav>
+  </main>
+  <script type="module">
+const W = 480, H = 640, FPS = 60;
+const CHART = [
+  {start:0,end:20,title:'月之珠 · 静夜',pattern:'ring',every:110,count:16,speed:1.35,color:'#b7a4ff',description:'每 1.83 秒展开 16 发旋转环弹；观察空隙，轻移穿过。'},
+  {start:20,end:40,title:'竹取 · 月下五愿',pattern:'fan',every:90,count:7,speed:1.8,color:'#ff9ab4',description:'每 1.5 秒向自机发射七向扇弹；等瞄准后横向移动。'},
+  {start:40,end:60,title:'蓬莱 · 不尽之月',pattern:'spiral',every:45,count:8,speed:1.65,color:'#8ee8cc',description:'每 0.75 秒发射八向旋转弹；低速寻找连续通道。'},
+];
+const BOMB_COLORS = ['#ff6a9f','#b28bff','#79bfff','#8de9e3','#98ed9d','#ffe38b','#ffb378','#f59be8'];
+const DIRECTIONS = [[0,0],[0,-1],[1,-1],[1,0],[1,1],[0,1],[-1,1],[-1,0],[-1,-1]];
+
+class Game {
+  constructor(seed=1) { this.reset(seed); }
+  reset(seed=1) {
+    this.seed=seed>>>0; this.tick=0;
+    this.player={x:240,y:550,lives:3,bombs:3,inv:120,dying:0};
+    this.boss={x:240,y:100,hp:3200,maxHp:3200};
+    this.bullets=[]; this.shots=[]; this.bombOrbs=[]; this.events=[];
+    this.score=0; this.graze=0; this.status='playing';
+    this.bombFlash=0; this.bombTimer=0; this.lastBomb=false; this.hits=0;
+    return this;
+  }
+  phase() { return CHART[Math.min(2,Math.floor(this.tick/1200))]; }
+  step(a=[0,0,0,0]) {
+    if(this.status!=='playing') return {reward:0,terminated:this.status!=='survived',truncated:this.status==='survived'};
+    this.events=[];
+    let reward=.002;
+    const p=this.player,b=this.boss;
+    this.tick++; p.inv=Math.max(0,p.inv-1);
+    this.bombFlash=Math.max(0,this.bombFlash-1);
+    this.bombTimer=Math.max(0,this.bombTimer-1);
+
+    if(p.dying>0) {
+      p.dying--;
+      if(p.dying===0 && p.lives>0) {
+        p.x=240; p.y=550; p.inv=150;
+        this.events.push({type:'respawn',x:p.x,y:p.y});
+      }
+    } else {
+      const d=DIRECTIONS[a[0]]||DIRECTIONS[0],speed=a[2]?2:4.3,norm=d[0]&&d[1]?Math.SQRT1_2:1;
+      p.x=Math.max(12,Math.min(W-12,p.x+d[0]*speed*norm));
+      p.y=Math.max(18,Math.min(H-12,p.y+d[1]*speed*norm));
+      if(a[3]&&!this.lastBomb&&p.bombs>0&&this.bombTimer===0) {
+        p.bombs--; this.bombTimer=150; this.bombFlash=25; p.inv=180;
+        this.events.push({type:'bomb',x:p.x,y:p.y,cleared:this.bullets.map(q=>({x:q.x,y:q.y}))});
+        this.bullets=[];
+        this.bombOrbs=BOMB_COLORS.map((color,index)=>({x:p.x,y:p.y,age:0,index,color,trail:[]}));
+        reward+=.2;
+      }
+      if(a[1]&&this.tick%5===0) {
+        for(const dx of [-8,8]) this.shots.push({x:p.x+dx,y:p.y-12});
+      }
+    }
+    this.lastBomb=!!a[3];
+    b.x=240+Math.sin(this.tick/150+this.seed*.01)*75;
+    this.shots=this.shots.filter(s=>{
+      s.y-=12;
+      if(Math.abs(s.x-b.x)<28&&Math.abs(s.y-b.y)<32) {
+        b.hp-=5; this.score+=10; reward+=.015; return false;
+      }
+      return s.y>0;
+    });
+
+    // Dream Seal: eight expanding orbs, then staggered homing impacts.
+    this.bombOrbs=this.bombOrbs.filter(o=>{
+      o.age++; o.trail.push({x:o.x,y:o.y}); if(o.trail.length>10)o.trail.shift();
+      if(o.age<42+o.index*4) {
+        const angle=o.index*Math.PI/4+o.age*.075,radius=15+Math.min(o.age,45)*2.6;
+        o.x=p.x+Math.cos(angle)*radius; o.y=p.y+Math.sin(angle)*radius*.55-25;
+      } else {
+        const dx=b.x-o.x,dy=b.y-o.y,dist=Math.hypot(dx,dy),speed=8+(o.age-42)*.16;
+        o.x+=dx/Math.max(1,dist)*speed; o.y+=dy/Math.max(1,dist)*speed;
+        if(dist<speed+24) {
+          b.hp-=30; this.score+=60; reward+=.09;
+          this.events.push({type:'orb_hit',x:o.x,y:o.y,color:o.color});
+          return false;
+        }
+      }
+      return o.age<150;
+    });
+    const ph=this.phase();
+    if(this.tick%ph.every===0) {
+      const base=ph.pattern==='fan'?Math.atan2(p.y-b.y,p.x-b.x):this.tick*.008+this.seed*.1;
+      for(let i=0;i<ph.count;i++) {
+        const angle=ph.pattern==='fan'?base+(i-(ph.count-1)/2)*.15:base+i*2*Math.PI/ph.count;
+        this.bullets.push({x:b.x,y:b.y,vx:Math.cos(angle)*ph.speed,vy:Math.sin(angle)*ph.speed,r:5,color:ph.color,grazed:false});
+      }
+    }
+    this.bullets=this.bullets.filter(q=>{
+      q.x+=q.vx; q.y+=q.vy;
+      if(this.bombOrbs.some(o=>Math.hypot(q.x-o.x,q.y-o.y)<38)) {
+        this.events.push({type:'cancel',x:q.x,y:q.y}); return false;
+      }
+      const dist=Math.hypot(q.x-p.x,q.y-p.y);
+      if(dist<q.r+3&&p.inv===0&&p.dying===0&&p.lives>0) {
+        p.lives--; this.hits++; p.dying=45; p.inv=45; this.shots=[];
+        this.events.push({type:'crash',x:p.x,y:p.y}); reward-=1; return false;
+      }
+      if(dist<22&&!q.grazed&&p.dying===0) { q.grazed=true; this.graze++; this.score+=25; reward+=.03; }
+      return q.x>-24&&q.x<W+24&&q.y>-24&&q.y<H+24;
+    });
+    // A clear zone around the crash lets the player see the explosion and re-entry.
+    if(this.events.some(e=>e.type==='crash')) this.bullets=this.bullets.filter(q=>Math.hypot(q.x-p.x,q.y-p.y)>90);
+    let terminated=false,truncated=false;
+    if(p.lives<=0&&(p.dying===0||this.tick>=3600)) { this.status='lost'; terminated=true; reward-=3; }
+    else if(b.hp<=0) { b.hp=0; this.status='won'; terminated=true; reward+=5; }
+    else if(this.tick>=3600) { this.status='survived'; truncated=true; reward+=2; }
+    return {reward,terminated,truncated};
+  }
+  snapshot() {
+    return {tick:this.tick,player:{...this.player},boss:{...this.boss},bullets:this.bullets,shots:this.shots,
+      bombOrbs:this.bombOrbs,bombTimer:this.bombTimer,events:this.events,
+      score:this.score,graze:this.graze,status:this.status,phase:this.phase().title,hits:this.hits};
+  }
+}
+const STAGES = [
+  {name:'环流', english:'RADIAL CURRENT', color:'#b7a4ff'},
+  {name:'追迹', english:'TRACKING FIELD', color:'#ff9ab4'},
+  {name:'旋光', english:'SPIRAL LIGHT', color:'#8ee8cc'},
+];
+
+const FONT='"Helvetica Neue", Arial, "PingFang SC", sans-serif';
+const PALETTE={paper:'#ecede3',muted:'#93a5ab',line:'#324249',green:'#bce9d4',coral:'#f0aa92'};
+const TAU=Math.PI*2;
+
+function text(c,value,x,y,size=12,color=PALETTE.paper,weight=400,align='left'){
+  c.font=`${weight} ${size}px ${FONT}`;c.fillStyle=color;c.textAlign=align;c.textBaseline='alphabetic';c.fillText(value,x,y);
+}
+function line(c,x1,y1,x2,y2,color=PALETTE.line){c.strokeStyle=color;c.lineWidth=1;c.beginPath();c.moveTo(x1,y1);c.lineTo(x2,y2);c.stroke();}
+function circle(c,x,y,r,fill,stroke=null){c.beginPath();c.arc(x,y,r,0,TAU);if(fill){c.fillStyle=fill;c.fill();}if(stroke){c.strokeStyle=stroke;c.lineWidth=1;c.stroke();}}
+function polygon(c,points,fill,stroke=null){c.beginPath();points.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.closePath();if(fill){c.fillStyle=fill;c.fill();}if(stroke){c.strokeStyle=stroke;c.lineWidth=1;c.stroke();}}
+function hex(c,x,y,r,angle=0,fill=null,stroke=PALETTE.coral){polygon(c,Array.from({length:6},(_,i)=>[x+Math.cos(i*TAU/6+angle)*r,y+Math.sin(i*TAU/6+angle)*r]),fill,stroke);}
+
+function arena(c,g,state){
+  c.save();c.translate(28,48);c.beginPath();c.rect(0,0,480,640);c.clip();
+  const bg=c.createLinearGradient(0,0,480,640);bg.addColorStop(0,'#1b2a32');bg.addColorStop(.6,'#14232c');bg.addColorStop(1,'#14202a');c.fillStyle=bg;c.fillRect(0,0,480,640);
+  c.strokeStyle='#69828b15';c.lineWidth=1;
+  for(let x=0;x<=480;x+=40)line(c,x+.5,0,x+.5,640,'#69828b15');
+  const scroll=(state.visualTick*.18)%40;for(let y=scroll;y<640;y+=40)line(c,0,y,480,y,'#69828b15');
+  circle(c,240,100,175,null,'#7c949b12');circle(c,240,100,110,null,'#7c949b12');
+  for(let i=0;i<28;i++){const x=(i*137.3+31)%480,y=(i*79.7+state.visualTick*.12)%640;c.fillStyle=i%3?'#9bb4bc48':'#cbdedc75';c.fillRect(x,y,1,1);}
+  const b=g.boss,stage=STAGES[state.phaseIndex];
+  if(b.hp>0){
+    circle(c,b.x,b.y,35,null,'#ecb39a30');hex(c,b.x,b.y,25,state.visualTick*.006,'#3e383b',PALETTE.coral);hex(c,b.x,b.y,13,-state.visualTick*.012,'#f0aa9222',PALETTE.coral);circle(c,b.x,b.y,4,PALETTE.coral);
+    line(c,b.x-38,b.y,b.x-30,b.y,PALETTE.coral);line(c,b.x+30,b.y,b.x+38,b.y,PALETTE.coral);
+  }
+  for(const s of g.shots){c.fillStyle='#bce9d4cc';c.fillRect(s.x-1,s.y-8,2,12);}
+  for(const q of g.bullets){circle(c,q.x,q.y,q.r+2,null,q.color+'55');circle(c,q.x,q.y,q.r,q.color);circle(c,q.x-1.2,q.y-1.4,1.3,'#ffffffa8');}
+  for(const o of g.bombOrbs){for(let i=0;i<o.trail.length;i++)circle(c,o.trail[i].x,o.trail[i].y,2+i*.3,o.color+Math.round((i+1)/o.trail.length*55).toString(16).padStart(2,'0'));circle(c,o.x,o.y,10,o.color);circle(c,o.x,o.y,15,null,o.color+'80');}
+  const p=g.player;
+  if(p.dying===0&&p.lives>0){
+    c.save();if(p.inv>0)c.globalAlpha=.55+.35*(Math.floor(state.visualTick/5)%2);
+    polygon(c,[[p.x,p.y-13],[p.x+11,p.y+10],[p.x,p.y+5],[p.x-11,p.y+10]],'#c7ecdb','#eefbf4');
+    polygon(c,[[p.x-3,p.y+10],[p.x,p.y+17+(state.visualTick%5)],[p.x+3,p.y+10]],'#9fcac055');
+    c.restore();
+    if(state.held[2]){circle(c,p.x,p.y,18,null,'#bce9d466');circle(c,p.x,p.y,3,'#152a30','#f9fff9');}
+    if(p.inv>0)circle(c,p.x,p.y,24,null,'#bce9d444');
+  }
+  if(p.dying>0){const r=(45-p.dying)*1.2;circle(c,p.x,p.y,r,null,'#f0aa92aa');circle(c,p.x,p.y,r*.7,null,'#f0aa9244');}
+  if(g.bombFlash>0){c.fillStyle=`rgba(188,233,212,${g.bombFlash/25*.20})`;c.fillRect(0,0,480,640);}
+  if(state.intro>0&&state.started){
+    c.fillStyle='#12232bd9';c.fillRect(0,229,480,151);line(c,38,230,442,230,stage.color+'88');
+    text(c,`SECTOR 0${state.phaseIndex+1}`,240,263,11,stage.color,600,'center');text(c,stage.name,240,312,34,PALETTE.paper,400,'center');text(c,stage.english,240,344,11,PALETTE.muted,400,'center');
+  }
+  if(!state.started||state.paused||g.status!=='playing'){
+    c.fillStyle='#0e1c24dc';c.fillRect(0,0,480,640);
+    const terminal=g.status!=='playing';
+    const title=!state.started?'穿过星航':state.paused?'航行暂停':g.status==='lost'?'信号中断':g.status==='won'?'目标已击破':'目标未击破';
+    const subtitle=!state.started?'FIND YOUR LINE THROUGH THE LIGHT':state.paused?'TAKE A BREATH':g.status==='won'?'MISSION COMPLETE':'MISSION NOT PASSED';
+    hex(c,240,206,40,state.visualTick*.003,null,PALETTE.green);hex(c,240,206,24,-state.visualTick*.004,null,PALETTE.green+'55');circle(c,240,206,5,PALETTE.green);
+    text(c,title,240,290,34,PALETTE.paper,400,'center');text(c,subtitle,240,319,10,PALETTE.muted,500,'center');
+    if(!state.started){text(c,'六十秒内击破目标；仅存活不算通过。',240,367,13,PALETTE.muted,400,'center');text(c,'按 Z 或点击「开始航行」',240,407,12,PALETTE.green,500,'center');}
+    else if(state.paused)text(c,'按 Esc 继续',240,369,12,PALETTE.green,500,'center');
+    else if(terminal){text(c,`SCORE  ${String(g.score).padStart(6,'0')}`,240,367,18,PALETTE.green,500,'center');text(c,'按 Z 或点击「重新开始」',240,407,12,PALETTE.muted,400,'center');}
+  }
+  c.restore();c.strokeStyle='#6b858c50';c.lineWidth=1;c.strokeRect(28.5,48.5,479,639);
+}
+
+function render(canvas,g,state){
+  const c=canvas.getContext('2d');c.clearRect(0,0,960,720);c.fillStyle='#111a20';c.fillRect(0,0,960,720);
+  text(c,'ASTER',28,29,15,PALETTE.paper,600);text(c,'星 航',91,28,12,PALETTE.muted);text(c,'FLIGHT STUDY / 01',508,27,9,PALETTE.muted,400,'right');
+  arena(c,g,state);
+  const x=550,right=924,width=374,stage=STAGES[state.phaseIndex];
+  text(c,'星航',x,80,32,PALETTE.paper,400);text(c,'A QUIET WAY THROUGH',x,105,10,PALETTE.muted,500);
+  circle(c,918,69,4,g.status==='lost'?PALETTE.coral:PALETTE.green);line(c,x,129,right,129);
+  text(c,'SCORE',x,158,10,PALETTE.muted,500);text(c,String(g.score).padStart(6,'0'),x,208,47,PALETTE.paper,300);
+  text(c,'HULL / 机体',x,249,10,PALETTE.muted,500);text(c,'PULSE / 清屏',x+210,249,10,PALETTE.muted,500);
+  for(let i=0;i<3;i++){const active=i<g.player.lives;polygon(c,[[x+i*27+6,265],[x+i*27+12,276],[x+i*27,276]],active?PALETTE.green:'#3a4b52');hex(c,x+218+i*27,272,6,0,i<g.player.bombs?PALETTE.coral:null,i<g.player.bombs?PALETTE.coral:'#3a4b52');}
+  line(c,x,303,right,303);
+  text(c,'TARGET',x,330,10,PALETTE.muted,500);text(c,`${Math.ceil(g.boss.hp/g.boss.maxHp*100)}%`,right,330,12,PALETTE.coral,500,'right');
+  c.fillStyle='#2b3940';c.fillRect(x,344,width,4);c.fillStyle=PALETTE.coral;c.fillRect(x,344,width*Math.max(0,g.boss.hp/g.boss.maxHp),4);
+  text(c,'ELAPSED',x,384,10,PALETTE.muted,500);text(c,`${(g.tick/60).toFixed(1).padStart(4,'0')} / 60.0 s`,right,384,16,PALETTE.paper,400,'right');
+  c.fillStyle='#2b3940';c.fillRect(x,399,width,2);c.fillStyle=PALETTE.green;c.fillRect(x,399,width*Math.min(1,g.tick/3600),2);
+  text(c,'SECTORS',x,436,10,PALETTE.muted,500);
+  STAGES.forEach((s,i)=>{const sx=x+i*128;line(c,sx,453,sx+115,453,i===state.phaseIndex?s.color:'#3a4b52');text(c,`0${i+1}`,sx,477,10,i===state.phaseIndex?s.color:PALETTE.muted);text(c,s.name,sx+26,477,13,i===state.phaseIndex?PALETTE.paper:PALETTE.muted);});
+  text(c,'GRAZE',x,527,10,PALETTE.muted,500);text(c,String(g.graze).padStart(3,'0'),x+74,527,14,PALETTE.paper,500);
+  text(c,'HITS',x+210,527,10,PALETTE.muted,500);text(c,String(g.hits).padStart(2,'0'),right,527,14,PALETTE.paper,500,'right');line(c,x,552,right,552);
+  text(c,'↑ ↓ ← →',x,582,14,PALETTE.paper,500);text(c,'移动',x+101,582,11,PALETTE.muted);text(c,'Z',x+210,582,14,PALETTE.paper,500);text(c,'射击',x+245,582,11,PALETTE.muted);
+  text(c,'SHIFT',x,611,12,PALETTE.paper,500);text(c,'精细移动',x+101,611,11,PALETTE.muted);text(c,'X',x+210,611,14,PALETTE.paper,500);text(c,'清屏',x+245,611,11,PALETTE.muted);
+  text(c,'60 秒内击破目标。',x,656,12,PALETTE.green);text(c,'仅存活不算通过；目标生命值必须归零。',x,677,11,PALETTE.muted);
+  text(c,`0${state.phaseIndex+1} / ${stage.english}`,28,707,9,PALETTE.muted,500);text(c,state.paused?'PAUSED':!state.started?'READY':g.status==='playing'?'IN FLIGHT':g.status==='won'?'COMPLETE':'NOT PASSED',508,707,9,PALETTE.muted,500,'right');
+}
+
+const canvas=document.getElementById('game'),game=new Game(1),keys=new Set();
+const researchEnabled=new URLSearchParams(location.search).get('research')==='1';
+if(researchEnabled)document.body.dataset.research='true';
+let started=false,paused=false,last=performance.now(),acc=0,visualTick=0,intro=0,phaseIndex=0;
+let mode='sim',speed=1,plan=[],remaining=0,held=[0,0,0,0],actionStart=0;
+let wallStart=0,maxGap=0,blurCount=0,human=false,humanEdges=[],humanActions=[],humanLastAction=null;
+const directions=[[0,0],[0,-1],[1,-1],[1,0],[1,1],[0,1],[-1,1],[-1,0],[-1,-1]];
+const allowed=['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','KeyZ','KeyX','ShiftLeft','ShiftRight','Escape'];
+const button=id=>document.getElementById(id);
+
+function action(){
+  const x=Number(keys.has('ArrowRight'))-Number(keys.has('ArrowLeft'));
+  const y=Number(keys.has('ArrowDown'))-Number(keys.has('ArrowUp'));
+  return [directions.findIndex(d=>d[0]===x&&d[1]===y),+keys.has('KeyZ'),+(keys.has('ShiftLeft')||keys.has('ShiftRight')),+keys.has('KeyX')];
+}
+function setKeys(a){held=a.slice(0,4);keys.clear();const [x,y]=directions[held[0]];if(x<0)keys.add('ArrowLeft');if(x>0)keys.add('ArrowRight');if(y<0)keys.add('ArrowUp');if(y>0)keys.add('ArrowDown');if(held[1])keys.add('KeyZ');if(held[2])keys.add('ShiftLeft');if(held[3])keys.add('KeyX');}
+function nextAction(){if(remaining>0)return;const next=plan.shift();if(next){setKeys(next);remaining=next[4];actionStart=game.tick;}else setKeys([0,held[1],held[2],0]);}
+function draw(){render(canvas,game,{started,paused,visualTick,intro,phaseIndex,held:researchEnabled?held:action()});}
+function reset(seed=1){game.reset(seed);started=true;paused=false;keys.clear();visualTick=0;intro=165;phaseIndex=0;acc=0;last=performance.now();button('pause').disabled=false;button('pause').textContent='暂停';button('start').textContent='航行中';draw();}
+function togglePause(){if(!started||game.status!=='playing'||researchEnabled)return;paused=!paused;keys.clear();acc=0;last=performance.now();button('pause').textContent=paused?'继续':'暂停';draw();}
+function simulate(){
+  if(!started||paused||game.status!=='playing')return;
+  if(researchEnabled&&!human&&intro===0)nextAction();
+  visualTick++;
+  if(intro>0){intro--;return;}
+  const act=action();
+  if(human){held=[...act];if(!humanLastAction||act.some((v,i)=>v!==humanLastAction[i])){humanActions.push({visual_frame:visualTick-1,logical_frame:game.tick,action:[...act],wall_ms:performance.now()-wallStart});humanLastAction=[...act];}}
+  game.step(act);
+  if(researchEnabled&&!human&&remaining>0){remaining--;if(remaining===0)nextAction();}
+  if(game.status!=='playing'){if(researchEnabled){plan=[];remaining=0;setKeys([0,0,0,0]);}button('start').textContent='再次航行';button('pause').disabled=true;return;}
+  const next=Math.min(2,Math.floor(game.tick/1200));if(next!==phaseIndex){phaseIndex=next;intro=135;}
+}
+function frame(now){
+  const elapsed=Math.max(0,(now-last)/1000);last=now;
+  if(researchEnabled&&started)maxGap=Math.max(maxGap,elapsed);
+  if(started&&!paused&&game.status==='playing'){
+    acc+=researchEnabled?(mode==='realtime'?elapsed*speed:0):Math.min(.1,elapsed);
+    while(acc>=1/FPS&&game.status==='playing'){simulate();acc-=1/FPS;}
+  }else{acc=0;if(!started&&!researchEnabled)visualTick++;}
+  if(!researchEnabled||mode==='realtime')draw();
+  requestAnimationFrame(frame);
+}
+function getClock(){const wall=wallStart?performance.now()-wallStart:0;return {frame:game.tick,visual_frame:visualTick,intro,mode,speed,wall_ms:wall,max_raf_gap_ms:maxGap*1000,actual_visual_speed:wall?visualTick/(wall*.06):0,blur_events:blurCount,paused,status:game.status,held:[...held],remaining,active_plan:remaining?{action:[...held],start:actionStart,end:game.tick+remaining}:null,pending_plan:plan.map(a=>[...a])};}
+function capture(asCanvas=false){draw();const image=document.createElement('canvas');image.width=960;image.height=720;image.getContext('2d').drawImage(canvas,0,0);const clock=getClock();return {...(asCanvas?{canvas:image}:{png:image.toDataURL('image/png')}),frame:clock.frame,held:[...held],clock};}
+function keyEdge(code,down,reason='keyboard'){if(!human)return;held=action();humanEdges.push({code,down,reason,visual_frame:visualTick,logical_frame:game.tick,wall_ms:performance.now()-wallStart,held:[...held],paused});}
+button('start').onclick=()=>{if(!researchEnabled){if(paused)togglePause();else reset(1);}};button('restart').onclick=()=>{if(!researchEnabled)reset(1);};button('pause').onclick=togglePause;
+window.addEventListener('keydown',e=>{if(!allowed.includes(e.code)||['INPUT','TEXTAREA'].includes(e.target.tagName))return;e.preventDefault();if(e.code==='Escape'){if(!e.repeat)togglePause();return;}if(researchEnabled&&!human)return;if(e.code==='KeyZ'&&(!started||game.status!=='playing')){if(!researchEnabled&&!e.repeat)reset(1);return;}const changed=!keys.has(e.code);keys.add(e.code);if(changed)keyEdge(e.code,true);});
+window.addEventListener('keyup',e=>{if(researchEnabled&&!human)return;keys.delete(e.code);if(allowed.includes(e.code))keyEdge(e.code,false);});
+function blur(){if(researchEnabled){blurCount++;if(human){for(const code of [...keys]){keys.delete(code);keyEdge(code,false,'blur');}}return;}keys.clear();if(started&&!paused&&game.status==='playing')togglePause();}
+window.addEventListener('blur',blur);document.addEventListener('visibilitychange',()=>{if(document.hidden)blur();});
+
+if(researchEnabled){
+  window.research={
+    ready:()=>true,
+    reset(seed=1,nextMode='sim',nextSpeed=1){if(!['sim','realtime'].includes(nextMode)||!(nextSpeed>0&&nextSpeed<=4))throw new Error('Invalid research clock');mode=nextMode;speed=nextSpeed;plan=[];remaining=0;held=[0,0,0,0];actionStart=0;reset(seed);setKeys(held);wallStart=performance.now();maxGap=0;blurCount=0;last=performance.now();acc=0;draw();return getClock();},
+    apply(next){if(human)throw new Error('AI plans disabled while human controls are active');if(!Array.isArray(next)||next.length>16)throw new Error('Expected at most 16 action chunks');for(const a of next)if(!Array.isArray(a)||a.length!==5||!a.every(Number.isInteger)||a[0]<0||a[0]>8||a.slice(1,4).some(v=>v!==0&&v!==1)||a[4]<1||a[4]>600)throw new Error('Invalid action chunk');plan=next.map(a=>[...a]);remaining=0;nextAction();draw();return getClock();},
+    step(frames=1){if(mode!=='sim')throw new Error('Manual stepping is disabled in realtime mode');if(!Number.isInteger(frames)||frames<0||frames>10000)throw new Error('Invalid frame count');for(let i=0;i<frames&&game.status==='playing';i++)simulate();draw();return getClock();},
+    setHuman(enabled){human=!!enabled;plan=[];remaining=0;setKeys([0,0,0,0]);humanEdges=[];humanActions=[];humanLastAction=null;return getClock();},
+    setHumanAction(a){if(!human||!Array.isArray(a)||a.length!==4||!a.every(Number.isInteger)||a[0]<0||a[0]>8||a.slice(1).some(v=>v!==0&&v!==1))throw new Error('Invalid human replay action');setKeys(a);return getClock();},
+    drainHumanEvents(){const result={keys:humanEdges,actions:humanActions};humanEdges=[];humanActions=[];return result;},
+    captureCanvas:()=>capture(true),capture,getClock,
+    diagnostics:()=>({clock:getClock(),state:structuredClone(game.snapshot())})
+  };
+  window.research.advance=window.research.step;
+}
+draw();requestAnimationFrame(frame);
+</script>
+</body>
+</html>

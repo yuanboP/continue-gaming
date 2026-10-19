@@ -1,0 +1,132 @@
+{
+  "calibration": {
+    "arm_cooldown_ms": 800,
+    "defect_count": 12,
+    "distance_to_gate_mm": 1000,
+    "entry_interval_ms": 6000,
+    "entry_jitter_ms": 350,
+    "grab_window_ms": 350,
+    "height": 1200,
+    "horizon_ms": 180000,
+    "lane_keys": [
+      "d",
+      "f",
+      "j",
+      "k"
+    ],
+    "lane_speed_mm_s": {
+      "d": 45,
+      "f": 50,
+      "j": 55,
+      "k": 48
+    },
+    "maximum_collisions": 0,
+    "maximum_empty_grabs": 2,
+    "maximum_normal_grabs": 1,
+    "minimum_defect_grabs": 11,
+    "normal_count": 12,
+    "schema_version": "visual-inspection-v3.1",
+    "task_rule": "Compare each query board with its independent known-normal reference. Reject visibly defective boards at their lane's gate; let normal boards pass.",
+    "width": 1920
+  },
+  "carriers": [
+    {
+      "carrier_id": "ca71fba1e1a505855",
+      "entry_ms": 120341.7053,
+      "inspection_url": "/inspection/ca71fba1e1a505855.png",
+      "lane": "d",
+      "sku": "board_b"
+    },
+    {
+      "carrier_id": "ce9418b9790fc1f95",
+      "entry_ms": 126203.548384,
+      "inspection_url": "/inspection/ce9418b9790fc1f95.png",
+      "lane": "f",
+      "sku": "board_b"
+    },
+    {
+      "carrier_id": "c5d3f71a8d122b23b",
+      "entry_ms": 131715.355714,
+      "inspection_url": "/inspection/c5d3f71a8d122b23b.png",
+      "lane": "j",
+      "sku": "board_a"
+    },
+    {
+      "carrier_id": "c0eba3257f57e8a74",
+      "entry_ms": 138101.089841,
+      "inspection_url": "/inspection/c0eba3257f57e8a74.png",
+      "lane": "k",
+      "sku": "board_a"
+    }
+  ],
+  "clock_ms": 138253.621899,
+  "clock_rate": 1.0,
+  "episode_counts": {
+    "defect": 12,
+    "normal": 12
+  },
+  "frame_url": "/frame.png",
+  "horizon_ms": 180000,
+  "mode": "live",
+  "phase": "running",
+  "receipts": [
+    {
+      "clock_ms": 29806.153195,
+      "id": "pick-c78b4a2f3b2394d0a",
+      "key": "j",
+      "result": "target_grab",
+      "session_id": "4585484a-5406-45c3-8fe3-78890b383d12"
+    },
+    {
+      "clock_ms": 38697.279442,
+      "id": "pick-c2dfa3917cbea29b6",
+      "key": "k",
+      "result": "target_grab",
+      "session_id": "4585484a-5406-45c3-8fe3-78890b383d12"
+    },
+    {
+      "clock_ms": 49764.50177,
+      "id": "pick-ccb8419736c876410",
+      "key": "f",
+      "result": "target_grab",
+      "session_id": "4585484a-5406-45c3-8fe3-78890b383d12"
+    },
+    {
+      "clock_ms": 53719.933931,
+      "id": "pick-c5c29a3a6c0ae0d2b",
+      "key": "j",
+      "result": "target_grab",
+      "session_id": "4585484a-5406-45c3-8fe3-78890b383d12"
+    },
+    {
+      "clock_ms": 74010.508007,
+      "id": "pick-ce01a70fd875c1bf0",
+      "key": "f",
+      "result": "target_grab",
+      "session_id": "4585484a-5406-45c3-8fe3-78890b383d12"
+    },
+    {
+      "clock_ms": 101999.56748,
+      "id": "pick-c9f63e1c97e0dd191",
+      "key": "j",
+      "result": "target_grab",
+      "session_id": "4585484a-5406-45c3-8fe3-78890b383d12"
+    },
+    {
+      "clock_ms": 121704.963307,
+      "id": "pick-ce27552132202dd41",
+      "key": "f",
+      "result": "target_grab",
+      "session_id": "4585484a-5406-45c3-8fe3-78890b383d12"
+    },
+    {
+      "clock_ms": 126328.340718,
+      "id": "pick-cf5ed365e255716e6",
+      "key": "j",
+      "result": "target_grab",
+      "session_id": "4585484a-5406-45c3-8fe3-78890b383d12"
+    }
+  ],
+  "schema_version": "visual-inspection-v3.1",
+  "session_id": "4585484a-5406-45c3-8fe3-78890b383d12"
+}

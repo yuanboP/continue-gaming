@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cb10ae77bcb305d08",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 141951.563,
+    "expires_ms": 142501.563,
+    "id": "pick-cb10ae77bcb305d08",
+    "key": "d"
+  },
+  "visible_evidence": "The central IC has a visibly gouged, damaged surface on its left side."
+}

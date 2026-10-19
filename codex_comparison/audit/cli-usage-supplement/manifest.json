@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "path": "supplement.json",
+      "public_bytes": 135201,
+      "public_sha256": "f39cd41a64315245a22045a866687a204bb341d34867948842a30fa99d139cf1",
+      "source": "derived-from-manifest-listed-public-snapshots",
+      "source_sha256": "9ce48ebf401b64bcf62cc09d26ecbb0caf40da007c2ff571460a228632dd51bf",
+      "transformation": "derived-numeric-usage-with-source-line-mapping"
+    },
+    {
+      "path": "usage.json",
+      "public_bytes": 9935450,
+      "public_sha256": "5296adf3a7df3c9849c5f0e7629e83fb20a47594cbdbe5c3ce29d0c4bccc500f",
+      "source": "derived-from-manifest-listed-public-snapshots",
+      "source_sha256": "9ce48ebf401b64bcf62cc09d26ecbb0caf40da007c2ff571460a228632dd51bf",
+      "transformation": "derived-numeric-usage-with-source-line-mapping"
+    }
+  ],
+  "helper_sha256": "9ce48ebf401b64bcf62cc09d26ecbb0caf40da007c2ff571460a228632dd51bf",
+  "schema_version": 1
+}

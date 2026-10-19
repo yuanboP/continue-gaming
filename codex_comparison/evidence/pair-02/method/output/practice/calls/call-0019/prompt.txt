@@ -1,0 +1,21 @@
+Inspect the attached camera image for this one carrier. It contains a query product and an independent normal reference. The normal reference is an example, not an exact pixel template.
+
+PUBLIC QUALITY RULES:
+# Public quality inspection rule
+
+Inspect each query circuit board against its independent normal reference of the same board type. Reject a board with a visible structural defect: bent or broken pins/connectors, a missing or damaged component, a cracked or broken board/part, or a conspicuous foreign material or damaging contamination. Normal manufacturing variation, printing, component markings, illumination, reflections and a different camera orientation are not defects by themselves.
+
+The reference is a different physical normal example. Exact pixel differences or text differences alone do not establish a defect. Examine the whole query. Images preserve the complete original field of view; no supplied box or crop marks a defect.
+
+The physical action is a timed reject at the downstream gate, using d/f/j/k for its four lanes. Accept normal items by leaving them alone. Do not use anonymous carrier IDs, SKU names, the order of appearance, or assumed class proportions as a quality signal. A correct quality judgment delivered after the gate has passed cannot reject the item.
+
+The trusted verifier uses independent dataset annotations and the actual action times. This is a simulated inspection and rejection workflow, not a certified production quality system.
+
+
+PUBLIC SENSOR DATA:
+{"calibration": {"arm_cooldown_ms": 800, "defect_count": 12, "distance_to_gate_mm": 1000, "entry_interval_ms": 6000, "entry_jitter_ms": 350, "grab_window_ms": 350, "height": 1200, "horizon_ms": 180000, "lane_keys": ["d", "f", "j", "k"], "lane_speed_mm_s": {"d": 45, "f": 50, "j": 55, "k": 48}, "maximum_collisions": 0, "maximum_empty_grabs": 2, "maximum_normal_grabs": 1, "minimum_defect_grabs": 11, "normal_count": 12, "schema_version": "visual-inspection-v3.1", "task_rule": "Compare each query board with its independent known-normal reference. Reject visibly defective boards at their lane's gate; let normal boards pass.", "width": 1920}, "capture_clock_ms": 107827.216665, "carrier": {"carrier_id": "c623d8eb7a4ca83b2", "entry_ms": 107741.676959, "inspection_url": "/inspection/c623d8eb7a4ca83b2.png", "lane": "j", "sku": "board_a"}}
+
+DEVELOPMENT TRANSPORT MEASUREMENT (finite samples; not guaranteed bounds):
+{"request_clock_ms": 108167.61181100002, "timing": {"delay_high_ms": 360.9530170000926, "delay_low_ms": -25, "margin_ms": 25, "profile_samples": 8, "recommended_lead_ms": 175}}
+
+The conveyor keeps moving during your response. Decide accept, reject, or uncertain from the pixels. Do not infer quality from an anonymous ID, SKU, image orientation, or assumed class balance. If reject, compute G = entry_ms + 1000 * distance_to_gate_mm / lane_speed_mm_s[lane] and W = grab_window_ms from the public data. Return one literal tap with id "pick-c623d8eb7a4ca83b2" and key "j". Use the full physical opportunity for expiry: expires_ms = G + W (ordinary numerical rounding within 1ms is accepted; the physical window itself is exact). Do not shorten expiry to at_ms plus an arbitrary allowance. Transport takes time after the local queue fires. When a measured lead is supplied, the recommended dispatch is at_ms = G - recommended_lead_ms. Check that your chosen dispatch itself lies inside [G-W, G+W] and that dispatch plus the measured delay range remains inside that physical window. You must compute and write the actual numerical timestamps yourself; the host will never correct them. If your decision cannot still be safely delivered, return uncertain with tap null rather than a knowingly stale action. If accept or uncertain, tap must be null. Do not use tools. Return only the required JSON with one short visible observation, not a step-by-step explanation.

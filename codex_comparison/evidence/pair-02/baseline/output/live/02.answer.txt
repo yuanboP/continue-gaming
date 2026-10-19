@@ -1,0 +1,1 @@
+{"reject":false,"reason":"All components appear present and intact; header pins are unbroken with no conspicuous bending. No visible cracks, foreign material, or damaging contamination."}

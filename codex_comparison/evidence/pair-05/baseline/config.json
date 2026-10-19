@@ -1,0 +1,24 @@
+{
+  "agent": {
+    "env": {
+      "CODEX_AUTH_JSON_PATH": "${CODEX_AUTH_JSON_PATH}",
+      "CODEX_EXTRA_CONFIG": "",
+      "OPENAI_BASE_URL": ""
+    },
+    "kwargs": {
+      "reasoning_effort": "medium",
+      "version": "0.157.0"
+    },
+    "model_name": "openai/gpt-6-astra",
+    "name": "codex"
+  },
+  "environment": {
+    "import_path": "harbor_suite.docker_copy:CopyDocker"
+  },
+  "job_id": "a0a1d415-c820-4e6b-9a24-33cd27cff8de",
+  "task": {
+    "path": "<WORKSPACE>/visual_inspection_v4/reproduction/awake-v1/tasks/pair-05/baseline/visual-inspection-v4"
+  },
+  "trial_name": "visual-inspection-v4__VA7pDxq",
+  "trials_dir": "<JOBS>/v4-repro-awake-v1-05-baseline"
+}

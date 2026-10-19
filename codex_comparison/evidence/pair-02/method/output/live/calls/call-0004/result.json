@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c2dfa3917cbea29b6\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 38691.357, \"expires_ms\": 39216.357, \"id\": \"pick-c2dfa3917cbea29b6\", \"key\": \"k\"}, \"visible_evidence\": \"The capacitor left of the main chip is missing, leaving two exposed solder pads.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792346021.6910706,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 8.771863223999844,
+    "ready_unix": 1792346021.6878338,
+    "started_unix": 1792346012.9159722,
+    "thread_id": "01a15025-bcfa-71d3-8921-a7fb8679177f",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7059,
+        "outputTokens": 138,
+        "reasoningOutputTokens": 51,
+        "totalTokens": 7197
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7059,
+        "outputTokens": 138,
+        "reasoningOutputTokens": 51,
+        "totalTokens": 7197
+      }
+    },
+    "turn_id": "01a15025-bd20-74e1-a7f5-aebb4799f728",
+    "usage_complete": true,
+    "wall_seconds": 8.775097833000018
+  }
+}

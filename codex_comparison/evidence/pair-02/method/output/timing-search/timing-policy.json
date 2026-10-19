@@ -1,0 +1,25 @@
+{
+  "capture_budget_ms": 369.9448169999414,
+  "clock_rate": 1,
+  "delay_high_ms": 360.9530170000926,
+  "delay_low_ms": -25,
+  "executor_host_sha256": "45852fb2a6fbcbeb7676f14fd0f28bb2cb526d48dc39886ff75625623759897f",
+  "feasible": true,
+  "limitations": [
+    "Empirical envelopes are not guaranteed latency bounds.",
+    "This simulation validates dispatch feasibility only, not image decisions or true model latency.",
+    "Capture guard is sized from measured RTT; no counterfactual guard improvement is claimed.",
+    "The actor model must itself output the literal at_ms and full-window expires_ms."
+  ],
+  "margin_ms": 25,
+  "profile_mode": "dev",
+  "profile_samples": 8,
+  "profile_sha256": "f1b2edf41b5f02a8383edbd86a5b2b3239dcc50e74d3dfc9dbbc5713cfef5925",
+  "recommended_lead_ms": 175,
+  "schema": "sooool-transport-policy-v4",
+  "selection": "Maximum worst-case slack over a fixed lead grid and recorded/envelope scenarios",
+  "settle_budget_ms": 359.0911889999916,
+  "simulator_sha256": "e70b5ae8735f3c2d21eace5ff90c700e09cf8a368e0491317076f81800a2ea84",
+  "upstream_executor_sha256": "3b0c38c81ae163fc1ff56dc26943484e8121a47f90ce4d3c7f2be221547e1b28",
+  "window_ms": 350
+}

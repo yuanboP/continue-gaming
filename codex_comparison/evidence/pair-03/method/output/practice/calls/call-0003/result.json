@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c902a174f11fa2ac0\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 29859.146, \"expires_ms\": 30384.146, \"id\": \"pick-c902a174f11fa2ac0\", \"key\": \"j\"}, \"visible_evidence\": \"The rightmost connector pin is bent downward across the board.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792347368.3437014,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 9.463480806999996,
+    "ready_unix": 1792347368.3384304,
+    "started_unix": 1792347358.8749506,
+    "thread_id": "01a1503a-469e-7b82-9f61-6ceaaa0d58fb",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7061,
+        "outputTokens": 128,
+        "reasoningOutputTokens": 45,
+        "totalTokens": 7189
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7061,
+        "outputTokens": 128,
+        "reasoningOutputTokens": 45,
+        "totalTokens": 7189
+      }
+    },
+    "turn_id": "01a1503a-46bc-7993-a060-c3aa9caef6e1",
+    "usage_complete": true,
+    "wall_seconds": 9.46875034499999
+  }
+}

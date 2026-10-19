@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c601e5b4578511608\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 62945.524, \"expires_ms\": 63470.524, \"id\": \"pick-c601e5b4578511608\", \"key\": \"k\"}, \"visible_evidence\": \"The small component near the bottom edge is visibly crushed and damaged.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792347397.7758653,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 8.524549839999963,
+    "ready_unix": 1792347397.77307,
+    "started_unix": 1792347389.2485218,
+    "thread_id": "01a1503a-bd46-7723-95b7-3ae71857ee83",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7058,
+        "outputTokens": 135,
+        "reasoningOutputTokens": 53,
+        "totalTokens": 7193
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7058,
+        "outputTokens": 135,
+        "reasoningOutputTokens": 53,
+        "totalTokens": 7193
+      }
+    },
+    "turn_id": "01a1503a-bd65-7ad1-b0e7-743595562d38",
+    "usage_complete": true,
+    "wall_seconds": 8.527343445000042
+  }
+}

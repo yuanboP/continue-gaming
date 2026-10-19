@@ -1,0 +1,4 @@
+WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir "/tmp" (codex_home: AbsolutePathBuf("/tmp/codex-home"))
+2026-10-18T18:45:12.412672Z ERROR codex_app_server: Codex is ignoring 1 unrecognized configuration setting. Check for typos or deprecated settings.
+  session-flags: `features.in_app_voice` is ignored.
+2026-10-18T18:45:12.412704Z ERROR codex_app_server: Codex could not find bubblewrap on PATH. Install bubblewrap with your OS package manager. See the sandbox prerequisites: https://developers.openai.com/codex/concepts/sandboxing#prerequisites. Codex will use the bundled bubblewrap in the meantime.

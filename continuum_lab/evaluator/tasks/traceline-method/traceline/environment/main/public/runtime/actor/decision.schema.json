@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["carrier_id", "decision", "visible_evidence", "tap"],
+  "properties": {
+    "carrier_id": {"type": "string"},
+    "decision": {"type": "string", "enum": ["accept", "reject", "uncertain"]},
+    "visible_evidence": {"type": "string"},
+    "tap": {
+      "anyOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "key", "at_ms", "expires_ms"],
+          "properties": {
+            "id": {"type": "string"},
+            "key": {"type": "string", "enum": ["d", "f", "j", "k"]},
+            "at_ms": {"type": "number"},
+            "expires_ms": {"type": "number"}
+          }
+        }
+      ]
+    }
+  }
+}

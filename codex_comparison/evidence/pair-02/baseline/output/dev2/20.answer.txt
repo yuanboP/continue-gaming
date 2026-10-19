@@ -1,0 +1,1 @@
+{"reject":true,"reason":"The J1 Echo header pin is severely bent downward over the central IC instead of standing upright with the other three pins."}

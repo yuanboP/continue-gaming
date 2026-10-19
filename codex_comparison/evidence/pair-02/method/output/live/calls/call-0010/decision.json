@@ -1,0 +1,11 @@
+{
+  "carrier_id": "ce01a70fd875c1bf0",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 74006.017,
+    "expires_ms": 74531.017,
+    "id": "pick-ce01a70fd875c1bf0",
+    "key": "f"
+  },
+  "visible_evidence": "The main chip is visibly broken, with fragments displaced over its lower pins."
+}

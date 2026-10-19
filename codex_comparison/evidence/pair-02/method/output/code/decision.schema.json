@@ -1,0 +1,63 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "carrier_id": {
+      "type": "string"
+    },
+    "decision": {
+      "enum": [
+        "accept",
+        "reject",
+        "uncertain"
+      ],
+      "type": "string"
+    },
+    "tap": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "at_ms": {
+              "type": "number"
+            },
+            "expires_ms": {
+              "type": "number"
+            },
+            "id": {
+              "type": "string"
+            },
+            "key": {
+              "enum": [
+                "d",
+                "f",
+                "j",
+                "k"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "key",
+            "at_ms",
+            "expires_ms"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "visible_evidence": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "carrier_id",
+    "decision",
+    "visible_evidence",
+    "tap"
+  ],
+  "type": "object"
+}

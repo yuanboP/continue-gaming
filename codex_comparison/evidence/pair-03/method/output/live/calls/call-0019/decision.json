@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cb0a07fd7d2e89294",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 126292.976,
+    "expires_ms": 126817.976,
+    "id": "pick-cb0a07fd7d2e89294",
+    "key": "j"
+  },
+  "visible_evidence": "The query's USB connector shell is visibly bent and crumpled."
+}

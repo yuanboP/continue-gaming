@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c4f0eb5658808f969\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 22022.222, \"expires_ms\": 22572.222, \"id\": \"pick-c4f0eb5658808f969\", \"key\": \"d\"}, \"visible_evidence\": \"The query's main chip is visibly broken, with fragments across its lower-left pins.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345535.6799839,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 7.511272755999926,
+    "ready_unix": 1792345535.6769667,
+    "started_unix": 1792345528.1656952,
+    "thread_id": "01a1501e-5769-7552-8b11-4d2e44c78ea1",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7058,
+        "outputTokens": 119,
+        "reasoningOutputTokens": 31,
+        "totalTokens": 7177
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7058,
+        "outputTokens": 119,
+        "reasoningOutputTokens": 31,
+        "totalTokens": 7177
+      }
+    },
+    "turn_id": "01a1501e-5790-7cd1-8f13-d1923ae5f3fa",
+    "usage_complete": true,
+    "wall_seconds": 7.5142883239998355
+  }
+}

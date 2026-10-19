@@ -1,0 +1,5 @@
+{
+  "decided_wall": 1792346492.2739127,
+  "reason": "The central IC has visible damage or foreign material covering its upper-right corner and adjacent pins, unlike the intact reference.",
+  "reject": true
+}

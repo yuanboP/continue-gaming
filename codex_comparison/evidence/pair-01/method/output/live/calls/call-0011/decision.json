@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c7b00ecb90a57ae9d",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 78066.877,
+    "expires_ms": 78616.877,
+    "id": "pick-c7b00ecb90a57ae9d",
+    "key": "j"
+  },
+  "visible_evidence": "The USB connector shell is visibly bent, and a small resistor beneath the left LED is missing."
+}

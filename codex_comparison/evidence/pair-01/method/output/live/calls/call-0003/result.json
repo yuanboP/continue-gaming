@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c54bb131153d0565e\", \"decision\": \"accept\", \"tap\": null, \"visible_evidence\": \"Components, connector, pins, and board edges appear intact with no visible structural defect.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345546.8574064,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 6.38119305500004,
+    "ready_unix": 1792345546.856902,
+    "started_unix": 1792345540.4757116,
+    "thread_id": "01a1501e-8781-7222-ab79-162db47708cb",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7057,
+        "outputTokens": 87,
+        "reasoningOutputTokens": 32,
+        "totalTokens": 7144
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7057,
+        "outputTokens": 87,
+        "reasoningOutputTokens": 32,
+        "totalTokens": 7144
+      }
+    },
+    "turn_id": "01a1501e-87a7-7800-87e4-0d1046dbb6e9",
+    "usage_complete": true,
+    "wall_seconds": 6.381695074000163
+  }
+}

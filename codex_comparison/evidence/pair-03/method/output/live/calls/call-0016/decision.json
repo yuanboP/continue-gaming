@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c37b4e6c91c9f1c75",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 110461.918,
+    "expires_ms": 110986.918,
+    "id": "pick-c37b4e6c91c9f1c75",
+    "key": "k"
+  },
+  "visible_evidence": "Several query connector pins are severely bent and cross over one another."
+}

@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c97bdd982cdac6046\", \"decision\": \"accept\", \"tap\": null, \"visible_evidence\": \"Pins are straight, components are present, and the board shows no visible structural damage.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345460.8244534,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 5.954782884999986,
+    "ready_unix": 1792345460.8179948,
+    "started_unix": 1792345454.8632133,
+    "thread_id": "01a1501d-3912-7920-be9d-07a4e22f6524",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7053,
+        "outputTokens": 99,
+        "reasoningOutputTokens": 45,
+        "totalTokens": 7152
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7053,
+        "outputTokens": 99,
+        "reasoningOutputTokens": 45,
+        "totalTokens": 7152
+      }
+    },
+    "turn_id": "01a1501d-392f-7db1-8526-752ecaa05f01",
+    "usage_complete": true,
+    "wall_seconds": 5.961239564999914
+  }
+}

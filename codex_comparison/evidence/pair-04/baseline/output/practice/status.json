@@ -1,0 +1,27 @@
+{
+  "clock_ms": 180000.0,
+  "phase": "finished",
+  "receipts": [
+    {
+      "clock_ms": 22226.254265,
+      "id": "reject-c4105cca7b53302fc",
+      "key": "d",
+      "result": "target_grab",
+      "session_id": "ce6c09ac-5064-4c6d-aa42-285f9627bcf9"
+    },
+    {
+      "clock_ms": 25879.171379,
+      "id": "reject-c834c687a3acb6266",
+      "key": "f",
+      "result": "target_grab",
+      "session_id": "ce6c09ac-5064-4c6d-aa42-285f9627bcf9"
+    },
+    {
+      "clock_ms": 30036.541334,
+      "id": "reject-c902a174f11fa2ac0",
+      "key": "j",
+      "result": "target_grab",
+      "session_id": "ce6c09ac-5064-4c6d-aa42-285f9627bcf9"
+    }
+  ]
+}

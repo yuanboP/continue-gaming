@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cd1c16bc02b461d05",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 73827.773475,
+    "expires_ms": 74377.773475,
+    "id": "pick-cd1c16bc02b461d05",
+    "key": "f"
+  },
+  "visible_evidence": "The USB connector housing is visibly bent and crumpled at its upper-left edge."
+}

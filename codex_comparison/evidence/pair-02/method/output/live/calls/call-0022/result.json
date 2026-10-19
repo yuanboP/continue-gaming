@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"ce9418b9790fc1f95\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 146028.548384, \"expires_ms\": 146553.548384, \"id\": \"pick-ce9418b9790fc1f95\", \"key\": \"f\"}, \"visible_evidence\": \"The USB connector shell is visibly bent and crushed at its upper-left edge.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792346128.9827278,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 8.339091420000159,
+    "ready_unix": 1792346128.9623969,
+    "started_unix": 1792346120.732148,
+    "thread_id": "01a15027-6221-7341-ae1e-0389a48a5b4f",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7062,
+        "outputTokens": 131,
+        "reasoningOutputTokens": 43,
+        "totalTokens": 7193
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7062,
+        "outputTokens": 131,
+        "reasoningOutputTokens": 43,
+        "totalTokens": 7193
+      }
+    },
+    "turn_id": "01a15027-623e-7e32-bdfc-0744e840437a",
+    "usage_complete": true,
+    "wall_seconds": 8.359420951000175
+  }
+}

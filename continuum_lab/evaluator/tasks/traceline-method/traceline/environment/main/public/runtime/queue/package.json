@@ -1,0 +1,8 @@
+{
+  "name": "inspection-timed-runtime",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "carrier_id": "ce9418b9790fc1f95",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 146028.548384,
+    "expires_ms": 146553.548384,
+    "id": "pick-ce9418b9790fc1f95",
+    "key": "f"
+  },
+  "visible_evidence": "The USB connector shell is visibly bent and crushed at its upper-left edge."
+}

@@ -1,0 +1,5 @@
+{
+  "decided_wall": 1792346713.2224178,
+  "reason": "All four J1 header pins are visibly bent sideways, unlike the straight pins on the reference.",
+  "reject": true
+}

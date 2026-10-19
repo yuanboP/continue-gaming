@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c601e5b4578511608\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 62920.524, \"expires_ms\": 63470.524, \"id\": \"pick-c601e5b4578511608\", \"key\": \"k\"}, \"visible_evidence\": \"The small bottom-edge resistor has a visibly broken, jagged body.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345381.5043283,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 10.405654524000056,
+    "ready_unix": 1792345381.490932,
+    "started_unix": 1792345371.191356,
+    "thread_id": "01a1501b-f23a-7652-afc4-91a7bafb3694",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7059,
+        "outputTokens": 144,
+        "reasoningOutputTokens": 61,
+        "totalTokens": 7203
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7059,
+        "outputTokens": 144,
+        "reasoningOutputTokens": 61,
+        "totalTokens": 7203
+      }
+    },
+    "turn_id": "01a1501b-f254-71a3-8d5c-2723261ff2d1",
+    "usage_complete": true,
+    "wall_seconds": 10.419048392000036
+  }
+}

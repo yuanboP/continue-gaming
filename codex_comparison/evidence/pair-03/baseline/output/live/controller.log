@@ -1,0 +1,26 @@
+NEW 1 {'carrier_id': 'c602126584874fb1f', 'entry_ms': 0.0, 'inspection_url': '/inspection/c602126584874fb1f.png', 'lane': 'd', 'sku': 'board_b', 'index': 1, 'gate_ms': 22222.222222222223}
+NEW 2 {'carrier_id': 'cfcd822ad1cdf6312', 'entry_ms': 6150.21952, 'inspection_url': '/inspection/cfcd822ad1cdf6312.png', 'lane': 'f', 'sku': 'board_a', 'index': 2, 'gate_ms': 26150.21952}
+NEW 3 {'carrier_id': 'c4da6575a62042bdd', 'entry_ms': 11991.365794, 'inspection_url': '/inspection/c4da6575a62042bdd.png', 'lane': 'j', 'sku': 'board_b', 'index': 3, 'gate_ms': 30173.18397581818}
+NEW 4 {'carrier_id': 'ccee64badf2a6c9c8', 'entry_ms': 17728.919711, 'inspection_url': '/inspection/ccee64badf2a6c9c8.png', 'lane': 'k', 'sku': 'board_b', 'index': 4, 'gate_ms': 38562.25304433333}
+NEW 5 {'carrier_id': 'c9cfec7e6529443e4', 'entry_ms': 24284.618376, 'inspection_url': '/inspection/c9cfec7e6529443e4.png', 'lane': 'd', 'sku': 'board_a', 'index': 5, 'gate_ms': 46506.84059822222}
+NEW 6 {'carrier_id': 'c036782dda7c50d29', 'entry_ms': 30251.234109, 'inspection_url': '/inspection/c036782dda7c50d29.png', 'lane': 'f', 'sku': 'board_a', 'index': 6, 'gate_ms': 50251.234109}
+NEW 7 {'carrier_id': 'c977ce0f0ea9a4abd', 'entry_ms': 35796.785408, 'inspection_url': '/inspection/c977ce0f0ea9a4abd.png', 'lane': 'j', 'sku': 'board_a', 'index': 7, 'gate_ms': 53978.60358981819}
+NEW 8 {'carrier_id': 'cc290e99055376e51', 'entry_ms': 41907.732904, 'inspection_url': '/inspection/cc290e99055376e51.png', 'lane': 'k', 'sku': 'board_b', 'index': 8, 'gate_ms': 62741.06623733333}
+NEW 9 {'carrier_id': 'cac7f4545bd7a8f1f', 'entry_ms': 48324.158571, 'inspection_url': '/inspection/cac7f4545bd7a8f1f.png', 'lane': 'd', 'sku': 'board_a', 'index': 9, 'gate_ms': 70546.38079322223}
+NEW 10 {'carrier_id': 'c11bf38cb7d0d741d', 'entry_ms': 53896.352147, 'inspection_url': '/inspection/c11bf38cb7d0d741d.png', 'lane': 'f', 'sku': 'board_b', 'index': 10, 'gate_ms': 73896.352147}
+NEW 11 {'carrier_id': 'c3db68f0d8e5eb16e', 'entry_ms': 59706.905133, 'inspection_url': '/inspection/c3db68f0d8e5eb16e.png', 'lane': 'j', 'sku': 'board_a', 'index': 11, 'gate_ms': 77888.72331481818}
+NEW 12 {'carrier_id': 'c613eed16f3247e58', 'entry_ms': 66296.761899, 'inspection_url': '/inspection/c613eed16f3247e58.png', 'lane': 'k', 'sku': 'board_a', 'index': 12, 'gate_ms': 87130.09523233333}
+NEW 13 {'carrier_id': 'c65eab13d584622c8', 'entry_ms': 71960.047388, 'inspection_url': '/inspection/c65eab13d584622c8.png', 'lane': 'd', 'sku': 'board_b', 'index': 13, 'gate_ms': 94182.26961022223}
+NEW 14 {'carrier_id': 'cd00ed04858d57409', 'entry_ms': 78242.947322, 'inspection_url': '/inspection/cd00ed04858d57409.png', 'lane': 'f', 'sku': 'board_b', 'index': 14, 'gate_ms': 98242.947322}
+NEW 15 {'carrier_id': 'ce24eee37d1000495', 'entry_ms': 84246.006831, 'inspection_url': '/inspection/ce24eee37d1000495.png', 'lane': 'j', 'sku': 'board_b', 'index': 15, 'gate_ms': 102427.82501281818}
+NEW 16 {'carrier_id': 'c37b4e6c91c9f1c75', 'entry_ms': 89803.584188, 'inspection_url': '/inspection/c37b4e6c91c9f1c75.png', 'lane': 'k', 'sku': 'board_a', 'index': 16, 'gate_ms': 110636.91752133332}
+NEW 17 {'carrier_id': 'cf3e640524a9c5920', 'entry_ms': 95906.726862, 'inspection_url': '/inspection/cf3e640524a9c5920.png', 'lane': 'd', 'sku': 'board_a', 'index': 17, 'gate_ms': 118128.94908422221}
+NEW 18 {'carrier_id': 'c893a4a04dbae8f61', 'entry_ms': 102030.185274, 'inspection_url': '/inspection/c893a4a04dbae8f61.png', 'lane': 'f', 'sku': 'board_b', 'index': 18, 'gate_ms': 122030.185274}
+NEW 19 {'carrier_id': 'cb0a07fd7d2e89294', 'entry_ms': 108286.157981, 'inspection_url': '/inspection/cb0a07fd7d2e89294.png', 'lane': 'j', 'sku': 'board_b', 'index': 19, 'gate_ms': 126467.97616281817}
+NEW 20 {'carrier_id': 'ccdd3fc69b134a790', 'entry_ms': 113934.008009, 'inspection_url': '/inspection/ccdd3fc69b134a790.png', 'lane': 'k', 'sku': 'board_b', 'index': 20, 'gate_ms': 134767.34134233333}
+NEW 21 {'carrier_id': 'cbb06ecb579092358', 'entry_ms': 119984.824806, 'inspection_url': '/inspection/cbb06ecb579092358.png', 'lane': 'd', 'sku': 'board_a', 'index': 21, 'gate_ms': 142207.04702822224}
+NEW 22 {'carrier_id': 'cfe03f753219cc747', 'entry_ms': 125994.555046, 'inspection_url': '/inspection/cfe03f753219cc747.png', 'lane': 'f', 'sku': 'board_a', 'index': 22, 'gate_ms': 145994.555046}
+NEW 23 {'carrier_id': 'c635ef4dd6fcab277', 'entry_ms': 131811.717311, 'inspection_url': '/inspection/c635ef4dd6fcab277.png', 'lane': 'j', 'sku': 'board_b', 'index': 23, 'gate_ms': 149993.53549281816}
+NEW 24 {'carrier_id': 'c6af72b708b6016a5', 'entry_ms': 138295.147031, 'inspection_url': '/inspection/c6af72b708b6016a5.png', 'lane': 'k', 'sku': 'board_a', 'index': 24, 'gate_ms': 159128.48036433334}
+ACTION 24 {'clock_ms': 159123.285712, 'id': 'reject-c6af72b708b6016a5', 'key': 'k', 'result': 'target_grab', 'session_id': 'bdab30dd-f160-42aa-adc8-57ff078cce8c'}
+EXPORTED {'output': '/app/output/session.json', 'bytes': 14113, 'sha256': '762c253e1c97d4f365017b5689073594e6b21584aceb53705dff0ec2e2659121'}

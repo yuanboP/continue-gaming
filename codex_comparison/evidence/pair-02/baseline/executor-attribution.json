@@ -1,0 +1,28 @@
+{
+  "action_links": [],
+  "all_physical_actions_linked": false,
+  "errors": [],
+  "expected_upstream_sha256": "3b0c38c81ae163fc1ff56dc26943484e8121a47f90ce4d3c7f2be221547e1b28",
+  "frozen_upstream_source_matches": false,
+  "limits": "Consistency of local logs, frozen source and signed action records is not cryptographic process attestation. Task success and executor adoption are separate outcomes. Oracle logs are not model evidence.",
+  "linked_action_count": 0,
+  "native_tool_calls_referencing_runtime": [],
+  "physical_action_count": 10,
+  "queue_logs": [],
+  "schema_version": 1,
+  "session_id": "e3123c78-6053-4224-8969-c07799a6e27d",
+  "status": "not_established",
+  "unlinked_physical_action_ids": [
+    "reject-c0eba3257f57e8a74",
+    "reject-c2dfa3917cbea29b6",
+    "reject-c5c29a3a6c0ae0d2b",
+    "reject-c9f63e1c97e0dd191",
+    "reject-ca71fba1e1a505855",
+    "reject-ccb8419736c876410",
+    "reject-ce01a70fd875c1bf0",
+    "reject-ce27552132202dd41",
+    "reject-ce9418b9790fc1f95",
+    "reject-cf5ed365e255716e6"
+  ],
+  "world_action_count": 10
+}

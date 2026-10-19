@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"ce812217c3fa23398\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 69789.321, \"expires_ms\": 70339.321, \"id\": \"pick-ce812217c3fa23398\", \"key\": \"d\"}, \"visible_evidence\": \"The rightmost connector pin is bent sharply outward.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792348074.1458898,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 7.496366730999853,
+    "ready_unix": 1792348074.1424356,
+    "started_unix": 1792348066.6460705,
+    "thread_id": "01a15045-135a-7991-ab4a-13966df09475",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7054,
+        "outputTokens": 116,
+        "reasoningOutputTokens": 39,
+        "totalTokens": 7170
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7054,
+        "outputTokens": 116,
+        "reasoningOutputTokens": 39,
+        "totalTokens": 7170
+      }
+    },
+    "turn_id": "01a15045-1375-7d33-b90a-855e5d4ca170",
+    "usage_complete": true,
+    "wall_seconds": 7.499818982999841
+  }
+}

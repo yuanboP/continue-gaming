@@ -1,0 +1,461 @@
+{
+  "atomic_requests_in_flight": 0,
+  "log_path": "/app/output/practice/plan-events.jsonl",
+  "public_phase": "running",
+  "server_receipts": [
+    {
+      "body": {
+        "clock_ms": 22030.754969,
+        "id": "pick-c4105cca7b53302fc",
+        "key": "d",
+        "result": "target_grab",
+        "session_id": "79d6a50e-55c3-4e9c-a050-d7552c4d8a10"
+      },
+      "id": "pick-c4105cca7b53302fc",
+      "key": "d",
+      "ok": true,
+      "received_ms": 22028.224207999996,
+      "sent_ms": 22023.953786000024,
+      "status": 200
+    },
+    {
+      "body": {
+        "clock_ms": 25678.049396,
+        "id": "pick-c834c687a3acb6266",
+        "key": "f",
+        "result": "target_grab",
+        "session_id": "79d6a50e-55c3-4e9c-a050-d7552c4d8a10"
+      },
+      "id": "pick-c834c687a3acb6266",
+      "key": "f",
+      "ok": true,
+      "received_ms": 25678.20317699998,
+      "sent_ms": 25673.150485999933,
+      "status": 200
+    },
+    {
+      "body": {
+        "clock_ms": 29842.012151,
+        "id": "pick-c902a174f11fa2ac0",
+        "key": "j",
+        "result": "target_grab",
+        "session_id": "79d6a50e-55c3-4e9c-a050-d7552c4d8a10"
+      },
+      "id": "pick-c902a174f11fa2ac0",
+      "key": "j",
+      "ok": true,
+      "received_ms": 29843.04191200007,
+      "sent_ms": 29834.990446000036,
+      "status": 200
+    },
+    {
+      "body": {
+        "clock_ms": 46270.821577,
+        "id": "pick-c111b8aaa62f28d1a",
+        "key": "d",
+        "result": "target_grab",
+        "session_id": "79d6a50e-55c3-4e9c-a050-d7552c4d8a10"
+      },
+      "id": "pick-c111b8aaa62f28d1a",
+      "key": "d",
+      "ok": true,
+      "received_ms": 46271.84579200003,
+      "sent_ms": 46265.86697100006,
+      "status": 200
+    },
+    {
+      "body": {
+        "clock_ms": 62928.026341,
+        "id": "pick-c601e5b4578511608",
+        "key": "k",
+        "result": "target_grab",
+        "session_id": "79d6a50e-55c3-4e9c-a050-d7552c4d8a10"
+      },
+      "id": "pick-c601e5b4578511608",
+      "key": "k",
+      "ok": true,
+      "received_ms": 62926.753057,
+      "sent_ms": 62922.876834,
+      "status": 200
+    },
+    {
+      "body": {
+        "clock_ms": 70366.974175,
+        "id": "pick-c6b77730f65bd9acb",
+        "key": "d",
+        "result": "target_grab",
+        "session_id": "79d6a50e-55c3-4e9c-a050-d7552c4d8a10"
+      },
+      "id": "pick-c6b77730f65bd9acb",
+      "key": "d",
+      "ok": true,
+      "received_ms": 70365.63998500002,
+      "sent_ms": 70360.65316599992,
+      "status": 200
+    },
+    {
+      "body": {
+        "clock_ms": 78184.387394,
+        "id": "pick-c563e9bed45100358",
+        "key": "j",
+        "result": "target_grab",
+        "session_id": "79d6a50e-55c3-4e9c-a050-d7552c4d8a10"
+      },
+      "id": "pick-c563e9bed45100358",
+      "key": "j",
+      "ok": true,
+      "received_ms": 78183.00295500003,
+      "sent_ms": 78179.72888299997,
+      "status": 200
+    },
+    {
+      "body": {
+        "clock_ms": 97539.623981,
+        "id": "pick-cb4ff00ae3f1347de",
+        "key": "f",
+        "result": "target_grab",
+        "session_id": "79d6a50e-55c3-4e9c-a050-d7552c4d8a10"
+      },
+      "id": "pick-cb4ff00ae3f1347de",
+      "key": "f",
+      "ok": true,
+      "received_ms": 97539.70482800009,
+      "sent_ms": 97536.15172899998,
+      "status": 200
+    },
+    {
+      "body": {
+        "clock_ms": 110845.879783,
+        "id": "pick-cae9ca08b2d7c5048",
+        "key": "k",
+        "result": "target_grab",
+        "session_id": "79d6a50e-55c3-4e9c-a050-d7552c4d8a10"
+      },
+      "id": "pick-cae9ca08b2d7c5048",
+      "key": "k",
+      "ok": true,
+      "received_ms": 110845.98917700008,
+      "sent_ms": 110843.86202900003,
+      "status": 200
+    },
+    {
+      "body": {
+        "clock_ms": 121586.485319,
+        "id": "pick-cc4ff64debb5d6b48",
+        "key": "f",
+        "result": "target_grab",
+        "session_id": "79d6a50e-55c3-4e9c-a050-d7552c4d8a10"
+      },
+      "id": "pick-cc4ff64debb5d6b48",
+      "key": "f",
+      "ok": true,
+      "received_ms": 121586.52259599978,
+      "sent_ms": 121584.15254199995,
+      "status": 200
+    },
+    {
+      "body": {
+        "clock_ms": 134372.456301,
+        "id": "pick-cfd7410696bb6a3de",
+        "key": "k",
+        "result": "target_grab",
+        "session_id": "79d6a50e-55c3-4e9c-a050-d7552c4d8a10"
+      },
+      "id": "pick-cfd7410696bb6a3de",
+      "key": "k",
+      "ok": true,
+      "received_ms": 134371.9230939999,
+      "sent_ms": 134366.81473099993,
+      "status": 200
+    },
+    {
+      "body": {
+        "clock_ms": 149852.912039,
+        "id": "pick-c050684bfe286852c",
+        "key": "j",
+        "result": "target_grab",
+        "session_id": "79d6a50e-55c3-4e9c-a050-d7552c4d8a10"
+      },
+      "id": "pick-c050684bfe286852c",
+      "key": "j",
+      "ok": true,
+      "received_ms": 149852.47808499986,
+      "sent_ms": 149847.865577,
+      "status": 200
+    }
+  ],
+  "session_id": "79d6a50e-55c3-4e9c-a050-d7552c4d8a10",
+  "upstream": {
+    "clock_ms": 180097.82193300006,
+    "cursor": 24,
+    "pending": [],
+    "protocol": 1,
+    "rawacks": [
+      {
+        "admitted_version": 1,
+        "at_ms": 22022.222,
+        "expires_ms": 22572.222,
+        "id": "pick-c4105cca7b53302fc",
+        "key": "d",
+        "received_ms": 10368.49898500006,
+        "seq": 1,
+        "status": "admitted",
+        "version": 1
+      },
+      {
+        "admitted_version": 2,
+        "at_ms": 25670.694052,
+        "expires_ms": 26220.694052,
+        "id": "pick-c834c687a3acb6266",
+        "key": "f",
+        "received_ms": 14631.100677999946,
+        "seq": 2,
+        "status": "admitted",
+        "version": 2
+      },
+      {
+        "admitted_version": 3,
+        "at_ms": 29834.146,
+        "expires_ms": 30384.146,
+        "id": "pick-c902a174f11fa2ac0",
+        "key": "j",
+        "received_ms": 19476.654609000074,
+        "seq": 3,
+        "status": "admitted",
+        "version": 3
+      },
+      {
+        "actual_ms": 22023.225050000005,
+        "admitted_version": 1,
+        "at_ms": 22022.222,
+        "expires_ms": 22572.222,
+        "id": "pick-c4105cca7b53302fc",
+        "key": "d",
+        "seq": 4,
+        "status": "executed",
+        "version": 3
+      },
+      {
+        "actual_ms": 25672.885764999948,
+        "admitted_version": 2,
+        "at_ms": 25670.694052,
+        "expires_ms": 26220.694052,
+        "id": "pick-c834c687a3acb6266",
+        "key": "f",
+        "seq": 5,
+        "status": "executed",
+        "version": 3
+      },
+      {
+        "actual_ms": 29834.663908000013,
+        "admitted_version": 3,
+        "at_ms": 29834.146,
+        "expires_ms": 30384.146,
+        "id": "pick-c902a174f11fa2ac0",
+        "key": "j",
+        "seq": 6,
+        "status": "executed",
+        "version": 3
+      },
+      {
+        "admitted_version": 4,
+        "at_ms": 46264.831,
+        "expires_ms": 46814.831,
+        "id": "pick-c111b8aaa62f28d1a",
+        "key": "d",
+        "received_ms": 31508.521363999917,
+        "seq": 7,
+        "status": "admitted",
+        "version": 4
+      },
+      {
+        "actual_ms": 46265.62267700009,
+        "admitted_version": 4,
+        "at_ms": 46264.831,
+        "expires_ms": 46814.831,
+        "id": "pick-c111b8aaa62f28d1a",
+        "key": "d",
+        "seq": 8,
+        "status": "executed",
+        "version": 4
+      },
+      {
+        "admitted_version": 5,
+        "at_ms": 62920.524,
+        "expires_ms": 63470.524,
+        "id": "pick-c601e5b4578511608",
+        "key": "k",
+        "received_ms": 53184.55756999996,
+        "seq": 9,
+        "status": "admitted",
+        "version": 5
+      },
+      {
+        "admitted_version": 6,
+        "at_ms": 70358.473,
+        "expires_ms": 70908.473,
+        "id": "pick-c6b77730f65bd9acb",
+        "key": "d",
+        "received_ms": 56958.854780999936,
+        "seq": 10,
+        "status": "admitted",
+        "version": 6
+      },
+      {
+        "actual_ms": 62922.53666500003,
+        "admitted_version": 5,
+        "at_ms": 62920.524,
+        "expires_ms": 63470.524,
+        "id": "pick-c601e5b4578511608",
+        "key": "k",
+        "seq": 11,
+        "status": "executed",
+        "version": 6
+      },
+      {
+        "admitted_version": 7,
+        "at_ms": 78176.776,
+        "expires_ms": 78726.776,
+        "id": "pick-c563e9bed45100358",
+        "key": "j",
+        "received_ms": 68595.37136600006,
+        "seq": 12,
+        "status": "admitted",
+        "version": 7
+      },
+      {
+        "actual_ms": 70360.39812899998,
+        "admitted_version": 6,
+        "at_ms": 70358.473,
+        "expires_ms": 70908.473,
+        "id": "pick-c6b77730f65bd9acb",
+        "key": "d",
+        "seq": 13,
+        "status": "executed",
+        "version": 7
+      },
+      {
+        "actual_ms": 78179.50940600003,
+        "admitted_version": 7,
+        "at_ms": 78176.776,
+        "expires_ms": 78726.776,
+        "id": "pick-c563e9bed45100358",
+        "key": "j",
+        "seq": 14,
+        "status": "executed",
+        "version": 7
+      },
+      {
+        "admitted_version": 8,
+        "at_ms": 97532.594176,
+        "expires_ms": 98082.594176,
+        "id": "pick-cb4ff00ae3f1347de",
+        "key": "f",
+        "received_ms": 87177.89353599997,
+        "seq": 15,
+        "status": "admitted",
+        "version": 8
+      },
+      {
+        "admitted_version": 9,
+        "at_ms": 110841.248,
+        "expires_ms": 111391.248,
+        "id": "pick-cae9ca08b2d7c5048",
+        "key": "k",
+        "received_ms": 97183.120758,
+        "seq": 16,
+        "status": "admitted",
+        "version": 9
+      },
+      {
+        "actual_ms": 97535.93716699997,
+        "admitted_version": 8,
+        "at_ms": 97532.594176,
+        "expires_ms": 98082.594176,
+        "id": "pick-cb4ff00ae3f1347de",
+        "key": "f",
+        "seq": 17,
+        "status": "executed",
+        "version": 9
+      },
+      {
+        "actual_ms": 110843.73773500005,
+        "admitted_version": 9,
+        "at_ms": 110841.248,
+        "expires_ms": 111391.248,
+        "id": "pick-cae9ca08b2d7c5048",
+        "key": "k",
+        "seq": 18,
+        "status": "executed",
+        "version": 9
+      },
+      {
+        "admitted_version": 10,
+        "at_ms": 134364.889,
+        "expires_ms": 134914.889,
+        "id": "pick-cfd7410696bb6a3de",
+        "key": "k",
+        "received_ms": 120508.35114800006,
+        "seq": 19,
+        "status": "admitted",
+        "version": 10
+      },
+      {
+        "admitted_version": 11,
+        "at_ms": 121583.479091,
+        "expires_ms": 122133.479091,
+        "id": "pick-cc4ff64debb5d6b48",
+        "key": "f",
+        "received_ms": 120992.87934400002,
+        "seq": 20,
+        "status": "admitted",
+        "version": 11
+      },
+      {
+        "actual_ms": 121583.99411599991,
+        "admitted_version": 11,
+        "at_ms": 121583.479091,
+        "expires_ms": 122133.479091,
+        "id": "pick-cc4ff64debb5d6b48",
+        "key": "f",
+        "seq": 21,
+        "status": "executed",
+        "version": 11
+      },
+      {
+        "actual_ms": 134366.51371999987,
+        "admitted_version": 10,
+        "at_ms": 134364.889,
+        "expires_ms": 134914.889,
+        "id": "pick-cfd7410696bb6a3de",
+        "key": "k",
+        "seq": 22,
+        "status": "executed",
+        "version": 11
+      },
+      {
+        "admitted_version": 12,
+        "at_ms": 149844.72,
+        "expires_ms": 150394.72,
+        "id": "pick-c050684bfe286852c",
+        "key": "j",
+        "received_ms": 138998.43762500002,
+        "seq": 23,
+        "status": "admitted",
+        "version": 12
+      },
+      {
+        "actual_ms": 149847.6723779999,
+        "admitted_version": 12,
+        "at_ms": 149844.72,
+        "expires_ms": 150394.72,
+        "id": "pick-c050684bfe286852c",
+        "key": "j",
+        "seq": 24,
+        "status": "executed",
+        "version": 12
+      }
+    ],
+    "version": 12
+  }
+}

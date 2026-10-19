@@ -1,0 +1,33 @@
+NEW 1 c4105cca7b53302fc d 22222.222222222223
+NEW 2 c834c687a3acb6266 f 25870.694052
+NEW 3 c902a174f11fa2ac0 j 30034.14614481818
+NEW 4 c1b98fbe466809a11 k 39019.73485333333
+ACTION 1 {'clock_ms': 22240.73794, 'id': 'dev-c4105cca7b53302fc', 'key': 'd', 'result': 'target_grab', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}
+NEW 5 c111b8aaa62f28d1a d 46464.830757222226
+ACTION 2 {'clock_ms': 25877.970903, 'id': 'dev-c834c687a3acb6266', 'key': 'f', 'result': 'target_grab', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}
+NEW 6 caf5570eed8e94b15 f 50320.629668
+ACTION 3 {'clock_ms': 30743.239053, 'id': 'dev-c902a174f11fa2ac0', 'key': 'j', 'result': 'expired', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}
+NEW 7 ced52a24135b00a54 j 53832.19963781818
+NEW 8 c601e5b4578511608 k 63120.52368333333
+ACTION 5 {'clock_ms': 46475.655153, 'id': 'dev-c111b8aaa62f28d1a', 'key': 'd', 'result': 'target_grab', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}
+NEW 9 c6b77730f65bd9acb d 70558.47348122222
+NEW 10 c32d03fdda123f501 f 73701.12684099999
+NEW 11 c563e9bed45100358 j 78376.77578281818
+NEW 12 c03e0d681552454f1 k 86544.33427233333
+ACTION 8 {'clock_ms': 67140.957294, 'id': 'dev-c601e5b4578511608', 'key': 'k', 'result': 'expired', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}
+ACTION 9 {'clock_ms': 70569.171727, 'id': 'dev-c6b77730f65bd9acb', 'key': 'd', 'result': 'target_grab', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}
+NEW 13 cec3fbf4dc20ef164 d 94547.07557422222
+NEW 14 cb4ff00ae3f1347de f 97732.594176
+ACTION 11 {'clock_ms': 78380.683158, 'id': 'dev-c563e9bed45100358', 'key': 'j', 'result': 'target_grab', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}
+NEW 15 c77064c2c0f552c94 j 101902.55059781818
+NEW 16 cae9ca08b2d7c5048 k 111041.24839133333
+NEW 17 c82450164728a6fcf d 118263.72882122222
+ACTION 14 {'clock_ms': 101160.667171, 'id': 'dev-cb4ff00ae3f1347de', 'key': 'f', 'result': 'expired', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}
+NEW 18 cc4ff64debb5d6b48 f 121783.479091
+NEW 19 c623d8eb7a4ca83b2 j 125923.49514081818
+NEW 20 cfd7410696bb6a3de k 134564.88892433333
+NEW 21 cdd44fd3645114889 d 142021.22819322222
+NEW 22 c97bdd982cdac6046 f 146329.65033899999
+NEW 23 c050684bfe286852c j 150044.71978681817
+NEW 24 cfeef16e964ef2ebe k 158630.83048833333
+FINISHED [{'clock_ms': 22240.73794, 'id': 'dev-c4105cca7b53302fc', 'key': 'd', 'result': 'target_grab', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}, {'clock_ms': 25877.970903, 'id': 'dev-c834c687a3acb6266', 'key': 'f', 'result': 'target_grab', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}, {'clock_ms': 30743.239053, 'id': 'dev-c902a174f11fa2ac0', 'key': 'j', 'result': 'expired', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}, {'clock_ms': 46475.655153, 'id': 'dev-c111b8aaa62f28d1a', 'key': 'd', 'result': 'target_grab', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}, {'clock_ms': 67140.957294, 'id': 'dev-c601e5b4578511608', 'key': 'k', 'result': 'expired', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}, {'clock_ms': 70569.171727, 'id': 'dev-c6b77730f65bd9acb', 'key': 'd', 'result': 'target_grab', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}, {'clock_ms': 78380.683158, 'id': 'dev-c563e9bed45100358', 'key': 'j', 'result': 'target_grab', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}, {'clock_ms': 101160.667171, 'id': 'dev-cb4ff00ae3f1347de', 'key': 'f', 'result': 'expired', 'session_id': '0fd513b3-816b-4cdf-9f41-47336c89d11f'}]

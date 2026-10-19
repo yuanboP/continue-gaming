@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "candidate_policy": "tracking_dodge_safe_intercept_v2",
+  "common": {
+    "provider": "subscription", "speed": 1, "workers": 4, "capacity": 4,
+    "decision_stride": 6, "chunk_size": 1, "max_duration": 48,
+    "max_wall_s": 1100, "wait_for_move": true, "intro_observation": true,
+    "structured": true, "lean_native": false, "decision_fanout": 4,
+    "shared_cohort_inputs": true, "stage_timings": true, "visual_memory_points": 8,
+    "wait_for_winner": true, "pixel_controls": true, "aggressive_native": true,
+    "latency_scale": 1, "early_action_delivery": false, "decision_brief": true,
+    "brief_language": "en", "effort": "low", "warm_clients": false,
+    "engine_sha256": "348e81340d4a09f8b488193daf0b4e395afa2755d34f249585ff5e1ffe787aa4"
+  },
+  "candidates": {
+    "initial": {"history_frames": 3, "capture_stride": 20, "history_spacing_frames": 20},
+    "single_frame": {"history_frames": 1, "capture_stride": 12, "history_spacing_frames": 20}
+  },
+  "limits": {"profile_calls": 16, "max_simulations": 2, "calls_per_simulation": 72, "live_calls": 100},
+  "selection": "Outer agent selects only from these candidates using DEV evidence before freeze. single_frame is a latency candidate, not a measured superiority claim."
+}

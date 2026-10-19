@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c6b77730f65bd9acb\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 70383.473481, \"expires_ms\": 70908.473481, \"id\": \"pick-c6b77730f65bd9acb\", \"key\": \"d\"}, \"visible_evidence\": \"The USB connector shell is visibly deformed and heavily pitted, with a crushed lower edge.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792348977.0506988,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 7.721204976000081,
+    "ready_unix": 1792348977.0478804,
+    "started_unix": 1792348969.3266761,
+    "thread_id": "01a15052-d972-7d51-9cd0-21bc85ef6b3a",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7064,
+        "outputTokens": 158,
+        "reasoningOutputTokens": 64,
+        "totalTokens": 7222
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7064,
+        "outputTokens": 158,
+        "reasoningOutputTokens": 64,
+        "totalTokens": 7222
+      }
+    },
+    "turn_id": "01a15052-d992-7852-9322-5f9d98d8f596",
+    "usage_complete": true,
+    "wall_seconds": 7.724022002999845
+  }
+}

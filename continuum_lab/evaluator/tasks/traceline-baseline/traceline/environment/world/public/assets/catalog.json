@@ -1,0 +1,1796 @@
+{
+  "schema_version": "visual-inspection-assets-v1",
+  "items": [
+    {
+      "asset_id": "v3_056b44b807e5fe68ebc8",
+      "sku": "board_b",
+      "image": "images/v3_056b44b807e5fe68ebc8.png",
+      "sha256": "a8c024e802b82c0f99b9ad4b7a9f59f2a8e84ca8b1d6a508778f02a1f9473ce2",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Anomaly/017.JPG",
+        "original_sha256": "09b3eb7bdf19da02bcc2ec52969df9961560a9fcf94eb4a5f68e74337e157903",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1656233984,
+        "archive_image_bytes": 223793,
+        "pixel_sha256": "0d77adab0a2f3faaa6426944a46255adb63af3305e411f3b5e0f7cc076f82be7",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_056b44b807e5fe68ebc8.png",
+          "original_path": "pcb4/Data/Masks/Anomaly/017.png",
+          "sha256": "d044d5bd0eb2f393875a0ce683305d425c547651dc168ce41c32408edc2819ac",
+          "classes": [
+            {
+              "id": 3,
+              "name": "Missing",
+              "pixels": 4386
+            },
+            {
+              "id": 4,
+              "name": "Damage",
+              "pixels": 22771
+            }
+          ],
+          "allowed_class_area": 27157,
+          "allowed_class_bbox": [
+            306,
+            338,
+            739,
+            625
+          ]
+        },
+        "static_review_note": "Center-left capacitor missing and USB housing visibly displaced."
+      },
+      "split": "live",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_070fa5d1276b75102b96",
+      "sku": "board_a",
+      "image": "images/v3_070fa5d1276b75102b96.png",
+      "sha256": "4c07c9519347e93b9488c19ce4e4c372bfa4e4eade395919c24bbd1ba4d93ffa",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Normal/0316.JPG",
+        "original_sha256": "0ecac0310a0115fb281bc49bb7b0f26b65baad7a903688a4506c6e8207d50303",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1375058432,
+        "archive_image_bytes": 251163,
+        "pixel_sha256": "4a0e5040fafca6db915a0744f43e6835c69380360d76b21f268f6d279c5c426d",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "dev",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_09bd7202e881f0790e3d",
+      "sku": "board_a",
+      "image": "images/v3_09bd7202e881f0790e3d.png",
+      "sha256": "a776c626ae25e8b73935198e9f4e59587ddcd20be457e22e6c64cf28c8954471",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Normal/0188.JPG",
+        "original_sha256": "d8f947888e1ab641411e0640167f6ae100b2b03bcc0507e3831ba87e15a9b97a",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1236568064,
+        "archive_image_bytes": 256766,
+        "pixel_sha256": "1bcb485201bab3cc2fb6884357fac104383df853172df0200109e8b74f562fce",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "live",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_0ab2a05c6484de2f796f",
+      "sku": "board_a",
+      "image": "images/v3_0ab2a05c6484de2f796f.png",
+      "sha256": "faf937e9dfd55bd763dfb19332cccfddcf810f5920ee7e467f63dae13dce82dc",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Normal/0156.JPG",
+        "original_sha256": "22d80a997c5297dbd4d1a5aa8dd66feca34c0a3db00870661d7f8a3ea5e13c9c",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1435631104,
+        "archive_image_bytes": 253804,
+        "pixel_sha256": "8af1a1af443fae0c4210f95a777a14e9442ea28f42d0b9131c6bab8997fd95f8",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "dev",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_156c4dd0e83d310ac507",
+      "sku": "board_a",
+      "image": "images/v3_156c4dd0e83d310ac507.png",
+      "sha256": "876acfba7c1ea6de3d58fe5aab24260f28db4eb77a0cc31b6567359e48fdf87c",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Normal/0286.JPG",
+        "original_sha256": "39972167b1ee0ac5403a107aaf926c67934d0d9c6c80c21b859169c0fee7e73b",
+        "original_label": "normal",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1478054400,
+        "archive_image_bytes": 223525,
+        "pixel_sha256": "fabf88ff64ac5c866b6162bea036043cfa04a31cd3095d3e2ae85e6117872da5",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "live",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_198e635aa6b18bad9491",
+      "sku": "board_b",
+      "image": "images/v3_198e635aa6b18bad9491.png",
+      "sha256": "6472bb42f7e4c73835b5fb28a229a5fa5feb360599c945f6505bd88cf4e2bf8b",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Normal/0289.JPG",
+        "original_sha256": "666107f8f2bd640afa78744ef366986f458e4c0d0685bde41b162dbfd5bc1e70",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1712984576,
+        "archive_image_bytes": 168357,
+        "pixel_sha256": "8b0df5a26bbb34fe3caf32bc30317dc38f58a52efaa7a98f2d396c1cd6ec58d4",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "dev",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_1c3dc3ed8c186c7915a7",
+      "sku": "board_a",
+      "image": "images/v3_1c3dc3ed8c186c7915a7.png",
+      "sha256": "bfcd89d6ab46ec653bc1314f4c4236d57c7e2c406a5da5650c04bc46aff6a09f",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Anomaly/003.JPG",
+        "original_sha256": "bb30a33d3516f0207e49de98cbdcc4d1834226b6571859bb26147bd40db62b3f",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1211724800,
+        "archive_image_bytes": 266271,
+        "pixel_sha256": "49d0d288e717c55298af8465f52799c1ca07c3d3a20edf6da0e68b5c73603656",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_1c3dc3ed8c186c7915a7.png",
+          "original_path": "pcb2/Data/Masks/Anomaly/003.png",
+          "sha256": "c6710a29b0e8d571fa808439ef0ee06d53a2fbd13bc9dd45ded8dc3f66007661",
+          "classes": [
+            {
+              "id": 1,
+              "name": "Bent",
+              "pixels": 3569
+            }
+          ],
+          "allowed_class_area": 3569,
+          "allowed_class_bbox": [
+            550,
+            249,
+            645,
+            370
+          ]
+        },
+        "static_review_note": "Two left connector pins bent out of the normal upright plane."
+      },
+      "split": "dev",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_211a7c151a49052e008d",
+      "sku": "board_b",
+      "image": "images/v3_211a7c151a49052e008d.png",
+      "sha256": "71d235d6d989c4b8ecfb74da6d08421f2363f0dd5bbc9e7df55685f9272afc6c",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Anomaly/016.JPG",
+        "original_sha256": "9f0f8ff0ea98c96bc0d305e88d50f14b43a88c19e35c969ab491c726f4823fd6",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1645012480,
+        "archive_image_bytes": 228636,
+        "pixel_sha256": "560de6e33cd5e73e3bf99593ea10b4bfe060f862aca06748999ad5a7bbdede17",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_211a7c151a49052e008d.png",
+          "original_path": "pcb4/Data/Masks/Anomaly/016.png",
+          "sha256": "0ef99e4ad64f05b370e4da61e81003a49cc23b282e7edd22fe9af5dc22ea4bf1",
+          "classes": [
+            {
+              "id": 3,
+              "name": "Missing",
+              "pixels": 5034
+            },
+            {
+              "id": 7,
+              "name": "Dirt",
+              "pixels": 16636
+            }
+          ],
+          "allowed_class_area": 5034,
+          "allowed_class_bbox": [
+            717,
+            533,
+            769,
+            634
+          ]
+        },
+        "static_review_note": "Center-left capacitor is missing/broken with debris."
+      },
+      "split": "dev",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_26cde43c408ccc1b5922",
+      "sku": "board_b",
+      "image": "images/v3_26cde43c408ccc1b5922.png",
+      "sha256": "8922643da7d32139ece690e3d74ec897de883659dd13c123fead51282d8f339a",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Anomaly/011.JPG",
+        "original_sha256": "7cf29bbf475c7f48574e53fd518fd1ceb294e5dfd97dd18e64fdedd10238f414",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1647282176,
+        "archive_image_bytes": 228389,
+        "pixel_sha256": "35299f88eda46a51034b9242a640941e115ce7e7bff139450d36f8fae9c65bec",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_26cde43c408ccc1b5922.png",
+          "original_path": "pcb4/Data/Masks/Anomaly/011.png",
+          "sha256": "79e951d75bfa1b2889e55cc23cf227b169b3434b24dc73d8c628ee68e0e5cecb",
+          "classes": [
+            {
+              "id": 4,
+              "name": "Damage",
+              "pixels": 10161
+            }
+          ],
+          "allowed_class_area": 10161,
+          "allowed_class_bbox": [
+            937,
+            484,
+            1053,
+            609
+          ]
+        },
+        "static_review_note": "Right capacitor has a large broken region and debris."
+      },
+      "split": "dev",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_286a0901423d557ba700",
+      "sku": "board_a",
+      "image": "images/v3_286a0901423d557ba700.png",
+      "sha256": "9afa2a980c86c5fadce69ba5eabd9516237852bdd71dcd62dd4531be70c74b30",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Anomaly/006.JPG",
+        "original_sha256": "ad7863602cab14426aa5c01c29442573e74f34bcd3787717db696e630976f086",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1221504512,
+        "archive_image_bytes": 243857,
+        "pixel_sha256": "960cb1e4e0abfa48f143999dcd810295a04e42e588b336c74eedbc9586cd419a",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_286a0901423d557ba700.png",
+          "original_path": "pcb2/Data/Masks/Anomaly/006.png",
+          "sha256": "c2658b16daba4f3c9615b3e93760b67ac4d7187378c3e5c96595d2e460865b29",
+          "classes": [
+            {
+              "id": 1,
+              "name": "Bent",
+              "pixels": 4316
+            },
+            {
+              "id": 2,
+              "name": "Melt",
+              "pixels": 269
+            }
+          ],
+          "allowed_class_area": 4316,
+          "allowed_class_bbox": [
+            519,
+            221,
+            762,
+            365
+          ]
+        },
+        "static_review_note": "Separated connector pins bend in different directions."
+      },
+      "split": "dev",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_2cd4f85b8ebec4bfee87",
+      "sku": "board_a",
+      "image": "images/v3_2cd4f85b8ebec4bfee87.png",
+      "sha256": "797925703a7650c27677d3736bb7188361534feaf574260604a3b0dfe3c116f9",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Anomaly/002.JPG",
+        "original_sha256": "8a9335e83494f8284a379db3ba5902aa0a99002104f233514c2308ea6b94f40e",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1218120704,
+        "archive_image_bytes": 263535,
+        "pixel_sha256": "2f932053c46333299b20d1d4006fb8f79eda48c167de2c273bb5b4a9a6dfde55",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_2cd4f85b8ebec4bfee87.png",
+          "original_path": "pcb2/Data/Masks/Anomaly/002.png",
+          "sha256": "75551e611ab2b9c621299f2bc29269759871618dad8796f4f8844c52d59b9575",
+          "classes": [
+            {
+              "id": 1,
+              "name": "Bent",
+              "pixels": 2760
+            }
+          ],
+          "allowed_class_area": 2760,
+          "allowed_class_bbox": [
+            766,
+            250,
+            901,
+            371
+          ]
+        },
+        "static_review_note": "Rightmost connector pin visibly leans away from the other pins."
+      },
+      "split": "live",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_2e6b0ba838dde0755db6",
+      "sku": "board_a",
+      "image": "images/v3_2e6b0ba838dde0755db6.png",
+      "sha256": "1747aa0c609ee3da2de78eee0f7742a3b33f3b5c4f17931964796e9578f05872",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Anomaly/013.JPG",
+        "original_sha256": "b436e7c594e14526b2997816c380e6112c3ec5d34ed616d110dfda21f0844efe",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1225503744,
+        "archive_image_bytes": 257883,
+        "pixel_sha256": "f064e23b6151044145601cdd7a115131fcdfe56b4dea56755f35fb338bd9a3ce",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_2e6b0ba838dde0755db6.png",
+          "original_path": "pcb2/Data/Masks/Anomaly/013.png",
+          "sha256": "e6bb7b86ba44837f2849ce0b443b4a073e213f6d134905be689099886a873740",
+          "classes": [
+            {
+              "id": 1,
+              "name": "Bent",
+              "pixels": 10241
+            }
+          ],
+          "allowed_class_area": 10241,
+          "allowed_class_bbox": [
+            462,
+            234,
+            751,
+            359
+          ]
+        },
+        "static_review_note": "Entire connector bank strongly bent sideways."
+      },
+      "split": "live",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_30fbee94b642f23f7669",
+      "sku": "board_b",
+      "image": "images/v3_30fbee94b642f23f7669.png",
+      "sha256": "754fa6201a44b789f3b49b4a8857efee24aa36e1eec992d1f3ba6237834cc38b",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Normal/0153.JPG",
+        "original_sha256": "203928b26872e844b9515d2b633b6f2cc2b57360b955f10aff75a14af12635d1",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1677086208,
+        "archive_image_bytes": 226388,
+        "pixel_sha256": "a83bf7d2cff394350c57a630a252e46f54e0535669e7250df1a8d67fa8ea4471",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "live",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_3817699d0b7d1bd64430",
+      "sku": "board_a",
+      "image": "images/v3_3817699d0b7d1bd64430.png",
+      "sha256": "a495485188665c9c487f49970dfb748a0b62bfc57fc5a0dc215eecdbe06abb75",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Anomaly/012.JPG",
+        "original_sha256": "3e3bedf0a83e5a5cd191f27a1b3707354d0eb9efbf4399356df14b3c5e16b285",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1212271104,
+        "archive_image_bytes": 275345,
+        "pixel_sha256": "3f8311608be534a689182d400710ee2b0cd70f39c08b6c189728f957ed12e7c4",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_3817699d0b7d1bd64430.png",
+          "original_path": "pcb2/Data/Masks/Anomaly/012.png",
+          "sha256": "c280d531088dda290277e321dfc64ff4dbbe1762a724038efbb258d06f767972",
+          "classes": [
+            {
+              "id": 1,
+              "name": "Bent",
+              "pixels": 3079
+            }
+          ],
+          "allowed_class_area": 3079,
+          "allowed_class_bbox": [
+            727,
+            358,
+            764,
+            545
+          ]
+        },
+        "static_review_note": "A central connector pin folded downward across the board."
+      },
+      "split": "dev",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_3a4786fd97ff0685304e",
+      "sku": "board_b",
+      "image": "images/v3_3a4786fd97ff0685304e.png",
+      "sha256": "404ba5c732fbcd373e4823b077727f3a393bfa23267344b21599a794bbf57240",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Anomaly/005.JPG",
+        "original_sha256": "e1f17e47688839d15cae4bed860c3f061ddbbd3e5ed6a029d114558c8e41178e",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1638634496,
+        "archive_image_bytes": 223053,
+        "pixel_sha256": "79e3c6ad1fa65a23a1d8a5d5450383eb781d8d7507cd4a22f2f89bb9fbcd3b4e",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_3a4786fd97ff0685304e.png",
+          "original_path": "pcb4/Data/Masks/Anomaly/005.png",
+          "sha256": "8405a8e99e6888c14856847776b265fd61dff8e83e4128f878633034bff18d0b",
+          "classes": [
+            {
+              "id": 4,
+              "name": "Damage",
+              "pixels": 3188
+            }
+          ],
+          "allowed_class_area": 3188,
+          "allowed_class_bbox": [
+            635,
+            688,
+            723,
+            739
+          ]
+        },
+        "static_review_note": "Lower small component is visibly crushed relative to normal reference."
+      },
+      "split": "dev",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_438e9a3e660941674497",
+      "sku": "board_b",
+      "image": "images/v3_438e9a3e660941674497.png",
+      "sha256": "95c357d34f4db7c0bc0209de5285dd927b9c792cf0e00b1c0aec3093e541fa07",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Normal/0349.JPG",
+        "original_sha256": "f591d89c063234834d588f6a09f12d75406a2c7b33c9669b5e1ea41568e6c326",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1865647104,
+        "archive_image_bytes": 184820,
+        "pixel_sha256": "d0b521c9b2ec7fe375a89779adb38b29ac43c61dfa0e0b926b2345c0a44e8805",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "live",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_47dd2ab4e3721d802a7c",
+      "sku": "board_a",
+      "image": "images/v3_47dd2ab4e3721d802a7c.png",
+      "sha256": "0298ba2401c41095fd064d4b62e53560bfb1879fe36f527aa6df1cab7dd398b1",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Anomaly/011.JPG",
+        "original_sha256": "18004aad0cd4de743a5d76e66c89d3a2b5992b1f6379edb56aeceda53eb9ee98",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1218907648,
+        "archive_image_bytes": 249107,
+        "pixel_sha256": "9694ca6d87060c359d94bc9432024adf1c8db57029c9077865ff6a964355dcb2",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_47dd2ab4e3721d802a7c.png",
+          "original_path": "pcb2/Data/Masks/Anomaly/011.png",
+          "sha256": "81e463afd8fe0e9546e0c408c8039b0d4940a481ddcaff6aece6555d3b9608d7",
+          "classes": [
+            {
+              "id": 1,
+              "name": "Bent",
+              "pixels": 21879
+            }
+          ],
+          "allowed_class_area": 21879,
+          "allowed_class_bbox": [
+            542,
+            344,
+            763,
+            567
+          ]
+        },
+        "static_review_note": "Entire connector bank folded onto the board."
+      },
+      "split": "live",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_47f4925dc1acbdc68dca",
+      "sku": "board_b",
+      "image": "images/v3_47f4925dc1acbdc68dca.png",
+      "sha256": "15fc2ca5fc2949df30a686d8ab07075128c9c62ced77dcd0fe977593a5f0340f",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Anomaly/018.JPG",
+        "original_sha256": "903f0e13d0ede1d996c5f7cdcc21962116befc0f52dc15aa74c419163438854d",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1637687808,
+        "archive_image_bytes": 226510,
+        "pixel_sha256": "52b10fc2b3e06cda93e9da1c8030c30be03f1b294d651c426d84e006ac029f24",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_47f4925dc1acbdc68dca.png",
+          "original_path": "pcb4/Data/Masks/Anomaly/018.png",
+          "sha256": "6b9ed387c0fef902e284a490af464778129ae17da170b36e093633055f62c4dc",
+          "classes": [
+            {
+              "id": 4,
+              "name": "Damage",
+              "pixels": 10410
+            }
+          ],
+          "allowed_class_area": 10410,
+          "allowed_class_bbox": [
+            843,
+            501,
+            975,
+            644
+          ]
+        },
+        "static_review_note": "Large upper-right part of the main IC visibly broken."
+      },
+      "split": "dev",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_4d8537062005a90deeb1",
+      "sku": "board_a",
+      "image": "images/v3_4d8537062005a90deeb1.png",
+      "sha256": "29fe5878e6af52863552f07e669fa2fc73340012242ca60bf302612a91b892ac",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Anomaly/001.JPG",
+        "original_sha256": "2d71a3af119e7495bb69af5a063020ad23e8ee0089be0ca1a1e8ac022d48bab9",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1205086720,
+        "archive_image_bytes": 262853,
+        "pixel_sha256": "6a3f9d277d619499edb5a9a1e8d423d1a8a669dbc0768f311db917c4bbd1389d",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_4d8537062005a90deeb1.png",
+          "original_path": "pcb2/Data/Masks/Anomaly/001.png",
+          "sha256": "15684849f94e0a588227e5182288236a40f75cc816f2fb293174b9d00574dce0",
+          "classes": [
+            {
+              "id": 1,
+              "name": "Bent",
+              "pixels": 2348
+            },
+            {
+              "id": 2,
+              "name": "Melt",
+              "pixels": 396
+            }
+          ],
+          "allowed_class_area": 2348,
+          "allowed_class_bbox": [
+            727,
+            233,
+            844,
+            361
+          ]
+        },
+        "static_review_note": "One connector pin diagonally bent relative to parallel normal pins."
+      },
+      "split": "dev",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_578aaf991868cf5bc31b",
+      "sku": "board_a",
+      "image": "images/v3_578aaf991868cf5bc31b.png",
+      "sha256": "6a40140cc125bd58c60d051b93e34505b55f7e79cf66f3b4b46ccadb86850b4f",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Normal/0075.JPG",
+        "original_sha256": "07c8036d967fa7ab4dae08bd36bb5cb5019a7befabc5c82e276cb30ec071d9e9",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1435117056,
+        "archive_image_bytes": 261663,
+        "pixel_sha256": "b4d234f7360c95a25410dbc459271b4ef6afc454665f693c82b2438f25899055",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "live",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_593f016362a4fa96343a",
+      "sku": "board_b",
+      "image": "images/v3_593f016362a4fa96343a.png",
+      "sha256": "9347df31f7c597190341d1280cfea9bdeb465edfe6789bfe81f9dda731b5fbfb",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Normal/0268.JPG",
+        "original_sha256": "debbcc0cba3b9f06e861fda85baac1fa8a0c092532b748a2d40044391262a583",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1865832448,
+        "archive_image_bytes": 200153,
+        "pixel_sha256": "90df7925e2cfa2dd31d9c5406169c0128baa1b7fbbb903cba325a42973625a6c",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "dev",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_5f681d178bcdf5c6eb98",
+      "sku": "board_b",
+      "image": "images/v3_5f681d178bcdf5c6eb98.png",
+      "sha256": "e37577b2f46fdc424bc83c55162e913456000f49130ef45b4d2136e6f36da418",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Anomaly/012.JPG",
+        "original_sha256": "4b0f2c901ca18f8e632d722140e4f051a92c05fdfd6e9130c40de585d52bdf63",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1641574912,
+        "archive_image_bytes": 225898,
+        "pixel_sha256": "57f0c6e797eb438115f06874cb9186b2cc982505a759e26f89c20500c1c5810f",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_5f681d178bcdf5c6eb98.png",
+          "original_path": "pcb4/Data/Masks/Anomaly/012.png",
+          "sha256": "227167eae6901d725e150a4dd11eeb5c9ab652cc5744a06dea0b716886ca19f7",
+          "classes": [
+            {
+              "id": 4,
+              "name": "Damage",
+              "pixels": 5298
+            }
+          ],
+          "allowed_class_area": 5298,
+          "allowed_class_bbox": [
+            312,
+            395,
+            407,
+            471
+          ]
+        },
+        "static_review_note": "Top corner of USB housing visibly bent inward relative to reference."
+      },
+      "split": "live",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_6662c386fc931b837c78",
+      "sku": "board_b",
+      "image": "images/v3_6662c386fc931b837c78.png",
+      "sha256": "f501ebaf21a79fe889f03301f6788a6e0cebbb71605e8a9a8dd60c4970af5c54",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Anomaly/009.JPG",
+        "original_sha256": "95dc4a49b4b8648cf7e42c46e566f3145913d94ac71f3fd35c93c72173f2e330",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1636544512,
+        "archive_image_bytes": 231224,
+        "pixel_sha256": "813862b5be99a42ae68a59d78ced22b9c4f1d887dd4d2e34ae94daa0027d9ac2",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_6662c386fc931b837c78.png",
+          "original_path": "pcb4/Data/Masks/Anomaly/009.png",
+          "sha256": "519621b47d54b887cf87474f2a863cd73767c4858be7e51f3149c1d79310aab6",
+          "classes": [
+            {
+              "id": 4,
+              "name": "Damage",
+              "pixels": 6425
+            },
+            {
+              "id": 7,
+              "name": "Dirt",
+              "pixels": 18603
+            }
+          ],
+          "allowed_class_area": 6425,
+          "allowed_class_bbox": [
+            657,
+            306,
+            738,
+            404
+          ]
+        },
+        "static_review_note": "Upper R400 component is visibly broken apart."
+      },
+      "split": "dev",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_75603ae4889e85d448cc",
+      "sku": "board_b",
+      "image": "images/v3_75603ae4889e85d448cc.png",
+      "sha256": "1ba1fb7778c419845cef6359d2cfdb188e1f019149a40e7e8c25a51a1656713c",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Anomaly/010.JPG",
+        "original_sha256": "dc043da3309a857efe390d908f36b73e7ddedc381e200cd5971fc337271aa5b6",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1635856384,
+        "archive_image_bytes": 216358,
+        "pixel_sha256": "2678c551d60b9feded175844fe826f1fa598039983f2b381cb95eec028d333f1",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_75603ae4889e85d448cc.png",
+          "original_path": "pcb4/Data/Masks/Anomaly/010.png",
+          "sha256": "31a6a322d61f7331d1a8b27bc9845856e3c4b0cf85d67f059b9851c28dd4fab7",
+          "classes": [
+            {
+              "id": 2,
+              "name": "Scratch",
+              "pixels": 8
+            },
+            {
+              "id": 4,
+              "name": "Damage",
+              "pixels": 4688
+            },
+            {
+              "id": 7,
+              "name": "Dirt",
+              "pixels": 19425
+            }
+          ],
+          "allowed_class_area": 4688,
+          "allowed_class_bbox": [
+            410,
+            387,
+            477,
+            528
+          ]
+        },
+        "static_review_note": "USB housing is damaged; upper small component also visibly disrupted."
+      },
+      "split": "live",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_82c427a2ef06a8dfd4fe",
+      "sku": "board_b",
+      "image": "images/v3_82c427a2ef06a8dfd4fe.png",
+      "sha256": "7291e4d98612f6f764d5547bcfcc1575cb73457003d72b159043a4ddc8e455ae",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Normal/0286.JPG",
+        "original_sha256": "c569e1dd4a82b6bcfee57a6673a292697e263899bedf78c33617430391e3f00f",
+        "original_label": "normal",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1869591552,
+        "archive_image_bytes": 174248,
+        "pixel_sha256": "17f2f13dec9f149ee0ac65725f913f00bea260fa05ccf29e0f60645624181dd2",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "live",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_82d2f7f2046021b69908",
+      "sku": "board_a",
+      "image": "images/v3_82d2f7f2046021b69908.png",
+      "sha256": "4b041ef0f2190d1ca68529fcf0aea635c98da7775ba2aeef7b01bbcc2c445e04",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Anomaly/004.JPG",
+        "original_sha256": "e52327c124f16ff844b05aa3818660a9b0481af14913a20f19c75aea0c00d434",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1224679424,
+        "archive_image_bytes": 266222,
+        "pixel_sha256": "33bc08db5ca91d091b72ccf2e7f676cd5e55267a343079b625ffea4ba89e5d37",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_82d2f7f2046021b69908.png",
+          "original_path": "pcb2/Data/Masks/Anomaly/004.png",
+          "sha256": "0e9e207573ecdc169ec8e907620d068d31e02af9c2688e1e3bd28a1fb751720c",
+          "classes": [
+            {
+              "id": 1,
+              "name": "Bent",
+              "pixels": 4400
+            }
+          ],
+          "allowed_class_area": 4400,
+          "allowed_class_bbox": [
+            684,
+            205,
+            836,
+            362
+          ]
+        },
+        "static_review_note": "Two right connector pins visibly lean and cross."
+      },
+      "split": "live",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_82fd54c54cd66b524662",
+      "sku": "board_b",
+      "image": "images/v3_82fd54c54cd66b524662.png",
+      "sha256": "fbc519a9d1b51138d67b6131f6b4a91d267e18869a29270859c7df8e1009fdc1",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Normal/0295.JPG",
+        "original_sha256": "175890dd2d36f2199473ce6571a72bbb7744e00053e89aa0118bb03afdee4fca",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1856913408,
+        "archive_image_bytes": 204270,
+        "pixel_sha256": "883ed6cfa0409329786b8653e32a619e5d6c9c961e3602c49d7a9e850b156ab2",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "live",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_86058bf512d5157a4dd4",
+      "sku": "board_b",
+      "image": "images/v3_86058bf512d5157a4dd4.png",
+      "sha256": "8e1d22a09d6e854e1d28caabe6a26d61adffb4d429b0d6b5569acd08f04dec22",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Normal/0187.JPG",
+        "original_sha256": "0ac3842af6606940a154f323d64fa7400f0f2106786cecbcfff2801941068c6f",
+        "original_label": "normal",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1865502208,
+        "archive_image_bytes": 144299,
+        "pixel_sha256": "e29fe1662d8e0fee7b8a84cc06c850326bc748d20fcf6742015307c5f82b7961",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "live",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_91e46a5302a543ac33d8",
+      "sku": "board_a",
+      "image": "images/v3_91e46a5302a543ac33d8.png",
+      "sha256": "28ecab859228a399b80296e2d3047cf4b22b8706261edea9e119c626409472d3",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Anomaly/007.JPG",
+        "original_sha256": "8c9c27c464af8dbb8b6ba98ed939295fdaf7bdacbad41a1923078dffc47648ab",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1215220224,
+        "archive_image_bytes": 224988,
+        "pixel_sha256": "eb1c40f8267e7c2f1e6df2e05e530a9df7e0be50ef48243763b275ac2572b555",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_91e46a5302a543ac33d8.png",
+          "original_path": "pcb2/Data/Masks/Anomaly/007.png",
+          "sha256": "44ab19fb1da23ce49139daa0197d22ed81664c169bf0bc70cf26f29976fbd087",
+          "classes": [
+            {
+              "id": 1,
+              "name": "Bent",
+              "pixels": 4959
+            }
+          ],
+          "allowed_class_area": 4959,
+          "allowed_class_bbox": [
+            598,
+            191,
+            725,
+            361
+          ]
+        },
+        "static_review_note": "Several connector pins visibly cross."
+      },
+      "split": "live",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_975d918c25b3c0f13b0d",
+      "sku": "board_b",
+      "image": "images/v3_975d918c25b3c0f13b0d.png",
+      "sha256": "074cc872c58ba7e9ba095595a3c7f63241b8decfbf4a7ec5b4e252724c60f3d1",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Normal/0448.JPG",
+        "original_sha256": "a408f541fb0602227e215fcaf3c16a9089427fe43788b673eeb2bf87d31153b0",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1869766656,
+        "archive_image_bytes": 240572,
+        "pixel_sha256": "77e81854924b5b6494ba2852fa6da0bee34300f6f8aa4b49ee24e107fd95fa5c",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "live",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_9b2f544f6be3181b77c5",
+      "sku": "board_a",
+      "image": "images/v3_9b2f544f6be3181b77c5.png",
+      "sha256": "40d51a7aba9a1073e93628fed291dc94af06a4d80a8b022588b878e4c65ddc56",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Normal/0448.JPG",
+        "original_sha256": "0dd6719823d408484ca7e4e9f1e9d855921a30d7c59f9d8cc01dca0c6d278aa0",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1478278656,
+        "archive_image_bytes": 239340,
+        "pixel_sha256": "41b0c69955cf6087e64cd6443217dcf7af8c5192de0ef2469ef8b04b83e54909",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "dev",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_a4481a755e1367f79ee7",
+      "sku": "board_a",
+      "image": "images/v3_a4481a755e1367f79ee7.png",
+      "sha256": "2a01c7ae885b144b2354b5d0d266b525600ce98fdb00d2dc78034776bd168f21",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Normal/0097.JPG",
+        "original_sha256": "c485a0cd9d68f771d9129658914a121050aeb87c612e60126a367e6b638d1134",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1465227776,
+        "archive_image_bytes": 252119,
+        "pixel_sha256": "5a575ddcd1150b7495817f5dc4d48ca9a1f6c754dac51fd977ecd6ffe2973d09",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "dev",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_a6974726c2ed71597358",
+      "sku": "board_b",
+      "image": "images/v3_a6974726c2ed71597358.png",
+      "sha256": "02685b1614fa127cb570b518e8c5dc87fb5260382a2470aa9ab747a4909d1403",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Normal/0315.JPG",
+        "original_sha256": "00707036814d47aacd361c9473609466f1f526ff00a1e6666cd243d19f4b0aa6",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1677313536,
+        "archive_image_bytes": 194285,
+        "pixel_sha256": "528ab44b3dfdf6c9456df9c2b17952dc6113446bea171c77f47be6a7ff458c87",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "dev",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_af2f99a3a07993c69fe8",
+      "sku": "board_a",
+      "image": "images/v3_af2f99a3a07993c69fe8.png",
+      "sha256": "399841e9fe16d051a57f0db19c34f40add4d4ac9ebfe39b9da266ab5beee03e5",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Normal/0062.JPG",
+        "original_sha256": "0252a41d1cfc4c2876f15cf967562e0f16b857fedc99dbf98c2d4f539146f69b",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1455187968,
+        "archive_image_bytes": 265904,
+        "pixel_sha256": "ee69cf4c95693e031cb81dafc55a491101f4b6d7be9a930c9c7536c7a46ff400",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "dev",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_b9bc79ec182f98410670",
+      "sku": "board_b",
+      "image": "images/v3_b9bc79ec182f98410670.png",
+      "sha256": "96d38afb758420d14d33e664d454bd532604fc107be771f82833b4cbd4858414",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Anomaly/019.JPG",
+        "original_sha256": "c857c6af258a04c1beaa7b34a5c5b74adc68b9fe3b66287af1814853c5949361",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1648437248,
+        "archive_image_bytes": 220951,
+        "pixel_sha256": "cae5f6f8f4b03b99dfa4665a98369ed01310ca33aaa275d7fce8e886bf097820",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_b9bc79ec182f98410670.png",
+          "original_path": "pcb4/Data/Masks/Anomaly/019.png",
+          "sha256": "8c1e1a95286eb31663299ce247d8b415af68325029fad68d76d2e4c1803e18cd",
+          "classes": [
+            {
+              "id": 4,
+              "name": "Damage",
+              "pixels": 12760
+            },
+            {
+              "id": 7,
+              "name": "Dirt",
+              "pixels": 28221
+            }
+          ],
+          "allowed_class_area": 12760,
+          "allowed_class_bbox": [
+            745,
+            540,
+            945,
+            738
+          ]
+        },
+        "static_review_note": "Large lower-left part of the main IC visibly broken."
+      },
+      "split": "live",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_c73f230c87f1e2b55ef5",
+      "sku": "board_a",
+      "image": "images/v3_c73f230c87f1e2b55ef5.png",
+      "sha256": "bba06e3ff567acdc3d1be40ed0345a15fe6c81903c2f44d3c50a4f492ffa3c8a",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Normal/0318.JPG",
+        "original_sha256": "1547601749f5ed937972297999b3819c3de5da096085afdc644d1e7fde66a109",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1435379712,
+        "archive_image_bytes": 250805,
+        "pixel_sha256": "3edee28cb34fb0237df9238234059b281f49c9f3a61850f98982eb37292b5d02",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "live",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_c82f570aca79f001d383",
+      "sku": "board_b",
+      "image": "images/v3_c82f570aca79f001d383.png",
+      "sha256": "9ec59a91d50eaf4000525e2b2caa940c8fd78ac8d2746a73c6d2da8c187b2063",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Anomaly/007.JPG",
+        "original_sha256": "a83335577081b46db08f7e3cbc2a713702d06c64829f83d096d4b108e226e882",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1644092928,
+        "archive_image_bytes": 228876,
+        "pixel_sha256": "496cc2f0e480a4ca31c9bf5a75b5ce0c0981db9e8e3ad4d6d513616cb12028c8",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_c82f570aca79f001d383.png",
+          "original_path": "pcb4/Data/Masks/Anomaly/007.png",
+          "sha256": "e23fe2df697f75dc8d2b707e15859391a90d7269a1476ec474f81769dcdeff97",
+          "classes": [
+            {
+              "id": 2,
+              "name": "Scratch",
+              "pixels": 525
+            },
+            {
+              "id": 4,
+              "name": "Damage",
+              "pixels": 3610
+            },
+            {
+              "id": 5,
+              "name": "Extra",
+              "pixels": 137
+            }
+          ],
+          "allowed_class_area": 3747,
+          "allowed_class_bbox": [
+            526,
+            488,
+            942,
+            615
+          ]
+        },
+        "static_review_note": "Main IC has a visible broken top edge with exposed pale interior."
+      },
+      "split": "live",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_c9a156975e9229a35374",
+      "sku": "board_a",
+      "image": "images/v3_c9a156975e9229a35374.png",
+      "sha256": "3fc67e17f8978cc2899f7c39a5af78e9b16a655aa25ce03a0ec35155e070b4f0",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Normal/0103.JPG",
+        "original_sha256": "f390c019e9bf3a921e6ef3e41341c24ac9e183034d8cb833fa948ddd903a95a5",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1425356800,
+        "archive_image_bytes": 255279,
+        "pixel_sha256": "b3606afd5dc845cfb1530bf9f08d944ca69723187a48922433e3f7d51ad05b71",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "live",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_ca4629c7ba6ab9e544c7",
+      "sku": "board_b",
+      "image": "images/v3_ca4629c7ba6ab9e544c7.png",
+      "sha256": "3e5ccdc01e1da62942660f1783f46c3cbd1d292b08d7e30b043c88517a54317c",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Normal/0088.JPG",
+        "original_sha256": "0e7814565e806559942199ca131efdffff83844f30740d2f2f25a018261ea293",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1867816448,
+        "archive_image_bytes": 220462,
+        "pixel_sha256": "fc7acfc4089df830a0d6c55cb8416f8ddaa4627715aa030dd03629926f297ad2",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "dev",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_d5e99e2899c3c671c3ca",
+      "sku": "board_b",
+      "image": "images/v3_d5e99e2899c3c671c3ca.png",
+      "sha256": "27795d0a0e916e19f52e0f50431098a63ab787f5ebc2cb66a8c88f4f125830e6",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Normal/0367.JPG",
+        "original_sha256": "e50fbdd57372909e5d18902f31dc74a5f84c1070e3c0600ec08677b03b46a4e5",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1869350912,
+        "archive_image_bytes": 239971,
+        "pixel_sha256": "9c6adc234452d8192b5422f070940748cc61cb7589404e2f807495ad67e5666a",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "dev",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_db1c53aa731d55c8d293",
+      "sku": "board_a",
+      "image": "images/v3_db1c53aa731d55c8d293.png",
+      "sha256": "1740f92dfd871b8c04beb366bfb0a99a09b79354ef1144f5c0dc5426c87db69d",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Normal/0497.JPG",
+        "original_sha256": "6db1867e52a5a5d0a889da225843808ee15d3738056b4ba7181938c9702a01f5",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1425612800,
+        "archive_image_bytes": 210025,
+        "pixel_sha256": "bdc3971f5b12938bb0988b290a62b629ead1585a071878f36f42ccc391c5da4d",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "live",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_e126367a08c34b71c31d",
+      "sku": "board_a",
+      "image": "images/v3_e126367a08c34b71c31d.png",
+      "sha256": "82a1561872c6500ba99f573457c381eca244a3f8bef94a4aee351a08905ec1ee",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Anomaly/010.JPG",
+        "original_sha256": "f2a9758e961a446ded92f68287e810b401b74d0d731d2e33475e335efb158ab7",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1205829120,
+        "archive_image_bytes": 255188,
+        "pixel_sha256": "827b716c63a3bbd52c722013ecf1286e496c890a47dd5dc826db7e07c01c0570",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_e126367a08c34b71c31d.png",
+          "original_path": "pcb2/Data/Masks/Anomaly/010.png",
+          "sha256": "801a0f64e146b910b873b576ace928c11e587a0b1bb027ff8d1eb3302afb33fd",
+          "classes": [
+            {
+              "id": 1,
+              "name": "Bent",
+              "pixels": 2651
+            },
+            {
+              "id": 2,
+              "name": "Melt",
+              "pixels": 421
+            }
+          ],
+          "allowed_class_area": 2651,
+          "allowed_class_bbox": [
+            721,
+            354,
+            738,
+            540
+          ]
+        },
+        "static_review_note": "Rightmost connector pin folded downward across the board."
+      },
+      "split": "dev",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_e1656880a777a0da3198",
+      "sku": "board_a",
+      "image": "images/v3_e1656880a777a0da3198.png",
+      "sha256": "5d8ff5be7b9dc804470cdb3816b3143c2157745effac22f8375b94c8361cebc5",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Normal/0212.JPG",
+        "original_sha256": "91057f19224e75f38cfd0308c7f5b7e7e89f1b7d9bf1119b97dd4afc8550c3bf",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1264330240,
+        "archive_image_bytes": 245894,
+        "pixel_sha256": "9ac03bf38e84586c2c51a12abd9fdfab5a7ee18d3d78185b892c2e22a0eefc0a",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "dev",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_e47ef5f49a649376f6cb",
+      "sku": "board_b",
+      "image": "images/v3_e47ef5f49a649376f6cb.png",
+      "sha256": "03a527405a3854c084caab21793880c7f5b107f7b8715b99b0b6876de4c47c8b",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Normal/0169.JPG",
+        "original_sha256": "d7ce48a07bc073ff3de86c7dd795ba7cc4d17cccaea9bfb1be6f796dbe1f9e00",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1867113984,
+        "archive_image_bytes": 236359,
+        "pixel_sha256": "5f80905e186321e36b90e7b1fd9f8e09417ae8b79e2349e0785d27681e4f7f48",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      },
+      "split": "dev",
+      "label": "normal"
+    },
+    {
+      "asset_id": "v3_e485ebbefdcf6ded18a2",
+      "sku": "board_b",
+      "image": "images/v3_e485ebbefdcf6ded18a2.png",
+      "sha256": "0dcd48261da30ebe40062c530b4cd26384e66e14a9a47ee40ddb63a50567cff6",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Anomaly/015.JPG",
+        "original_sha256": "4be5990a1ba80e06cceac8ae0fea5c16226c314ba9af294fc1d7cdcea4aa089c",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1650479104,
+        "archive_image_bytes": 223896,
+        "pixel_sha256": "0b0518d9c406e81529e334c5182e61b516d4583315db59f6aa1318ab5c06abf4",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_e485ebbefdcf6ded18a2.png",
+          "original_path": "pcb4/Data/Masks/Anomaly/015.png",
+          "sha256": "95c8c98503ee5dae7f9bf611c02a89616a6e5f7f5f23bd602da278e5178e2bc2",
+          "classes": [
+            {
+              "id": 4,
+              "name": "Damage",
+              "pixels": 5640
+            }
+          ],
+          "allowed_class_area": 5640,
+          "allowed_class_bbox": [
+            341,
+            391,
+            439,
+            482
+          ]
+        },
+        "static_review_note": "Top-left USB housing corner is visibly torn and folded inward."
+      },
+      "split": "live",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_ebce925e404652e48638",
+      "sku": "board_b",
+      "image": "images/v3_ebce925e404652e48638.png",
+      "sha256": "68c786dbe5bb7e3e135ccf0753eaf6923cbce2511d837f83022b37456447e27d",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Anomaly/013.JPG",
+        "original_sha256": "58520840bd9769106cbee922aa27f47ef3e12db2c505c70c77c87a0a7a0b33f3",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1652984320,
+        "archive_image_bytes": 234566,
+        "pixel_sha256": "0af004e4ab2faf61240474928197c8956bf53ec07256d480bd08e0334b855f14",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_ebce925e404652e48638.png",
+          "original_path": "pcb4/Data/Masks/Anomaly/013.png",
+          "sha256": "c58e0fd54389250e66d31f7f47e1644befa229bd9d2ef0e64fbc4d829e8cdc0c",
+          "classes": [
+            {
+              "id": 4,
+              "name": "Damage",
+              "pixels": 9164
+            },
+            {
+              "id": 7,
+              "name": "Dirt",
+              "pixels": 5926
+            }
+          ],
+          "allowed_class_area": 9164,
+          "allowed_class_bbox": [
+            314,
+            535,
+            444,
+            643
+          ]
+        },
+        "static_review_note": "Bottom corner of USB housing visibly crushed and folded."
+      },
+      "split": "dev",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_ececf933bf7057978a62",
+      "sku": "board_a",
+      "image": "images/v3_ececf933bf7057978a62.png",
+      "sha256": "5be42b313269f76971d2e8b5d9dadd7eaed2c69af58f5655f40ff6b6aeafdb32",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Anomaly/009.JPG",
+        "original_sha256": "d19ff86d61f5eb821d80986055e3ac0b2fe4e7e1539af80bbf8646de8e52ba43",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1206595072,
+        "archive_image_bytes": 262121,
+        "pixel_sha256": "48c8ed314b9608df4d7fb0d3a610c51f7ca374449c3198f29d26f752b6e21a2f",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_ececf933bf7057978a62.png",
+          "original_path": "pcb2/Data/Masks/Anomaly/009.png",
+          "sha256": "9562fe7859717cb14f53be97dd395bdda73c801304d497c14d83c9e908134a0b",
+          "classes": [
+            {
+              "id": 1,
+              "name": "Bent",
+              "pixels": 5377
+            }
+          ],
+          "allowed_class_area": 5377,
+          "allowed_class_bbox": [
+            685,
+            348,
+            760,
+            534
+          ]
+        },
+        "static_review_note": "Two connector pins folded downward across the board."
+      },
+      "split": "live",
+      "label": "defect"
+    },
+    {
+      "asset_id": "v3_ee463c9e53007df632cf",
+      "sku": "board_a",
+      "image": "images/v3_ee463c9e53007df632cf.png",
+      "sha256": "a90ddede4ed4a59793e712ac53e9d63d858a3b24d9856b503d9f08904309d436",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Anomaly/008.JPG",
+        "original_sha256": "6cbcdb94dc2efb5bdc33bae1cef665bffc31b80decf011f8e8cc66c899d4bdb0",
+        "original_label": "anomaly",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1228111360,
+        "archive_image_bytes": 248226,
+        "pixel_sha256": "582ab119e782d559bc03487dc9649b70c1e1190e0a03e102c0fccfb14210fa90",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved",
+        "gt_mask": {
+          "path": "masks/v3_ee463c9e53007df632cf.png",
+          "original_path": "pcb2/Data/Masks/Anomaly/008.png",
+          "sha256": "64260117240056b3fec8665c27b0a08eb90fcb8fd801622a6da6729e24e3aa46",
+          "classes": [
+            {
+              "id": 1,
+              "name": "Bent",
+              "pixels": 6749
+            }
+          ],
+          "allowed_class_area": 6749,
+          "allowed_class_bbox": [
+            638,
+            193,
+            796,
+            347
+          ]
+        },
+        "static_review_note": "Multiple connector pins strongly lean and cross."
+      },
+      "split": "dev",
+      "label": "defect"
+    }
+  ],
+  "references": [
+    {
+      "asset_id": "v3_a9887591be43ec954389",
+      "sku": "board_a",
+      "image": "images/v3_a9887591be43ec954389.png",
+      "sha256": "a1e063d253c69e1d74b1cf1a035032956c9e546c1a20201bbaaddf1e20be52eb",
+      "width": 1404,
+      "height": 1070,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb2",
+        "original_path": "pcb2/Data/Images/Normal/0016.JPG",
+        "original_sha256": "2b2d715d67201bbf308daa916e82c87b820b63899bd5e7ca284863501c5c9d52",
+        "original_label": "normal",
+        "official_split": "test",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1326060032,
+        "archive_image_bytes": 264968,
+        "pixel_sha256": "0a15e4ba986cc78656b0d457d7a294ca30c4ba4cb5f412b1f668e6a63f830036",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      }
+    },
+    {
+      "asset_id": "v3_ca303deba0c0dec98487",
+      "sku": "board_b",
+      "image": "images/v3_ca303deba0c0dec98487.png",
+      "sha256": "45f31b56aa2485408acc0794dab5481f8f5f82bd0d9044a015585bffdd15e9da",
+      "width": 1358,
+      "height": 1104,
+      "source": {
+        "dataset": "VisA",
+        "product": "pcb4",
+        "original_path": "pcb4/Data/Images/Normal/0041.JPG",
+        "original_sha256": "c8006732587485cd44a8c818fb47adf36032f077b0ce7386f17951bcd9f4e9c7",
+        "original_label": "normal",
+        "official_split": "train",
+        "annotation_source": "https://github.com/amazon-science/spot-diff/blob/main/split_csv/1cls.csv",
+        "annotation_file_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+        "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+        "archive_data_offset": 1693788672,
+        "archive_image_bytes": 179001,
+        "pixel_sha256": "0cd5bf306adc86f2d1e7cd852f47bf6bc468f3e85674bd6fadbce89d853afb2c",
+        "transform": "JPEG decode to RGB, metadata-free lossless PNG; pixels preserved"
+      }
+    }
+  ],
+  "curation_policy_sha256": "6ca4f089fbb8c857efc656c00b0e449cccfeba0bb7b959cc953c28d3d2183f37",
+  "source_dataset": "VisA, CC BY 4.0",
+  "limitations": "Two PCB SKUs are represented in both splits. This is source-image-disjoint evaluation, not product-heldout generalization."
+}

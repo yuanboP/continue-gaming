@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c111b8aaa62f28d1a",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 46289.831,
+    "expires_ms": 46814.831,
+    "id": "pick-c111b8aaa62f28d1a",
+    "key": "d"
+  },
+  "visible_evidence": "A conspicuous dark, irregular mass covers the IC's upper-right corner and pins."
+}

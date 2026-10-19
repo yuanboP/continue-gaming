@@ -1,0 +1,1 @@
+{"reject":true,"reason":"The query’s USB connector has a visibly bent, lifted metal shell tab and conspicuous dark contamination across the housing."}

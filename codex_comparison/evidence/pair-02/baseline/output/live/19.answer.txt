@@ -1,0 +1,1 @@
+{"reject":true,"reason":"The rightmost GND pin on header J1 is severely bent outward, unlike the other three upright pins."}

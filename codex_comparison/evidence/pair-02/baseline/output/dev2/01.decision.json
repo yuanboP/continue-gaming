@@ -1,0 +1,5 @@
+{
+  "decided_wall": 1792346469.673443,
+  "reason": "The two leftmost header pins (VCC and Trig) are visibly bent and skewed compared with the straight reference pins.",
+  "reject": true
+}

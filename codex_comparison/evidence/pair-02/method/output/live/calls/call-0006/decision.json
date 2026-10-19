@@ -1,0 +1,11 @@
+{
+  "carrier_id": "ccb8419736c876410",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 49757.759,
+    "expires_ms": 50282.759,
+    "id": "pick-ccb8419736c876410",
+    "key": "f"
+  },
+  "visible_evidence": "The four connector pins are bent inward across the central component."
+}

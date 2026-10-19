@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"cb0a07fd7d2e89294\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 126292.976, \"expires_ms\": 126817.976, \"id\": \"pick-cb0a07fd7d2e89294\", \"key\": \"j\"}, \"visible_evidence\": \"The query's USB connector shell is visibly bent and crumpled.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792347654.6316028,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 8.225204165999912,
+    "ready_unix": 1792347654.6254737,
+    "started_unix": 1792347646.400271,
+    "thread_id": "01a1503e-a9c4-76d1-9ac3-66d66d844c2b",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7066,
+        "outputTokens": 152,
+        "reasoningOutputTokens": 64,
+        "totalTokens": 7218
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7066,
+        "outputTokens": 152,
+        "reasoningOutputTokens": 64,
+        "totalTokens": 7218
+      }
+    },
+    "turn_id": "01a1503e-a9e0-7ba1-bb18-d6d8314c50eb",
+    "usage_complete": true,
+    "wall_seconds": 8.231331107999722
+  }
+}

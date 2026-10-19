@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c9cfec7e6529443e4",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 46331.841,
+    "expires_ms": 46856.841,
+    "id": "pick-c9cfec7e6529443e4",
+    "key": "d"
+  },
+  "visible_evidence": "The query's four connector pins are bent sharply sideways."
+}

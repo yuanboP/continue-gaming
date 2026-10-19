@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c563e9bed45100358\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 78201.776, \"expires_ms\": 78726.776, \"id\": \"pick-c563e9bed45100358\", \"key\": \"j\"}, \"visible_evidence\": \"The right-side capacitor is visibly broken and blackened.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792347415.6967056,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 8.489258103999873,
+    "ready_unix": 1792347415.6944041,
+    "started_unix": 1792347407.2051475,
+    "thread_id": "01a1503b-0368-76c1-a444-fd9693a2c9ad",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7055,
+        "outputTokens": 131,
+        "reasoningOutputTokens": 53,
+        "totalTokens": 7186
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7055,
+        "outputTokens": 131,
+        "reasoningOutputTokens": 53,
+        "totalTokens": 7186
+      }
+    },
+    "turn_id": "01a1503b-0385-71f3-950f-612212faaf28",
+    "usage_complete": true,
+    "wall_seconds": 8.491557986999851
+  }
+}

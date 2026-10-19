@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c6af72b708b6016a5\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 158953.480364, \"expires_ms\": 159478.480364, \"id\": \"pick-c6af72b708b6016a5\", \"key\": \"k\"}, \"visible_evidence\": \"The four connector pins are bent down across the board.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792347684.4043934,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 8.01219257899993,
+    "ready_unix": 1792347684.4007828,
+    "started_unix": 1792347676.3885927,
+    "thread_id": "01a1503f-1eec-7733-93c5-5be24753c1ed",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7063,
+        "outputTokens": 133,
+        "reasoningOutputTokens": 47,
+        "totalTokens": 7196
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7063,
+        "outputTokens": 133,
+        "reasoningOutputTokens": 47,
+        "totalTokens": 7196
+      }
+    },
+    "turn_id": "01a1503f-1f0c-7e52-8eb3-4dfe31708511",
+    "usage_complete": true,
+    "wall_seconds": 8.01580068300018
+  }
+}

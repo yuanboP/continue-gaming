@@ -1,0 +1,9 @@
+{
+  "adapter": "portable app-server",
+  "auth": "chatgpt",
+  "base_instructions": "You are a visual inspection controller. Read the supplied public task rules, sensor metadata and camera pixels. Make the quality decision and every action time yourself. Return only the requested JSON. Do not use tools or inspect files. Describe only a short visible observation in visible_evidence; do not include reasoning steps.",
+  "base_instructions_sha256": "2f611627c63071f91c1e4facb64874a664f0068d172fe14678ca87e07d51f5a5",
+  "direct_api_calls": 0,
+  "effort": "medium",
+  "model": "gpt-6-astra"
+}

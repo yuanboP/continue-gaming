@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"cb4ff00ae3f1347de\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 97532.594176, \"expires_ms\": 98082.594176, \"id\": \"pick-cb4ff00ae3f1347de\", \"key\": \"f\"}, \"visible_evidence\": \"The component immediately left of the main chip is visibly broken with surrounding debris.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792347909.1103523,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 7.587579608999931,
+    "ready_unix": 1792347909.1048565,
+    "started_unix": 1792347901.517278,
+    "thread_id": "01a15042-8e51-7c52-8af1-a43aec708847",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7062,
+        "outputTokens": 125,
+        "reasoningOutputTokens": 36,
+        "totalTokens": 7187
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7062,
+        "outputTokens": 125,
+        "reasoningOutputTokens": 36,
+        "totalTokens": 7187
+      }
+    },
+    "turn_id": "01a15042-8e74-7350-9c3e-effa7f62c5de",
+    "usage_complete": true,
+    "wall_seconds": 7.593071886999951
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c6b77730f65bd9acb",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 70383.473,
+    "expires_ms": 70908.473,
+    "id": "pick-c6b77730f65bd9acb",
+    "key": "d"
+  },
+  "visible_evidence": "The USB connector shell is visibly crumpled and torn at its lower edge."
+}

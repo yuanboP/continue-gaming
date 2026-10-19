@@ -1,0 +1,5 @@
+{
+  "decided_wall": 1792346580.946657,
+  "reason": "The J1 Echo header pin is severely bent downward over the central IC instead of standing upright with the other three pins.",
+  "reject": true
+}

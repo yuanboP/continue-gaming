@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"cd00ed04858d57409\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 98067.947322, \"expires_ms\": 98592.947322, \"id\": \"pick-cd00ed04858d57409\", \"key\": \"f\"}, \"visible_evidence\": \"The query IC has a conspicuous gouged, damaged area on its top surface.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792347623.4802876,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 7.0939286389998415,
+    "ready_unix": 1792347623.4737067,
+    "started_unix": 1792347616.3797798,
+    "thread_id": "01a1503e-3480-72f3-80d5-85a5d3d29040",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7055,
+        "outputTokens": 126,
+        "reasoningOutputTokens": 39,
+        "totalTokens": 7181
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7055,
+        "outputTokens": 126,
+        "reasoningOutputTokens": 39,
+        "totalTokens": 7181
+      }
+    },
+    "turn_id": "01a1503e-349c-7fe3-8312-cb9780f66e0c",
+    "usage_complete": true,
+    "wall_seconds": 7.1005075650000435
+  }
+}

@@ -1,0 +1,1 @@
+{"reject":true,"reason":"All four J1 header pins are visibly bent sideways, unlike the straight pins on the reference."}

@@ -1,0 +1,1 @@
+{"reject":true,"reason":"The two leftmost header pins (VCC and Trig) are visibly bent and skewed compared with the straight reference pins."}

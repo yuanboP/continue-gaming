@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c0eba3257f57e8a74\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 158759.423, \"expires_ms\": 159284.423, \"id\": \"pick-c0eba3257f57e8a74\", \"key\": \"k\"}, \"visible_evidence\": \"Several connector pins are severely bent and crossing.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792346139.106511,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 6.597077547000026,
+    "ready_unix": 1792346139.1018662,
+    "started_unix": 1792346132.50479,
+    "thread_id": "01a15027-9020-76a0-a01c-2b2d47b5f7d4",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7062,
+        "outputTokens": 125,
+        "reasoningOutputTokens": 43,
+        "totalTokens": 7187
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7062,
+        "outputTokens": 125,
+        "reasoningOutputTokens": 43,
+        "totalTokens": 7187
+      }
+    },
+    "turn_id": "01a15027-9041-7f33-b8c5-8a3ac960b28d",
+    "usage_complete": true,
+    "wall_seconds": 6.601720606999834
+  }
+}

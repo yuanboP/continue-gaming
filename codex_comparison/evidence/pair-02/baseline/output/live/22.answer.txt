@@ -1,0 +1,1 @@
+{"reject":true,"reason":"The USB connector shield is visibly bent and crumpled near its upper-left edge, with an irregular inward-folded metal section."}

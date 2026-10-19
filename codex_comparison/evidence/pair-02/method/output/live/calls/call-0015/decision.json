@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c9f63e1c97e0dd191",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 101990.801214,
+    "expires_ms": 102515.801214,
+    "id": "pick-c9f63e1c97e0dd191",
+    "key": "j"
+  },
+  "visible_evidence": "Two query header pins are sharply bent sideways."
+}

@@ -1,0 +1,17 @@
+{
+  "arm": "baseline",
+  "broker_url": "http://main:8090",
+  "dev": true,
+  "dev_seeds": [
+    17,
+    17
+  ],
+  "dev_url": "http://dev:8080",
+  "engine_sha256": "348e81340d4a09f8b488193daf0b4e395afa2755d34f249585ff5e1ffe787aa4",
+  "max_dev_resets": 3,
+  "max_episode_wall_seconds": 900,
+  "max_raf_gap_ms": 500,
+  "require_controller_commitment": false,
+  "seed": 17,
+  "task_id": "aster:aster-prepared-v1:baseline:dev"
+}

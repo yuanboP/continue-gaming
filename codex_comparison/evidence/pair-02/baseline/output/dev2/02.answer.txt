@@ -1,0 +1,1 @@
+{"reject":true,"reason":"Multiple header pins are severely bent and misaligned compared with the straight, parallel pins on the reference."}

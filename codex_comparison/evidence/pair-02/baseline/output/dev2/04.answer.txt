@@ -1,0 +1,1 @@
+{"reject":true,"reason":"Small dark foreign particles are visible below the large vertical resistor, extending onto the upper terminal of the capacitor beneath it."}

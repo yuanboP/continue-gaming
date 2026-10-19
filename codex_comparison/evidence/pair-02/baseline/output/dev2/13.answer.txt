@@ -1,0 +1,1 @@
+{"reject":false,"reason":"All components are present, with no visible broken or bent pins, board cracks, or conspicuous damaging contamination."}

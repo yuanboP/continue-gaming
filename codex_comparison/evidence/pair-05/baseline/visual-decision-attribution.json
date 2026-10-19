@@ -1,0 +1,17 @@
+{
+  "action_links": [],
+  "adapted_transport_sha256": null,
+  "limits": "Checks signed camera/action evidence against local native messages and literal queue logs. It does not prove process execution cryptographically. Oracle or baseline alternatives may pass with attribution not established.",
+  "linked_model_action_count": 0,
+  "schema_version": 1,
+  "session_id": "a88515e4-1482-4768-a0d3-2dda59a37477",
+  "status": "not_established",
+  "subscription_upstream_sha256": null,
+  "subscription_upstream_source_matches_provenance": false,
+  "unlinked_physical_action_ids": [
+    "reject-1",
+    "reject-2",
+    "reject-5",
+    "reject-8"
+  ]
+}

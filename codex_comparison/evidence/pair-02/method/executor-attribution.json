@@ -1,0 +1,156 @@
+{
+  "action_links": [
+    {
+      "consistent": true,
+      "id": "pick-c78b4a2f3b2394d0a",
+      "issues": [],
+      "key": "j",
+      "model_at_ms": 29792.078425,
+      "result": "target_grab",
+      "sent_ms": 29796.24484700009,
+      "upstream_executed_ms": 29793.923454000127,
+      "world_action_ms": 29806.153195,
+      "world_minus_send_ms": 9.908347999909893
+    },
+    {
+      "consistent": true,
+      "id": "pick-c2dfa3917cbea29b6",
+      "issues": [],
+      "key": "k",
+      "model_at_ms": 38691.357,
+      "result": "target_grab",
+      "sent_ms": 38692.82804999981,
+      "upstream_executed_ms": 38692.641584,
+      "world_action_ms": 38697.279442,
+      "world_minus_send_ms": 4.451392000191845
+    },
+    {
+      "consistent": true,
+      "id": "pick-ccb8419736c876410",
+      "issues": [],
+      "key": "f",
+      "model_at_ms": 49757.759,
+      "result": "target_grab",
+      "sent_ms": 49760.39103900015,
+      "upstream_executed_ms": 49760.14909600003,
+      "world_action_ms": 49764.50177,
+      "world_minus_send_ms": 4.11073099985515
+    },
+    {
+      "consistent": true,
+      "id": "pick-c5c29a3a6c0ae0d2b",
+      "issues": [],
+      "key": "j",
+      "model_at_ms": 53712.479,
+      "result": "target_grab",
+      "sent_ms": 53713.11904500007,
+      "upstream_executed_ms": 53712.753659999944,
+      "world_action_ms": 53719.933931,
+      "world_minus_send_ms": 6.814885999927355
+    },
+    {
+      "consistent": true,
+      "id": "pick-ce01a70fd875c1bf0",
+      "issues": [],
+      "key": "f",
+      "model_at_ms": 74006.017,
+      "result": "target_grab",
+      "sent_ms": 74007.03016900008,
+      "upstream_executed_ms": 74006.86496400011,
+      "world_action_ms": 74010.508007,
+      "world_minus_send_ms": 3.4778379999188473
+    },
+    {
+      "consistent": true,
+      "id": "pick-c9f63e1c97e0dd191",
+      "issues": [],
+      "key": "j",
+      "model_at_ms": 101990.801214,
+      "result": "target_grab",
+      "sent_ms": 101994.79362599998,
+      "upstream_executed_ms": 101993.96335199992,
+      "world_action_ms": 101999.56748,
+      "world_minus_send_ms": 4.773854000013671
+    },
+    {
+      "consistent": true,
+      "id": "pick-ce27552132202dd41",
+      "issues": [],
+      "key": "f",
+      "model_at_ms": 121696.479797,
+      "result": "target_grab",
+      "sent_ms": 121700.22179400011,
+      "upstream_executed_ms": 121698.57814799993,
+      "world_action_ms": 121704.963307,
+      "world_minus_send_ms": 4.741512999884435
+    },
+    {
+      "consistent": true,
+      "id": "pick-cf5ed365e255716e6",
+      "issues": [],
+      "key": "j",
+      "model_at_ms": 126320.42,
+      "result": "target_grab",
+      "sent_ms": 126323.44477500008,
+      "upstream_executed_ms": 126323.07039700016,
+      "world_action_ms": 126328.340718,
+      "world_minus_send_ms": 4.895942999923136
+    },
+    {
+      "consistent": true,
+      "id": "pick-ca71fba1e1a505855",
+      "issues": [],
+      "key": "d",
+      "model_at_ms": 142388.928,
+      "result": "target_grab",
+      "sent_ms": 142389.91094699985,
+      "upstream_executed_ms": 142389.71890199994,
+      "world_action_ms": 142396.115074,
+      "world_minus_send_ms": 6.204127000150038
+    },
+    {
+      "consistent": true,
+      "id": "pick-ce9418b9790fc1f95",
+      "issues": [],
+      "key": "f",
+      "model_at_ms": 146028.548384,
+      "result": "target_grab",
+      "sent_ms": 146031.3255160001,
+      "upstream_executed_ms": 146030.70742300007,
+      "world_action_ms": 146038.189856,
+      "world_minus_send_ms": 6.864339999912772
+    },
+    {
+      "consistent": true,
+      "id": "pick-c0eba3257f57e8a74",
+      "issues": [],
+      "key": "k",
+      "model_at_ms": 158759.423,
+      "result": "target_grab",
+      "sent_ms": 158761.27607300002,
+      "upstream_executed_ms": 158760.50169799998,
+      "world_action_ms": 158770.629933,
+      "world_minus_send_ms": 9.353859999973793
+    }
+  ],
+  "all_physical_actions_linked": true,
+  "errors": [],
+  "expected_upstream_sha256": "3b0c38c81ae163fc1ff56dc26943484e8121a47f90ce4d3c7f2be221547e1b28",
+  "frozen_upstream_source_matches": true,
+  "limits": "Consistency of local logs, frozen source and signed action records is not cryptographic process attestation. Task success and executor adoption are separate outcomes. Oracle logs are not model evidence.",
+  "linked_action_count": 11,
+  "native_tool_calls_referencing_runtime": [],
+  "physical_action_count": 11,
+  "queue_logs": [
+    {
+      "path": "live/plan-events.jsonl",
+      "runtime_starts": 1,
+      "sha256": "eec8f5c3ee69bf02ccc5b19230a18ddaa3068b7e4ebe350041ae98b5f29a9ffc"
+    }
+  ],
+  "schema_version": 1,
+  "session_id": "4585484a-5406-45c3-8fe3-78890b383d12",
+  "status": "consistent",
+  "unlinked_physical_action_ids": [],
+  "world_action_count": 11
+}

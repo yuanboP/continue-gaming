@@ -1,0 +1,1 @@
+{"reject":true,"reason":"The bottom-center resistor is visibly damaged, with an irregular fractured-looking body and metallic debris instead of the intact rectangular component seen in the reference."}

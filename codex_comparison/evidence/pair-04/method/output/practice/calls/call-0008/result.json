@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c601e5b4578511608\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 62920.524, \"expires_ms\": 63470.524, \"id\": \"pick-c601e5b4578511608\", \"key\": \"k\"}, \"visible_evidence\": \"The small resistor along the bottom edge is visibly damaged, with an irregular exposed center.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792347872.2175076,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 6.573334909000096,
+    "ready_unix": 1792347872.2142344,
+    "started_unix": 1792347865.6409004,
+    "thread_id": "01a15042-0230-74b2-81d7-f3be8e433605",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7057,
+        "outputTokens": 142,
+        "reasoningOutputTokens": 56,
+        "totalTokens": 7199
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7057,
+        "outputTokens": 142,
+        "reasoningOutputTokens": 56,
+        "totalTokens": 7199
+      }
+    },
+    "turn_id": "01a15042-0250-7891-957c-7545b65f74ca",
+    "usage_complete": true,
+    "wall_seconds": 6.576607108000189
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c6b77730f65bd9acb\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 70358.473, \"expires_ms\": 70908.473, \"id\": \"pick-c6b77730f65bd9acb\", \"key\": \"d\"}, \"visible_evidence\": \"The USB connector shell is visibly corroded and deformed along its lower edge.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345385.3145473,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 8.236400568000022,
+    "ready_unix": 1792345385.27316,
+    "started_unix": 1792345377.1428378,
+    "thread_id": "01a1501c-097e-7b51-b6f7-08ec10c72dc5",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7063,
+        "outputTokens": 151,
+        "reasoningOutputTokens": 61,
+        "totalTokens": 7214
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7063,
+        "outputTokens": 151,
+        "reasoningOutputTokens": 61,
+        "totalTokens": 7214
+      }
+    },
+    "turn_id": "01a1501c-0993-73f1-937b-057b08bee73e",
+    "usage_complete": true,
+    "wall_seconds": 8.277785092000045
+  }
+}

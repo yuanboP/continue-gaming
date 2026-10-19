@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c42b60e8d006f94a7",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 22047.222,
+    "expires_ms": 22572.222,
+    "id": "pick-c42b60e8d006f94a7",
+    "key": "d"
+  },
+  "visible_evidence": "The USB connector housing is visibly bent and damaged."
+}

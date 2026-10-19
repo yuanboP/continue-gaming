@@ -1,0 +1,1 @@
+{"reject":false,"reason":"All components appear present, with intact pins and board edges. No clear structural damage or conspicuous damaging contamination is visible."}

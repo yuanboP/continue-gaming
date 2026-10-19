@@ -1,0 +1,37 @@
+NEW 1 c4f0eb5658808f969 d 22222.222222222223
+NEW 2 c1780090abed4a3c7 f 25905.216009
+NEW 3 c54bb131153d0565e j 30492.99273481818
+NEW 4 ca6932c3d5f89f28b k 38724.716538333334
+ACTION 1 {'clock_ms': 22235.759455, 'id': 'live-c4f0eb5658808f969', 'key': 'd', 'result': 'target_grab', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}
+NEW 5 c80d15cf666fed4a6 d 45875.14805422223
+NEW 6 c1b332686dcb3d867 f 49852.579463999995
+NEW 7 c626df91ddfb64a03 j 54019.175234818176
+ACTION 4 {'clock_ms': 38729.85138, 'id': 'live-ca6932c3d5f89f28b', 'key': 'k', 'result': 'target_grab', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}
+NEW 8 c7774308475700a1e k 62830.26430433334
+NEW 9 ccb56d3e5564e4a32 d 70541.73946422222
+NEW 10 cd1c16bc02b461d05 f 74027.773475
+ACTION 7 {'clock_ms': 56294.524765, 'id': 'live-c626df91ddfb64a03', 'key': 'j', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}
+NEW 11 c7b00ecb90a57ae9d j 78266.87693881818
+NEW 12 ce6cde6ddc4a3f286 k 87081.39148133332
+NEW 13 cf7fb3ff1acb7d42e d 93928.66260422222
+ACTION 9 {'clock_ms': 73254.455315, 'id': 'live-ccb56d3e5564e4a32', 'key': 'd', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}
+NEW 14 c041a531b01d80ff4 f 97702.114728
+ACTION 10 {'clock_ms': 81554.624913, 'id': 'live-cd1c16bc02b461d05', 'key': 'f', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}
+NEW 15 c979a7a2f839987d8 j 102002.19579481818
+NEW 16 c4dc5f7ed032c72b8 k 110792.48842433332
+NEW 17 c63d277cf4b7ec073 d 118268.13788922221
+NEW 18 cd5b8dd8a7ca00964 f 122306.855709
+NEW 19 c8c0306b898c2058a j 125969.26467881817
+ACTION 11 {'clock_ms': 108244.639264, 'id': 'live-c7b00ecb90a57ae9d', 'key': 'j', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}
+ACTION 12 {'clock_ms': 108245.694939, 'id': 'live-ce6cde6ddc4a3f286', 'key': 'k', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}
+NEW 20 cd36618e5452c152d k 135106.33763033335
+NEW 21 c407aff6a8205be26 d 142194.47554122223
+NEW 22 c8fe2c7f4c1c04582 f 145906.47276
+NEW 23 cfd9febc77087be06 j 149999.10078781817
+NEW 24 cf896c54739ceb72a k 158564.29306033335
+ACTION 15 {'clock_ms': 139910.70249, 'id': 'live-c979a7a2f839987d8', 'key': 'j', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}
+ACTION 18 {'clock_ms': 139911.989847, 'id': 'live-cd5b8dd8a7ca00964', 'key': 'f', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}
+ACTION 21 {'clock_ms': 155841.866653, 'id': 'live-c407aff6a8205be26', 'key': 'd', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}
+ACTION 23 {'clock_ms': 169151.287509, 'id': 'live-cfd9febc77087be06', 'key': 'j', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}
+ACTION 24 {'clock_ms': 179400.975441, 'id': 'live-cf896c54739ceb72a', 'key': 'k', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}
+FINISHED [{'clock_ms': 22235.759455, 'id': 'live-c4f0eb5658808f969', 'key': 'd', 'result': 'target_grab', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}, {'clock_ms': 38729.85138, 'id': 'live-ca6932c3d5f89f28b', 'key': 'k', 'result': 'target_grab', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}, {'clock_ms': 56294.524765, 'id': 'live-c626df91ddfb64a03', 'key': 'j', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}, {'clock_ms': 73254.455315, 'id': 'live-ccb56d3e5564e4a32', 'key': 'd', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}, {'clock_ms': 81554.624913, 'id': 'live-cd1c16bc02b461d05', 'key': 'f', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}, {'clock_ms': 108244.639264, 'id': 'live-c7b00ecb90a57ae9d', 'key': 'j', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}, {'clock_ms': 108245.694939, 'id': 'live-ce6cde6ddc4a3f286', 'key': 'k', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}, {'clock_ms': 139910.70249, 'id': 'live-c979a7a2f839987d8', 'key': 'j', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}, {'clock_ms': 139911.989847, 'id': 'live-cd5b8dd8a7ca00964', 'key': 'f', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}, {'clock_ms': 155841.866653, 'id': 'live-c407aff6a8205be26', 'key': 'd', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}, {'clock_ms': 169151.287509, 'id': 'live-cfd9febc77087be06', 'key': 'j', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}, {'clock_ms': 179400.975441, 'id': 'live-cf896c54739ceb72a', 'key': 'k', 'result': 'expired', 'session_id': 'ddef75da-3046-48ef-8cb2-08b47c7fe2d5'}]

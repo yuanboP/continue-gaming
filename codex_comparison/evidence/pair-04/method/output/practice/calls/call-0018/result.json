@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"cc4ff64debb5d6b48\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 121583.479091, \"expires_ms\": 122133.479091, \"id\": \"pick-cc4ff64debb5d6b48\", \"key\": \"f\"}, \"visible_evidence\": \"The upper-center resistor is visibly broken, with exposed fragments.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792347932.3275845,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 7.174484829999983,
+    "ready_unix": 1792347932.3205605,
+    "started_unix": 1792347925.1460772,
+    "thread_id": "01a15042-ea9e-72a0-a2b7-188138626651",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7065,
+        "outputTokens": 134,
+        "reasoningOutputTokens": 46,
+        "totalTokens": 7199
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7065,
+        "outputTokens": 134,
+        "reasoningOutputTokens": 46,
+        "totalTokens": 7199
+      }
+    },
+    "turn_id": "01a15042-eac1-7d22-bf84-02cf15f2b196",
+    "usage_complete": true,
+    "wall_seconds": 7.181507123000301
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c111b8aaa62f28d1a",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 46264.831,
+    "expires_ms": 46814.831,
+    "id": "pick-c111b8aaa62f28d1a",
+    "key": "d"
+  },
+  "visible_evidence": "The central chip has a visibly broken upper-right corner with jagged material over its pins."
+}

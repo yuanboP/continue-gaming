@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c111b8aaa62f28d1a\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 46264.831, \"expires_ms\": 46814.831, \"id\": \"pick-c111b8aaa62f28d1a\", \"key\": \"d\"}, \"visible_evidence\": \"The central chip has a visibly broken upper-right corner with jagged material over its pins.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792345359.9387538,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 6.886253303999979,
+    "ready_unix": 1792345359.9304368,
+    "started_unix": 1792345353.0441847,
+    "thread_id": "01a1501b-ab58-7e73-9112-12ea4e7586a9",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7063,
+        "outputTokens": 133,
+        "reasoningOutputTokens": 42,
+        "totalTokens": 7196
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 2816,
+        "inputTokens": 7063,
+        "outputTokens": 133,
+        "reasoningOutputTokens": 42,
+        "totalTokens": 7196
+      }
+    },
+    "turn_id": "01a1501b-ab7b-7863-93ad-88408c3f2458",
+    "usage_complete": true,
+    "wall_seconds": 6.894568618999983
+  }
+}

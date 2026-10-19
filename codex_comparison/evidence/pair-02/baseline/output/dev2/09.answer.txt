@@ -1,0 +1,1 @@
+{"reject":true,"reason":"The query USB connector has extensive dark, crusty contamination and a visibly deformed lower metal shell compared with the normal reference."}

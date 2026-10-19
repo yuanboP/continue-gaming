@@ -1,0 +1,1 @@
+{"reject":false,"reason":"All components appear present and intact, with no clearly bent or broken pins, cracks, foreign material, or damaging contamination."}

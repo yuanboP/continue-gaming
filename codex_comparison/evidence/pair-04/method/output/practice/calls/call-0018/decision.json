@@ -1,0 +1,11 @@
+{
+  "carrier_id": "cc4ff64debb5d6b48",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 121583.479091,
+    "expires_ms": 122133.479091,
+    "id": "pick-cc4ff64debb5d6b48",
+    "key": "f"
+  },
+  "visible_evidence": "The upper-center resistor is visibly broken, with exposed fragments."
+}

@@ -1,0 +1,1 @@
+{"reject":true,"reason":"The four J1 connector pins are severely bent downward over the central U2 component instead of projecting straight outward."}

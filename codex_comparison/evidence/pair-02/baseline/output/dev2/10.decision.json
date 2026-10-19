@@ -1,0 +1,5 @@
+{
+  "decided_wall": 1792346527.6339972,
+  "reason": "Visible dark cut across the narrow trace between the R400 resistor and the capacitor below it, absent from the normal reference.",
+  "reject": true
+}

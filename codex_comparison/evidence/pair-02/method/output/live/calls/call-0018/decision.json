@@ -1,0 +1,11 @@
+{
+  "carrier_id": "ce27552132202dd41",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 121696.479797,
+    "expires_ms": 122221.479797,
+    "id": "pick-ce27552132202dd41",
+    "key": "f"
+  },
+  "visible_evidence": "Two connector pins are bent downward across the board."
+}

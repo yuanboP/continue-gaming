@@ -1,0 +1,24 @@
+{"decision": "reject", "number": 1, "reason": "Missing resistor above IC; damaged contaminated connector", "wall_time": 1792348649.5387657}
+{"decision": "reject", "number": 2, "reason": "Missing large capacitor left of IC", "wall_time": 1792348656.5886815}
+{"decision": "reject", "number": 3, "reason": "Severely bent crossing header pins", "wall_time": 1792348663.9102643}
+{"decision": "accept", "number": 4, "reason": "Components and straight header intact", "wall_time": 1792348672.5414283}
+{"decision": "reject", "number": 5, "reason": "USB connector shell torn and bent outward", "wall_time": 1792348677.919476}
+{"decision": "accept", "number": 6, "reason": "All components present; connector and PCB intact", "wall_time": 1792348684.1204727}
+{"decision": "accept", "number": 7, "reason": "Intact connector, components, and traces", "wall_time": 1792348689.7031221}
+{"decision": "reject", "number": 8, "reason": "Damaged IC package with conspicuous gouge and material on surface", "wall_time": 1792348697.2555017}
+{"decision": "accept", "number": 9, "reason": "Complete intact components and connector", "wall_time": 1792348707.8540134}
+{"decision": "accept", "number": 10, "reason": "Straight pins and complete components", "wall_time": 1792348719.2340214}
+{"decision": "reject", "number": 11, "reason": "Two header pins severely bent sideways", "wall_time": 1792348719.2489822}
+{"decision": "reject", "number": 12, "reason": "Two header pins folded down over IC", "wall_time": 1792348728.0513887}
+{"decision": "accept", "number": 13, "reason": "Intact assembly; printing variation only", "wall_time": 1792348739.5615454}
+{"decision": "reject", "number": 14, "reason": "Rightmost header pin bent sharply outward", "wall_time": 1792348754.0647151}
+{"decision": "accept", "number": 15, "reason": "All header pins straight and components present", "wall_time": 1792348764.0010235}
+{"decision": "reject", "number": 16, "reason": "All four header pins bent sharply to left", "wall_time": 1792348769.8358908}
+{"decision": "reject", "number": 17, "reason": "Header bent flat onto PCB and IC", "wall_time": 1792348781.0041053}
+{"decision": "accept", "number": 18, "reason": "Straight pins intact components", "wall_time": 1792348792.8128188}
+{"decision": "reject", "number": 21, "reason": "Broken IC package with detached fragment", "wall_time": 1792348809.2611384}
+{"decision": "accept", "number": 19, "reason": "Intact components and connector", "wall_time": 1792348809.2743156}
+{"decision": "accept", "number": 20, "reason": "Intact components and straight pins", "wall_time": 1792348809.2907386}
+{"decision": "accept", "number": 22, "reason": "Intact components and connector", "wall_time": 1792348809.3035858}
+{"decision": "accept", "number": 23, "reason": "Intact components and straight pins", "wall_time": 1792348809.315375}
+{"decision": "accept", "number": 24, "reason": "Intact components and connector", "wall_time": 1792348809.3292727}

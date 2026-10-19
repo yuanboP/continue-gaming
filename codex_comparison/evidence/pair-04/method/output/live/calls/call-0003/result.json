@@ -1,0 +1,36 @@
+{
+  "answer": "{\"carrier_id\": \"c1ccc1c5867abdbcb\", \"decision\": \"reject\", \"tap\": {\"at_ms\": 29986.58, \"expires_ms\": 30536.58, \"id\": \"pick-c1ccc1c5867abdbcb\", \"key\": \"j\"}, \"visible_evidence\": \"The query IC has a conspicuous gouged, damaged patch on its casing.\"}",
+  "meta": {
+    "auth": "chatgpt",
+    "completed_unix": 1792348038.3878126,
+    "direct_api_calls": 0,
+    "effort": "medium",
+    "model": "gpt-6-astra",
+    "ready_seconds": 7.466616074000285,
+    "ready_unix": 1792348038.385877,
+    "started_unix": 1792348030.919263,
+    "thread_id": "01a15044-87cb-7780-95b0-c3cb3ccce1c4",
+    "token_usage": {
+      "last": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7061,
+        "outputTokens": 134,
+        "reasoningOutputTokens": 47,
+        "totalTokens": 7195
+      },
+      "modelContextWindow": 258400,
+      "total": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "inputTokens": 7061,
+        "outputTokens": 134,
+        "reasoningOutputTokens": 47,
+        "totalTokens": 7195
+      }
+    },
+    "turn_id": "01a15044-87ed-7330-ac75-49e35a65e0b8",
+    "usage_complete": true,
+    "wall_seconds": 7.468549497000367
+  }
+}

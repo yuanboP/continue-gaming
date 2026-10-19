@@ -1,0 +1,43 @@
+{
+  "canonical_artifact_sha256": "4e93c21b1ec3013757e6c9b33b3493583c54eea2a7cd7263a13d6caeeae138a8",
+  "nested_model_calls": [],
+  "note": "Visual decisions made by outer agent. No nested model calls. Several decisions arrived after gate deadlines.",
+  "phase": "finished",
+  "receipts": [
+    {
+      "clock_ms": 22229.943511,
+      "id": "reject-cd4aca70def8dd9ff",
+      "key": "d",
+      "result": "target_grab",
+      "session_id": "3aa5c5bc-aa01-4887-8e1f-da666a1b8cbe"
+    },
+    {
+      "clock_ms": 26230.978932,
+      "id": "reject-c9b72c659885ada39",
+      "key": "f",
+      "result": "target_grab",
+      "session_id": "3aa5c5bc-aa01-4887-8e1f-da666a1b8cbe"
+    },
+    {
+      "clock_ms": 30333.00573,
+      "id": "reject-c1ccc1c5867abdbcb",
+      "key": "j",
+      "result": "target_grab",
+      "session_id": "3aa5c5bc-aa01-4887-8e1f-da666a1b8cbe"
+    },
+    {
+      "clock_ms": 46479.258073,
+      "id": "reject-c5f612af832205333",
+      "key": "d",
+      "result": "target_grab",
+      "session_id": "3aa5c5bc-aa01-4887-8e1f-da666a1b8cbe"
+    },
+    {
+      "clock_ms": 110507.404149,
+      "id": "reject-cf93283487e530a32",
+      "key": "k",
+      "result": "target_grab",
+      "session_id": "3aa5c5bc-aa01-4887-8e1f-da666a1b8cbe"
+    }
+  ]
+}

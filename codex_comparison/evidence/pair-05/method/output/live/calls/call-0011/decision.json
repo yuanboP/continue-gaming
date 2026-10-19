@@ -1,0 +1,11 @@
+{
+  "carrier_id": "c2f9c05c328f8e271",
+  "decision": "reject",
+  "tap": {
+    "at_ms": 78058.20943,
+    "expires_ms": 78583.20943,
+    "id": "pick-c2f9c05c328f8e271",
+    "key": "j"
+  },
+  "visible_evidence": "Two header connector pins are visibly bent sideways."
+}
